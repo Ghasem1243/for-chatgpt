@@ -1,0 +1,2026 @@
+                        166     BINARY_SUBSCR                   
+                        176     LOAD_METHOD                     6: replace
+                        198     LOAD_CONST                      4: '('
+                        200     LOAD_CONST                      5: ''
+                        202     PRECALL                         2
+                        206     CALL                            2
+                        216     LOAD_METHOD                     6: replace
+                        238     LOAD_CONST                      6: ')'
+                        240     LOAD_CONST                      5: ''
+                        242     PRECALL                         2
+                        246     CALL                            2
+                        256     STORE_FAST                      2: index
+                        258     LOAD_FAST                       0: self
+                        260     LOAD_ATTR                       7: entry_sabt_nam
+                        270     LOAD_METHOD                     8: delete
+                        292     LOAD_CONST                      7: 0
+                        294     LOAD_GLOBAL                     18: END
+                        306     PRECALL                         2
+                        310     CALL                            2
+                        320     POP_TOP                         
+                        322     JUMP_FORWARD                    122 (to 568)
+                        324     LOAD_FAST                       0: self
+                        326     LOAD_ATTR                       7: entry_sabt_nam
+                        336     LOAD_METHOD                     4: get
+                        358     PRECALL                         0
+                        362     CALL                            0
+                        372     LOAD_METHOD                     5: split
+                        394     LOAD_CONST                      2: '_'
+                        396     PRECALL                         1
+                        400     CALL                            1
+                        410     LOAD_CONST                      3: -1
+                        412     BINARY_SUBSCR                   
+                        422     LOAD_METHOD                     6: replace
+                        444     LOAD_CONST                      4: '('
+                        446     LOAD_CONST                      5: ''
+                        448     PRECALL                         2
+                        452     CALL                            2
+                        462     LOAD_METHOD                     6: replace
+                        484     LOAD_CONST                      6: ')'
+                        486     LOAD_CONST                      5: ''
+                        488     PRECALL                         2
+                        492     CALL                            2
+                        502     STORE_FAST                      2: index
+                        504     LOAD_FAST                       0: self
+                        506     LOAD_ATTR                       3: entry_motaqazian
+                        516     LOAD_METHOD                     8: delete
+                        538     LOAD_CONST                      7: 0
+                        540     LOAD_GLOBAL                     18: END
+                        552     PRECALL                         2
+                        556     CALL                            2
+                        566     POP_TOP                         
+                        568     LOAD_GLOBAL                     21: NULL + int
+                        580     LOAD_FAST                       2: index
+                        582     PRECALL                         1
+                        586     CALL                            1
+                        596     STORE_FAST                      2: index
+                        598     LOAD_FAST                       0: self
+                        600     LOAD_METHOD                     11: fillForm
+                        622     LOAD_FAST                       2: index
+                        624     PRECALL                         1
+                        628     CALL                            1
+                        638     POP_TOP                         
+                        640     LOAD_CONST                      0: None
+                        642     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: showRestoreMember
+                    Qualified Name: MyApp.showRestoreMember
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 10
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'getRemovedMembers'
+                        'Tk'
+                        'resizable'
+                        'title'
+                        'Label'
+                        'grid'
+                        'default_padx'
+                        'default_pady'
+                        'Combobox'
+                        'addSerchToCombobox'
+                        'database_list_removed_index'
+                        'str'
+                        'len'
+                        'Button'
+                        'tkinter_Button'
+                        'mainloop'
+                    [Locals+Names]
+                        'self'
+                        'a'
+                        'motaqazian_text_list'
+                        'entry_restore'
+                        'label_removed_count'
+                    [Constants]
+                        None
+                        0
+                        'بازیابی کاربر'
+                        'کاربران پاک شده'
+                        (
+                            'text'
+                        )
+                        2
+                        (
+                            'column'
+                            'row'
+                            'padx'
+                            'pady'
+                        )
+                        'right'
+                        44
+                        (
+                            'justify'
+                            'width'
+                        )
+                        ''
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.showRestoreMember.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 12
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_list_removed_members'
+                                'database_map'
+                                'split'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'bank'
+                                ','
+                                0
+                                '_('
+                                ')'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        145 (to 300)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_DEREF                      2: self
+                                14      LOAD_ATTR                       0: database_list_removed_members
+                                24      LOAD_FAST                       1: i
+                                26      BINARY_SUBSCR                   
+                                36      LOAD_DEREF                      2: self
+                                38      LOAD_ATTR                       1: database_map
+                                48      LOAD_CONST                      0: 'name'
+                                50      BINARY_SUBSCR                   
+                                60      BINARY_SUBSCR                   
+                                70      FORMAT_VALUE                    0 (FVC_NONE)
+                                72      LOAD_CONST                      1: '_'
+                                74      LOAD_DEREF                      2: self
+                                76      LOAD_ATTR                       0: database_list_removed_members
+                                86      LOAD_FAST                       1: i
+                                88      BINARY_SUBSCR                   
+                                98      LOAD_DEREF                      2: self
+                                100     LOAD_ATTR                       1: database_map
+                                110     LOAD_CONST                      2: 'family'
+                                112     BINARY_SUBSCR                   
+                                122     BINARY_SUBSCR                   
+                                132     FORMAT_VALUE                    0 (FVC_NONE)
+                                134     LOAD_CONST                      1: '_'
+                                136     LOAD_DEREF                      2: self
+                                138     LOAD_ATTR                       0: database_list_removed_members
+                                148     LOAD_FAST                       1: i
+                                150     BINARY_SUBSCR                   
+                                160     LOAD_DEREF                      2: self
+                                162     LOAD_ATTR                       1: database_map
+                                172     LOAD_CONST                      3: 'bank'
+                                174     BINARY_SUBSCR                   
+                                184     BINARY_SUBSCR                   
+                                194     LOAD_METHOD                     2: split
+                                216     LOAD_CONST                      4: ','
+                                218     PRECALL                         1
+                                222     CALL                            1
+                                232     LOAD_CONST                      5: 0
+                                234     BINARY_SUBSCR                   
+                                244     FORMAT_VALUE                    0 (FVC_NONE)
+                                246     LOAD_CONST                      6: '_('
+                                248     LOAD_FAST                       1: i
+                                250     FORMAT_VALUE                    0 (FVC_NONE)
+                                252     LOAD_CONST                      4: ','
+                                254     LOAD_DEREF                      2: self
+                                256     LOAD_ATTR                       0: database_list_removed_members
+                                266     LOAD_FAST                       1: i
+                                268     BINARY_SUBSCR                   
+                                278     LOAD_CONST                      5: 0
+                                280     BINARY_SUBSCR                   
+                                290     FORMAT_VALUE                    0 (FVC_NONE)
+                                292     LOAD_CONST                      7: ')'
+                                294     BUILD_STRING                    10
+                                296     LIST_APPEND                     2
+                                298     JUMP_BACKWARD                   146 (to 8)
+                                300     RETURN_VALUE                    
+                        'values'
+                        1
+                        3
+                        'e'
+                        (
+                            'column'
+                            'row'
+                            'padx'
+                            'pady'
+                            'sticky'
+                        )
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.showRestoreMember.<locals>.<lambda>
+                            Arg Count: 0
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 5
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'updateRestoreMemberDialog'
+                            [Locals+Names]
+                                'entry_restore'
+                                'label_removed_count'
+                                'self'
+                            [Constants]
+                                None
+                                'restore'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  3
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      2: self
+                                6       LOAD_METHOD                     0: updateRestoreMemberDialog
+                                28      LOAD_DEREF                      0: entry_restore
+                                30      LOAD_DEREF                      1: label_removed_count
+                                32      LOAD_CONST                      1: 'restore'
+                                34      PRECALL                         3
+                                38      CALL                            3
+                                48      RETURN_VALUE                    
+                        (
+                            'text'
+                            'command'
+                        )
+                        'ew'
+                        (
+                            'columnspan'
+                            'column'
+                            'row'
+                            'pady'
+                            'sticky'
+                        )
+                        'حذف کامل کاربر'
+                        'red'
+                        'white'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.showRestoreMember.<locals>.<lambda>
+                            Arg Count: 0
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 5
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'updateRestoreMemberDialog'
+                            [Locals+Names]
+                                'entry_restore'
+                                'label_removed_count'
+                                'self'
+                            [Constants]
+                                None
+                                'delete'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  3
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      2: self
+                                6       LOAD_METHOD                     0: updateRestoreMemberDialog
+                                28      LOAD_DEREF                      0: entry_restore
+                                30      LOAD_DEREF                      1: label_removed_count
+                                32      LOAD_CONST                      1: 'delete'
+                                34      PRECALL                         3
+                                38      CALL                            3
+                                48      RETURN_VALUE                    
+                        (
+                            'text'
+                            'height'
+                            'background'
+                            'foreground'
+                            'command'
+                        )
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       MAKE_CELL                       3: entry_restore
+                        4       MAKE_CELL                       4: label_removed_count
+                        6       RESUME                          0
+                        8       LOAD_DEREF                      0: self
+                        10      LOAD_METHOD                     0: getRemovedMembers
+                        32      PRECALL                         0
+                        36      CALL                            0
+                        46      POP_TOP                         
+                        48      LOAD_GLOBAL                     3: NULL + Tk
+                        60      PRECALL                         0
+                        64      CALL                            0
+                        74      STORE_FAST                      1: a
+                        76      LOAD_FAST                       1: a
+                        78      LOAD_METHOD                     2: resizable
+                        100     LOAD_CONST                      1: 0
+                        102     LOAD_CONST                      1: 0
+                        104     PRECALL                         2
+                        108     CALL                            2
+                        118     POP_TOP                         
+                        120     LOAD_FAST                       1: a
+                        122     LOAD_METHOD                     3: title
+                        144     LOAD_CONST                      2: 'بازیابی کاربر'
+                        146     PRECALL                         1
+                        150     CALL                            1
+                        160     POP_TOP                         
+                        162     LOAD_GLOBAL                     9: NULL + Label
+                        174     LOAD_FAST                       1: a
+                        176     LOAD_CONST                      3: 'کاربران پاک شده'
+                        178     KW_NAMES                        4: ('text',)
+                        180     PRECALL                         2
+                        184     CALL                            2
+                        194     LOAD_METHOD                     5: grid
+                        216     LOAD_CONST                      5: 2
+                        218     LOAD_CONST                      1: 0
+                        220     LOAD_DEREF                      0: self
+                        222     LOAD_ATTR                       6: default_padx
+                        232     LOAD_DEREF                      0: self
+                        234     LOAD_ATTR                       7: default_pady
+                        244     KW_NAMES                        6: ('column', 'row', 'padx', 'pady')
+                        246     PRECALL                         4
+                        250     CALL                            4
+                        260     POP_TOP                         
+                        262     LOAD_GLOBAL                     17: NULL + Combobox
+                        274     LOAD_FAST                       1: a
+                        276     LOAD_CONST                      7: 'right'
+                        278     LOAD_CONST                      8: 44
+                        280     KW_NAMES                        9: ('justify', 'width')
+                        282     PRECALL                         3
+                        286     CALL                            3
+                        296     STORE_DEREF                     3: entry_restore
+                        298     LOAD_DEREF                      0: self
+                        300     LOAD_METHOD                     9: addSerchToCombobox
+                        322     LOAD_DEREF                      3: entry_restore
+                        324     LOAD_CONST                      10: ''
+                        326     PRECALL                         2
+                        330     CALL                            2
+                        340     POP_TOP                         
+                        342     LOAD_CLOSURE                    0: self
+                        344     BUILD_TUPLE                     1
+                        346     LOAD_CONST                      11: <CODE> <listcomp>
+                        348     MAKE_FUNCTION                   8
+                        350     LOAD_DEREF                      0: self
+                        352     LOAD_ATTR                       10: database_list_removed_index
+                        362     GET_ITER                        
+                        364     PRECALL                         0
+                        368     CALL                            0
+                        378     STORE_FAST                      2: motaqazian_text_list
+                        380     LOAD_FAST                       2: motaqazian_text_list
+                        382     LOAD_DEREF                      3: entry_restore
+                        384     LOAD_CONST                      12: 'values'
+                        386     STORE_SUBSCR                    
+                        390     LOAD_DEREF                      3: entry_restore
+                        392     LOAD_METHOD                     5: grid
+                        414     LOAD_CONST                      13: 1
+                        416     LOAD_CONST                      1: 0
+                        418     LOAD_CONST                      14: 3
+                        420     LOAD_DEREF                      0: self
+                        422     LOAD_ATTR                       7: default_pady
+                        432     LOAD_CONST                      15: 'e'
+                        434     KW_NAMES                        16: ('column', 'row', 'padx', 'pady', 'sticky')
+                        436     PRECALL                         5
+                        440     CALL                            5
+                        450     POP_TOP                         
+                        452     LOAD_GLOBAL                     9: NULL + Label
+                        464     LOAD_FAST                       1: a
+                        466     LOAD_GLOBAL                     23: NULL + str
+                        478     LOAD_GLOBAL                     25: NULL + len
+                        490     LOAD_DEREF                      0: self
+                        492     LOAD_ATTR                       10: database_list_removed_index
+                        502     PRECALL                         1
+                        506     CALL                            1
+                        516     PRECALL                         1
+                        520     CALL                            1
+                        530     KW_NAMES                        4: ('text',)
+                        532     PRECALL                         2
+                        536     CALL                            2
+                        546     STORE_DEREF                     4: label_removed_count
+                        548     LOAD_DEREF                      4: label_removed_count
+                        550     LOAD_METHOD                     5: grid
+                        572     LOAD_CONST                      1: 0
+                        574     LOAD_CONST                      1: 0
+                        576     LOAD_CONST                      14: 3
+                        578     LOAD_DEREF                      0: self
+                        580     LOAD_ATTR                       7: default_pady
+                        590     LOAD_CONST                      15: 'e'
+                        592     KW_NAMES                        16: ('column', 'row', 'padx', 'pady', 'sticky')
+                        594     PRECALL                         5
+                        598     CALL                            5
+                        608     POP_TOP                         
+                        610     LOAD_GLOBAL                     27: NULL + Button
+                        622     LOAD_FAST                       1: a
+                        624     LOAD_CONST                      2: 'بازیابی کاربر'
+                        626     LOAD_CLOSURE                    3: entry_restore
+                        628     LOAD_CLOSURE                    4: label_removed_count
+                        630     LOAD_CLOSURE                    0: self
+                        632     BUILD_TUPLE                     3
+                        634     LOAD_CONST                      17: <CODE> <lambda>
+                        636     MAKE_FUNCTION                   8
+                        638     KW_NAMES                        18: ('text', 'command')
+                        640     PRECALL                         3
+                        644     CALL                            3
+                        654     LOAD_METHOD                     5: grid
+                        676     LOAD_CONST                      13: 1
+                        678     LOAD_CONST                      13: 1
+                        680     LOAD_CONST                      5: 2
+                        682     LOAD_DEREF                      0: self
+                        684     LOAD_ATTR                       7: default_pady
+                        694     LOAD_CONST                      19: 'ew'
+                        696     KW_NAMES                        20: ('columnspan', 'column', 'row', 'pady', 'sticky')
+                        698     PRECALL                         5
+                        702     CALL                            5
+                        712     POP_TOP                         
+                        714     LOAD_GLOBAL                     29: NULL + tkinter_Button
+                        726     LOAD_FAST                       1: a
+                        728     LOAD_CONST                      21: 'حذف کامل کاربر'
+                        730     LOAD_CONST                      13: 1
+                        732     LOAD_CONST                      22: 'red'
+                        734     LOAD_CONST                      23: 'white'
+                        736     LOAD_CLOSURE                    3: entry_restore
+                        738     LOAD_CLOSURE                    4: label_removed_count
+                        740     LOAD_CLOSURE                    0: self
+                        742     BUILD_TUPLE                     3
+                        744     LOAD_CONST                      24: <CODE> <lambda>
+                        746     MAKE_FUNCTION                   8
+                        748     KW_NAMES                        25: ('text', 'height', 'background', 'foreground', 'command')
+                        750     PRECALL                         6
+                        754     CALL                            6
+                        764     LOAD_METHOD                     5: grid
+                        786     LOAD_CONST                      13: 1
+                        788     LOAD_CONST                      5: 2
+                        790     LOAD_CONST                      5: 2
+                        792     LOAD_CONST                      1: 0
+                        794     LOAD_CONST                      19: 'ew'
+                        796     KW_NAMES                        20: ('columnspan', 'column', 'row', 'pady', 'sticky')
+                        798     PRECALL                         5
+                        802     CALL                            5
+                        812     POP_TOP                         
+                        814     LOAD_FAST                       1: a
+                        816     LOAD_METHOD                     15: mainloop
+                        838     PRECALL                         0
+                        842     CALL                            0
+                        852     POP_TOP                         
+                        854     LOAD_CONST                      0: None
+                        856     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: updateRestoreMemberDialog
+                    Qualified Name: MyApp.updateRestoreMemberDialog
+                    Arg Count: 4
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'restoreMember'
+                        'get'
+                        'delete'
+                        'END'
+                        'getRemovedMembers'
+                        'database_list_removed_index'
+                        'config'
+                        'str'
+                        'len'
+                        'fullyRemoveMember'
+                    [Locals+Names]
+                        'self'
+                        'entry_restore'
+                        'label_removed_count'
+                        'mode'
+                        'motaqazian_text_list'
+                    [Constants]
+                        None
+                        'restore'
+                        0
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.updateRestoreMemberDialog.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 12
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_list_removed_members'
+                                'database_map'
+                                'split'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'bank'
+                                ','
+                                0
+                                '_('
+                                ')'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        145 (to 300)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_DEREF                      2: self
+                                14      LOAD_ATTR                       0: database_list_removed_members
+                                24      LOAD_FAST                       1: i
+                                26      BINARY_SUBSCR                   
+                                36      LOAD_DEREF                      2: self
+                                38      LOAD_ATTR                       1: database_map
+                                48      LOAD_CONST                      0: 'name'
+                                50      BINARY_SUBSCR                   
+                                60      BINARY_SUBSCR                   
+                                70      FORMAT_VALUE                    0 (FVC_NONE)
+                                72      LOAD_CONST                      1: '_'
+                                74      LOAD_DEREF                      2: self
+                                76      LOAD_ATTR                       0: database_list_removed_members
+                                86      LOAD_FAST                       1: i
+                                88      BINARY_SUBSCR                   
+                                98      LOAD_DEREF                      2: self
+                                100     LOAD_ATTR                       1: database_map
+                                110     LOAD_CONST                      2: 'family'
+                                112     BINARY_SUBSCR                   
+                                122     BINARY_SUBSCR                   
+                                132     FORMAT_VALUE                    0 (FVC_NONE)
+                                134     LOAD_CONST                      1: '_'
+                                136     LOAD_DEREF                      2: self
+                                138     LOAD_ATTR                       0: database_list_removed_members
+                                148     LOAD_FAST                       1: i
+                                150     BINARY_SUBSCR                   
+                                160     LOAD_DEREF                      2: self
+                                162     LOAD_ATTR                       1: database_map
+                                172     LOAD_CONST                      3: 'bank'
+                                174     BINARY_SUBSCR                   
+                                184     BINARY_SUBSCR                   
+                                194     LOAD_METHOD                     2: split
+                                216     LOAD_CONST                      4: ','
+                                218     PRECALL                         1
+                                222     CALL                            1
+                                232     LOAD_CONST                      5: 0
+                                234     BINARY_SUBSCR                   
+                                244     FORMAT_VALUE                    0 (FVC_NONE)
+                                246     LOAD_CONST                      6: '_('
+                                248     LOAD_FAST                       1: i
+                                250     FORMAT_VALUE                    0 (FVC_NONE)
+                                252     LOAD_CONST                      4: ','
+                                254     LOAD_DEREF                      2: self
+                                256     LOAD_ATTR                       0: database_list_removed_members
+                                266     LOAD_FAST                       1: i
+                                268     BINARY_SUBSCR                   
+                                278     LOAD_CONST                      5: 0
+                                280     BINARY_SUBSCR                   
+                                290     FORMAT_VALUE                    0 (FVC_NONE)
+                                292     LOAD_CONST                      7: ')'
+                                294     BUILD_STRING                    10
+                                296     LIST_APPEND                     2
+                                298     JUMP_BACKWARD                   146 (to 8)
+                                300     RETURN_VALUE                    
+                        'values'
+                        (
+                            'text'
+                        )
+                        'delete'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.updateRestoreMemberDialog.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 12
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_list_removed_members'
+                                'database_map'
+                                'split'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'bank'
+                                ','
+                                0
+                                '_('
+                                ')'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        145 (to 300)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_DEREF                      2: self
+                                14      LOAD_ATTR                       0: database_list_removed_members
+                                24      LOAD_FAST                       1: i
+                                26      BINARY_SUBSCR                   
+                                36      LOAD_DEREF                      2: self
+                                38      LOAD_ATTR                       1: database_map
+                                48      LOAD_CONST                      0: 'name'
+                                50      BINARY_SUBSCR                   
+                                60      BINARY_SUBSCR                   
+                                70      FORMAT_VALUE                    0 (FVC_NONE)
+                                72      LOAD_CONST                      1: '_'
+                                74      LOAD_DEREF                      2: self
+                                76      LOAD_ATTR                       0: database_list_removed_members
+                                86      LOAD_FAST                       1: i
+                                88      BINARY_SUBSCR                   
+                                98      LOAD_DEREF                      2: self
+                                100     LOAD_ATTR                       1: database_map
+                                110     LOAD_CONST                      2: 'family'
+                                112     BINARY_SUBSCR                   
+                                122     BINARY_SUBSCR                   
+                                132     FORMAT_VALUE                    0 (FVC_NONE)
+                                134     LOAD_CONST                      1: '_'
+                                136     LOAD_DEREF                      2: self
+                                138     LOAD_ATTR                       0: database_list_removed_members
+                                148     LOAD_FAST                       1: i
+                                150     BINARY_SUBSCR                   
+                                160     LOAD_DEREF                      2: self
+                                162     LOAD_ATTR                       1: database_map
+                                172     LOAD_CONST                      3: 'bank'
+                                174     BINARY_SUBSCR                   
+                                184     BINARY_SUBSCR                   
+                                194     LOAD_METHOD                     2: split
+                                216     LOAD_CONST                      4: ','
+                                218     PRECALL                         1
+                                222     CALL                            1
+                                232     LOAD_CONST                      5: 0
+                                234     BINARY_SUBSCR                   
+                                244     FORMAT_VALUE                    0 (FVC_NONE)
+                                246     LOAD_CONST                      6: '_('
+                                248     LOAD_FAST                       1: i
+                                250     FORMAT_VALUE                    0 (FVC_NONE)
+                                252     LOAD_CONST                      4: ','
+                                254     LOAD_DEREF                      2: self
+                                256     LOAD_ATTR                       0: database_list_removed_members
+                                266     LOAD_FAST                       1: i
+                                268     BINARY_SUBSCR                   
+                                278     LOAD_CONST                      5: 0
+                                280     BINARY_SUBSCR                   
+                                290     FORMAT_VALUE                    0 (FVC_NONE)
+                                292     LOAD_CONST                      7: ')'
+                                294     BUILD_STRING                    10
+                                296     LIST_APPEND                     2
+                                298     JUMP_BACKWARD                   146 (to 8)
+                                300     RETURN_VALUE                    
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       RESUME                          0
+                        4       LOAD_FAST                       3: mode
+                        6       LOAD_CONST                      1: 'restore'
+                        8       COMPARE_OP                      2 (==)
+                        14      POP_JUMP_FORWARD_IF_FALSE       165 (to 346)
+                        16      LOAD_DEREF                      0: self
+                        18      LOAD_METHOD                     0: restoreMember
+                        40      LOAD_FAST                       1: entry_restore
+                        42      LOAD_METHOD                     1: get
+                        64      PRECALL                         0
+                        68      CALL                            0
+                        78      PRECALL                         1
+                        82      CALL                            1
+                        92      POP_TOP                         
+                        94      LOAD_FAST                       1: entry_restore
+                        96      LOAD_METHOD                     2: delete
+                        118     LOAD_CONST                      2: 0
+                        120     LOAD_GLOBAL                     6: END
+                        132     PRECALL                         2
+                        136     CALL                            2
+                        146     POP_TOP                         
+                        148     LOAD_DEREF                      0: self
+                        150     LOAD_METHOD                     4: getRemovedMembers
+                        172     PRECALL                         0
+                        176     CALL                            0
+                        186     POP_TOP                         
+                        188     LOAD_CLOSURE                    0: self
+                        190     BUILD_TUPLE                     1
+                        192     LOAD_CONST                      3: <CODE> <listcomp>
+                        194     MAKE_FUNCTION                   8
+                        196     LOAD_DEREF                      0: self
+                        198     LOAD_ATTR                       5: database_list_removed_index
+                        208     GET_ITER                        
+                        210     PRECALL                         0
+                        214     CALL                            0
+                        224     STORE_FAST                      4: motaqazian_text_list
+                        226     LOAD_FAST                       4: motaqazian_text_list
+                        228     LOAD_FAST                       1: entry_restore
+                        230     LOAD_CONST                      4: 'values'
+                        232     STORE_SUBSCR                    
+                        236     LOAD_FAST                       2: label_removed_count
+                        238     LOAD_METHOD                     6: config
+                        260     LOAD_GLOBAL                     15: NULL + str
+                        272     LOAD_GLOBAL                     17: NULL + len
+                        284     LOAD_DEREF                      0: self
+                        286     LOAD_ATTR                       5: database_list_removed_index
+                        296     PRECALL                         1
+                        300     CALL                            1
+                        310     PRECALL                         1
+                        314     CALL                            1
+                        324     KW_NAMES                        5: ('text',)
+                        326     PRECALL                         1
+                        330     CALL                            1
+                        340     POP_TOP                         
+                        342     LOAD_CONST                      0: None
+                        344     RETURN_VALUE                    
+                        346     LOAD_FAST                       3: mode
+                        348     LOAD_CONST                      6: 'delete'
+                        350     COMPARE_OP                      2 (==)
+                        356     POP_JUMP_FORWARD_IF_FALSE       165 (to 688)
+                        358     LOAD_DEREF                      0: self
+                        360     LOAD_METHOD                     9: fullyRemoveMember
+                        382     LOAD_FAST                       1: entry_restore
+                        384     LOAD_METHOD                     1: get
+                        406     PRECALL                         0
+                        410     CALL                            0
+                        420     PRECALL                         1
+                        424     CALL                            1
+                        434     POP_TOP                         
+                        436     LOAD_FAST                       1: entry_restore
+                        438     LOAD_METHOD                     2: delete
+                        460     LOAD_CONST                      2: 0
+                        462     LOAD_GLOBAL                     6: END
+                        474     PRECALL                         2
+                        478     CALL                            2
+                        488     POP_TOP                         
+                        490     LOAD_DEREF                      0: self
+                        492     LOAD_METHOD                     4: getRemovedMembers
+                        514     PRECALL                         0
+                        518     CALL                            0
+                        528     POP_TOP                         
+                        530     LOAD_CLOSURE                    0: self
+                        532     BUILD_TUPLE                     1
+                        534     LOAD_CONST                      7: <CODE> <listcomp>
+                        536     MAKE_FUNCTION                   8
+                        538     LOAD_DEREF                      0: self
+                        540     LOAD_ATTR                       5: database_list_removed_index
+                        550     GET_ITER                        
+                        552     PRECALL                         0
+                        556     CALL                            0
+                        566     STORE_FAST                      4: motaqazian_text_list
+                        568     LOAD_FAST                       4: motaqazian_text_list
+                        570     LOAD_FAST                       1: entry_restore
+                        572     LOAD_CONST                      4: 'values'
+                        574     STORE_SUBSCR                    
+                        578     LOAD_FAST                       2: label_removed_count
+                        580     LOAD_METHOD                     6: config
+                        602     LOAD_GLOBAL                     15: NULL + str
+                        614     LOAD_GLOBAL                     17: NULL + len
+                        626     LOAD_DEREF                      0: self
+                        628     LOAD_ATTR                       5: database_list_removed_index
+                        638     PRECALL                         1
+                        642     CALL                            1
+                        652     PRECALL                         1
+                        656     CALL                            1
+                        666     KW_NAMES                        5: ('text',)
+                        668     PRECALL                         1
+                        672     CALL                            1
+                        682     POP_TOP                         
+                        684     LOAD_CONST                      0: None
+                        686     RETURN_VALUE                    
+                        688     LOAD_CONST                      0: None
+                        690     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: showRestoreMemberBlockedNumber
+                    Qualified Name: MyApp.showRestoreMemberBlockedNumber
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 8
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'Tk'
+                        'resizable'
+                        'title'
+                        'Label'
+                        'grid'
+                        'default_padx'
+                        'default_pady'
+                        'Combobox'
+                        'addSerchToCombobox'
+                        'blocked_number_member_list'
+                        'str'
+                        'len'
+                        'Button'
+                        'mainloop'
+                    [Locals+Names]
+                        'self'
+                        'a'
+                        'motaqazian_text_list'
+                        'entry_restore'
+                        'label_removed_count'
+                    [Constants]
+                        None
+                        1
+                        0
+                        'بازیابی کاربر بر اساس شماره مسدود شده'
+                        'کاربران پاک شده'
+                        (
+                            'text'
+                        )
+                        2
+                        (
+                            'column'
+                            'row'
+                            'padx'
+                            'pady'
+                        )
+                        'right'
+                        44
+                        (
+                            'justify'
+                            'width'
+                        )
+                        ''
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.showRestoreMemberBlockedNumber.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 9
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_map'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'hamrah'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        63 (to 136)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_FAST                       1: i
+                                14      LOAD_DEREF                      2: self
+                                16      LOAD_ATTR                       0: database_map
+                                26      LOAD_CONST                      0: 'name'
+                                28      BINARY_SUBSCR                   
+                                38      BINARY_SUBSCR                   
+                                48      FORMAT_VALUE                    0 (FVC_NONE)
+                                50      LOAD_CONST                      1: '_'
+                                52      LOAD_FAST                       1: i
+                                54      LOAD_DEREF                      2: self
+                                56      LOAD_ATTR                       0: database_map
+                                66      LOAD_CONST                      2: 'family'
+                                68      BINARY_SUBSCR                   
+                                78      BINARY_SUBSCR                   
+                                88      FORMAT_VALUE                    0 (FVC_NONE)
+                                90      LOAD_CONST                      1: '_'
+                                92      LOAD_FAST                       1: i
+                                94      LOAD_DEREF                      2: self
+                                96      LOAD_ATTR                       0: database_map
+                                106     LOAD_CONST                      3: 'hamrah'
+                                108     BINARY_SUBSCR                   
+                                118     BINARY_SUBSCR                   
+                                128     FORMAT_VALUE                    0 (FVC_NONE)
+                                130     BUILD_STRING                    5
+                                132     LIST_APPEND                     2
+                                134     JUMP_BACKWARD                   64 (to 8)
+                                136     RETURN_VALUE                    
+                        'values'
+                        3
+                        'e'
+                        (
+                            'column'
+                            'row'
+                            'padx'
+                            'pady'
+                            'sticky'
+                        )
+                        'بازیابی شماره'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.showRestoreMemberBlockedNumber.<locals>.<lambda>
+                            Arg Count: 0
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 5
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'updateRestoreMemberBlockedNumberDialog'
+                            [Locals+Names]
+                                'entry_restore'
+                                'label_removed_count'
+                                'self'
+                            [Constants]
+                                None
+                                'restore'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  3
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      2: self
+                                6       LOAD_METHOD                     0: updateRestoreMemberBlockedNumberDialog
+                                28      LOAD_DEREF                      0: entry_restore
+                                30      LOAD_DEREF                      1: label_removed_count
+                                32      LOAD_CONST                      1: 'restore'
+                                34      PRECALL                         3
+                                38      CALL                            3
+                                48      RETURN_VALUE                    
+                        (
+                            'text'
+                            'command'
+                        )
+                        'ew'
+                        (
+                            'columnspan'
+                            'column'
+                            'row'
+                            'pady'
+                            'sticky'
+                        )
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       MAKE_CELL                       3: entry_restore
+                        4       MAKE_CELL                       4: label_removed_count
+                        6       RESUME                          0
+                        8       LOAD_GLOBAL                     1: NULL + Tk
+                        20      PRECALL                         0
+                        24      CALL                            0
+                        34      STORE_FAST                      1: a
+                        36      LOAD_FAST                       1: a
+                        38      LOAD_METHOD                     1: resizable
+                        60      LOAD_CONST                      1: 1
+                        62      LOAD_CONST                      2: 0
+                        64      PRECALL                         2
+                        68      CALL                            2
+                        78      POP_TOP                         
+                        80      LOAD_FAST                       1: a
+                        82      LOAD_METHOD                     2: title
+                        104     LOAD_CONST                      3: 'بازیابی کاربر بر اساس شماره مسدود شده'
+                        106     PRECALL                         1
+                        110     CALL                            1
+                        120     POP_TOP                         
+                        122     LOAD_GLOBAL                     7: NULL + Label
+                        134     LOAD_FAST                       1: a
+                        136     LOAD_CONST                      4: 'کاربران پاک شده'
+                        138     KW_NAMES                        5: ('text',)
+                        140     PRECALL                         2
+                        144     CALL                            2
+                        154     LOAD_METHOD                     4: grid
+                        176     LOAD_CONST                      6: 2
+                        178     LOAD_CONST                      2: 0
+                        180     LOAD_DEREF                      0: self
+                        182     LOAD_ATTR                       5: default_padx
+                        192     LOAD_DEREF                      0: self
+                        194     LOAD_ATTR                       6: default_pady
+                        204     KW_NAMES                        7: ('column', 'row', 'padx', 'pady')
+                        206     PRECALL                         4
+                        210     CALL                            4
+                        220     POP_TOP                         
+                        222     LOAD_GLOBAL                     15: NULL + Combobox
+                        234     LOAD_FAST                       1: a
+                        236     LOAD_CONST                      8: 'right'
+                        238     LOAD_CONST                      9: 44
+                        240     KW_NAMES                        10: ('justify', 'width')
+                        242     PRECALL                         3
+                        246     CALL                            3
+                        256     STORE_DEREF                     3: entry_restore
+                        258     LOAD_DEREF                      0: self
+                        260     LOAD_METHOD                     8: addSerchToCombobox
+                        282     LOAD_DEREF                      3: entry_restore
+                        284     LOAD_CONST                      11: ''
+                        286     PRECALL                         2
+                        290     CALL                            2
+                        300     POP_TOP                         
+                        302     LOAD_CLOSURE                    0: self
+                        304     BUILD_TUPLE                     1
+                        306     LOAD_CONST                      12: <CODE> <listcomp>
+                        308     MAKE_FUNCTION                   8
+                        310     LOAD_DEREF                      0: self
+                        312     LOAD_ATTR                       9: blocked_number_member_list
+                        322     GET_ITER                        
+                        324     PRECALL                         0
+                        328     CALL                            0
+                        338     STORE_FAST                      2: motaqazian_text_list
+                        340     LOAD_FAST                       2: motaqazian_text_list
+                        342     LOAD_DEREF                      3: entry_restore
+                        344     LOAD_CONST                      13: 'values'
+                        346     STORE_SUBSCR                    
+                        350     LOAD_DEREF                      3: entry_restore
+                        352     LOAD_METHOD                     4: grid
+                        374     LOAD_CONST                      1: 1
+                        376     LOAD_CONST                      2: 0
+                        378     LOAD_CONST                      14: 3
+                        380     LOAD_DEREF                      0: self
+                        382     LOAD_ATTR                       6: default_pady
+                        392     LOAD_CONST                      15: 'e'
+                        394     KW_NAMES                        16: ('column', 'row', 'padx', 'pady', 'sticky')
+                        396     PRECALL                         5
+                        400     CALL                            5
+                        410     POP_TOP                         
+                        412     LOAD_GLOBAL                     7: NULL + Label
+                        424     LOAD_FAST                       1: a
+                        426     LOAD_GLOBAL                     21: NULL + str
+                        438     LOAD_GLOBAL                     23: NULL + len
+                        450     LOAD_DEREF                      0: self
+                        452     LOAD_ATTR                       9: blocked_number_member_list
+                        462     PRECALL                         1
+                        466     CALL                            1
+                        476     PRECALL                         1
+                        480     CALL                            1
+                        490     KW_NAMES                        5: ('text',)
+                        492     PRECALL                         2
+                        496     CALL                            2
+                        506     STORE_DEREF                     4: label_removed_count
+                        508     LOAD_DEREF                      4: label_removed_count
+                        510     LOAD_METHOD                     4: grid
+                        532     LOAD_CONST                      2: 0
+                        534     LOAD_CONST                      2: 0
+                        536     LOAD_CONST                      14: 3
+                        538     LOAD_DEREF                      0: self
+                        540     LOAD_ATTR                       6: default_pady
+                        550     LOAD_CONST                      15: 'e'
+                        552     KW_NAMES                        16: ('column', 'row', 'padx', 'pady', 'sticky')
+                        554     PRECALL                         5
+                        558     CALL                            5
+                        568     POP_TOP                         
+                        570     LOAD_GLOBAL                     25: NULL + Button
+                        582     LOAD_FAST                       1: a
+                        584     LOAD_CONST                      17: 'بازیابی شماره'
+                        586     LOAD_CLOSURE                    3: entry_restore
+                        588     LOAD_CLOSURE                    4: label_removed_count
+                        590     LOAD_CLOSURE                    0: self
+                        592     BUILD_TUPLE                     3
+                        594     LOAD_CONST                      18: <CODE> <lambda>
+                        596     MAKE_FUNCTION                   8
+                        598     KW_NAMES                        19: ('text', 'command')
+                        600     PRECALL                         3
+                        604     CALL                            3
+                        614     LOAD_METHOD                     4: grid
+                        636     LOAD_CONST                      1: 1
+                        638     LOAD_CONST                      1: 1
+                        640     LOAD_CONST                      6: 2
+                        642     LOAD_DEREF                      0: self
+                        644     LOAD_ATTR                       6: default_pady
+                        654     LOAD_CONST                      20: 'ew'
+                        656     KW_NAMES                        21: ('columnspan', 'column', 'row', 'pady', 'sticky')
+                        658     PRECALL                         5
+                        662     CALL                            5
+                        672     POP_TOP                         
+                        674     LOAD_FAST                       1: a
+                        676     LOAD_METHOD                     13: mainloop
+                        698     PRECALL                         0
+                        702     CALL                            0
+                        712     POP_TOP                         
+                        714     LOAD_CONST                      0: None
+                        716     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: updateRestoreMemberBlockedNumberDialog
+                    Qualified Name: MyApp.updateRestoreMemberBlockedNumberDialog
+                    Arg Count: 4
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'len'
+                        'get'
+                        'split'
+                        'removeBlockedNumber'
+                        'updateTopWidget'
+                        'delete'
+                        'END'
+                        'blocked_number_member_list'
+                        'config'
+                        'str'
+                    [Locals+Names]
+                        'self'
+                        'entry_restore'
+                        'label_removed_count'
+                        'mode'
+                        'phone_number'
+                        'motaqazian_text_list'
+                    [Constants]
+                        None
+                        'restore'
+                        1
+                        '_'
+                        -1
+                        0
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.updateRestoreMemberBlockedNumberDialog.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 9
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_map'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'hamrah'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        63 (to 136)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_FAST                       1: i
+                                14      LOAD_DEREF                      2: self
+                                16      LOAD_ATTR                       0: database_map
+                                26      LOAD_CONST                      0: 'name'
+                                28      BINARY_SUBSCR                   
+                                38      BINARY_SUBSCR                   
+                                48      FORMAT_VALUE                    0 (FVC_NONE)
+                                50      LOAD_CONST                      1: '_'
+                                52      LOAD_FAST                       1: i
+                                54      LOAD_DEREF                      2: self
+                                56      LOAD_ATTR                       0: database_map
+                                66      LOAD_CONST                      2: 'family'
+                                68      BINARY_SUBSCR                   
+                                78      BINARY_SUBSCR                   
+                                88      FORMAT_VALUE                    0 (FVC_NONE)
+                                90      LOAD_CONST                      1: '_'
+                                92      LOAD_FAST                       1: i
+                                94      LOAD_DEREF                      2: self
+                                96      LOAD_ATTR                       0: database_map
+                                106     LOAD_CONST                      3: 'hamrah'
+                                108     BINARY_SUBSCR                   
+                                118     BINARY_SUBSCR                   
+                                128     FORMAT_VALUE                    0 (FVC_NONE)
+                                130     BUILD_STRING                    5
+                                132     LIST_APPEND                     2
+                                134     JUMP_BACKWARD                   64 (to 8)
+                                136     RETURN_VALUE                    
+                        'values'
+                        (
+                            'text'
+                        )
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       RESUME                          0
+                        4       LOAD_FAST                       3: mode
+                        6       LOAD_CONST                      1: 'restore'
+                        8       COMPARE_OP                      2 (==)
+                        14      POP_JUMP_FORWARD_IF_FALSE       231 (to 478)
+                        16      LOAD_GLOBAL                     1: NULL + len
+                        28      LOAD_FAST                       1: entry_restore
+                        30      LOAD_METHOD                     1: get
+                        52      PRECALL                         0
+                        56      CALL                            0
+                        66      PRECALL                         1
+                        70      CALL                            1
+                        80      LOAD_CONST                      2: 1
+                        82      COMPARE_OP                      0 (<)
+                        88      POP_JUMP_FORWARD_IF_FALSE       2 (to 94)
+                        90      LOAD_CONST                      0: None
+                        92      RETURN_VALUE                    
+                        94      LOAD_FAST                       1: entry_restore
+                        96      LOAD_METHOD                     1: get
+                        118     PRECALL                         0
+                        122     CALL                            0
+                        132     LOAD_METHOD                     2: split
+                        154     LOAD_CONST                      3: '_'
+                        156     PRECALL                         1
+                        160     CALL                            1
+                        170     LOAD_CONST                      4: -1
+                        172     BINARY_SUBSCR                   
+                        182     STORE_FAST                      4: phone_number
+                        184     LOAD_DEREF                      0: self
+                        186     LOAD_METHOD                     3: removeBlockedNumber
+                        208     LOAD_FAST                       4: phone_number
+                        210     PRECALL                         1
+                        214     CALL                            1
+                        224     POP_TOP                         
+                        226     LOAD_DEREF                      0: self
+                        228     LOAD_METHOD                     4: updateTopWidget
+                        250     PRECALL                         0
+                        254     CALL                            0
+                        264     POP_TOP                         
+                        266     LOAD_FAST                       1: entry_restore
+                        268     LOAD_METHOD                     5: delete
+                        290     LOAD_CONST                      5: 0
+                        292     LOAD_GLOBAL                     12: END
+                        304     PRECALL                         2
+                        308     CALL                            2
+                        318     POP_TOP                         
+                        320     LOAD_CLOSURE                    0: self
+                        322     BUILD_TUPLE                     1
+                        324     LOAD_CONST                      6: <CODE> <listcomp>
+                        326     MAKE_FUNCTION                   8
+                        328     LOAD_DEREF                      0: self
+                        330     LOAD_ATTR                       7: blocked_number_member_list
+                        340     GET_ITER                        
+                        342     PRECALL                         0
+                        346     CALL                            0
+                        356     STORE_FAST                      5: motaqazian_text_list
+                        358     LOAD_FAST                       5: motaqazian_text_list
+                        360     LOAD_FAST                       1: entry_restore
+                        362     LOAD_CONST                      7: 'values'
+                        364     STORE_SUBSCR                    
+                        368     LOAD_FAST                       2: label_removed_count
+                        370     LOAD_METHOD                     8: config
+                        392     LOAD_GLOBAL                     19: NULL + str
+                        404     LOAD_GLOBAL                     1: NULL + len
+                        416     LOAD_DEREF                      0: self
+                        418     LOAD_ATTR                       7: blocked_number_member_list
+                        428     PRECALL                         1
+                        432     CALL                            1
+                        442     PRECALL                         1
+                        446     CALL                            1
+                        456     KW_NAMES                        8: ('text',)
+                        458     PRECALL                         1
+                        462     CALL                            1
+                        472     POP_TOP                         
+                        474     LOAD_CONST                      0: None
+                        476     RETURN_VALUE                    
+                        478     LOAD_CONST                      0: None
+                        480     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: showRestoreMemberSignedUpBefore
+                    Qualified Name: MyApp.showRestoreMemberSignedUpBefore
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 8
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'Tk'
+                        'resizable'
+                        'title'
+                        'Label'
+                        'grid'
+                        'default_padx'
+                        'default_pady'
+                        'Combobox'
+                        'addSerchToCombobox'
+                        'signed_up_before_member_list'
+                        'str'
+                        'len'
+                        'Button'
+                        'mainloop'
+                    [Locals+Names]
+                        'self'
+                        'a'
+                        'motaqazian_text_list'
+                        'entry_restore'
+                        'label_removed_count'
+                    [Constants]
+                        None
+                        1
+                        0
+                        'بازیابی کاربر که قبلا ثبت شده'
+                        'کاربران پاک شده'
+                        (
+                            'text'
+                        )
+                        2
+                        (
+                            'column'
+                            'row'
+                            'padx'
+                            'pady'
+                        )
+                        'right'
+                        44
+                        (
+                            'justify'
+                            'width'
+                        )
+                        ''
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.showRestoreMemberSignedUpBefore.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 9
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_map'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'meli'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        63 (to 136)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_FAST                       1: i
+                                14      LOAD_DEREF                      2: self
+                                16      LOAD_ATTR                       0: database_map
+                                26      LOAD_CONST                      0: 'name'
+                                28      BINARY_SUBSCR                   
+                                38      BINARY_SUBSCR                   
+                                48      FORMAT_VALUE                    0 (FVC_NONE)
+                                50      LOAD_CONST                      1: '_'
+                                52      LOAD_FAST                       1: i
+                                54      LOAD_DEREF                      2: self
+                                56      LOAD_ATTR                       0: database_map
+                                66      LOAD_CONST                      2: 'family'
+                                68      BINARY_SUBSCR                   
+                                78      BINARY_SUBSCR                   
+                                88      FORMAT_VALUE                    0 (FVC_NONE)
+                                90      LOAD_CONST                      1: '_'
+                                92      LOAD_FAST                       1: i
+                                94      LOAD_DEREF                      2: self
+                                96      LOAD_ATTR                       0: database_map
+                                106     LOAD_CONST                      3: 'meli'
+                                108     BINARY_SUBSCR                   
+                                118     BINARY_SUBSCR                   
+                                128     FORMAT_VALUE                    0 (FVC_NONE)
+                                130     BUILD_STRING                    5
+                                132     LIST_APPEND                     2
+                                134     JUMP_BACKWARD                   64 (to 8)
+                                136     RETURN_VALUE                    
+                        'values'
+                        3
+                        'e'
+                        (
+                            'column'
+                            'row'
+                            'padx'
+                            'pady'
+                            'sticky'
+                        )
+                        'بازیابی کاربر'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.showRestoreMemberSignedUpBefore.<locals>.<lambda>
+                            Arg Count: 0
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 5
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'updateRestoreMemberSignedUpBefore'
+                            [Locals+Names]
+                                'entry_restore'
+                                'label_removed_count'
+                                'self'
+                            [Constants]
+                                None
+                                'restore'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  3
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      2: self
+                                6       LOAD_METHOD                     0: updateRestoreMemberSignedUpBefore
+                                28      LOAD_DEREF                      0: entry_restore
+                                30      LOAD_DEREF                      1: label_removed_count
+                                32      LOAD_CONST                      1: 'restore'
+                                34      PRECALL                         3
+                                38      CALL                            3
+                                48      RETURN_VALUE                    
+                        (
+                            'text'
+                            'command'
+                        )
+                        'ew'
+                        (
+                            'columnspan'
+                            'column'
+                            'row'
+                            'pady'
+                            'sticky'
+                        )
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       MAKE_CELL                       3: entry_restore
+                        4       MAKE_CELL                       4: label_removed_count
+                        6       RESUME                          0
+                        8       LOAD_GLOBAL                     1: NULL + Tk
+                        20      PRECALL                         0
+                        24      CALL                            0
+                        34      STORE_FAST                      1: a
+                        36      LOAD_FAST                       1: a
+                        38      LOAD_METHOD                     1: resizable
+                        60      LOAD_CONST                      1: 1
+                        62      LOAD_CONST                      2: 0
+                        64      PRECALL                         2
+                        68      CALL                            2
+                        78      POP_TOP                         
+                        80      LOAD_FAST                       1: a
+                        82      LOAD_METHOD                     2: title
+                        104     LOAD_CONST                      3: 'بازیابی کاربر که قبلا ثبت شده'
+                        106     PRECALL                         1
+                        110     CALL                            1
+                        120     POP_TOP                         
+                        122     LOAD_GLOBAL                     7: NULL + Label
+                        134     LOAD_FAST                       1: a
+                        136     LOAD_CONST                      4: 'کاربران پاک شده'
+                        138     KW_NAMES                        5: ('text',)
+                        140     PRECALL                         2
+                        144     CALL                            2
+                        154     LOAD_METHOD                     4: grid
+                        176     LOAD_CONST                      6: 2
+                        178     LOAD_CONST                      2: 0
+                        180     LOAD_DEREF                      0: self
+                        182     LOAD_ATTR                       5: default_padx
+                        192     LOAD_DEREF                      0: self
+                        194     LOAD_ATTR                       6: default_pady
+                        204     KW_NAMES                        7: ('column', 'row', 'padx', 'pady')
+                        206     PRECALL                         4
+                        210     CALL                            4
+                        220     POP_TOP                         
+                        222     LOAD_GLOBAL                     15: NULL + Combobox
+                        234     LOAD_FAST                       1: a
+                        236     LOAD_CONST                      8: 'right'
+                        238     LOAD_CONST                      9: 44
+                        240     KW_NAMES                        10: ('justify', 'width')
+                        242     PRECALL                         3
+                        246     CALL                            3
+                        256     STORE_DEREF                     3: entry_restore
+                        258     LOAD_DEREF                      0: self
+                        260     LOAD_METHOD                     8: addSerchToCombobox
+                        282     LOAD_DEREF                      3: entry_restore
+                        284     LOAD_CONST                      11: ''
+                        286     PRECALL                         2
+                        290     CALL                            2
+                        300     POP_TOP                         
+                        302     LOAD_CLOSURE                    0: self
+                        304     BUILD_TUPLE                     1
+                        306     LOAD_CONST                      12: <CODE> <listcomp>
+                        308     MAKE_FUNCTION                   8
+                        310     LOAD_DEREF                      0: self
+                        312     LOAD_ATTR                       9: signed_up_before_member_list
+                        322     GET_ITER                        
+                        324     PRECALL                         0
+                        328     CALL                            0
+                        338     STORE_FAST                      2: motaqazian_text_list
+                        340     LOAD_FAST                       2: motaqazian_text_list
+                        342     LOAD_DEREF                      3: entry_restore
+                        344     LOAD_CONST                      13: 'values'
+                        346     STORE_SUBSCR                    
+                        350     LOAD_DEREF                      3: entry_restore
+                        352     LOAD_METHOD                     4: grid
+                        374     LOAD_CONST                      1: 1
+                        376     LOAD_CONST                      2: 0
+                        378     LOAD_CONST                      14: 3
+                        380     LOAD_DEREF                      0: self
+                        382     LOAD_ATTR                       6: default_pady
+                        392     LOAD_CONST                      15: 'e'
+                        394     KW_NAMES                        16: ('column', 'row', 'padx', 'pady', 'sticky')
+                        396     PRECALL                         5
+                        400     CALL                            5
+                        410     POP_TOP                         
+                        412     LOAD_GLOBAL                     7: NULL + Label
+                        424     LOAD_FAST                       1: a
+                        426     LOAD_GLOBAL                     21: NULL + str
+                        438     LOAD_GLOBAL                     23: NULL + len
+                        450     LOAD_DEREF                      0: self
+                        452     LOAD_ATTR                       9: signed_up_before_member_list
+                        462     PRECALL                         1
+                        466     CALL                            1
+                        476     PRECALL                         1
+                        480     CALL                            1
+                        490     KW_NAMES                        5: ('text',)
+                        492     PRECALL                         2
+                        496     CALL                            2
+                        506     STORE_DEREF                     4: label_removed_count
+                        508     LOAD_DEREF                      4: label_removed_count
+                        510     LOAD_METHOD                     4: grid
+                        532     LOAD_CONST                      2: 0
+                        534     LOAD_CONST                      2: 0
+                        536     LOAD_CONST                      14: 3
+                        538     LOAD_DEREF                      0: self
+                        540     LOAD_ATTR                       6: default_pady
+                        550     LOAD_CONST                      15: 'e'
+                        552     KW_NAMES                        16: ('column', 'row', 'padx', 'pady', 'sticky')
+                        554     PRECALL                         5
+                        558     CALL                            5
+                        568     POP_TOP                         
+                        570     LOAD_GLOBAL                     25: NULL + Button
+                        582     LOAD_FAST                       1: a
+                        584     LOAD_CONST                      17: 'بازیابی کاربر'
+                        586     LOAD_CLOSURE                    3: entry_restore
+                        588     LOAD_CLOSURE                    4: label_removed_count
+                        590     LOAD_CLOSURE                    0: self
+                        592     BUILD_TUPLE                     3
+                        594     LOAD_CONST                      18: <CODE> <lambda>
+                        596     MAKE_FUNCTION                   8
+                        598     KW_NAMES                        19: ('text', 'command')
+                        600     PRECALL                         3
+                        604     CALL                            3
+                        614     LOAD_METHOD                     4: grid
+                        636     LOAD_CONST                      1: 1
+                        638     LOAD_CONST                      1: 1
+                        640     LOAD_CONST                      6: 2
+                        642     LOAD_DEREF                      0: self
+                        644     LOAD_ATTR                       6: default_pady
+                        654     LOAD_CONST                      20: 'ew'
+                        656     KW_NAMES                        21: ('columnspan', 'column', 'row', 'pady', 'sticky')
+                        658     PRECALL                         5
+                        662     CALL                            5
+                        672     POP_TOP                         
+                        674     LOAD_FAST                       1: a
+                        676     LOAD_METHOD                     13: mainloop
+                        698     PRECALL                         0
+                        702     CALL                            0
+                        712     POP_TOP                         
+                        714     LOAD_CONST                      0: None
+                        716     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: updateRestoreMemberSignedUpBefore
+                    Qualified Name: MyApp.updateRestoreMemberSignedUpBefore
+                    Arg Count: 4
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'len'
+                        'get'
+                        'split'
+                        'removeSignedUpBefore'
+                        'updateTopWidget'
+                        'delete'
+                        'END'
+                        'signed_up_before_member_list'
+                        'config'
+                        'str'
+                    [Locals+Names]
+                        'self'
+                        'entry_restore'
+                        'label_removed_count'
+                        'mode'
+                        'meli'
+                        'motaqazian_text_list'
+                    [Constants]
+                        None
+                        'restore'
+                        1
+                        '_'
+                        -1
+                        0
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.updateRestoreMemberSignedUpBefore.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 9
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_map'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'meli'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        63 (to 136)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_FAST                       1: i
+                                14      LOAD_DEREF                      2: self
+                                16      LOAD_ATTR                       0: database_map
+                                26      LOAD_CONST                      0: 'name'
+                                28      BINARY_SUBSCR                   
+                                38      BINARY_SUBSCR                   
+                                48      FORMAT_VALUE                    0 (FVC_NONE)
+                                50      LOAD_CONST                      1: '_'
+                                52      LOAD_FAST                       1: i
+                                54      LOAD_DEREF                      2: self
+                                56      LOAD_ATTR                       0: database_map
+                                66      LOAD_CONST                      2: 'family'
+                                68      BINARY_SUBSCR                   
+                                78      BINARY_SUBSCR                   
+                                88      FORMAT_VALUE                    0 (FVC_NONE)
+                                90      LOAD_CONST                      1: '_'
+                                92      LOAD_FAST                       1: i
+                                94      LOAD_DEREF                      2: self
+                                96      LOAD_ATTR                       0: database_map
+                                106     LOAD_CONST                      3: 'meli'
+                                108     BINARY_SUBSCR                   
+                                118     BINARY_SUBSCR                   
+                                128     FORMAT_VALUE                    0 (FVC_NONE)
+                                130     BUILD_STRING                    5
+                                132     LIST_APPEND                     2
+                                134     JUMP_BACKWARD                   64 (to 8)
+                                136     RETURN_VALUE                    
+                        'values'
+                        (
+                            'text'
+                        )
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       RESUME                          0
+                        4       LOAD_FAST                       3: mode
+                        6       LOAD_CONST                      1: 'restore'
+                        8       COMPARE_OP                      2 (==)
+                        14      POP_JUMP_FORWARD_IF_FALSE       231 (to 478)
+                        16      LOAD_GLOBAL                     1: NULL + len
+                        28      LOAD_FAST                       1: entry_restore
+                        30      LOAD_METHOD                     1: get
+                        52      PRECALL                         0
+                        56      CALL                            0
+                        66      PRECALL                         1
+                        70      CALL                            1
+                        80      LOAD_CONST                      2: 1
+                        82      COMPARE_OP                      0 (<)
+                        88      POP_JUMP_FORWARD_IF_FALSE       2 (to 94)
+                        90      LOAD_CONST                      0: None
+                        92      RETURN_VALUE                    
+                        94      LOAD_FAST                       1: entry_restore
+                        96      LOAD_METHOD                     1: get
+                        118     PRECALL                         0
+                        122     CALL                            0
+                        132     LOAD_METHOD                     2: split
+                        154     LOAD_CONST                      3: '_'
+                        156     PRECALL                         1
+                        160     CALL                            1
+                        170     LOAD_CONST                      4: -1
+                        172     BINARY_SUBSCR                   
+                        182     STORE_FAST                      4: meli
+                        184     LOAD_DEREF                      0: self
+                        186     LOAD_METHOD                     3: removeSignedUpBefore
+                        208     LOAD_FAST                       4: meli
+                        210     PRECALL                         1
+                        214     CALL                            1
+                        224     POP_TOP                         
+                        226     LOAD_DEREF                      0: self
+                        228     LOAD_METHOD                     4: updateTopWidget
+                        250     PRECALL                         0
+                        254     CALL                            0
+                        264     POP_TOP                         
+                        266     LOAD_FAST                       1: entry_restore
+                        268     LOAD_METHOD                     5: delete
+                        290     LOAD_CONST                      5: 0
+                        292     LOAD_GLOBAL                     12: END
+                        304     PRECALL                         2
+                        308     CALL                            2
+                        318     POP_TOP                         
+                        320     LOAD_CLOSURE                    0: self
+                        322     BUILD_TUPLE                     1
+                        324     LOAD_CONST                      6: <CODE> <listcomp>
+                        326     MAKE_FUNCTION                   8
+                        328     LOAD_DEREF                      0: self
+                        330     LOAD_ATTR                       7: signed_up_before_member_list
+                        340     GET_ITER                        
+                        342     PRECALL                         0
+                        346     CALL                            0
+                        356     STORE_FAST                      5: motaqazian_text_list
+                        358     LOAD_FAST                       5: motaqazian_text_list
+                        360     LOAD_FAST                       1: entry_restore
+                        362     LOAD_CONST                      7: 'values'
+                        364     STORE_SUBSCR                    
+                        368     LOAD_FAST                       2: label_removed_count
+                        370     LOAD_METHOD                     8: config
+                        392     LOAD_GLOBAL                     19: NULL + str
+                        404     LOAD_GLOBAL                     1: NULL + len
+                        416     LOAD_DEREF                      0: self
+                        418     LOAD_ATTR                       7: signed_up_before_member_list
+                        428     PRECALL                         1
+                        432     CALL                            1
+                        442     PRECALL                         1
+                        446     CALL                            1
+                        456     KW_NAMES                        8: ('text',)
+                        458     PRECALL                         1
+                        462     CALL                            1
+                        472     POP_TOP                         
+                        474     LOAD_CONST                      0: None
+                        476     RETURN_VALUE                    
+                        478     LOAD_CONST                      0: None
+                        480     RETURN_VALUE                    
+                3
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: printError
+                    Qualified Name: MyApp.printError
+                    Arg Count: 3
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 2
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'automation'
+                        'last_error'
+                        'time'
+                        'last_error_time'
+                    [Locals+Names]
+                        'self'
+                        'error_message'
+                        'appeare_time'
+                    [Constants]
+                        None
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       1: error_message
+                        4       LOAD_FAST                       0: self
+                        6       LOAD_ATTR                       0: automation
+                        16      STORE_ATTR                      1: last_error
+                        26      LOAD_GLOBAL                     5: NULL + time
+                        38      LOAD_ATTR                       2: time
+                        48      PRECALL                         0
+                        52      CALL                            0
+                        62      LOAD_FAST                       2: appeare_time
+                        64      BINARY_OP                       0 (+)
+                        68      LOAD_FAST                       0: self
+                        70      LOAD_ATTR                       0: automation
+                        80      STORE_ATTR                      3: last_error_time
+                        90      LOAD_CONST                      0: None
+                        92      RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: fullyRemoveMember
+                    Qualified Name: MyApp.fullyRemoveMember
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 6
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'split'
+                        'replace'
+                        'int'
+                        'database_list_removed_members'
+                        'database_map'
+                        'sqlite3'
+                        'connect'
+                        'cursor'
+                        'execute'
+                        'commit'
+                        'close'
+                        'notification'
+                        'make'
+                        'printError'
+                        'getAllDataFromDataBase'
+                    [Locals+Names]
+                        'self'
+                        'member'
+                        'idxs'
+                        'index'
+                        'id_code'
+                        'meli'
+                        'con'
+                        'cur'
+                    [Constants]
+                        None
+                        '_'
+                        -1
+                        '('
+                        ''
+                        ')'
+                        ','
+                        'meli'
+                        'members.db'
+                        "DELETE FROM deleted_members WHERE id='"
+                        "'"
+                        'هشدار'
+                        'کاربر با کد ملی '
+                        ' به طور کامل حذف گردید'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_CONST                      1: '_'
+                        4       LOAD_FAST                       1: member
+                        6       CONTAINS_OP                     1 (not in)
+                        8       POP_JUMP_FORWARD_IF_FALSE       2 (to 14)
+                        10      LOAD_CONST                      0: None
+                        12      RETURN_VALUE                    
+                        14      LOAD_FAST                       1: member
+                        16      LOAD_METHOD                     0: split
+                        38      LOAD_CONST                      1: '_'
+                        40      PRECALL                         1
+                        44      CALL                            1
+                        54      LOAD_CONST                      2: -1
+                        56      BINARY_SUBSCR                   
+                        66      LOAD_METHOD                     1: replace
+                        88      LOAD_CONST                      3: '('
+                        90      LOAD_CONST                      4: ''
+                        92      PRECALL                         2
+                        96      CALL                            2
+                        106     LOAD_METHOD                     1: replace
+                        128     LOAD_CONST                      5: ')'
+                        130     LOAD_CONST                      4: ''
+                        132     PRECALL                         2
+                        136     CALL                            2
+                        146     STORE_FAST                      2: idxs
+                        148     LOAD_FAST                       2: idxs
+                        150     LOAD_METHOD                     0: split
+                        172     LOAD_CONST                      6: ','
+                        174     PRECALL                         1
+                        178     CALL                            1
+                        188     UNPACK_SEQUENCE                 2
+                        192     STORE_FAST                      3: index
+                        194     STORE_FAST                      4: id_code
+                        196     LOAD_GLOBAL                     5: NULL + int
+                        208     LOAD_FAST                       3: index
+                        210     PRECALL                         1
+                        214     CALL                            1
+                        224     LOAD_GLOBAL                     5: NULL + int
+                        236     LOAD_FAST                       4: id_code
+                        238     PRECALL                         1
+                        242     CALL                            1
+                        252     STORE_FAST                      4: id_code
+                        254     STORE_FAST                      3: index
+                        256     LOAD_FAST                       0: self
+                        258     LOAD_ATTR                       3: database_list_removed_members
+                        268     LOAD_FAST                       3: index
+                        270     BINARY_SUBSCR                   
+                        280     STORE_FAST                      1: member
+                        282     LOAD_FAST                       1: member
+                        284     LOAD_FAST                       0: self
+                        286     LOAD_ATTR                       4: database_map
+                        296     LOAD_CONST                      7: 'meli'
+                        298     BINARY_SUBSCR                   
+                        308     BINARY_SUBSCR                   
+                        318     STORE_FAST                      5: meli
+                        320     LOAD_GLOBAL                     11: NULL + sqlite3
+                        332     LOAD_ATTR                       6: connect
+                        342     LOAD_CONST                      8: 'members.db'
+                        344     PRECALL                         1
+                        348     CALL                            1
+                        358     STORE_FAST                      6: con
+                        360     LOAD_FAST                       6: con
+                        362     LOAD_METHOD                     7: cursor
+                        384     PRECALL                         0
+                        388     CALL                            0
+                        398     STORE_FAST                      7: cur
+                        400     LOAD_FAST                       7: cur
+                        402     LOAD_METHOD                     8: execute
+                        424     LOAD_CONST                      9: "DELETE FROM deleted_members WHERE id='"
+                        426     LOAD_FAST                       4: id_code
+                        428     FORMAT_VALUE                    0 (FVC_NONE)
+                        430     LOAD_CONST                      10: "'"
+                        432     BUILD_STRING                    3
+                        434     PRECALL                         1
+                        438     CALL                            1
+                        448     POP_TOP                         
+                        450     LOAD_FAST                       6: con
+                        452     LOAD_METHOD                     9: commit
+                        474     PRECALL                         0
+                        478     CALL                            0
+                        488     POP_TOP                         
+                        490     LOAD_FAST                       6: con
+                        492     LOAD_METHOD                     10: close
+                        514     PRECALL                         0
+                        518     CALL                            0
+                        528     POP_TOP                         
+                        530     LOAD_GLOBAL                     23: NULL + notification
+                        542     LOAD_ATTR                       12: make
+                        552     LOAD_CONST                      11: 'هشدار'
+                        554     LOAD_CONST                      12: 'کاربر با کد ملی '
+                        556     LOAD_FAST                       5: meli
+                        558     FORMAT_VALUE                    0 (FVC_NONE)
+                        560     LOAD_CONST                      13: ' به طور کامل حذف گردید'
+                        562     BUILD_STRING                    3
+                        564     PRECALL                         2
+                        568     CALL                            2
+                        578     POP_TOP                         
+                        580     LOAD_FAST                       0: self
+                        582     LOAD_METHOD                     13: printError
+                        604     LOAD_CONST                      12: 'کاربر با کد ملی '
+                        606     LOAD_FAST                       5: meli
+                        608     FORMAT_VALUE                    0 (FVC_NONE)
+                        610     LOAD_CONST                      13: ' به طور کامل حذف گردید'
+                        612     BUILD_STRING                    3
+                        614     PRECALL                         1
+                        618     CALL                            1
+                        628     POP_TOP                         
+                        630     LOAD_FAST                       0: self
+                        632     LOAD_METHOD                     14: getAllDataFromDataBase
+                        654     PRECALL                         0
+                        658     CALL                            0
+                        668     POP_TOP                         
+                        670     LOAD_CONST                      0: None
+                        672     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: restoreMember
+                    Qualified Name: MyApp.restoreMember
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'split'
+                        'replace'
+                        'int'
+                        'database_list_removed_members'
+                        'database_map'
+                        'sqlite3'
+                        'connect'
+                        'cursor'
+                        'execute'
+                        'commit'
+                        'close'
+                        'getAllDataFromDataBase'
+                        'database_list_motaqazi_index'
+                        'entry_motaqazian'
+                        'database_list_sabtname_index'
+                        'entry_sabt_nam'
+                        'label_motaqazian_num'
+                        'config'
+                        'str'
+                        'len'
+                        'notification'
+                        'make'
+                        'printError'
+                    [Locals+Names]
+                        'self'
+                        'member'
+                        'idxs'
+                        'index'
+                        'id_code'
+                        'meli'
+                        'con'
+                        'cur'
+                        'motaqazian_text_list'
+                        'sabt_name_text_list'
+                    [Constants]
+                        None
+                        '_'
+                        -1
+                        '('
+                        ''
+                        ')'
+                        ','
+                        'meli'
+                        'members.db'
+                        "INSERT INTO members SELECT * FROM deleted_members WHERE id='"
+                        "'"
+                        "DELETE FROM deleted_members WHERE id='"
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.restoreMember.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 10
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_list'
+                                'database_map'
+                                'split'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'bank'
+                                ','
+                                0
+                                '_('
+                                ')'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        125 (to 260)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_DEREF                      2: self
+                                14      LOAD_ATTR                       0: database_list
+                                24      LOAD_FAST                       1: i
+                                26      BINARY_SUBSCR                   
+                                36      LOAD_DEREF                      2: self
+                                38      LOAD_ATTR                       1: database_map
+                                48      LOAD_CONST                      0: 'name'
+                                50      BINARY_SUBSCR                   
+                                60      BINARY_SUBSCR                   
+                                70      FORMAT_VALUE                    0 (FVC_NONE)
+                                72      LOAD_CONST                      1: '_'
+                                74      LOAD_DEREF                      2: self
+                                76      LOAD_ATTR                       0: database_list
+                                86      LOAD_FAST                       1: i

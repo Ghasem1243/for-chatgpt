@@ -1,0 +1,2026 @@
+                        7018    LOAD_ATTR                       20: settings
+                        7028    LOAD_CONST                      99: 't2e11'
+                        7030    BINARY_SUBSCR                   
+                        7040    PRECALL                         2
+                        7044    CALL                            2
+                        7054    POP_TOP                         
+                        7056    LOAD_DEREF                      82: entry_form_time_page_midle
+                        7058    LOAD_METHOD                     17: grid
+                        7080    LOAD_CONST                      70: 5
+                        7082    LOAD_CONST                      21: 0
+                        7084    LOAD_DEREF                      0: self
+                        7086    LOAD_ATTR                       21: default_padx
+                        7096    LOAD_CONST                      66: 2
+                        7098    BINARY_OP                       5 (*)
+                        7102    LOAD_DEREF                      0: self
+                        7104    LOAD_ATTR                       22: default_pady
+                        7114    LOAD_CONST                      66: 2
+                        7116    BINARY_OP                       5 (*)
+                        7120    LOAD_CONST                      67: 'e'
+                        7122    KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        7124    PRECALL                         5
+                        7128    CALL                            5
+                        7138    POP_TOP                         
+                        7140    LOAD_GLOBAL                     49: NULL + Label
+                        7152    LOAD_FAST                       9: frame_refresh
+                        7154    LOAD_CONST                      100: 'رفرش کلی فرم (ثانیه)'
+                        7156    KW_NAMES                        28: ('text',)
+                        7158    PRECALL                         2
+                        7162    CALL                            2
+                        7172    LOAD_METHOD                     17: grid
+                        7194    LOAD_CONST                      71: 6
+                        7196    LOAD_CONST                      22: 1
+                        7198    LOAD_DEREF                      0: self
+                        7200    LOAD_ATTR                       21: default_padx
+                        7210    LOAD_CONST                      66: 2
+                        7212    BINARY_OP                       5 (*)
+                        7216    LOAD_DEREF                      0: self
+                        7218    LOAD_ATTR                       22: default_pady
+                        7228    LOAD_CONST                      66: 2
+                        7230    BINARY_OP                       5 (*)
+                        7234    LOAD_CONST                      67: 'e'
+                        7236    KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        7238    PRECALL                         5
+                        7242    CALL                            5
+                        7252    POP_TOP                         
+                        7254    LOAD_GLOBAL                     51: NULL + Entry
+                        7266    LOAD_FAST                       9: frame_refresh
+                        7268    LOAD_CONST                      14: 10
+                        7270    LOAD_CONST                      85: 'key'
+                        7272    LOAD_DEREF                      89: window
+                        7274    LOAD_METHOD                     26: register
+                        7296    LOAD_DEREF                      0: self
+                        7298    LOAD_ATTR                       27: validate
+                        7308    PRECALL                         1
+                        7312    CALL                            1
+                        7322    LOAD_CONST                      86: '%P'
+                        7324    LOAD_CONST                      73: 8
+                        7326    LOAD_CONST                      87: 'int'
+                        7328    BUILD_TUPLE                     4
+                        7330    KW_NAMES                        88: ('width', 'validate', 'validatecommand')
+                        7332    PRECALL                         4
+                        7336    CALL                            4
+                        7346    STORE_DEREF                     81: entry_form_time
+                        7348    LOAD_DEREF                      81: entry_form_time
+                        7350    LOAD_METHOD                     28: insert
+                        7372    LOAD_CONST                      21: 0
+                        7374    LOAD_DEREF                      0: self
+                        7376    LOAD_ATTR                       20: settings
+                        7386    LOAD_CONST                      101: 't2e2'
+                        7388    BINARY_SUBSCR                   
+                        7398    PRECALL                         2
+                        7402    CALL                            2
+                        7412    POP_TOP                         
+                        7414    LOAD_DEREF                      81: entry_form_time
+                        7416    LOAD_METHOD                     17: grid
+                        7438    LOAD_CONST                      71: 6
+                        7440    LOAD_CONST                      21: 0
+                        7442    LOAD_DEREF                      0: self
+                        7444    LOAD_ATTR                       21: default_padx
+                        7454    LOAD_CONST                      66: 2
+                        7456    BINARY_OP                       5 (*)
+                        7460    LOAD_DEREF                      0: self
+                        7462    LOAD_ATTR                       22: default_pady
+                        7472    LOAD_CONST                      66: 2
+                        7474    BINARY_OP                       5 (*)
+                        7478    LOAD_CONST                      67: 'e'
+                        7480    KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        7482    PRECALL                         5
+                        7486    CALL                            5
+                        7496    POP_TOP                         
+                        7498    LOAD_GLOBAL                     37: NULL + Checkbutton
+                        7510    LOAD_FAST                       9: frame_refresh
+                        7512    LOAD_CONST                      102: 'ریست تایمر رفرش کلی فرم، لحظه ورود به صفحه سوم'
+                        7514    KW_NAMES                        28: ('text',)
+                        7516    PRECALL                         2
+                        7520    CALL                            2
+                        7530    STORE_DEREF                     54: check_refresh_form_restart
+                        7532    LOAD_DEREF                      54: check_refresh_form_restart
+                        7534    LOAD_METHOD                     19: state
+                        7556    LOAD_DEREF                      0: self
+                        7558    LOAD_ATTR                       20: settings
+                        7568    LOAD_CONST                      103: 't2c4'
+                        7570    BINARY_SUBSCR                   
+                        7580    POP_JUMP_FORWARD_IF_FALSE       4 (to 7590)
+                        7582    LOAD_CONST                      30: '!alternate'
+                        7584    LOAD_CONST                      31: 'selected'
+                        7586    BUILD_LIST                      2
+                        7588    JUMP_FORWARD                    2 (to 7594)
+                        7590    LOAD_CONST                      30: '!alternate'
+                        7592    BUILD_LIST                      1
+                        7594    PRECALL                         1
+                        7598    CALL                            1
+                        7608    POP_TOP                         
+                        7610    LOAD_DEREF                      54: check_refresh_form_restart
+                        7612    LOAD_METHOD                     17: grid
+                        7634    LOAD_CONST                      66: 2
+                        7636    LOAD_CONST                      72: 7
+                        7638    LOAD_CONST                      21: 0
+                        7640    LOAD_DEREF                      0: self
+                        7642    LOAD_ATTR                       21: default_padx
+                        7652    LOAD_CONST                      66: 2
+                        7654    BINARY_OP                       5 (*)
+                        7658    LOAD_DEREF                      0: self
+                        7660    LOAD_ATTR                       22: default_pady
+                        7670    LOAD_CONST                      66: 2
+                        7672    BINARY_OP                       5 (*)
+                        7676    LOAD_CONST                      67: 'e'
+                        7678    KW_NAMES                        104: ('columnspan', 'row', 'column', 'padx', 'pady', 'sticky')
+                        7680    PRECALL                         6
+                        7684    CALL                            6
+                        7694    POP_TOP                         
+                        7696    LOAD_GLOBAL                     28: Grid
+                        7708    LOAD_METHOD                     15: columnconfigure
+                        7730    LOAD_FAST                       9: frame_refresh
+                        7732    LOAD_CONST                      21: 0
+                        7734    LOAD_CONST                      22: 1
+                        7736    KW_NAMES                        23: ('weight',)
+                        7738    PRECALL                         3
+                        7742    CALL                            3
+                        7752    POP_TOP                         
+                        7754    LOAD_FAST                       9: frame_refresh
+                        7756    LOAD_METHOD                     17: grid
+                        7778    LOAD_CONST                      66: 2
+                        7780    LOAD_CONST                      21: 0
+                        7782    LOAD_CONST                      66: 2
+                        7784    LOAD_DEREF                      0: self
+                        7786    LOAD_ATTR                       21: default_padx
+                        7796    LOAD_CONST                      66: 2
+                        7798    BINARY_OP                       5 (*)
+                        7802    LOAD_DEREF                      0: self
+                        7804    LOAD_ATTR                       22: default_pady
+                        7814    LOAD_CONST                      66: 2
+                        7816    BINARY_OP                       5 (*)
+                        7820    LOAD_CONST                      13: 'nsew'
+                        7822    KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        7824    PRECALL                         6
+                        7828    CALL                            6
+                        7838    POP_TOP                         
+                        7840    LOAD_GLOBAL                     47: NULL + Labelframe
+                        7852    LOAD_FAST                       4: settings_tab2
+                        7854    LOAD_CONST                      106: 'زمان کار نرم افزار'
+                        7856    LOAD_CONST                      8: 'ne'
+                        7858    KW_NAMES                        83: ('text', 'labelanchor')
+                        7860    PRECALL                         3
+                        7864    CALL                            3
+                        7874    STORE_FAST                      10: frame_work_time
+                        7876    LOAD_GLOBAL                     49: NULL + Label
+                        7888    LOAD_FAST                       10: frame_work_time
+                        7890    LOAD_CONST                      107: 'ساعت شروع کار'
+                        7892    KW_NAMES                        28: ('text',)
+                        7894    PRECALL                         2
+                        7898    CALL                            2
+                        7908    LOAD_METHOD                     17: grid
+                        7930    LOAD_CONST                      24: 3
+                        7932    LOAD_CONST                      21: 0
+                        7934    LOAD_DEREF                      0: self
+                        7936    LOAD_ATTR                       21: default_padx
+                        7946    LOAD_CONST                      66: 2
+                        7948    BINARY_OP                       5 (*)
+                        7952    LOAD_DEREF                      0: self
+                        7954    LOAD_ATTR                       22: default_pady
+                        7964    LOAD_CONST                      66: 2
+                        7966    BINARY_OP                       5 (*)
+                        7970    LOAD_CONST                      67: 'e'
+                        7972    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        7974    PRECALL                         5
+                        7978    CALL                            5
+                        7988    POP_TOP                         
+                        7990    LOAD_GLOBAL                     51: NULL + Entry
+                        8002    LOAD_FAST                       10: frame_work_time
+                        8004    LOAD_CONST                      70: 5
+                        8006    LOAD_CONST                      85: 'key'
+                        8008    LOAD_DEREF                      89: window
+                        8010    LOAD_METHOD                     26: register
+                        8032    LOAD_DEREF                      0: self
+                        8034    LOAD_ATTR                       27: validate
+                        8044    PRECALL                         1
+                        8048    CALL                            1
+                        8058    LOAD_CONST                      86: '%P'
+                        8060    LOAD_CONST                      66: 2
+                        8062    LOAD_CONST                      87: 'int'
+                        8064    BUILD_TUPLE                     4
+                        8066    KW_NAMES                        88: ('width', 'validate', 'validatecommand')
+                        8068    PRECALL                         4
+                        8072    CALL                            4
+                        8082    STORE_DEREF                     86: entry_start_m
+                        8084    LOAD_DEREF                      86: entry_start_m
+                        8086    LOAD_METHOD                     28: insert
+                        8108    LOAD_CONST                      21: 0
+                        8110    LOAD_DEREF                      0: self
+                        8112    LOAD_ATTR                       20: settings
+                        8122    LOAD_CONST                      109: 't2e5'
+                        8124    BINARY_SUBSCR                   
+                        8134    PRECALL                         2
+                        8138    CALL                            2
+                        8148    POP_TOP                         
+                        8150    LOAD_DEREF                      86: entry_start_m
+                        8152    LOAD_METHOD                     17: grid
+                        8174    LOAD_CONST                      66: 2
+                        8176    LOAD_CONST                      21: 0
+                        8178    LOAD_DEREF                      0: self
+                        8180    LOAD_ATTR                       21: default_padx
+                        8190    LOAD_CONST                      66: 2
+                        8192    BINARY_OP                       11 (/)
+                        8196    LOAD_DEREF                      0: self
+                        8198    LOAD_ATTR                       22: default_pady
+                        8208    LOAD_CONST                      66: 2
+                        8210    BINARY_OP                       5 (*)
+                        8214    LOAD_CONST                      67: 'e'
+                        8216    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        8218    PRECALL                         5
+                        8222    CALL                            5
+                        8232    POP_TOP                         
+                        8234    LOAD_GLOBAL                     49: NULL + Label
+                        8246    LOAD_FAST                       10: frame_work_time
+                        8248    LOAD_CONST                      110: ':'
+                        8250    KW_NAMES                        28: ('text',)
+                        8252    PRECALL                         2
+                        8256    CALL                            2
+                        8266    LOAD_METHOD                     17: grid
+                        8288    LOAD_CONST                      22: 1
+                        8290    LOAD_CONST                      21: 0
+                        8292    LOAD_DEREF                      0: self
+                        8294    LOAD_ATTR                       21: default_padx
+                        8304    LOAD_CONST                      66: 2
+                        8306    BINARY_OP                       11 (/)
+                        8310    LOAD_DEREF                      0: self
+                        8312    LOAD_ATTR                       22: default_pady
+                        8322    LOAD_CONST                      66: 2
+                        8324    BINARY_OP                       5 (*)
+                        8328    LOAD_CONST                      67: 'e'
+                        8330    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        8332    PRECALL                         5
+                        8336    CALL                            5
+                        8346    POP_TOP                         
+                        8348    LOAD_GLOBAL                     51: NULL + Entry
+                        8360    LOAD_FAST                       10: frame_work_time
+                        8362    LOAD_CONST                      70: 5
+                        8364    LOAD_CONST                      85: 'key'
+                        8366    LOAD_DEREF                      89: window
+                        8368    LOAD_METHOD                     26: register
+                        8390    LOAD_DEREF                      0: self
+                        8392    LOAD_ATTR                       27: validate
+                        8402    PRECALL                         1
+                        8406    CALL                            1
+                        8416    LOAD_CONST                      86: '%P'
+                        8418    LOAD_CONST                      66: 2
+                        8420    LOAD_CONST                      87: 'int'
+                        8422    BUILD_TUPLE                     4
+                        8424    KW_NAMES                        88: ('width', 'validate', 'validatecommand')
+                        8426    PRECALL                         4
+                        8430    CALL                            4
+                        8440    STORE_DEREF                     85: entry_start_h
+                        8442    LOAD_DEREF                      85: entry_start_h
+                        8444    LOAD_METHOD                     28: insert
+                        8466    LOAD_CONST                      21: 0
+                        8468    LOAD_DEREF                      0: self
+                        8470    LOAD_ATTR                       20: settings
+                        8480    LOAD_CONST                      111: 't2e4'
+                        8482    BINARY_SUBSCR                   
+                        8492    PRECALL                         2
+                        8496    CALL                            2
+                        8506    POP_TOP                         
+                        8508    LOAD_DEREF                      85: entry_start_h
+                        8510    LOAD_METHOD                     17: grid
+                        8532    LOAD_CONST                      21: 0
+                        8534    LOAD_CONST                      21: 0
+                        8536    LOAD_DEREF                      0: self
+                        8538    LOAD_ATTR                       21: default_padx
+                        8548    LOAD_CONST                      66: 2
+                        8550    BINARY_OP                       11 (/)
+                        8554    LOAD_DEREF                      0: self
+                        8556    LOAD_ATTR                       22: default_pady
+                        8566    LOAD_CONST                      66: 2
+                        8568    BINARY_OP                       5 (*)
+                        8572    LOAD_CONST                      67: 'e'
+                        8574    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        8576    PRECALL                         5
+                        8580    CALL                            5
+                        8590    POP_TOP                         
+                        8592    LOAD_GLOBAL                     49: NULL + Label
+                        8604    LOAD_FAST                       10: frame_work_time
+                        8606    LOAD_CONST                      112: 'ساعت اتمام کار'
+                        8608    KW_NAMES                        28: ('text',)
+                        8610    PRECALL                         2
+                        8614    CALL                            2
+                        8624    LOAD_METHOD                     17: grid
+                        8646    LOAD_CONST                      24: 3
+                        8648    LOAD_CONST                      22: 1
+                        8650    LOAD_DEREF                      0: self
+                        8652    LOAD_ATTR                       21: default_padx
+                        8662    LOAD_CONST                      66: 2
+                        8664    BINARY_OP                       5 (*)
+                        8668    LOAD_DEREF                      0: self
+                        8670    LOAD_ATTR                       22: default_pady
+                        8680    LOAD_CONST                      66: 2
+                        8682    BINARY_OP                       5 (*)
+                        8686    LOAD_CONST                      67: 'e'
+                        8688    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        8690    PRECALL                         5
+                        8694    CALL                            5
+                        8704    POP_TOP                         
+                        8706    LOAD_GLOBAL                     51: NULL + Entry
+                        8718    LOAD_FAST                       10: frame_work_time
+                        8720    LOAD_CONST                      70: 5
+                        8722    LOAD_CONST                      85: 'key'
+                        8724    LOAD_DEREF                      89: window
+                        8726    LOAD_METHOD                     26: register
+                        8748    LOAD_DEREF                      0: self
+                        8750    LOAD_ATTR                       27: validate
+                        8760    PRECALL                         1
+                        8764    CALL                            1
+                        8774    LOAD_CONST                      86: '%P'
+                        8776    LOAD_CONST                      66: 2
+                        8778    LOAD_CONST                      87: 'int'
+                        8780    BUILD_TUPLE                     4
+                        8782    KW_NAMES                        88: ('width', 'validate', 'validatecommand')
+                        8784    PRECALL                         4
+                        8788    CALL                            4
+                        8798    STORE_DEREF                     88: entry_stop_m
+                        8800    LOAD_DEREF                      88: entry_stop_m
+                        8802    LOAD_METHOD                     28: insert
+                        8824    LOAD_CONST                      21: 0
+                        8826    LOAD_DEREF                      0: self
+                        8828    LOAD_ATTR                       20: settings
+                        8838    LOAD_CONST                      113: 't2e7'
+                        8840    BINARY_SUBSCR                   
+                        8850    PRECALL                         2
+                        8854    CALL                            2
+                        8864    POP_TOP                         
+                        8866    LOAD_DEREF                      88: entry_stop_m
+                        8868    LOAD_METHOD                     17: grid
+                        8890    LOAD_CONST                      66: 2
+                        8892    LOAD_CONST                      22: 1
+                        8894    LOAD_DEREF                      0: self
+                        8896    LOAD_ATTR                       21: default_padx
+                        8906    LOAD_CONST                      66: 2
+                        8908    BINARY_OP                       11 (/)
+                        8912    LOAD_DEREF                      0: self
+                        8914    LOAD_ATTR                       22: default_pady
+                        8924    LOAD_CONST                      66: 2
+                        8926    BINARY_OP                       5 (*)
+                        8930    LOAD_CONST                      67: 'e'
+                        8932    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        8934    PRECALL                         5
+                        8938    CALL                            5
+                        8948    POP_TOP                         
+                        8950    LOAD_GLOBAL                     49: NULL + Label
+                        8962    LOAD_FAST                       10: frame_work_time
+                        8964    LOAD_CONST                      110: ':'
+                        8966    KW_NAMES                        28: ('text',)
+                        8968    PRECALL                         2
+                        8972    CALL                            2
+                        8982    LOAD_METHOD                     17: grid
+                        9004    LOAD_CONST                      22: 1
+                        9006    LOAD_CONST                      22: 1
+                        9008    LOAD_DEREF                      0: self
+                        9010    LOAD_ATTR                       21: default_padx
+                        9020    LOAD_CONST                      66: 2
+                        9022    BINARY_OP                       11 (/)
+                        9026    LOAD_DEREF                      0: self
+                        9028    LOAD_ATTR                       22: default_pady
+                        9038    LOAD_CONST                      66: 2
+                        9040    BINARY_OP                       5 (*)
+                        9044    LOAD_CONST                      67: 'e'
+                        9046    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        9048    PRECALL                         5
+                        9052    CALL                            5
+                        9062    POP_TOP                         
+                        9064    LOAD_GLOBAL                     51: NULL + Entry
+                        9076    LOAD_FAST                       10: frame_work_time
+                        9078    LOAD_CONST                      70: 5
+                        9080    LOAD_CONST                      85: 'key'
+                        9082    LOAD_DEREF                      89: window
+                        9084    LOAD_METHOD                     26: register
+                        9106    LOAD_DEREF                      0: self
+                        9108    LOAD_ATTR                       27: validate
+                        9118    PRECALL                         1
+                        9122    CALL                            1
+                        9132    LOAD_CONST                      86: '%P'
+                        9134    LOAD_CONST                      66: 2
+                        9136    LOAD_CONST                      87: 'int'
+                        9138    BUILD_TUPLE                     4
+                        9140    KW_NAMES                        88: ('width', 'validate', 'validatecommand')
+                        9142    PRECALL                         4
+                        9146    CALL                            4
+                        9156    STORE_DEREF                     87: entry_stop_h
+                        9158    LOAD_DEREF                      87: entry_stop_h
+                        9160    LOAD_METHOD                     28: insert
+                        9182    LOAD_CONST                      21: 0
+                        9184    LOAD_DEREF                      0: self
+                        9186    LOAD_ATTR                       20: settings
+                        9196    LOAD_CONST                      114: 't2e6'
+                        9198    BINARY_SUBSCR                   
+                        9208    PRECALL                         2
+                        9212    CALL                            2
+                        9222    POP_TOP                         
+                        9224    LOAD_DEREF                      87: entry_stop_h
+                        9226    LOAD_METHOD                     17: grid
+                        9248    LOAD_CONST                      21: 0
+                        9250    LOAD_CONST                      22: 1
+                        9252    LOAD_DEREF                      0: self
+                        9254    LOAD_ATTR                       21: default_padx
+                        9264    LOAD_CONST                      66: 2
+                        9266    BINARY_OP                       11 (/)
+                        9270    LOAD_DEREF                      0: self
+                        9272    LOAD_ATTR                       22: default_pady
+                        9282    LOAD_CONST                      66: 2
+                        9284    BINARY_OP                       5 (*)
+                        9288    LOAD_CONST                      67: 'e'
+                        9290    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        9292    PRECALL                         5
+                        9296    CALL                            5
+                        9306    POP_TOP                         
+                        9308    LOAD_GLOBAL                     28: Grid
+                        9320    LOAD_METHOD                     15: columnconfigure
+                        9342    LOAD_FAST                       10: frame_work_time
+                        9344    LOAD_CONST                      21: 0
+                        9346    LOAD_CONST                      22: 1
+                        9348    KW_NAMES                        23: ('weight',)
+                        9350    PRECALL                         3
+                        9354    CALL                            3
+                        9364    POP_TOP                         
+                        9366    LOAD_FAST                       10: frame_work_time
+                        9368    LOAD_METHOD                     17: grid
+                        9390    LOAD_CONST                      24: 3
+                        9392    LOAD_CONST                      21: 0
+                        9394    LOAD_CONST                      66: 2
+                        9396    LOAD_DEREF                      0: self
+                        9398    LOAD_ATTR                       21: default_padx
+                        9408    LOAD_CONST                      66: 2
+                        9410    BINARY_OP                       5 (*)
+                        9414    LOAD_DEREF                      0: self
+                        9416    LOAD_ATTR                       22: default_pady
+                        9426    LOAD_CONST                      66: 2
+                        9428    BINARY_OP                       5 (*)
+                        9432    LOAD_CONST                      13: 'nsew'
+                        9434    KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        9436    PRECALL                         6
+                        9440    CALL                            6
+                        9450    POP_TOP                         
+                        9452    LOAD_GLOBAL                     47: NULL + Labelframe
+                        9464    LOAD_FAST                       4: settings_tab2
+                        9466    LOAD_CONST                      115: 'ثبت نهایی کاربر'
+                        9468    LOAD_CONST                      8: 'ne'
+                        9470    KW_NAMES                        83: ('text', 'labelanchor')
+                        9472    PRECALL                         3
+                        9476    CALL                            3
+                        9486    STORE_FAST                      11: frame_commit
+                        9488    LOAD_GLOBAL                     28: Grid
+                        9500    LOAD_METHOD                     15: columnconfigure
+                        9522    LOAD_FAST                       11: frame_commit
+                        9524    LOAD_CONST                      21: 0
+                        9526    LOAD_CONST                      22: 1
+                        9528    KW_NAMES                        23: ('weight',)
+                        9530    PRECALL                         3
+                        9534    CALL                            3
+                        9544    POP_TOP                         
+                        9546    LOAD_FAST                       11: frame_commit
+                        9548    LOAD_METHOD                     17: grid
+                        9570    LOAD_CONST                      14: 10
+                        9572    LOAD_CONST                      21: 0
+                        9574    LOAD_CONST                      66: 2
+                        9576    LOAD_DEREF                      0: self
+                        9578    LOAD_ATTR                       21: default_padx
+                        9588    LOAD_CONST                      66: 2
+                        9590    BINARY_OP                       5 (*)
+                        9594    LOAD_DEREF                      0: self
+                        9596    LOAD_ATTR                       22: default_pady
+                        9606    LOAD_CONST                      66: 2
+                        9608    BINARY_OP                       5 (*)
+                        9612    LOAD_CONST                      13: 'nsew'
+                        9614    KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        9616    PRECALL                         6
+                        9620    CALL                            6
+                        9630    POP_TOP                         
+                        9632    LOAD_GLOBAL                     49: NULL + Label
+                        9644    LOAD_FAST                       11: frame_commit
+                        9646    LOAD_CONST                      116: 'زمان انتظار بعد از انتخاب بانک و قبل ثبت'
+                        9648    KW_NAMES                        28: ('text',)
+                        9650    PRECALL                         2
+                        9654    CALL                            2
+                        9664    LOAD_METHOD                     17: grid
+                        9686    LOAD_CONST                      66: 2
+                        9688    LOAD_CONST                      22: 1
+                        9690    LOAD_DEREF                      0: self
+                        9692    LOAD_ATTR                       21: default_padx
+                        9702    LOAD_CONST                      66: 2
+                        9704    BINARY_OP                       5 (*)
+                        9708    LOAD_DEREF                      0: self
+                        9710    LOAD_ATTR                       22: default_pady
+                        9720    LOAD_CONST                      66: 2
+                        9722    BINARY_OP                       5 (*)
+                        9726    LOAD_CONST                      67: 'e'
+                        9728    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        9730    PRECALL                         5
+                        9734    CALL                            5
+                        9744    POP_TOP                         
+                        9746    LOAD_GLOBAL                     49: NULL + Label
+                        9758    LOAD_FAST                       11: frame_commit
+                        9760    LOAD_CONST                      117: 'تا تغییر نکردن کد پیامک ثبت فشرده نشود'
+                        9762    KW_NAMES                        28: ('text',)
+                        9764    PRECALL                         2
+                        9768    CALL                            2
+                        9778    LOAD_METHOD                     17: grid
+                        9800    LOAD_CONST                      66: 2
+                        9802    LOAD_CONST                      66: 2
+                        9804    LOAD_DEREF                      0: self
+                        9806    LOAD_ATTR                       21: default_padx
+                        9816    LOAD_CONST                      66: 2
+                        9818    BINARY_OP                       5 (*)
+                        9822    LOAD_DEREF                      0: self
+                        9824    LOAD_ATTR                       22: default_pady
+                        9834    LOAD_CONST                      66: 2
+                        9836    BINARY_OP                       5 (*)
+                        9840    LOAD_CONST                      67: 'e'
+                        9842    KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        9844    PRECALL                         5
+                        9848    CALL                            5
+                        9858    POP_TOP                         
+                        9860    LOAD_GLOBAL                     51: NULL + Entry
+                        9872    LOAD_FAST                       11: frame_commit
+                        9874    LOAD_CONST                      70: 5
+                        9876    LOAD_CONST                      85: 'key'
+                        9878    LOAD_DEREF                      89: window
+                        9880    LOAD_METHOD                     26: register
+                        9902    LOAD_DEREF                      0: self
+                        9904    LOAD_ATTR                       27: validate
+                        9914    PRECALL                         1
+                        9918    CALL                            1
+                        9928    LOAD_CONST                      86: '%P'
+                        9930    LOAD_CONST                      69: 4
+                        9932    LOAD_CONST                      87: 'int'
+                        9934    BUILD_TUPLE                     4
+                        9936    KW_NAMES                        88: ('width', 'validate', 'validatecommand')
+                        9938    PRECALL                         4
+                        9942    CALL                            4
+                        9952    STORE_DEREF                     80: entry_commit_wait_time
+                        9954    LOAD_GLOBAL                     37: NULL + Checkbutton
+                        9966    LOAD_FAST                       11: frame_commit
+                        9968    LOAD_CONST                      118: ''
+                        9970    KW_NAMES                        28: ('text',)
+                        9972    PRECALL                         2
+                        9976    CALL                            2
+                        9986    STORE_DEREF                     71: check_wait_for_sms_before_commit
+                        9988    LOAD_DEREF                      80: entry_commit_wait_time
+                        9990    LOAD_METHOD                     28: insert
+                        10012   LOAD_CONST                      21: 0
+                        10014   LOAD_DEREF                      0: self
+                        10016   LOAD_ATTR                       20: settings
+                        10026   LOAD_CONST                      119: 't2e9'
+                        10028   BINARY_SUBSCR                   
+                        10038   PRECALL                         2
+                        10042   CALL                            2
+                        10052   POP_TOP                         
+                        10054   LOAD_DEREF                      71: check_wait_for_sms_before_commit
+                        10056   LOAD_METHOD                     19: state
+                        10078   LOAD_DEREF                      0: self
+                        10080   LOAD_ATTR                       20: settings
+                        10090   LOAD_CONST                      120: 't2c5'
+                        10092   BINARY_SUBSCR                   
+                        10102   POP_JUMP_FORWARD_IF_FALSE       4 (to 10112)
+                        10104   LOAD_CONST                      30: '!alternate'
+                        10106   LOAD_CONST                      31: 'selected'
+                        10108   BUILD_LIST                      2
+                        10110   JUMP_FORWARD                    2 (to 10116)
+                        10112   LOAD_CONST                      30: '!alternate'
+                        10114   BUILD_LIST                      1
+                        10116   PRECALL                         1
+                        10120   CALL                            1
+                        10130   POP_TOP                         
+                        10132   LOAD_DEREF                      80: entry_commit_wait_time
+                        10134   LOAD_METHOD                     17: grid
+                        10156   LOAD_CONST                      21: 0
+                        10158   LOAD_CONST                      22: 1
+                        10160   LOAD_DEREF                      0: self
+                        10162   LOAD_ATTR                       21: default_padx
+                        10172   LOAD_CONST                      66: 2
+                        10174   BINARY_OP                       5 (*)
+                        10178   LOAD_DEREF                      0: self
+                        10180   LOAD_ATTR                       22: default_pady
+                        10190   LOAD_CONST                      66: 2
+                        10192   BINARY_OP                       5 (*)
+                        10196   LOAD_CONST                      67: 'e'
+                        10198   KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        10200   PRECALL                         5
+                        10204   CALL                            5
+                        10214   POP_TOP                         
+                        10216   LOAD_DEREF                      71: check_wait_for_sms_before_commit
+                        10218   LOAD_METHOD                     17: grid
+                        10240   LOAD_CONST                      21: 0
+                        10242   LOAD_CONST                      66: 2
+                        10244   LOAD_DEREF                      0: self
+                        10246   LOAD_ATTR                       21: default_padx
+                        10256   LOAD_CONST                      66: 2
+                        10258   BINARY_OP                       5 (*)
+                        10262   LOAD_DEREF                      0: self
+                        10264   LOAD_ATTR                       22: default_pady
+                        10274   LOAD_CONST                      66: 2
+                        10276   BINARY_OP                       5 (*)
+                        10280   LOAD_CONST                      67: 'e'
+                        10282   KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        10284   PRECALL                         5
+                        10288   CALL                            5
+                        10298   POP_TOP                         
+                        10300   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        10312   LOAD_FAST                       4: settings_tab2
+                        10314   LOAD_CONST                      121: 'بعد از ثبت نام کاربر، کاربر بعدی را انتخاب کن'
+                        10316   KW_NAMES                        28: ('text',)
+                        10318   PRECALL                         2
+                        10322   CALL                            2
+                        10332   STORE_DEREF                     46: check_next_user
+                        10334   LOAD_DEREF                      46: check_next_user
+                        10336   LOAD_METHOD                     19: state
+                        10358   LOAD_DEREF                      0: self
+                        10360   LOAD_ATTR                       20: settings
+                        10370   LOAD_CONST                      122: 't2c1'
+                        10372   BINARY_SUBSCR                   
+                        10382   POP_JUMP_FORWARD_IF_FALSE       4 (to 10392)
+                        10384   LOAD_CONST                      30: '!alternate'
+                        10386   LOAD_CONST                      31: 'selected'
+                        10388   BUILD_LIST                      2
+                        10390   JUMP_FORWARD                    2 (to 10396)
+                        10392   LOAD_CONST                      30: '!alternate'
+                        10394   BUILD_LIST                      1
+                        10396   PRECALL                         1
+                        10400   CALL                            1
+                        10410   POP_TOP                         
+                        10412   LOAD_DEREF                      46: check_next_user
+                        10414   LOAD_METHOD                     17: grid
+                        10436   LOAD_CONST                      69: 4
+                        10438   LOAD_CONST                      21: 0
+                        10440   LOAD_CONST                      66: 2
+                        10442   LOAD_DEREF                      0: self
+                        10444   LOAD_ATTR                       21: default_padx
+                        10454   LOAD_CONST                      66: 2
+                        10456   BINARY_OP                       5 (*)
+                        10460   LOAD_DEREF                      0: self
+                        10462   LOAD_ATTR                       22: default_pady
+                        10472   LOAD_CONST                      66: 2
+                        10474   BINARY_OP                       5 (*)
+                        10478   LOAD_CONST                      67: 'e'
+                        10480   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        10482   PRECALL                         6
+                        10486   CALL                            6
+                        10496   POP_TOP                         
+                        10498   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        10510   LOAD_FAST                       4: settings_tab2
+                        10512   LOAD_CONST                      123: 'اگربانک انتخاب شده موجود نبود ولی بانک \nکاربر دیگر فعال بود، کاربر دیگر را ثبت نام کن'
+                        10514   KW_NAMES                        28: ('text',)
+                        10516   PRECALL                         2
+                        10520   CALL                            2
+                        10530   STORE_DEREF                     47: check_other_bank
+                        10532   LOAD_DEREF                      47: check_other_bank
+                        10534   LOAD_METHOD                     19: state
+                        10556   LOAD_DEREF                      0: self
+                        10558   LOAD_ATTR                       20: settings
+                        10568   LOAD_CONST                      124: 't2c2'
+                        10570   BINARY_SUBSCR                   
+                        10580   POP_JUMP_FORWARD_IF_FALSE       4 (to 10590)
+                        10582   LOAD_CONST                      30: '!alternate'
+                        10584   LOAD_CONST                      31: 'selected'
+                        10586   BUILD_LIST                      2
+                        10588   JUMP_FORWARD                    2 (to 10594)
+                        10590   LOAD_CONST                      30: '!alternate'
+                        10592   BUILD_LIST                      1
+                        10594   PRECALL                         1
+                        10598   CALL                            1
+                        10608   POP_TOP                         
+                        10610   LOAD_DEREF                      47: check_other_bank
+                        10612   LOAD_METHOD                     17: grid
+                        10634   LOAD_CONST                      70: 5
+                        10636   LOAD_CONST                      21: 0
+                        10638   LOAD_CONST                      66: 2
+                        10640   LOAD_DEREF                      0: self
+                        10642   LOAD_ATTR                       21: default_padx
+                        10652   LOAD_CONST                      66: 2
+                        10654   BINARY_OP                       5 (*)
+                        10658   LOAD_DEREF                      0: self
+                        10660   LOAD_ATTR                       22: default_pady
+                        10670   LOAD_CONST                      66: 2
+                        10672   BINARY_OP                       5 (*)
+                        10676   LOAD_CONST                      67: 'e'
+                        10678   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        10680   PRECALL                         6
+                        10684   CALL                            6
+                        10694   POP_TOP                         
+                        10696   LOAD_GLOBAL                     49: NULL + Label
+                        10708   LOAD_FAST                       4: settings_tab2
+                        10710   LOAD_CONST                      125: 'تعداد تلاش بعد از اتمام بودجه'
+                        10712   KW_NAMES                        28: ('text',)
+                        10714   PRECALL                         2
+                        10718   CALL                            2
+                        10728   LOAD_METHOD                     17: grid
+                        10750   LOAD_CONST                      71: 6
+                        10752   LOAD_CONST                      22: 1
+                        10754   LOAD_DEREF                      0: self
+                        10756   LOAD_ATTR                       21: default_padx
+                        10766   LOAD_CONST                      66: 2
+                        10768   BINARY_OP                       5 (*)
+                        10772   LOAD_DEREF                      0: self
+                        10774   LOAD_ATTR                       22: default_pady
+                        10784   LOAD_CONST                      66: 2
+                        10786   BINARY_OP                       5 (*)
+                        10790   LOAD_CONST                      67: 'e'
+                        10792   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        10794   PRECALL                         5
+                        10798   CALL                            5
+                        10808   POP_TOP                         
+                        10810   LOAD_GLOBAL                     51: NULL + Entry
+                        10822   LOAD_FAST                       4: settings_tab2
+                        10824   LOAD_CONST                      14: 10
+                        10826   LOAD_CONST                      85: 'key'
+                        10828   LOAD_DEREF                      89: window
+                        10830   LOAD_METHOD                     26: register
+                        10852   LOAD_DEREF                      0: self
+                        10854   LOAD_ATTR                       27: validate
+                        10864   PRECALL                         1
+                        10868   CALL                            1
+                        10878   LOAD_CONST                      86: '%P'
+                        10880   LOAD_CONST                      73: 8
+                        10882   LOAD_CONST                      87: 'int'
+                        10884   BUILD_TUPLE                     4
+                        10886   KW_NAMES                        88: ('width', 'validate', 'validatecommand')
+                        10888   PRECALL                         4
+                        10892   CALL                            4
+                        10902   STORE_DEREF                     74: entry_bank_count
+                        10904   LOAD_DEREF                      74: entry_bank_count
+                        10906   LOAD_METHOD                     28: insert
+                        10928   LOAD_CONST                      21: 0
+                        10930   LOAD_DEREF                      0: self
+                        10932   LOAD_ATTR                       20: settings
+                        10942   LOAD_CONST                      126: 't2e8'
+                        10944   BINARY_SUBSCR                   
+                        10954   PRECALL                         2
+                        10958   CALL                            2
+                        10968   POP_TOP                         
+                        10970   LOAD_DEREF                      74: entry_bank_count
+                        10972   LOAD_METHOD                     17: grid
+                        10994   LOAD_CONST                      71: 6
+                        10996   LOAD_CONST                      21: 0
+                        10998   LOAD_DEREF                      0: self
+                        11000   LOAD_ATTR                       21: default_padx
+                        11010   LOAD_CONST                      66: 2
+                        11012   BINARY_OP                       5 (*)
+                        11016   LOAD_DEREF                      0: self
+                        11018   LOAD_ATTR                       22: default_pady
+                        11028   LOAD_CONST                      66: 2
+                        11030   BINARY_OP                       5 (*)
+                        11034   LOAD_CONST                      67: 'e'
+                        11036   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        11038   PRECALL                         5
+                        11042   CALL                            5
+                        11052   POP_TOP                         
+                        11054   LOAD_GLOBAL                     23: NULL + Frame
+                        11066   LOAD_FAST                       4: settings_tab2
+                        11068   PRECALL                         1
+                        11072   CALL                            1
+                        11082   STORE_FAST                      12: frame_change_bank_in_budjet_mode
+                        11084   LOAD_GLOBAL                     28: Grid
+                        11096   LOAD_METHOD                     15: columnconfigure
+                        11118   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        11120   LOAD_CONST                      21: 0
+                        11122   LOAD_CONST                      22: 1
+                        11124   KW_NAMES                        23: ('weight',)
+                        11126   PRECALL                         3
+                        11130   CALL                            3
+                        11140   POP_TOP                         
+                        11142   LOAD_GLOBAL                     28: Grid
+                        11154   LOAD_METHOD                     15: columnconfigure
+                        11176   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        11178   LOAD_CONST                      21: 0
+                        11180   LOAD_CONST                      22: 1
+                        11182   KW_NAMES                        23: ('weight',)
+                        11184   PRECALL                         3
+                        11188   CALL                            3
+                        11198   POP_TOP                         
+                        11200   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        11202   LOAD_METHOD                     17: grid
+                        11224   LOAD_CONST                      79: 15
+                        11226   LOAD_CONST                      21: 0
+                        11228   LOAD_CONST                      66: 2
+                        11230   LOAD_DEREF                      0: self
+                        11232   LOAD_ATTR                       21: default_padx
+                        11242   LOAD_CONST                      66: 2
+                        11244   BINARY_OP                       5 (*)
+                        11248   LOAD_DEREF                      0: self
+                        11250   LOAD_ATTR                       22: default_pady
+                        11260   LOAD_CONST                      66: 2
+                        11262   BINARY_OP                       5 (*)
+                        11266   LOAD_CONST                      13: 'nsew'
+                        11268   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        11270   PRECALL                         6
+                        11274   CALL                            6
+                        11284   POP_TOP                         
+                        11286   LOAD_GLOBAL                     26: jbdb_license
+                        11298   POP_JUMP_FORWARD_IF_FALSE       39 (to 11378)
+                        11300   LOAD_GLOBAL                     49: NULL + Label
+                        11312   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        11314   LOAD_CONST                      127: 'تعویض بانک در حالت خطای بودجه'
+                        11316   KW_NAMES                        28: ('text',)
+                        11318   PRECALL                         2
+                        11322   CALL                            2
+                        11332   LOAD_METHOD                     17: grid
+                        11354   LOAD_CONST                      70: 5
+                        11356   LOAD_CONST                      24: 3
+                        11358   LOAD_CONST                      67: 'e'
+                        11360   KW_NAMES                        128: ('row', 'column', 'sticky')
+                        11362   PRECALL                         3
+                        11366   CALL                            3
+                        11376   POP_TOP                         
+                        11378   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        11390   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        11392   LOAD_CONST                      118: ''
+                        11394   KW_NAMES                        28: ('text',)
+                        11396   PRECALL                         2
+                        11400   CALL                            2
+                        11410   STORE_DEREF                     34: check_change_bank_in_budjet_mode
+                        11412   LOAD_DEREF                      34: check_change_bank_in_budjet_mode
+                        11414   LOAD_METHOD                     19: state
+                        11436   LOAD_DEREF                      0: self
+                        11438   LOAD_ATTR                       20: settings
+                        11448   LOAD_CONST                      129: 't2c6'
+                        11450   BINARY_SUBSCR                   
+                        11460   POP_JUMP_FORWARD_IF_FALSE       4 (to 11470)
+                        11462   LOAD_CONST                      30: '!alternate'
+                        11464   LOAD_CONST                      31: 'selected'
+                        11466   BUILD_LIST                      2
+                        11468   JUMP_FORWARD                    2 (to 11474)
+                        11470   LOAD_CONST                      30: '!alternate'
+                        11472   BUILD_LIST                      1
+                        11474   PRECALL                         1
+                        11478   CALL                            1
+                        11488   POP_TOP                         
+                        11490   LOAD_GLOBAL                     26: jbdb_license
+                        11502   POP_JUMP_FORWARD_IF_FALSE       43 (to 11590)
+                        11504   LOAD_DEREF                      34: check_change_bank_in_budjet_mode
+                        11506   LOAD_METHOD                     17: grid
+                        11528   LOAD_CONST                      70: 5
+                        11530   LOAD_CONST                      21: 0
+                        11532   LOAD_CONST                      66: 2
+                        11534   LOAD_DEREF                      0: self
+                        11536   LOAD_ATTR                       21: default_padx
+                        11546   LOAD_CONST                      66: 2
+                        11548   BINARY_OP                       5 (*)
+                        11552   LOAD_DEREF                      0: self
+                        11554   LOAD_ATTR                       22: default_pady
+                        11564   LOAD_CONST                      66: 2
+                        11566   BINARY_OP                       5 (*)
+                        11570   LOAD_CONST                      67: 'e'
+                        11572   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        11574   PRECALL                         6
+                        11578   CALL                            6
+                        11588   POP_TOP                         
+                        11590   LOAD_GLOBAL                     26: jbdb_license
+                        11602   POP_JUMP_FORWARD_IF_TRUE        41 (to 11686)
+                        11604   LOAD_DEREF                      34: check_change_bank_in_budjet_mode
+                        11606   LOAD_METHOD                     19: state
+                        11628   LOAD_CONST                      30: '!alternate'
+                        11630   LOAD_CONST                      130: 'disabled'
+                        11632   BUILD_LIST                      2
+                        11634   PRECALL                         1
+                        11638   CALL                            1
+                        11648   POP_TOP                         
+                        11650   LOAD_GLOBAL                     59: NULL + ToolTip
+                        11662   LOAD_DEREF                      34: check_change_bank_in_budjet_mode
+                        11664   LOAD_CONST                      131: 'برای فعال سازی نیاز به سرویس پلاس هست'
+                        11666   LOAD_CONST                      132: 0.05
+                        11668   PRECALL                         3
+                        11672   CALL                            3
+                        11682   POP_TOP                         
+                        11684   JUMP_FORWARD                    39 (to 11764)
+                        11686   LOAD_DEREF                      34: check_change_bank_in_budjet_mode
+                        11688   LOAD_METHOD                     19: state
+                        11710   LOAD_DEREF                      0: self
+                        11712   LOAD_ATTR                       20: settings
+                        11722   LOAD_CONST                      129: 't2c6'
+                        11724   BINARY_SUBSCR                   
+                        11734   POP_JUMP_FORWARD_IF_FALSE       4 (to 11744)
+                        11736   LOAD_CONST                      30: '!alternate'
+                        11738   LOAD_CONST                      31: 'selected'
+                        11740   BUILD_LIST                      2
+                        11742   JUMP_FORWARD                    2 (to 11748)
+                        11744   LOAD_CONST                      30: '!alternate'
+                        11746   BUILD_LIST                      1
+                        11748   PRECALL                         1
+                        11752   CALL                            1
+                        11762   POP_TOP                         
+                        11764   LOAD_GLOBAL                     49: NULL + Label
+                        11776   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        11778   LOAD_CONST                      133: '"بستن اجباری خطای "درحال بارگذاری'
+                        11780   KW_NAMES                        28: ('text',)
+                        11782   PRECALL                         2
+                        11786   CALL                            2
+                        11796   LOAD_METHOD                     17: grid
+                        11818   LOAD_CONST                      71: 6
+                        11820   LOAD_CONST                      24: 3
+                        11822   LOAD_CONST                      67: 'e'
+                        11824   KW_NAMES                        128: ('row', 'column', 'sticky')
+                        11826   PRECALL                         3
+                        11830   CALL                            3
+                        11840   POP_TOP                         
+                        11842   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        11854   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        11856   LOAD_CONST                      118: ''
+                        11858   KW_NAMES                        28: ('text',)
+                        11860   PRECALL                         2
+                        11864   CALL                            2
+                        11874   STORE_DEREF                     36: check_force_close_wait_error
+                        11876   LOAD_DEREF                      36: check_force_close_wait_error
+                        11878   LOAD_METHOD                     19: state
+                        11900   LOAD_DEREF                      0: self
+                        11902   LOAD_ATTR                       20: settings
+                        11912   LOAD_CONST                      134: 't2c7'
+                        11914   BINARY_SUBSCR                   
+                        11924   POP_JUMP_FORWARD_IF_FALSE       4 (to 11934)
+                        11926   LOAD_CONST                      30: '!alternate'
+                        11928   LOAD_CONST                      31: 'selected'
+                        11930   BUILD_LIST                      2
+                        11932   JUMP_FORWARD                    2 (to 11938)
+                        11934   LOAD_CONST                      30: '!alternate'
+                        11936   BUILD_LIST                      1
+                        11938   PRECALL                         1
+                        11942   CALL                            1
+                        11952   POP_TOP                         
+                        11954   LOAD_DEREF                      36: check_force_close_wait_error
+                        11956   LOAD_METHOD                     17: grid
+                        11978   LOAD_CONST                      71: 6
+                        11980   LOAD_CONST                      21: 0
+                        11982   LOAD_CONST                      66: 2
+                        11984   LOAD_DEREF                      0: self
+                        11986   LOAD_ATTR                       21: default_padx
+                        11996   LOAD_CONST                      66: 2
+                        11998   BINARY_OP                       5 (*)
+                        12002   LOAD_DEREF                      0: self
+                        12004   LOAD_ATTR                       22: default_pady
+                        12014   LOAD_CONST                      66: 2
+                        12016   BINARY_OP                       5 (*)
+                        12020   LOAD_CONST                      67: 'e'
+                        12022   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        12024   PRECALL                         6
+                        12028   CALL                            6
+                        12038   POP_TOP                         
+                        12040   LOAD_GLOBAL                     49: NULL + Label
+                        12052   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        12054   LOAD_CONST                      135: 'رفرش فرم در صورت اشتباه بودن یا منقضی شدن کد پیامک'
+                        12056   KW_NAMES                        28: ('text',)
+                        12058   PRECALL                         2
+                        12062   CALL                            2
+                        12072   LOAD_METHOD                     17: grid
+                        12094   LOAD_CONST                      72: 7
+                        12096   LOAD_CONST                      24: 3
+                        12098   LOAD_CONST                      67: 'e'
+                        12100   KW_NAMES                        128: ('row', 'column', 'sticky')
+                        12102   PRECALL                         3
+                        12106   CALL                            3
+                        12116   POP_TOP                         
+                        12118   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        12130   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        12132   LOAD_CONST                      118: ''
+                        12134   KW_NAMES                        28: ('text',)
+                        12136   PRECALL                         2
+                        12140   CALL                            2
+                        12150   STORE_DEREF                     53: check_refresh_expire_sms_code
+                        12152   LOAD_GLOBAL                     59: NULL + ToolTip
+                        12164   LOAD_DEREF                      53: check_refresh_expire_sms_code
+                        12166   LOAD_CONST                      136: 'توجه کنید تنظیمات برای انتظار تا دریافت کد جدید فعال باشد'
+                        12168   LOAD_CONST                      137: 0.1
+                        12170   PRECALL                         3
+                        12174   CALL                            3
+                        12184   POP_TOP                         
+                        12186   LOAD_DEREF                      53: check_refresh_expire_sms_code
+                        12188   LOAD_METHOD                     19: state
+                        12210   LOAD_DEREF                      0: self
+                        12212   LOAD_ATTR                       20: settings
+                        12222   LOAD_CONST                      138: 't2c8'
+                        12224   BINARY_SUBSCR                   
+                        12234   POP_JUMP_FORWARD_IF_FALSE       4 (to 12244)
+                        12236   LOAD_CONST                      30: '!alternate'
+                        12238   LOAD_CONST                      31: 'selected'
+                        12240   BUILD_LIST                      2
+                        12242   JUMP_FORWARD                    2 (to 12248)
+                        12244   LOAD_CONST                      30: '!alternate'
+                        12246   BUILD_LIST                      1
+                        12248   PRECALL                         1
+                        12252   CALL                            1
+                        12262   POP_TOP                         
+                        12264   LOAD_DEREF                      53: check_refresh_expire_sms_code
+                        12266   LOAD_METHOD                     17: grid
+                        12288   LOAD_CONST                      72: 7
+                        12290   LOAD_CONST                      21: 0
+                        12292   LOAD_CONST                      66: 2
+                        12294   LOAD_DEREF                      0: self
+                        12296   LOAD_ATTR                       21: default_padx
+                        12306   LOAD_CONST                      66: 2
+                        12308   BINARY_OP                       5 (*)
+                        12312   LOAD_DEREF                      0: self
+                        12314   LOAD_ATTR                       22: default_pady
+                        12324   LOAD_CONST                      66: 2
+                        12326   BINARY_OP                       5 (*)
+                        12330   LOAD_CONST                      67: 'e'
+                        12332   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        12334   PRECALL                         6
+                        12338   CALL                            6
+                        12348   POP_TOP                         
+                        12350   LOAD_GLOBAL                     49: NULL + Label
+                        12362   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        12364   LOAD_CONST                      139: 'توقف حل خودکار کپچا در صورت نبودن بانک مورد نظر'
+                        12366   KW_NAMES                        28: ('text',)
+                        12368   PRECALL                         2
+                        12372   CALL                            2
+                        12382   LOAD_METHOD                     17: grid
+                        12404   LOAD_CONST                      73: 8
+                        12406   LOAD_CONST                      24: 3
+                        12408   LOAD_CONST                      67: 'e'
+                        12410   KW_NAMES                        128: ('row', 'column', 'sticky')
+                        12412   PRECALL                         3
+                        12416   CALL                            3
+                        12426   POP_TOP                         
+                        12428   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        12440   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        12442   LOAD_CONST                      118: ''
+                        12444   KW_NAMES                        28: ('text',)
+                        12446   PRECALL                         2
+                        12450   CALL                            2
+                        12460   STORE_DEREF                     69: check_stop_auto_captcha_solver_in_page_three
+                        12462   LOAD_DEREF                      69: check_stop_auto_captcha_solver_in_page_three
+                        12464   LOAD_METHOD                     19: state
+                        12486   LOAD_DEREF                      0: self
+                        12488   LOAD_ATTR                       20: settings
+                        12498   LOAD_CONST                      140: 't2c9'
+                        12500   BINARY_SUBSCR                   
+                        12510   POP_JUMP_FORWARD_IF_FALSE       4 (to 12520)
+                        12512   LOAD_CONST                      30: '!alternate'
+                        12514   LOAD_CONST                      31: 'selected'
+                        12516   BUILD_LIST                      2
+                        12518   JUMP_FORWARD                    2 (to 12524)
+                        12520   LOAD_CONST                      30: '!alternate'
+                        12522   BUILD_LIST                      1
+                        12524   PRECALL                         1
+                        12528   CALL                            1
+                        12538   POP_TOP                         
+                        12540   LOAD_DEREF                      69: check_stop_auto_captcha_solver_in_page_three
+                        12542   LOAD_METHOD                     17: grid
+                        12564   LOAD_CONST                      73: 8
+                        12566   LOAD_CONST                      21: 0
+                        12568   LOAD_CONST                      66: 2
+                        12570   LOAD_DEREF                      0: self
+                        12572   LOAD_ATTR                       21: default_padx
+                        12582   LOAD_CONST                      66: 2
+                        12584   BINARY_OP                       5 (*)
+                        12588   LOAD_DEREF                      0: self
+                        12590   LOAD_ATTR                       22: default_pady
+                        12600   LOAD_CONST                      66: 2
+                        12602   BINARY_OP                       5 (*)
+                        12606   LOAD_CONST                      67: 'e'
+                        12608   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        12610   PRECALL                         6
+                        12614   CALL                            6
+                        12624   POP_TOP                         
+                        12626   LOAD_GLOBAL                     49: NULL + Label
+                        12638   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        12640   LOAD_CONST                      141: 'بعد از انتخاب شعبه ابتدا کپچا رفرش و سپس متقاضی ثبت شود'
+                        12642   KW_NAMES                        28: ('text',)
+                        12644   PRECALL                         2
+                        12648   CALL                            2
+                        12658   LOAD_METHOD                     17: grid
+                        12680   LOAD_CONST                      74: 9
+                        12682   LOAD_CONST                      24: 3
+                        12684   LOAD_CONST                      67: 'e'
+                        12686   KW_NAMES                        128: ('row', 'column', 'sticky')
+                        12688   PRECALL                         3
+                        12692   CALL                            3
+                        12702   POP_TOP                         
+                        12704   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        12716   LOAD_FAST                       12: frame_change_bank_in_budjet_mode
+                        12718   LOAD_CONST                      118: ''
+                        12720   KW_NAMES                        28: ('text',)
+                        12722   PRECALL                         2
+                        12726   CALL                            2
+                        12736   STORE_DEREF                     52: check_refresh_captcha_before_commit_member
+                        12738   LOAD_DEREF                      52: check_refresh_captcha_before_commit_member
+                        12740   LOAD_METHOD                     19: state
+                        12762   LOAD_DEREF                      0: self
+                        12764   LOAD_ATTR                       20: settings
+                        12774   LOAD_CONST                      142: 't2c10'
+                        12776   BINARY_SUBSCR                   
+                        12786   POP_JUMP_FORWARD_IF_FALSE       4 (to 12796)
+                        12788   LOAD_CONST                      30: '!alternate'
+                        12790   LOAD_CONST                      31: 'selected'
+                        12792   BUILD_LIST                      2
+                        12794   JUMP_FORWARD                    2 (to 12800)
+                        12796   LOAD_CONST                      30: '!alternate'
+                        12798   BUILD_LIST                      1
+                        12800   PRECALL                         1
+                        12804   CALL                            1
+                        12814   POP_TOP                         
+                        12816   LOAD_DEREF                      52: check_refresh_captcha_before_commit_member
+                        12818   LOAD_METHOD                     17: grid
+                        12840   LOAD_CONST                      74: 9
+                        12842   LOAD_CONST                      21: 0
+                        12844   LOAD_CONST                      66: 2
+                        12846   LOAD_DEREF                      0: self
+                        12848   LOAD_ATTR                       21: default_padx
+                        12858   LOAD_CONST                      66: 2
+                        12860   BINARY_OP                       5 (*)
+                        12864   LOAD_DEREF                      0: self
+                        12866   LOAD_ATTR                       22: default_pady
+                        12876   LOAD_CONST                      66: 2
+                        12878   BINARY_OP                       5 (*)
+                        12882   LOAD_CONST                      67: 'e'
+                        12884   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        12886   PRECALL                         6
+                        12890   CALL                            6
+                        12900   POP_TOP                         
+                        12902   LOAD_GLOBAL                     49: NULL + Label
+                        12914   LOAD_FAST                       4: settings_tab2
+                        12916   LOAD_CONST                      143: 'نصب دوباره درایور'
+                        12918   KW_NAMES                        28: ('text',)
+                        12920   PRECALL                         2
+                        12924   CALL                            2
+                        12934   LOAD_METHOD                     17: grid
+                        12956   LOAD_CONST                      72: 7
+                        12958   LOAD_CONST                      22: 1
+                        12960   LOAD_DEREF                      0: self
+                        12962   LOAD_ATTR                       21: default_padx
+                        12972   LOAD_CONST                      66: 2
+                        12974   BINARY_OP                       5 (*)
+                        12978   LOAD_DEREF                      0: self
+                        12980   LOAD_ATTR                       22: default_pady
+                        12990   LOAD_CONST                      66: 2
+                        12992   BINARY_OP                       5 (*)
+                        12996   LOAD_CONST                      67: 'e'
+                        12998   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        13000   PRECALL                         5
+                        13004   CALL                            5
+                        13014   POP_TOP                         
+                        13016   LOAD_GLOBAL                     61: NULL + Button
+                        13028   LOAD_FAST                       4: settings_tab2
+                        13030   LOAD_CONST                      14: 10
+                        13032   LOAD_CONST                      144: 'شروع'
+                        13034   LOAD_CLOSURE                    0: self
+                        13036   BUILD_TUPLE                     1
+                        13038   LOAD_CONST                      145: <CODE> <lambda>
+                        13040   MAKE_FUNCTION                   8
+                        13042   KW_NAMES                        146: ('width', 'text', 'command')
+                        13044   PRECALL                         4
+                        13048   CALL                            4
+                        13058   LOAD_METHOD                     17: grid
+                        13080   LOAD_CONST                      72: 7
+                        13082   LOAD_CONST                      21: 0
+                        13084   LOAD_DEREF                      0: self
+                        13086   LOAD_ATTR                       21: default_padx
+                        13096   LOAD_CONST                      66: 2
+                        13098   BINARY_OP                       5 (*)
+                        13102   LOAD_DEREF                      0: self
+                        13104   LOAD_ATTR                       22: default_pady
+                        13114   LOAD_CONST                      66: 2
+                        13116   BINARY_OP                       5 (*)
+                        13120   LOAD_CONST                      67: 'e'
+                        13122   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        13124   PRECALL                         5
+                        13128   CALL                            5
+                        13138   POP_TOP                         
+                        13140   LOAD_GLOBAL                     49: NULL + Label
+                        13152   LOAD_FAST                       4: settings_tab2
+                        13154   LOAD_CONST                      147: 'سرویس کپچای نا شناخته'
+                        13156   KW_NAMES                        28: ('text',)
+                        13158   PRECALL                         2
+                        13162   CALL                            2
+                        13172   LOAD_METHOD                     17: grid
+                        13194   LOAD_CONST                      73: 8
+                        13196   LOAD_CONST                      22: 1
+                        13198   LOAD_DEREF                      0: self
+                        13200   LOAD_ATTR                       21: default_padx
+                        13210   LOAD_CONST                      66: 2
+                        13212   BINARY_OP                       5 (*)
+                        13216   LOAD_DEREF                      0: self
+                        13218   LOAD_ATTR                       22: default_pady
+                        13228   LOAD_CONST                      66: 2
+                        13230   BINARY_OP                       5 (*)
+                        13234   LOAD_CONST                      67: 'e'
+                        13236   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        13238   PRECALL                         5
+                        13242   CALL                            5
+                        13252   POP_TOP                         
+                        13254   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        13266   LOAD_FAST                       4: settings_tab2
+                        13268   LOAD_CONST                      14: 10
+                        13270   LOAD_CONST                      148: 'سیستمی'
+                        13272   KW_NAMES                        149: ('width', 'text')
+                        13274   PRECALL                         3
+                        13278   CALL                            3
+                        13288   STORE_DEREF                     70: check_uc_local
+                        13290   LOAD_GLOBAL                     62: os_platform
+                        13302   LOAD_CONST                      150: 'win64'
+                        13304   COMPARE_OP                      2 (==)
+                        13310   POP_JUMP_FORWARD_IF_FALSE       40 (to 13392)
+                        13312   LOAD_DEREF                      70: check_uc_local
+                        13314   LOAD_METHOD                     19: state
+                        13336   LOAD_DEREF                      0: self
+                        13338   LOAD_ATTR                       20: settings
+                        13348   LOAD_CONST                      151: 't2c3'
+                        13350   BINARY_SUBSCR                   
+                        13360   POP_JUMP_FORWARD_IF_FALSE       4 (to 13370)
+                        13362   LOAD_CONST                      30: '!alternate'
+                        13364   LOAD_CONST                      31: 'selected'
+                        13366   BUILD_LIST                      2
+                        13368   JUMP_FORWARD                    2 (to 13374)
+                        13370   LOAD_CONST                      30: '!alternate'
+                        13372   BUILD_LIST                      1
+                        13374   PRECALL                         1
+                        13378   CALL                            1
+                        13388   POP_TOP                         
+                        13390   JUMP_FORWARD                    22 (to 13436)
+                        13392   LOAD_DEREF                      70: check_uc_local
+                        13394   LOAD_METHOD                     19: state
+                        13416   LOAD_CONST                      130: 'disabled'
+                        13418   BUILD_LIST                      1
+                        13420   PRECALL                         1
+                        13424   CALL                            1
+                        13434   POP_TOP                         
+                        13436   LOAD_DEREF                      70: check_uc_local
+                        13438   LOAD_METHOD                     17: grid
+                        13460   LOAD_CONST                      73: 8
+                        13462   LOAD_CONST                      21: 0
+                        13464   LOAD_DEREF                      0: self
+                        13466   LOAD_ATTR                       21: default_padx
+                        13476   LOAD_CONST                      66: 2
+                        13478   BINARY_OP                       5 (*)
+                        13482   LOAD_DEREF                      0: self
+                        13484   LOAD_ATTR                       22: default_pady
+                        13494   LOAD_CONST                      66: 2
+                        13496   BINARY_OP                       5 (*)
+                        13500   LOAD_CONST                      67: 'e'
+                        13502   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        13504   PRECALL                         5
+                        13508   CALL                            5
+                        13518   POP_TOP                         
+                        13520   LOAD_GLOBAL                     62: os_platform
+                        13532   LOAD_CONST                      150: 'win64'
+                        13534   COMPARE_OP                      2 (==)
+                        13540   POP_JUMP_FORWARD_IF_FALSE       2 (to 13546)
+                        13542   LOAD_CONST                      152: 'سرویس سیستمی به دلیل اجرا در همین سیستم، قطعی ندارد همچنین می تواند سرعت بهتری داشته باشد. قبل از استفاده از این سرویس باید نرم افزار مورد نیاز نصب شود. بعد از فعال سازی این قسمت و تایید تنظیمات در صورتی که نرم افزار نصب نشده باشد پیامی مبنی بر نصب ظاهر می شود که می توانید با استفاده از این دکمه اقدام به نصب این سرویس کنید'
+                        13544   JUMP_FORWARD                    1 (to 13548)
+                        13546   LOAD_CONST                      153: 'در حال حاضر این سرویس برای سیستم های 32 بیتی در دسترس نمی باشد'
+                        13548   STORE_FAST                      13: tooltip_message
+                        13550   LOAD_GLOBAL                     59: NULL + ToolTip
+                        13562   LOAD_DEREF                      70: check_uc_local
+                        13564   LOAD_FAST                       13: tooltip_message
+                        13566   LOAD_CONST                      132: 0.05
+                        13568   PRECALL                         3
+                        13572   CALL                            3
+                        13582   POP_TOP                         
+                        13584   LOAD_GLOBAL                     47: NULL + Labelframe
+                        13596   LOAD_FAST                       5: settings_tab3
+                        13598   LOAD_CONST                      154: 'پیمایش امن'
+                        13600   LOAD_CONST                      8: 'ne'
+                        13602   KW_NAMES                        83: ('text', 'labelanchor')
+                        13604   PRECALL                         3
+                        13608   CALL                            3
+                        13618   STORE_FAST                      14: frame_safe_settings_parent
+                        13620   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        13632   LOAD_FAST                       14: frame_safe_settings_parent
+                        13634   PRECALL                         1
+                        13638   CALL                            1
+                        13648   STORE_DEREF                     59: check_safe_run
+                        13650   LOAD_DEREF                      59: check_safe_run
+                        13652   LOAD_METHOD                     19: state
+                        13674   LOAD_DEREF                      0: self
+                        13676   LOAD_ATTR                       20: settings
+                        13686   LOAD_CONST                      155: 't2p2c1'
+                        13688   BINARY_SUBSCR                   
+                        13698   POP_JUMP_FORWARD_IF_FALSE       4 (to 13708)
+                        13700   LOAD_CONST                      30: '!alternate'
+                        13702   LOAD_CONST                      31: 'selected'
+                        13704   BUILD_LIST                      2
+                        13706   JUMP_FORWARD                    2 (to 13712)
+                        13708   LOAD_CONST                      30: '!alternate'
+                        13710   BUILD_LIST                      1
+                        13712   PRECALL                         1
+                        13716   CALL                            1
+                        13726   POP_TOP                         
+                        13728   LOAD_CONST                      156: 'با فعال کردن این قابلیت، رفرش کردن صفحه تا زمانی که بانک مورد نظر یافت شود به تعویق می‌افتد و با این روش از بسته شدن دسترسی شما توسط بانک جلوگیری می‌شود، لازم به ذکر است اگر زمان پیدا شدن بانک کمتر از زمان رفرش باشد لازم به رفرش کردن صفحه نیست و متقاضی مستقیما ثبت می‌شود'
+                        13730   STORE_FAST                      13: tooltip_message
+                        13732   LOAD_GLOBAL                     59: NULL + ToolTip
+                        13744   LOAD_DEREF                      59: check_safe_run
+                        13746   LOAD_FAST                       13: tooltip_message
+                        13748   LOAD_CONST                      132: 0.05
+                        13750   PRECALL                         3
+                        13754   CALL                            3
+                        13764   POP_TOP                         
+                        13766   LOAD_GLOBAL                     47: NULL + Labelframe
+                        13778   LOAD_FAST                       14: frame_safe_settings_parent
+                        13780   LOAD_CONST                      157: 'تعویض کاربر'
+                        13782   LOAD_CONST                      8: 'ne'
+                        13784   KW_NAMES                        83: ('text', 'labelanchor')
+                        13786   PRECALL                         3
+                        13790   CALL                            3
+                        13800   STORE_FAST                      15: frame_safe_settings
+                        13802   LOAD_GLOBAL                     49: NULL + Label
+                        13814   LOAD_FAST                       15: frame_safe_settings
+                        13816   LOAD_CONST                      158: 'زمان مبنا'
+                        13818   KW_NAMES                        28: ('text',)
+                        13820   PRECALL                         2
+                        13824   CALL                            2
+                        13834   LOAD_METHOD                     17: grid
+                        13856   LOAD_CONST                      22: 1
+                        13858   LOAD_CONST                      69: 4
+                        13860   LOAD_DEREF                      0: self
+                        13862   LOAD_ATTR                       21: default_padx
+                        13872   LOAD_CONST                      66: 2
+                        13874   BINARY_OP                       5 (*)
+                        13878   LOAD_DEREF                      0: self
+                        13880   LOAD_ATTR                       22: default_pady
+                        13890   LOAD_CONST                      66: 2
+                        13892   BINARY_OP                       5 (*)
+                        13896   LOAD_CONST                      67: 'e'
+                        13898   KW_NAMES                        108: ('column', 'row', 'padx', 'pady', 'sticky')
+                        13900   PRECALL                         5
+                        13904   CALL                            5
+                        13914   POP_TOP                         
+                        13916   LOAD_GLOBAL                     51: NULL + Entry
+                        13928   LOAD_FAST                       15: frame_safe_settings
+                        13930   LOAD_CONST                      14: 10
+                        13932   LOAD_CONST                      85: 'key'
+                        13934   LOAD_DEREF                      89: window
+                        13936   LOAD_METHOD                     26: register
+                        13958   LOAD_DEREF                      0: self
+                        13960   LOAD_ATTR                       27: validate
+                        13970   PRECALL                         1
+                        13974   CALL                            1
+                        13984   LOAD_CONST                      86: '%P'
+                        13986   LOAD_CONST                      70: 5
+                        13988   LOAD_CONST                      87: 'int'
+                        13990   BUILD_TUPLE                     4
+                        13992   KW_NAMES                        88: ('width', 'validate', 'validatecommand')
+                        13994   PRECALL                         4
+                        13998   CALL                            4
+                        14008   STORE_DEREF                     84: entry_safe_change_time
+                        14010   LOAD_DEREF                      84: entry_safe_change_time
+                        14012   LOAD_METHOD                     28: insert
+                        14034   LOAD_CONST                      21: 0
+                        14036   LOAD_DEREF                      0: self
+                        14038   LOAD_ATTR                       20: settings
+                        14048   LOAD_CONST                      159: 't2p2e1'
+                        14050   BINARY_SUBSCR                   
+                        14060   PRECALL                         2
+                        14064   CALL                            2
+                        14074   POP_TOP                         
+                        14076   LOAD_DEREF                      84: entry_safe_change_time
+                        14078   LOAD_METHOD                     17: grid
+                        14100   LOAD_CONST                      69: 4
+                        14102   LOAD_CONST                      21: 0
+                        14104   LOAD_DEREF                      0: self
+                        14106   LOAD_ATTR                       21: default_padx
+                        14116   LOAD_CONST                      66: 2
+                        14118   BINARY_OP                       5 (*)
+                        14122   LOAD_DEREF                      0: self
+                        14124   LOAD_ATTR                       22: default_pady
+                        14134   LOAD_CONST                      66: 2
+                        14136   BINARY_OP                       5 (*)
+                        14140   LOAD_CONST                      67: 'e'
+                        14142   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        14144   PRECALL                         5
+                        14148   CALL                            5
+                        14158   POP_TOP                         
+                        14160   LOAD_CONST                      160: 'اگر در این مدت وارد صفحه اصلی ثبت نام نشد، کاربر را بر اساس تیک های موجود تغیر داده و سپس دوباره اتوماسیون اجرا می‌شود (تنظیم مقدار ۰ برای غیر فعال کردن) - لازم به ذکر است در صورت غیر فعال بودن تمامی تیک های پایین، قابلیت تعویض کاربر خاموش می‌شود. برای جلوگیری می‌توانید تیک "به ترتیب لیست" را همیشه روشن بگذارید'
+                        14162   STORE_FAST                      13: tooltip_message
+                        14164   LOAD_GLOBAL                     59: NULL + ToolTip
+                        14176   LOAD_DEREF                      84: entry_safe_change_time
+                        14178   LOAD_FAST                       13: tooltip_message
+                        14180   LOAD_CONST                      132: 0.05
+                        14182   PRECALL                         3
+                        14186   CALL                            3
+                        14196   POP_TOP                         
+                        14198   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        14210   LOAD_FAST                       15: frame_safe_settings
+                        14212   LOAD_CONST                      161: 'استان مشترک'
+                        14214   KW_NAMES                        28: ('text',)
+                        14216   PRECALL                         2
+                        14220   CALL                            2
+                        14230   STORE_DEREF                     58: check_safe_change_same_province
+                        14232   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        14244   LOAD_FAST                       15: frame_safe_settings
+                        14246   LOAD_CONST                      162: 'شهر مشترک'
+                        14248   KW_NAMES                        28: ('text',)
+                        14250   PRECALL                         2
+                        14254   CALL                            2
+                        14264   STORE_DEREF                     57: check_safe_change_same_city
+                        14266   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        14278   LOAD_FAST                       15: frame_safe_settings
+                        14280   LOAD_CONST                      163: 'بانک مشترک'
+                        14282   KW_NAMES                        28: ('text',)
+                        14284   PRECALL                         2
+                        14288   CALL                            2
+                        14298   STORE_DEREF                     56: check_safe_change_same_bank
+                        14300   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        14312   LOAD_FAST                       15: frame_safe_settings
+                        14314   LOAD_CONST                      164: 'به ترتیب لیست'
+                        14316   KW_NAMES                        28: ('text',)
+                        14318   PRECALL                         2
+                        14322   CALL                            2
+                        14332   STORE_DEREF                     55: check_safe_change_list_order
+                        14334   LOAD_DEREF                      58: check_safe_change_same_province
+                        14336   LOAD_METHOD                     19: state
+                        14358   LOAD_DEREF                      0: self
+                        14360   LOAD_ATTR                       20: settings
+                        14370   LOAD_CONST                      165: 't2p2c2'
+                        14372   BINARY_SUBSCR                   
+                        14382   POP_JUMP_FORWARD_IF_FALSE       4 (to 14392)
+                        14384   LOAD_CONST                      30: '!alternate'
+                        14386   LOAD_CONST                      31: 'selected'
+                        14388   BUILD_LIST                      2
+                        14390   JUMP_FORWARD                    2 (to 14396)
+                        14392   LOAD_CONST                      30: '!alternate'
+                        14394   BUILD_LIST                      1
+                        14396   PRECALL                         1
+                        14400   CALL                            1
+                        14410   POP_TOP                         
+                        14412   LOAD_DEREF                      57: check_safe_change_same_city
+                        14414   LOAD_METHOD                     19: state
+                        14436   LOAD_DEREF                      0: self
+                        14438   LOAD_ATTR                       20: settings
+                        14448   LOAD_CONST                      166: 't2p2c3'
+                        14450   BINARY_SUBSCR                   
+                        14460   POP_JUMP_FORWARD_IF_FALSE       4 (to 14470)
+                        14462   LOAD_CONST                      30: '!alternate'
+                        14464   LOAD_CONST                      31: 'selected'
+                        14466   BUILD_LIST                      2
+                        14468   JUMP_FORWARD                    2 (to 14474)
+                        14470   LOAD_CONST                      30: '!alternate'
+                        14472   BUILD_LIST                      1
+                        14474   PRECALL                         1
+                        14478   CALL                            1
+                        14488   POP_TOP                         
+                        14490   LOAD_DEREF                      56: check_safe_change_same_bank
+                        14492   LOAD_METHOD                     19: state
+                        14514   LOAD_DEREF                      0: self
+                        14516   LOAD_ATTR                       20: settings
+                        14526   LOAD_CONST                      167: 't2p2c4'
+                        14528   BINARY_SUBSCR                   
+                        14538   POP_JUMP_FORWARD_IF_FALSE       4 (to 14548)
+                        14540   LOAD_CONST                      30: '!alternate'
+                        14542   LOAD_CONST                      31: 'selected'
+                        14544   BUILD_LIST                      2
+                        14546   JUMP_FORWARD                    2 (to 14552)
+                        14548   LOAD_CONST                      30: '!alternate'
+                        14550   BUILD_LIST                      1
+                        14552   PRECALL                         1
+                        14556   CALL                            1
+                        14566   POP_TOP                         
+                        14568   LOAD_DEREF                      55: check_safe_change_list_order
+                        14570   LOAD_METHOD                     19: state
+                        14592   LOAD_DEREF                      0: self
+                        14594   LOAD_ATTR                       20: settings
+                        14604   LOAD_CONST                      168: 't2p2c5'
+                        14606   BINARY_SUBSCR                   
+                        14616   POP_JUMP_FORWARD_IF_FALSE       4 (to 14626)
+                        14618   LOAD_CONST                      30: '!alternate'
+                        14620   LOAD_CONST                      31: 'selected'
+                        14622   BUILD_LIST                      2
+                        14624   JUMP_FORWARD                    2 (to 14630)
+                        14626   LOAD_CONST                      30: '!alternate'
+                        14628   BUILD_LIST                      1
+                        14630   PRECALL                         1
+                        14634   CALL                            1
+                        14644   POP_TOP                         
+                        14646   LOAD_DEREF                      58: check_safe_change_same_province
+                        14648   LOAD_METHOD                     17: grid
+                        14670   LOAD_CONST                      70: 5
+                        14672   LOAD_CONST                      21: 0
+                        14674   LOAD_DEREF                      0: self
+                        14676   LOAD_ATTR                       21: default_padx
+                        14686   LOAD_CONST                      66: 2
+                        14688   BINARY_OP                       5 (*)
+                        14692   LOAD_DEREF                      0: self
+                        14694   LOAD_ATTR                       22: default_pady
+                        14704   LOAD_CONST                      66: 2
+                        14706   BINARY_OP                       5 (*)
+                        14710   LOAD_CONST                      67: 'e'
+                        14712   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        14714   PRECALL                         5
+                        14718   CALL                            5
+                        14728   POP_TOP                         
+                        14730   LOAD_DEREF                      57: check_safe_change_same_city
+                        14732   LOAD_METHOD                     17: grid
+                        14754   LOAD_CONST                      70: 5
+                        14756   LOAD_CONST                      22: 1
+                        14758   LOAD_DEREF                      0: self
+                        14760   LOAD_ATTR                       21: default_padx
+                        14770   LOAD_CONST                      66: 2
+                        14772   BINARY_OP                       5 (*)
+                        14776   LOAD_DEREF                      0: self
+                        14778   LOAD_ATTR                       22: default_pady
+                        14788   LOAD_CONST                      66: 2
+                        14790   BINARY_OP                       5 (*)
+                        14794   LOAD_CONST                      67: 'e'
+                        14796   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        14798   PRECALL                         5
+                        14802   CALL                            5
+                        14812   POP_TOP                         
+                        14814   LOAD_DEREF                      56: check_safe_change_same_bank
+                        14816   LOAD_METHOD                     17: grid
+                        14838   LOAD_CONST                      71: 6
+                        14840   LOAD_CONST                      22: 1
+                        14842   LOAD_DEREF                      0: self
+                        14844   LOAD_ATTR                       21: default_padx
+                        14854   LOAD_CONST                      66: 2
+                        14856   BINARY_OP                       5 (*)
+                        14860   LOAD_DEREF                      0: self
+                        14862   LOAD_ATTR                       22: default_pady
+                        14872   LOAD_CONST                      66: 2
+                        14874   BINARY_OP                       5 (*)
+                        14878   LOAD_CONST                      67: 'e'
+                        14880   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        14882   PRECALL                         5
+                        14886   CALL                            5
+                        14896   POP_TOP                         
+                        14898   LOAD_DEREF                      55: check_safe_change_list_order
+                        14900   LOAD_METHOD                     17: grid
+                        14922   LOAD_CONST                      71: 6
+                        14924   LOAD_CONST                      21: 0
+                        14926   LOAD_DEREF                      0: self
+                        14928   LOAD_ATTR                       21: default_padx
+                        14938   LOAD_CONST                      66: 2
+                        14940   BINARY_OP                       5 (*)
+                        14944   LOAD_DEREF                      0: self
+                        14946   LOAD_ATTR                       22: default_pady
+                        14956   LOAD_CONST                      66: 2
+                        14958   BINARY_OP                       5 (*)
+                        14962   LOAD_CONST                      67: 'e'
+                        14964   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        14966   PRECALL                         5
+                        14970   CALL                            5
+                        14980   POP_TOP                         
+                        14982   LOAD_CONST                      169: 'درصورت وجود استان مشترک بین کاربر فعلی و کاربر دیگر، کاربر مورد نظر اولویت  داده می‌شود'
+                        14984   STORE_FAST                      13: tooltip_message
+                        14986   LOAD_GLOBAL                     59: NULL + ToolTip
+                        14998   LOAD_DEREF                      58: check_safe_change_same_province
+                        15000   LOAD_FAST                       13: tooltip_message
+                        15002   LOAD_CONST                      132: 0.05
+                        15004   PRECALL                         3
+                        15008   CALL                            3
+                        15018   POP_TOP                         
+                        15020   LOAD_CONST                      170: 'در صورت وجود شهر مشترک بین کاربر فعلی و کاربر دیگر، کاربر مورد نظر اولویت داده می‌شود'
+                        15022   STORE_FAST                      13: tooltip_message
+                        15024   LOAD_GLOBAL                     59: NULL + ToolTip
+                        15036   LOAD_DEREF                      57: check_safe_change_same_city
+                        15038   LOAD_FAST                       13: tooltip_message
+                        15040   LOAD_CONST                      132: 0.05
+                        15042   PRECALL                         3
+                        15046   CALL                            3
+                        15056   POP_TOP                         
+                        15058   LOAD_CONST                      171: 'درصورت وجود بانکی مشترک بین کاربر فعلی و کاربر دیگر، کاربر مورد نظر اولویت داده می‌شود'
+                        15060   STORE_FAST                      13: tooltip_message
+                        15062   LOAD_GLOBAL                     59: NULL + ToolTip
+                        15074   LOAD_DEREF                      56: check_safe_change_same_bank
+                        15076   LOAD_FAST                       13: tooltip_message
+                        15078   LOAD_CONST                      132: 0.05
+                        15080   PRECALL                         3
+                        15084   CALL                            3
+                        15094   POP_TOP                         
+                        15096   LOAD_CONST                      172: 'اگر موارد دیگر برای اولویت دادن وجود نداشت، به ترتیب، لیست متقاضیان انتخاب و اتوماسیون اجرا می‌شود. پیشنهاد می‌شود، این مورد همیشه روشن باشد'
+                        15098   STORE_FAST                      13: tooltip_message
+                        15100   LOAD_GLOBAL                     59: NULL + ToolTip
+                        15112   LOAD_DEREF                      55: check_safe_change_list_order
+                        15114   LOAD_FAST                       13: tooltip_message
+                        15116   LOAD_CONST                      132: 0.05
+                        15118   PRECALL                         3
+                        15122   CALL                            3
+                        15132   POP_TOP                         
+                        15134   LOAD_GLOBAL                     28: Grid
+                        15146   LOAD_METHOD                     15: columnconfigure
+                        15168   LOAD_FAST                       15: frame_safe_settings
+                        15170   LOAD_CONST                      21: 0
+                        15172   LOAD_CONST                      22: 1
+                        15174   KW_NAMES                        23: ('weight',)
+                        15176   PRECALL                         3
+                        15180   CALL                            3
+                        15190   POP_TOP                         
+                        15192   LOAD_GLOBAL                     28: Grid
+                        15204   LOAD_METHOD                     15: columnconfigure
+                        15226   LOAD_FAST                       14: frame_safe_settings_parent
+                        15228   LOAD_CONST                      21: 0
+                        15230   LOAD_CONST                      22: 1
+                        15232   KW_NAMES                        23: ('weight',)
+                        15234   PRECALL                         3
+                        15238   CALL                            3
+                        15248   POP_TOP                         
+                        15250   LOAD_FAST                       14: frame_safe_settings_parent
+                        15252   LOAD_METHOD                     17: grid
+                        15274   LOAD_CONST                      10: 20
+                        15276   LOAD_CONST                      21: 0
+                        15278   LOAD_CONST                      66: 2
+                        15280   LOAD_DEREF                      0: self
+                        15282   LOAD_ATTR                       21: default_padx
+                        15292   LOAD_CONST                      66: 2
+                        15294   BINARY_OP                       5 (*)
+                        15298   LOAD_DEREF                      0: self
+                        15300   LOAD_ATTR                       22: default_pady
+                        15310   LOAD_CONST                      66: 2
+                        15312   BINARY_OP                       5 (*)
+                        15316   LOAD_CONST                      13: 'nsew'
+                        15318   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        15320   PRECALL                         6
+                        15324   CALL                            6
+                        15334   POP_TOP                         
+                        15336   LOAD_FAST                       15: frame_safe_settings
+                        15338   LOAD_METHOD                     17: grid
+                        15360   LOAD_CONST                      10: 20
+                        15362   LOAD_CONST                      21: 0
+                        15364   LOAD_CONST                      66: 2
+                        15366   LOAD_DEREF                      0: self
+                        15368   LOAD_ATTR                       21: default_padx
+                        15378   LOAD_CONST                      66: 2
+                        15380   BINARY_OP                       5 (*)
+                        15384   LOAD_DEREF                      0: self
+                        15386   LOAD_ATTR                       22: default_pady
+                        15396   LOAD_CONST                      66: 2
+                        15398   BINARY_OP                       5 (*)
+                        15402   LOAD_CONST                      13: 'nsew'
+                        15404   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        15406   PRECALL                         6
+                        15410   CALL                            6
+                        15420   POP_TOP                         
+                        15422   LOAD_GLOBAL                     49: NULL + Label
+                        15434   LOAD_FAST                       7: settings_tab5
+                        15436   LOAD_CONST                      173: 'شماره موبایل'
+                        15438   KW_NAMES                        28: ('text',)
+                        15440   PRECALL                         2
+                        15444   CALL                            2
+                        15454   LOAD_METHOD                     17: grid
+                        15476   LOAD_CONST                      21: 0
+                        15478   LOAD_CONST                      22: 1
+                        15480   LOAD_DEREF                      0: self
+                        15482   LOAD_ATTR                       21: default_padx
+                        15492   LOAD_CONST                      66: 2
+                        15494   BINARY_OP                       5 (*)
+                        15498   LOAD_DEREF                      0: self
+                        15500   LOAD_ATTR                       22: default_pady
+                        15510   LOAD_CONST                      66: 2
+                        15512   BINARY_OP                       5 (*)
+                        15516   LOAD_CONST                      67: 'e'
+                        15518   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        15520   PRECALL                         5
+                        15524   CALL                            5
+                        15534   POP_TOP                         
+                        15536   LOAD_GLOBAL                     51: NULL + Entry
+                        15548   LOAD_FAST                       7: settings_tab5
+                        15550   LOAD_CONST                      85: 'key'
+                        15552   LOAD_DEREF                      89: window
+                        15554   LOAD_METHOD                     26: register
+                        15576   LOAD_DEREF                      0: self
+                        15578   LOAD_ATTR                       27: validate
+                        15588   PRECALL                         1
+                        15592   CALL                            1
+                        15602   LOAD_CONST                      86: '%P'
+                        15604   LOAD_CONST                      75: 11
+                        15606   LOAD_CONST                      87: 'int'
+                        15608   LOAD_CONST                      1: True
+                        15610   BUILD_TUPLE                     5
+                        15612   KW_NAMES                        174: ('validate', 'validatecommand')
+                        15614   PRECALL                         3
+                        15618   CALL                            3
+                        15628   STORE_FAST                      16: entry_meli_sms
+                        15630   LOAD_FAST                       16: entry_meli_sms
+                        15632   LOAD_METHOD                     32: bind
+                        15654   LOAD_CONST                      175: '<Button-3>'
+                        15656   LOAD_GLOBAL                     66: RightClicker
+                        15668   PRECALL                         2
+                        15672   CALL                            2
+                        15682   POP_TOP                         
+                        15684   LOAD_FAST                       16: entry_meli_sms
+                        15686   LOAD_METHOD                     17: grid
+                        15708   LOAD_CONST                      21: 0
+                        15710   LOAD_CONST                      21: 0
+                        15712   LOAD_DEREF                      0: self
+                        15714   LOAD_ATTR                       21: default_padx
+                        15724   LOAD_CONST                      66: 2
+                        15726   BINARY_OP                       5 (*)
+                        15730   LOAD_DEREF                      0: self
+                        15732   LOAD_ATTR                       22: default_pady
+                        15742   LOAD_CONST                      66: 2
+                        15744   BINARY_OP                       5 (*)
+                        15748   LOAD_CONST                      67: 'e'
+                        15750   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        15752   PRECALL                         5
+                        15756   CALL                            5
+                        15766   POP_TOP                         
+                        15768   LOAD_GLOBAL                     69: NULL + Text
+                        15780   LOAD_FAST                       7: settings_tab5
+                        15782   LOAD_CONST                      2: '#F0F0F0'
+                        15784   LOAD_CONST                      176: 'normal'
+                        15786   LOAD_CONST                      177: 30
+                        15788   KW_NAMES                        178: ('background', 'state', 'width')
+                        15790   PRECALL                         4
+                        15794   CALL                            4
+                        15804   LOAD_DEREF                      0: self
+                        15806   STORE_ATTR                      35: text_sms
+                        15816   LOAD_DEREF                      0: self
+                        15818   LOAD_ATTR                       35: text_sms
+                        15828   LOAD_METHOD                     32: bind
+                        15850   LOAD_CONST                      175: '<Button-3>'
+                        15852   LOAD_GLOBAL                     66: RightClicker
+                        15864   PRECALL                         2
+                        15868   CALL                            2
+                        15878   POP_TOP                         
+                        15880   LOAD_DEREF                      0: self
+                        15882   LOAD_ATTR                       35: text_sms
+                        15892   LOAD_METHOD                     36: tag_config
+                        15914   LOAD_CONST                      179: 'tag-right'
+                        15916   LOAD_CONST                      180: 'right'
+                        15918   KW_NAMES                        181: ('justify',)
+                        15920   PRECALL                         2
+                        15924   CALL                            2
+                        15934   POP_TOP                         
+                        15936   LOAD_DEREF                      0: self
+                        15938   LOAD_ATTR                       35: text_sms
+                        15948   LOAD_METHOD                     17: grid
+                        15970   LOAD_CONST                      66: 2
+                        15972   LOAD_CONST                      21: 0
+                        15974   LOAD_CONST                      66: 2
+                        15976   LOAD_DEREF                      0: self
+                        15978   LOAD_ATTR                       21: default_padx
+                        15988   LOAD_CONST                      66: 2
+                        15990   BINARY_OP                       5 (*)
+                        15994   LOAD_DEREF                      0: self
+                        15996   LOAD_ATTR                       22: default_pady
+                        16006   LOAD_CONST                      66: 2
+                        16008   BINARY_OP                       5 (*)
+                        16012   LOAD_CONST                      13: 'nsew'
+                        16014   KW_NAMES                        105: ('row', 'column', 'columnspan', 'padx', 'pady', 'sticky')
+                        16016   PRECALL                         6
+                        16020   CALL                            6
+                        16030   POP_TOP                         
+                        16032   LOAD_DEREF                      0: self
+                        16034   LOAD_ATTR                       35: text_sms
+                        16044   LOAD_METHOD                     28: insert
+                        16066   LOAD_GLOBAL                     74: END
+                        16078   LOAD_CONST                      182: 'لطفا شماره موبایل را به صورت کامل وارد کنید تا تنظیمات نمایان شود'
+                        16080   LOAD_CONST                      179: 'tag-right'
+                        16082   PRECALL                         3
+                        16086   CALL                            3
+                        16096   POP_TOP                         
+                        16098   LOAD_DEREF                      0: self
+                        16100   LOAD_ATTR                       35: text_sms
+                        16110   LOAD_METHOD                     4: config
+                        16132   LOAD_CONST                      130: 'disabled'
+                        16134   KW_NAMES                        183: ('state',)
+                        16136   PRECALL                         1
+                        16140   CALL                            1
+                        16150   POP_TOP                         
+                        16152   LOAD_GLOBAL                     28: Grid
+                        16164   LOAD_METHOD                     15: columnconfigure
+                        16186   LOAD_FAST                       7: settings_tab5
+                        16188   LOAD_CONST                      21: 0
+                        16190   LOAD_CONST                      22: 1
+                        16192   KW_NAMES                        23: ('weight',)
+                        16194   PRECALL                         3
+                        16198   CALL                            3
+                        16208   POP_TOP                         
+                        16210   LOAD_GLOBAL                     47: NULL + Labelframe
+                        16222   LOAD_FAST                       8: settings_tab6
+                        16224   LOAD_CONST                      118: ''
+                        16226   LOAD_CONST                      8: 'ne'
+                        16228   KW_NAMES                        83: ('text', 'labelanchor')
+                        16230   PRECALL                         3
+                        16234   CALL                            3
+                        16244   STORE_FAST                      17: frame_proxy
+                        16246   LOAD_FAST                       17: frame_proxy
+                        16248   LOAD_METHOD                     17: grid
+                        16270   LOAD_CONST                      21: 0
+                        16272   LOAD_CONST                      21: 0
+                        16274   LOAD_CONST                      66: 2
+                        16276   KW_NAMES                        184: ('row', 'column', 'columnspan')
+                        16278   PRECALL                         3
+                        16282   CALL                            3
+                        16292   POP_TOP                         
+                        16294   LOAD_GLOBAL                     49: NULL + Label
+                        16306   LOAD_FAST                       17: frame_proxy
+                        16308   LOAD_CONST                      185: 'زمان تعویض (۰=خاموش)'
+                        16310   KW_NAMES                        28: ('text',)
+                        16312   PRECALL                         2
+                        16316   CALL                            2
+                        16326   LOAD_METHOD                     17: grid
+                        16348   LOAD_CONST                      21: 0
+                        16350   LOAD_CONST                      66: 2
+                        16352   LOAD_DEREF                      0: self
+                        16354   LOAD_ATTR                       21: default_padx
+                        16364   LOAD_CONST                      66: 2
+                        16366   BINARY_OP                       5 (*)
+                        16370   LOAD_DEREF                      0: self
+                        16372   LOAD_ATTR                       22: default_pady
+                        16382   LOAD_CONST                      66: 2
+                        16384   BINARY_OP                       5 (*)
+                        16388   LOAD_CONST                      67: 'e'
+                        16390   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        16392   PRECALL                         5
+                        16396   CALL                            5
+                        16406   POP_TOP                         
+                        16408   LOAD_GLOBAL                     51: NULL + Entry
+                        16420   LOAD_FAST                       17: frame_proxy
+                        16422   LOAD_CONST                      85: 'key'
+                        16424   LOAD_CONST                      73: 8
+                        16426   LOAD_DEREF                      89: window
+                        16428   LOAD_METHOD                     26: register
+                        16450   LOAD_DEREF                      0: self
+                        16452   LOAD_ATTR                       27: validate
+                        16462   PRECALL                         1
+                        16466   CALL                            1
+                        16476   LOAD_CONST                      86: '%P'
+                        16478   LOAD_CONST                      71: 6
+                        16480   LOAD_CONST                      87: 'int'
+                        16482   LOAD_CONST                      1: True
+                        16484   BUILD_TUPLE                     5
+                        16486   KW_NAMES                        186: ('validate', 'width', 'validatecommand')
+                        16488   PRECALL                         4
+                        16492   CALL                            4
+                        16502   STORE_DEREF                     83: entry_proxy_chage_time
+                        16504   LOAD_DEREF                      83: entry_proxy_chage_time
+                        16506   LOAD_METHOD                     32: bind
+                        16528   LOAD_CONST                      175: '<Button-3>'
+                        16530   LOAD_GLOBAL                     66: RightClicker
+                        16542   PRECALL                         2
+                        16546   CALL                            2
+                        16556   POP_TOP                         
+                        16558   LOAD_DEREF                      83: entry_proxy_chage_time
+                        16560   LOAD_METHOD                     17: grid
+                        16582   LOAD_CONST                      21: 0
+                        16584   LOAD_CONST                      22: 1
+                        16586   LOAD_DEREF                      0: self
+                        16588   LOAD_ATTR                       21: default_padx
+                        16598   LOAD_CONST                      66: 2
+                        16600   BINARY_OP                       5 (*)
+                        16604   LOAD_DEREF                      0: self
+                        16606   LOAD_ATTR                       22: default_pady
+                        16616   LOAD_CONST                      66: 2
+                        16618   BINARY_OP                       5 (*)
+                        16622   LOAD_CONST                      187: 'w'
+                        16624   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        16626   PRECALL                         5
+                        16630   CALL                            5
+                        16640   POP_TOP                         
+                        16642   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        16654   LOAD_FAST                       17: frame_proxy
+                        16656   LOAD_CONST                      188: 'حالت افزونه'
+                        16658   KW_NAMES                        28: ('text',)
+                        16660   PRECALL                         2
+                        16664   CALL                            2
+                        16674   STORE_DEREF                     51: check_proxy_extention_mode
+                        16676   LOAD_DEREF                      51: check_proxy_extention_mode
+                        16678   LOAD_METHOD                     19: state
+                        16700   LOAD_DEREF                      0: self
+                        16702   LOAD_ATTR                       20: settings
+                        16712   LOAD_CONST                      189: 't6c1'
+                        16714   BINARY_SUBSCR                   
+                        16724   POP_JUMP_FORWARD_IF_FALSE       4 (to 16734)
+                        16726   LOAD_CONST                      30: '!alternate'
+                        16728   LOAD_CONST                      31: 'selected'
+                        16730   BUILD_LIST                      2
+                        16732   JUMP_FORWARD                    2 (to 16738)
+                        16734   LOAD_CONST                      30: '!alternate'
+                        16736   BUILD_LIST                      1
+                        16738   PRECALL                         1
+                        16742   CALL                            1
+                        16752   POP_TOP                         
+                        16754   LOAD_DEREF                      51: check_proxy_extention_mode
+                        16756   LOAD_METHOD                     17: grid
+                        16778   LOAD_CONST                      21: 0
+                        16780   LOAD_CONST                      21: 0
+                        16782   LOAD_DEREF                      0: self
+                        16784   LOAD_ATTR                       21: default_padx
+                        16794   LOAD_CONST                      66: 2
+                        16796   BINARY_OP                       5 (*)
+                        16800   LOAD_DEREF                      0: self
+                        16802   LOAD_ATTR                       22: default_pady
+                        16812   LOAD_CONST                      66: 2
+                        16814   BINARY_OP                       5 (*)
+                        16818   LOAD_CONST                      67: 'e'
+                        16820   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        16822   PRECALL                         5
+                        16826   CALL                            5
+                        16836   POP_TOP                         
+                        16838   LOAD_GLOBAL                     49: NULL + Label
+                        16850   LOAD_FAST                       17: frame_proxy
+                        16852   LOAD_CONST                      190: 'زمان فعال بودن (افزونه)'
+                        16854   KW_NAMES                        28: ('text',)
+                        16856   PRECALL                         2
+                        16860   CALL                            2
+                        16870   LOAD_METHOD                     17: grid
+                        16892   LOAD_CONST                      22: 1
+                        16894   LOAD_CONST                      66: 2
+                        16896   LOAD_DEREF                      0: self
+                        16898   LOAD_ATTR                       21: default_padx
+                        16908   LOAD_CONST                      66: 2
+                        16910   BINARY_OP                       5 (*)
+                        16914   LOAD_DEREF                      0: self
+                        16916   LOAD_ATTR                       22: default_pady
+                        16926   LOAD_CONST                      66: 2
+                        16928   BINARY_OP                       5 (*)
+                        16932   LOAD_CONST                      67: 'e'
+                        16934   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        16936   PRECALL                         5
+                        16940   CALL                            5
+                        16950   POP_TOP                         
+                        16952   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        16964   LOAD_FAST                       17: frame_proxy
+                        16966   LOAD_CONST                      191: 'صفحات ورود'
+                        16968   KW_NAMES                        28: ('text',)
+                        16970   PRECALL                         2
+                        16974   CALL                            2
+                        16984   STORE_DEREF                     49: check_proxy_change_page_one
+                        16986   LOAD_DEREF                      49: check_proxy_change_page_one
+                        16988   LOAD_METHOD                     19: state
+                        17010   LOAD_DEREF                      0: self
+                        17012   LOAD_ATTR                       20: settings
+                        17022   LOAD_CONST                      192: 't6c2'
+                        17024   BINARY_SUBSCR                   
+                        17034   POP_JUMP_FORWARD_IF_FALSE       4 (to 17044)
+                        17036   LOAD_CONST                      30: '!alternate'
+                        17038   LOAD_CONST                      31: 'selected'
+                        17040   BUILD_LIST                      2
+                        17042   JUMP_FORWARD                    2 (to 17048)
+                        17044   LOAD_CONST                      30: '!alternate'
+                        17046   BUILD_LIST                      1
+                        17048   PRECALL                         1
+                        17052   CALL                            1
+                        17062   POP_TOP                         
+                        17064   LOAD_DEREF                      49: check_proxy_change_page_one
+                        17066   LOAD_METHOD                     17: grid
+                        17088   LOAD_CONST                      22: 1
+                        17090   LOAD_CONST                      22: 1
+                        17092   LOAD_DEREF                      0: self
+                        17094   LOAD_ATTR                       21: default_padx
+                        17104   LOAD_CONST                      66: 2
+                        17106   BINARY_OP                       5 (*)
+                        17110   LOAD_DEREF                      0: self
+                        17112   LOAD_ATTR                       22: default_pady
+                        17122   LOAD_CONST                      66: 2
+                        17124   BINARY_OP                       5 (*)
+                        17128   LOAD_CONST                      67: 'e'
+                        17130   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        17132   PRECALL                         5
+                        17136   CALL                            5
+                        17146   POP_TOP                         
+                        17148   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        17160   LOAD_FAST                       17: frame_proxy
+                        17162   LOAD_CONST                      193: 'صفحه انتخاب بانک'
+                        17164   KW_NAMES                        28: ('text',)
+                        17166   PRECALL                         2
+                        17170   CALL                            2
+                        17180   STORE_DEREF                     50: check_proxy_change_page_two
+                        17182   LOAD_DEREF                      50: check_proxy_change_page_two
+                        17184   LOAD_METHOD                     19: state
+                        17206   LOAD_DEREF                      0: self
+                        17208   LOAD_ATTR                       20: settings
+                        17218   LOAD_CONST                      194: 't6c3'
+                        17220   BINARY_SUBSCR                   
+                        17230   POP_JUMP_FORWARD_IF_FALSE       4 (to 17240)
+                        17232   LOAD_CONST                      30: '!alternate'
+                        17234   LOAD_CONST                      31: 'selected'
+                        17236   BUILD_LIST                      2
+                        17238   JUMP_FORWARD                    2 (to 17244)
+                        17240   LOAD_CONST                      30: '!alternate'
+                        17242   BUILD_LIST                      1
+                        17244   PRECALL                         1
+                        17248   CALL                            1
+                        17258   POP_TOP                         
+                        17260   LOAD_DEREF                      50: check_proxy_change_page_two
+                        17262   LOAD_METHOD                     17: grid
+                        17284   LOAD_CONST                      22: 1
+                        17286   LOAD_CONST                      21: 0
+                        17288   LOAD_DEREF                      0: self
+                        17290   LOAD_ATTR                       21: default_padx
+                        17300   LOAD_CONST                      66: 2
+                        17302   BINARY_OP                       5 (*)
+                        17306   LOAD_DEREF                      0: self
+                        17308   LOAD_ATTR                       22: default_pady
+                        17318   LOAD_CONST                      66: 2
+                        17320   BINARY_OP                       5 (*)
+                        17324   LOAD_CONST                      67: 'e'
+                        17326   KW_NAMES                        68: ('row', 'column', 'padx', 'pady', 'sticky')
+                        17328   PRECALL                         5
+                        17332   CALL                            5
+                        17342   POP_TOP                         
+                        17344   LOAD_GLOBAL                     37: NULL + Checkbutton
+                        17356   LOAD_FAST                       17: frame_proxy
+                        17358   LOAD_CONST                      195: 'بعد از ثبت هر متقاضی، پراکسی تعویض شود'
+                        17360   KW_NAMES                        28: ('text',)
+                        17362   PRECALL                         2
+                        17366   CALL                            2
+                        17376   STORE_DEREF                     48: check_proxy_change_after_commit_member
+                        17378   LOAD_DEREF                      48: check_proxy_change_after_commit_member
+                        17380   LOAD_METHOD                     19: state
+                        17402   LOAD_DEREF                      0: self
+                        17404   LOAD_ATTR                       20: settings
+                        17414   LOAD_CONST                      196: 't6c4'
+                        17416   BINARY_SUBSCR                   
+                        17426   POP_JUMP_FORWARD_IF_FALSE       4 (to 17436)
+                        17428   LOAD_CONST                      30: '!alternate'
+                        17430   LOAD_CONST                      31: 'selected'
+                        17432   BUILD_LIST                      2
+                        17434   JUMP_FORWARD                    2 (to 17440)
+                        17436   LOAD_CONST                      30: '!alternate'
+                        17438   BUILD_LIST                      1

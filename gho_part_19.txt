@@ -1,0 +1,2026 @@
+                                528     CALL                            1
+                                538     LOAD_CONST                      16: 3
+                                540     COMPARE_OP                      0 (<)
+                                546     POP_JUMP_FORWARD_IF_FALSE       1 (to 550)
+                                548     JUMP_BACKWARD                   22 (to 506)
+                                550     LOAD_FAST                       2: i
+                                552     LOAD_CONST                      11: 0
+                                554     BINARY_SUBSCR                   
+                                564     LOAD_CONST                      17: ' '
+                                566     COMPARE_OP                      2 (==)
+                                572     POP_JUMP_FORWARD_IF_FALSE       22 (to 618)
+                                574     LOAD_FAST                       2: i
+                                576     LOAD_CONST                      18: 1
+                                578     LOAD_CONST                      0: None
+                                580     BUILD_SLICE                     2
+                                582     BINARY_SUBSCR                   
+                                592     STORE_FAST                      2: i
+                                594     LOAD_FAST                       2: i
+                                596     LOAD_CONST                      11: 0
+                                598     BINARY_SUBSCR                   
+                                608     LOAD_CONST                      17: ' '
+                                610     COMPARE_OP                      2 (==)
+                                616     POP_JUMP_BACKWARD_IF_TRUE       22 (to 574)
+                                618     LOAD_FAST                       2: i
+                                620     LOAD_CONST                      19: -1
+                                622     BINARY_SUBSCR                   
+                                632     LOAD_CONST                      17: ' '
+                                634     COMPARE_OP                      2 (==)
+                                640     POP_JUMP_FORWARD_IF_FALSE       22 (to 686)
+                                642     LOAD_FAST                       2: i
+                                644     LOAD_CONST                      0: None
+                                646     LOAD_CONST                      19: -1
+                                648     BUILD_SLICE                     2
+                                650     BINARY_SUBSCR                   
+                                660     STORE_FAST                      2: i
+                                662     LOAD_FAST                       2: i
+                                664     LOAD_CONST                      19: -1
+                                666     BINARY_SUBSCR                   
+                                676     LOAD_CONST                      17: ' '
+                                678     COMPARE_OP                      2 (==)
+                                684     POP_JUMP_BACKWARD_IF_TRUE       22 (to 642)
+                                686     LOAD_FAST                       2: i
+                                688     LOAD_FAST                       4: jbdb_banks_string
+                                690     CONTAINS_OP                     0 (in)
+                                692     POP_JUMP_FORWARD_IF_FALSE       91 (to 876)
+                                694     LOAD_DEREF                      7: self
+                                696     LOAD_ATTR                       9: val_meli
+                                706     LOAD_FAST                       6: member
+                                708     LOAD_DEREF                      7: self
+                                710     LOAD_ATTR                       5: database_map
+                                720     LOAD_CONST                      12: 'meli'
+                                722     BINARY_SUBSCR                   
+                                732     BINARY_SUBSCR                   
+                                742     COMPARE_OP                      2 (==)
+                                748     POP_JUMP_FORWARD_IF_FALSE       1 (to 752)
+                                750     JUMP_BACKWARD                   123 (to 506)
+                                752     LOAD_DEREF                      7: self
+                                754     LOAD_ATTR                       2: play
+                                764     POP_JUMP_FORWARD_IF_FALSE       2 (to 770)
+                                766     POP_TOP                         
+                                768     JUMP_FORWARD                    54 (to 878)
+                                770     LOAD_DEREF                      7: self
+                                772     LOAD_METHOD                     10: clearAll
+                                794     PRECALL                         0
+                                798     CALL                            0
+                                808     POP_TOP                         
+                                810     LOAD_DEREF                      7: self
+                                812     LOAD_METHOD                     11: fillForm
+                                834     LOAD_CONST                      11: 0
+                                836     LOAD_FAST                       6: member
+                                838     PRECALL                         2
+                                842     CALL                            2
+                                852     POP_TOP                         
+                                854     LOAD_CONST                      20: True
+                                856     STORE_FAST                      1: a_user_selected
+                                858     LOAD_CONST                      20: True
+                                860     LOAD_DEREF                      7: self
+                                862     STORE_ATTR                      12: start_pending
+                                872     POP_TOP                         
+                                874     JUMP_FORWARD                    1 (to 878)
+                                876     JUMP_BACKWARD                   186 (to 506)
+                                878     JUMP_BACKWARD                   319 (to 244)
+                                882     JUMP_BACKWARD                   398 (to 90)
+                                886     LOAD_CONST                      0: None
+                                888     RETURN_VALUE                    
+                        (
+                            'target'
+                        )
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       RESUME                          0
+                        4       LOAD_DEREF                      0: self
+                        6       LOAD_ATTR                       0: last_check_banks_for_auto_start_along_all
+                        16      LOAD_CONST                      1: 0.5
+                        18      BINARY_OP                       0 (+)
+                        22      LOAD_GLOBAL                     3: NULL + time
+                        34      LOAD_ATTR                       1: time
+                        44      PRECALL                         0
+                        48      CALL                            0
+                        58      COMPARE_OP                      0 (<)
+                        64      POP_JUMP_FORWARD_IF_FALSE       72 (to 210)
+                        66      LOAD_GLOBAL                     3: NULL + time
+                        78      LOAD_ATTR                       1: time
+                        88      PRECALL                         0
+                        92      CALL                            0
+                        102     LOAD_DEREF                      0: self
+                        104     STORE_ATTR                      0: last_check_banks_for_auto_start_along_all
+                        114     LOAD_CLOSURE                    0: self
+                        116     BUILD_TUPLE                     1
+                        118     LOAD_CONST                      2: <CODE> checkBanksOpensInProvince
+                        120     MAKE_FUNCTION                   8
+                        122     STORE_FAST                      1: checkBanksOpensInProvince
+                        124     LOAD_GLOBAL                     5: NULL + threading
+                        136     LOAD_ATTR                       3: Thread
+                        146     LOAD_FAST                       1: checkBanksOpensInProvince
+                        148     KW_NAMES                        3: ('target',)
+                        150     PRECALL                         1
+                        154     CALL                            1
+                        164     STORE_FAST                      2: t
+                        166     LOAD_FAST                       2: t
+                        168     LOAD_METHOD                     4: start
+                        190     PRECALL                         0
+                        194     CALL                            0
+                        204     POP_TOP                         
+                        206     LOAD_CONST                      0: None
+                        208     RETURN_VALUE                    
+                        210     LOAD_CONST                      0: None
+                        212     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: validatePlay
+                    Qualified Name: MyApp.validatePlay
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 3
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'len'
+                        'val_meli'
+                        'val_malek'
+                        'val_ostan'
+                        'val_shahr'
+                        'val_birth_day'
+                        'val_birth_month'
+                        'val_birth_year'
+                        'val_marry_day'
+                        'val_marry_month'
+                        'val_marry_year'
+                        'val_sabet'
+                        'val_hamrah'
+                        'val_posti'
+                        'val_neshani'
+                        'val_bank'
+                    [Locals+Names]
+                        'self'
+                    [Constants]
+                        None
+                        10
+                        1
+                        0
+                        11
+                        3
+                        True
+                        False
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + len
+                        14      LOAD_FAST                       0: self
+                        16      LOAD_ATTR                       1: val_meli
+                        26      PRECALL                         1
+                        30      CALL                            1
+                        40      LOAD_CONST                      1: 10
+                        42      COMPARE_OP                      2 (==)
+                        48      POP_JUMP_FORWARD_IF_FALSE       341 (to 734)
+                        52      LOAD_GLOBAL                     1: NULL + len
+                        64      LOAD_FAST                       0: self
+                        66      LOAD_ATTR                       2: val_malek
+                        76      PRECALL                         1
+                        80      CALL                            1
+                        90      LOAD_CONST                      1: 10
+                        92      COMPARE_OP                      2 (==)
+                        98      POP_JUMP_FORWARD_IF_FALSE       316 (to 734)
+                        102     LOAD_GLOBAL                     1: NULL + len
+                        114     LOAD_FAST                       0: self
+                        116     LOAD_ATTR                       3: val_ostan
+                        126     PRECALL                         1
+                        130     CALL                            1
+                        140     LOAD_CONST                      2: 1
+                        142     COMPARE_OP                      4 (>)
+                        148     POP_JUMP_FORWARD_IF_FALSE       291 (to 734)
+                        152     LOAD_GLOBAL                     1: NULL + len
+                        164     LOAD_FAST                       0: self
+                        166     LOAD_ATTR                       4: val_shahr
+                        176     PRECALL                         1
+                        180     CALL                            1
+                        190     LOAD_CONST                      2: 1
+                        192     COMPARE_OP                      4 (>)
+                        198     POP_JUMP_FORWARD_IF_FALSE       266 (to 734)
+                        202     LOAD_GLOBAL                     1: NULL + len
+                        214     LOAD_FAST                       0: self
+                        216     LOAD_ATTR                       5: val_birth_day
+                        226     PRECALL                         1
+                        230     CALL                            1
+                        240     LOAD_CONST                      3: 0
+                        242     COMPARE_OP                      4 (>)
+                        248     POP_JUMP_FORWARD_IF_FALSE       242 (to 734)
+                        250     LOAD_GLOBAL                     1: NULL + len
+                        262     LOAD_FAST                       0: self
+                        264     LOAD_ATTR                       6: val_birth_month
+                        274     PRECALL                         1
+                        278     CALL                            1
+                        288     LOAD_CONST                      2: 1
+                        290     COMPARE_OP                      4 (>)
+                        296     POP_JUMP_FORWARD_IF_FALSE       218 (to 734)
+                        298     LOAD_GLOBAL                     1: NULL + len
+                        310     LOAD_FAST                       0: self
+                        312     LOAD_ATTR                       7: val_birth_year
+                        322     PRECALL                         1
+                        326     CALL                            1
+                        336     LOAD_CONST                      2: 1
+                        338     COMPARE_OP                      4 (>)
+                        344     POP_JUMP_FORWARD_IF_FALSE       194 (to 734)
+                        346     LOAD_GLOBAL                     1: NULL + len
+                        358     LOAD_FAST                       0: self
+                        360     LOAD_ATTR                       8: val_marry_day
+                        370     PRECALL                         1
+                        374     CALL                            1
+                        384     LOAD_CONST                      3: 0
+                        386     COMPARE_OP                      4 (>)
+                        392     POP_JUMP_FORWARD_IF_FALSE       170 (to 734)
+                        394     LOAD_GLOBAL                     1: NULL + len
+                        406     LOAD_FAST                       0: self
+                        408     LOAD_ATTR                       9: val_marry_month
+                        418     PRECALL                         1
+                        422     CALL                            1
+                        432     LOAD_CONST                      2: 1
+                        434     COMPARE_OP                      4 (>)
+                        440     POP_JUMP_FORWARD_IF_FALSE       146 (to 734)
+                        442     LOAD_GLOBAL                     1: NULL + len
+                        454     LOAD_FAST                       0: self
+                        456     LOAD_ATTR                       10: val_marry_year
+                        466     PRECALL                         1
+                        470     CALL                            1
+                        480     LOAD_CONST                      2: 1
+                        482     COMPARE_OP                      4 (>)
+                        488     POP_JUMP_FORWARD_IF_FALSE       122 (to 734)
+                        490     LOAD_GLOBAL                     1: NULL + len
+                        502     LOAD_FAST                       0: self
+                        504     LOAD_ATTR                       11: val_sabet
+                        514     PRECALL                         1
+                        518     CALL                            1
+                        528     LOAD_CONST                      4: 11
+                        530     COMPARE_OP                      2 (==)
+                        536     POP_JUMP_FORWARD_IF_FALSE       98 (to 734)
+                        538     LOAD_GLOBAL                     1: NULL + len
+                        550     LOAD_FAST                       0: self
+                        552     LOAD_ATTR                       12: val_hamrah
+                        562     PRECALL                         1
+                        566     CALL                            1
+                        576     LOAD_CONST                      4: 11
+                        578     COMPARE_OP                      2 (==)
+                        584     POP_JUMP_FORWARD_IF_FALSE       74 (to 734)
+                        586     LOAD_GLOBAL                     1: NULL + len
+                        598     LOAD_FAST                       0: self
+                        600     LOAD_ATTR                       13: val_posti
+                        610     PRECALL                         1
+                        614     CALL                            1
+                        624     LOAD_CONST                      1: 10
+                        626     COMPARE_OP                      2 (==)
+                        632     POP_JUMP_FORWARD_IF_FALSE       50 (to 734)
+                        634     LOAD_GLOBAL                     1: NULL + len
+                        646     LOAD_FAST                       0: self
+                        648     LOAD_ATTR                       14: val_neshani
+                        658     PRECALL                         1
+                        662     CALL                            1
+                        672     LOAD_CONST                      2: 1
+                        674     COMPARE_OP                      4 (>)
+                        680     POP_JUMP_FORWARD_IF_FALSE       26 (to 734)
+                        682     LOAD_GLOBAL                     1: NULL + len
+                        694     LOAD_FAST                       0: self
+                        696     LOAD_ATTR                       15: val_bank
+                        706     PRECALL                         1
+                        710     CALL                            1
+                        720     LOAD_CONST                      5: 3
+                        722     COMPARE_OP                      4 (>)
+                        728     POP_JUMP_FORWARD_IF_FALSE       2 (to 734)
+                        730     LOAD_CONST                      6: True
+                        732     RETURN_VALUE                    
+                        734     LOAD_CONST                      7: False
+                        736     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: sabtKhodkar
+                    Qualified Name: MyApp.sabtKhodkar
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 3
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'sabte_khodkar'
+                        'state'
+                        'button_sabt'
+                        'config'
+                        'automation'
+                        'sabt_pending'
+                    [Locals+Names]
+                        'self'
+                        'state'
+                    [Constants]
+                        None
+                        'selected'
+                        True
+                        False
+                        'normal'
+                        'disabled'
+                        (
+                            'state'
+                        )
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_CONST                      1: 'selected'
+                        4       LOAD_FAST                       0: self
+                        6       LOAD_ATTR                       0: sabte_khodkar
+                        16      LOAD_METHOD                     1: state
+                        38      PRECALL                         0
+                        42      CALL                            0
+                        52      CONTAINS_OP                     0 (in)
+                        54      POP_JUMP_FORWARD_IF_FALSE       2 (to 60)
+                        56      LOAD_CONST                      2: True
+                        58      JUMP_FORWARD                    1 (to 62)
+                        60      LOAD_CONST                      3: False
+                        62      STORE_FAST                      1: state
+                        64      LOAD_FAST                       0: self
+                        66      LOAD_ATTR                       2: button_sabt
+                        76      LOAD_METHOD                     3: config
+                        98      LOAD_FAST                       1: state
+                        100     POP_JUMP_FORWARD_IF_TRUE        2 (to 106)
+                        102     LOAD_CONST                      4: 'normal'
+                        104     JUMP_FORWARD                    1 (to 108)
+                        106     LOAD_CONST                      5: 'disabled'
+                        108     KW_NAMES                        6: ('state',)
+                        110     PRECALL                         1
+                        114     CALL                            1
+                        124     POP_TOP                         
+                        126     LOAD_FAST                       1: state
+                        128     POP_JUMP_FORWARD_IF_FALSE       14 (to 158)
+                        130     LOAD_CONST                      3: False
+                        132     LOAD_FAST                       0: self
+                        134     LOAD_ATTR                       4: automation
+                        144     STORE_ATTR                      5: sabt_pending
+                        154     LOAD_CONST                      0: None
+                        156     RETURN_VALUE                    
+                        158     LOAD_CONST                      0: None
+                        160     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: sabtPending
+                    Qualified Name: MyApp.sabtPending
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 2
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'automation'
+                        'sabt_pending'
+                    [Locals+Names]
+                        'self'
+                    [Constants]
+                        None
+                        True
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_CONST                      1: True
+                        4       LOAD_FAST                       0: self
+                        6       LOAD_ATTR                       0: automation
+                        16      STORE_ATTR                      1: sabt_pending
+                        26      LOAD_CONST                      0: None
+                        28      RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: sabtCaptchaPending
+                    Qualified Name: MyApp.sabtCaptchaPending
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 2
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'automation'
+                        'sabt_captcha_pending'
+                    [Locals+Names]
+                        'self'
+                    [Constants]
+                        None
+                        True
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_CONST                      1: True
+                        4       LOAD_FAST                       0: self
+                        6       LOAD_ATTR                       0: automation
+                        16      STORE_ATTR                      1: sabt_captcha_pending
+                        26      LOAD_CONST                      0: None
+                        28      RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: getStatus
+                    Qualified Name: MyApp.getStatus
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'get_status_play'
+                        'button_status'
+                        'config'
+                        'photo_status_paus'
+                        'photo_status'
+                        'int'
+                        'val_rahgiri'
+                        'notification'
+                        'make'
+                        'printError'
+                        'jlog'
+                        'settings'
+                        'automation'
+                        'updateRahgiriForCheck'
+                        'val_meli'
+                        'val_captcha'
+                        'val_captcha_status'
+                        'threading'
+                        'Thread'
+                        'getStatus'
+                        'daemon'
+                        'start'
+                        'status_live'
+                    [Locals+Names]
+                        'self'
+                        'rahgiri'
+                        'refresh_captcha_time_unrecognize'
+                        't'
+                    [Constants]
+                        None
+                        (
+                            'image'
+                        )
+                        'خطا'
+                        'مقدار کد رهگیری درست نیست'
+                        'get status'
+                        't2e1p3'
+                        ''
+                        0
+                        (
+                            'target'
+                        )
+                        True
+                        False
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       0: self
+                        4       LOAD_ATTR                       0: get_status_play
+                        14      UNARY_NOT                       
+                        16      LOAD_FAST                       0: self
+                        18      STORE_ATTR                      0: get_status_play
+                        28      LOAD_FAST                       0: self
+                        30      LOAD_ATTR                       1: button_status
+                        40      LOAD_METHOD                     2: config
+                        62      LOAD_FAST                       0: self
+                        64      LOAD_ATTR                       0: get_status_play
+                        74      POP_JUMP_FORWARD_IF_FALSE       7 (to 90)
+                        76      LOAD_FAST                       0: self
+                        78      LOAD_ATTR                       3: photo_status_paus
+                        88      JUMP_FORWARD                    6 (to 102)
+                        90      LOAD_FAST                       0: self
+                        92      LOAD_ATTR                       4: photo_status
+                        102     KW_NAMES                        1: ('image',)
+                        104     PRECALL                         1
+                        108     CALL                            1
+                        118     POP_TOP                         
+                        120     LOAD_FAST                       0: self
+                        122     LOAD_ATTR                       0: get_status_play
+                        132     POP_JUMP_FORWARD_IF_FALSE       321 (to 778)
+                        136     NOP                             
+                        138     LOAD_GLOBAL                     11: NULL + int
+                        150     LOAD_FAST                       0: self
+                        152     LOAD_ATTR                       6: val_rahgiri
+                        162     PRECALL                         1
+                        166     CALL                            1
+                        176     STORE_FAST                      1: rahgiri
+                        178     JUMP_FORWARD                    124 (to 428)
+                        180     PUSH_EXC_INFO                   
+                        182     POP_TOP                         
+                        184     LOAD_GLOBAL                     15: NULL + notification
+                        196     LOAD_ATTR                       8: make
+                        206     LOAD_CONST                      2: 'خطا'
+                        208     LOAD_CONST                      3: 'مقدار کد رهگیری درست نیست'
+                        210     PRECALL                         2
+                        214     CALL                            2
+                        224     POP_TOP                         
+                        226     LOAD_FAST                       0: self
+                        228     LOAD_METHOD                     9: printError
+                        250     LOAD_CONST                      3: 'مقدار کد رهگیری درست نیست'
+                        252     PRECALL                         1
+                        256     CALL                            1
+                        266     POP_TOP                         
+                        268     LOAD_FAST                       0: self
+                        270     LOAD_ATTR                       0: get_status_play
+                        280     UNARY_NOT                       
+                        282     LOAD_FAST                       0: self
+                        284     STORE_ATTR                      0: get_status_play
+                        294     LOAD_FAST                       0: self
+                        296     LOAD_ATTR                       1: button_status
+                        306     LOAD_METHOD                     2: config
+                        328     LOAD_FAST                       0: self
+                        330     LOAD_ATTR                       0: get_status_play
+                        340     POP_JUMP_FORWARD_IF_FALSE       7 (to 356)
+                        342     LOAD_FAST                       0: self
+                        344     LOAD_ATTR                       3: photo_status_paus
+                        354     JUMP_FORWARD                    6 (to 368)
+                        356     LOAD_FAST                       0: self
+                        358     LOAD_ATTR                       4: photo_status
+                        368     KW_NAMES                        1: ('image',)
+                        370     PRECALL                         1
+                        374     CALL                            1
+                        384     POP_TOP                         
+                        386     LOAD_GLOBAL                     21: NULL + jlog
+                        398     LOAD_CONST                      4: 'get status'
+                        400     PRECALL                         1
+                        404     CALL                            1
+                        414     POP_TOP                         
+                        416     POP_EXCEPT                      
+                        418     LOAD_CONST                      0: None
+                        420     RETURN_VALUE                    
+                        422     COPY                            3
+                        424     POP_EXCEPT                      
+                        426     RERAISE                         1
+                        428     LOAD_FAST                       0: self
+                        430     LOAD_ATTR                       11: settings
+                        440     LOAD_CONST                      5: 't2e1p3'
+                        442     BINARY_SUBSCR                   
+                        452     LOAD_CONST                      6: ''
+                        454     COMPARE_OP                      3 (!=)
+                        460     POP_JUMP_FORWARD_IF_FALSE       53 (to 568)
+                        462     LOAD_GLOBAL                     11: NULL + int
+                        474     LOAD_FAST                       0: self
+                        476     LOAD_ATTR                       11: settings
+                        486     LOAD_CONST                      5: 't2e1p3'
+                        488     BINARY_SUBSCR                   
+                        498     PRECALL                         1
+                        502     CALL                            1
+                        512     POP_JUMP_FORWARD_IF_FALSE       27 (to 568)
+                        514     LOAD_GLOBAL                     11: NULL + int
+                        526     LOAD_FAST                       0: self
+                        528     LOAD_ATTR                       11: settings
+                        538     LOAD_CONST                      5: 't2e1p3'
+                        540     BINARY_SUBSCR                   
+                        550     PRECALL                         1
+                        554     CALL                            1
+                        564     STORE_FAST                      2: refresh_captcha_time_unrecognize
+                        566     JUMP_FORWARD                    2 (to 572)
+                        568     LOAD_CONST                      7: 0
+                        570     STORE_FAST                      2: refresh_captcha_time_unrecognize
+                        572     LOAD_FAST                       0: self
+                        574     LOAD_ATTR                       12: automation
+                        584     LOAD_METHOD                     13: updateRahgiriForCheck
+                        606     LOAD_FAST                       1: rahgiri
+                        608     LOAD_FAST                       0: self
+                        610     LOAD_ATTR                       14: val_meli
+                        620     LOAD_FAST                       0: self
+                        622     LOAD_ATTR                       15: val_captcha
+                        632     LOAD_FAST                       0: self
+                        634     LOAD_ATTR                       16: val_captcha_status
+                        644     LOAD_FAST                       2: refresh_captcha_time_unrecognize
+                        646     PRECALL                         5
+                        650     CALL                            5
+                        660     POP_TOP                         
+                        662     LOAD_GLOBAL                     35: NULL + threading
+                        674     LOAD_ATTR                       18: Thread
+                        684     LOAD_FAST                       0: self
+                        686     LOAD_ATTR                       12: automation
+                        696     LOAD_ATTR                       19: getStatus
+                        706     KW_NAMES                        8: ('target',)
+                        708     PRECALL                         1
+                        712     CALL                            1
+                        722     STORE_FAST                      3: t
+                        724     LOAD_CONST                      9: True
+                        726     LOAD_FAST                       3: t
+                        728     STORE_ATTR                      20: daemon
+                        738     LOAD_FAST                       3: t
+                        740     LOAD_METHOD                     21: start
+                        762     PRECALL                         0
+                        766     CALL                            0
+                        776     POP_TOP                         
+                        778     LOAD_FAST                       0: self
+                        780     LOAD_ATTR                       0: get_status_play
+                        790     POP_JUMP_FORWARD_IF_TRUE        14 (to 820)
+                        792     LOAD_CONST                      10: False
+                        794     LOAD_FAST                       0: self
+                        796     LOAD_ATTR                       12: automation
+                        806     STORE_ATTR                      22: status_live
+                        816     LOAD_CONST                      0: None
+                        818     RETURN_VALUE                    
+                        820     LOAD_CONST                      0: None
+                        822     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: recoverCode
+                    Qualified Name: MyApp.recoverCode
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 14
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'recover_code_play'
+                        'button_recover'
+                        'config'
+                        'photo_recover_pause'
+                        'photo_recover'
+                        'settings'
+                        'int'
+                        'automation'
+                        'updateRecoverCode'
+                        'val_meli'
+                        'val_name'
+                        'val_family'
+                        'val_birth_day'
+                        'val_birth_month'
+                        'val_birth_year'
+                        'val_marry_day'
+                        'val_marry_month'
+                        'val_marry_year'
+                        'val_captcha'
+                        'val_captcha_status'
+                        'threading'
+                        'Thread'
+                        'recoverCode'
+                        'daemon'
+                        'start'
+                        'recover_live'
+                    [Locals+Names]
+                        'self'
+                        'refresh_captcha_time_unrecognize'
+                        't'
+                    [Constants]
+                        None
+                        (
+                            'image'
+                        )
+                        't2e1p3'
+                        ''
+                        0
+                        (
+                            'target'
+                        )
+                        True
+                        False
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       0: self
+                        4       LOAD_ATTR                       0: recover_code_play
+                        14      UNARY_NOT                       
+                        16      LOAD_FAST                       0: self
+                        18      STORE_ATTR                      0: recover_code_play
+                        28      LOAD_FAST                       0: self
+                        30      LOAD_ATTR                       1: button_recover
+                        40      LOAD_METHOD                     2: config
+                        62      LOAD_FAST                       0: self
+                        64      LOAD_ATTR                       0: recover_code_play
+                        74      POP_JUMP_FORWARD_IF_FALSE       7 (to 90)
+                        76      LOAD_FAST                       0: self
+                        78      LOAD_ATTR                       3: photo_recover_pause
+                        88      JUMP_FORWARD                    6 (to 102)
+                        90      LOAD_FAST                       0: self
+                        92      LOAD_ATTR                       4: photo_recover
+                        102     KW_NAMES                        1: ('image',)
+                        104     PRECALL                         1
+                        108     CALL                            1
+                        118     POP_TOP                         
+                        120     LOAD_FAST                       0: self
+                        122     LOAD_ATTR                       0: recover_code_play
+                        132     POP_JUMP_FORWARD_IF_FALSE       222 (to 578)
+                        134     LOAD_FAST                       0: self
+                        136     LOAD_ATTR                       5: settings
+                        146     LOAD_CONST                      2: 't2e1p3'
+                        148     BINARY_SUBSCR                   
+                        158     LOAD_CONST                      3: ''
+                        160     COMPARE_OP                      3 (!=)
+                        166     POP_JUMP_FORWARD_IF_FALSE       53 (to 274)
+                        168     LOAD_GLOBAL                     13: NULL + int
+                        180     LOAD_FAST                       0: self
+                        182     LOAD_ATTR                       5: settings
+                        192     LOAD_CONST                      2: 't2e1p3'
+                        194     BINARY_SUBSCR                   
+                        204     PRECALL                         1
+                        208     CALL                            1
+                        218     POP_JUMP_FORWARD_IF_FALSE       27 (to 274)
+                        220     LOAD_GLOBAL                     13: NULL + int
+                        232     LOAD_FAST                       0: self
+                        234     LOAD_ATTR                       5: settings
+                        244     LOAD_CONST                      2: 't2e1p3'
+                        246     BINARY_SUBSCR                   
+                        256     PRECALL                         1
+                        260     CALL                            1
+                        270     STORE_FAST                      1: refresh_captcha_time_unrecognize
+                        272     JUMP_FORWARD                    2 (to 278)
+                        274     LOAD_CONST                      4: 0
+                        276     STORE_FAST                      1: refresh_captcha_time_unrecognize
+                        278     LOAD_FAST                       0: self
+                        280     LOAD_ATTR                       7: automation
+                        290     LOAD_METHOD                     8: updateRecoverCode
+                        312     LOAD_FAST                       0: self
+                        314     LOAD_ATTR                       9: val_meli
+                        324     LOAD_FAST                       0: self
+                        326     LOAD_ATTR                       10: val_name
+                        336     LOAD_FAST                       0: self
+                        338     LOAD_ATTR                       11: val_family
+                        348     LOAD_FAST                       0: self
+                        350     LOAD_ATTR                       12: val_birth_day
+                        360     LOAD_FAST                       0: self
+                        362     LOAD_ATTR                       13: val_birth_month
+                        372     LOAD_FAST                       0: self
+                        374     LOAD_ATTR                       14: val_birth_year
+                        384     LOAD_FAST                       0: self
+                        386     LOAD_ATTR                       15: val_marry_day
+                        396     LOAD_FAST                       0: self
+                        398     LOAD_ATTR                       16: val_marry_month
+                        408     LOAD_FAST                       0: self
+                        410     LOAD_ATTR                       17: val_marry_year
+                        420     LOAD_FAST                       0: self
+                        422     LOAD_ATTR                       18: val_captcha
+                        432     LOAD_FAST                       0: self
+                        434     LOAD_ATTR                       19: val_captcha_status
+                        444     LOAD_FAST                       1: refresh_captcha_time_unrecognize
+                        446     PRECALL                         12
+                        450     CALL                            12
+                        460     POP_TOP                         
+                        462     LOAD_GLOBAL                     41: NULL + threading
+                        474     LOAD_ATTR                       21: Thread
+                        484     LOAD_FAST                       0: self
+                        486     LOAD_ATTR                       7: automation
+                        496     LOAD_ATTR                       22: recoverCode
+                        506     KW_NAMES                        5: ('target',)
+                        508     PRECALL                         1
+                        512     CALL                            1
+                        522     STORE_FAST                      2: t
+                        524     LOAD_CONST                      6: True
+                        526     LOAD_FAST                       2: t
+                        528     STORE_ATTR                      23: daemon
+                        538     LOAD_FAST                       2: t
+                        540     LOAD_METHOD                     24: start
+                        562     PRECALL                         0
+                        566     CALL                            0
+                        576     POP_TOP                         
+                        578     LOAD_FAST                       0: self
+                        580     LOAD_ATTR                       0: recover_code_play
+                        590     POP_JUMP_FORWARD_IF_TRUE        14 (to 620)
+                        592     LOAD_CONST                      7: False
+                        594     LOAD_FAST                       0: self
+                        596     LOAD_ATTR                       7: automation
+                        606     STORE_ATTR                      25: recover_live
+                        616     LOAD_CONST                      0: None
+                        618     RETURN_VALUE                    
+                        620     LOAD_CONST                      0: None
+                        622     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: playPause
+                    Qualified Name: MyApp.playPause
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'automation'
+                        'current_step'
+                        'bank_nahaei'
+                        'play'
+                        'checkLicenseTime'
+                        'licenseCheckCloseDialog'
+                        'protocol'
+                        'mainloop'
+                        'countJetvam'
+                        'showJetvamCountError'
+                        'closeFunction'
+                        'makeBlankPreview'
+                        'image_clock'
+                        'validatePlay'
+                        'getMemberByMeli'
+                        'val_meli'
+                        'database_list'
+                        'database_map'
+                        'notification'
+                        'make'
+                        'printError'
+                        'time'
+                        'bank_counter'
+                        'form_counter'
+                        'captcha_counter'
+                        'refreshForm'
+                        'refreshBank'
+                        'refreshCaptcha'
+                        'automation_live'
+                        'play_pause_button'
+                        'config'
+                        'photo_pause'
+                        'photo_play'
+                        'fully_stopped'
+                        'threading'
+                        'Thread'
+                        'start'
+                        't'
+                        'daemon'
+                    [Locals+Names]
+                        'self'
+                        'check_froms'
+                        'user'
+                        'i'
+                        'aaa'
+                    [Constants]
+                        None
+                        1
+                        ''
+                        False
+                        'WM_DELETE_WINDOW'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.playPause.<locals>.<lambda>
+                            Arg Count: 0
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 3
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'destroy'
+                                'closeFunction'
+                            [Locals+Names]
+                                'aaa'
+                                'self'
+                            [Constants]
+                                None
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  2
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      0: aaa
+                                6       LOAD_METHOD                     0: destroy
+                                28      PRECALL                         0
+                                32      CALL                            0
+                                42      LOAD_DEREF                      1: self
+                                44      LOAD_METHOD                     1: closeFunction
+                                66      PRECALL                         0
+                                70      CALL                            0
+                                80      BUILD_LIST                      2
+                                82      RETURN_VALUE                    
+                        4
+                        True
+                        'meli'
+                        'status'
+                        'خطا'
+                        'این کاربر قبلا ثبت گردیده است'
+                        'لطفا مقادیر اجباری را به درستی کامل کنید'
+                        (
+                            'image'
+                        )
+                        (
+                            'target'
+                        )
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       MAKE_CELL                       4: aaa
+                        4       RESUME                          0
+                        6       LOAD_CONST                      1: 1
+                        8       LOAD_DEREF                      0: self
+                        10      LOAD_ATTR                       0: automation
+                        20      STORE_ATTR                      1: current_step
+                        30      LOAD_CONST                      2: ''
+                        32      LOAD_DEREF                      0: self
+                        34      LOAD_ATTR                       0: automation
+                        44      STORE_ATTR                      2: bank_nahaei
+                        54      LOAD_DEREF                      0: self
+                        56      LOAD_ATTR                       3: play
+                        66      POP_JUMP_FORWARD_IF_TRUE        475 (to 1020)
+                        70      LOAD_GLOBAL                     9: NULL + checkLicenseTime
+                        82      PRECALL                         0
+                        86      CALL                            0
+                        96      LOAD_CONST                      3: False
+                        98      COMPARE_OP                      2 (==)
+                        104     POP_JUMP_FORWARD_IF_FALSE       60 (to 226)
+                        106     LOAD_GLOBAL                     11: NULL + licenseCheckCloseDialog
+                        118     PRECALL                         0
+                        122     CALL                            0
+                        132     STORE_DEREF                     4: aaa
+                        134     LOAD_DEREF                      4: aaa
+                        136     LOAD_METHOD                     6: protocol
+                        158     LOAD_CONST                      4: 'WM_DELETE_WINDOW'
+                        160     LOAD_CLOSURE                    4: aaa
+                        162     LOAD_CLOSURE                    0: self
+                        164     BUILD_TUPLE                     2
+                        166     LOAD_CONST                      5: <CODE> <lambda>
+                        168     MAKE_FUNCTION                   8
+                        170     PRECALL                         2
+                        174     CALL                            2
+                        184     POP_TOP                         
+                        186     LOAD_DEREF                      4: aaa
+                        188     LOAD_METHOD                     7: mainloop
+                        210     PRECALL                         0
+                        214     CALL                            0
+                        224     POP_TOP                         
+                        226     LOAD_GLOBAL                     17: NULL + countJetvam
+                        238     PRECALL                         0
+                        242     CALL                            0
+                        252     LOAD_CONST                      6: 4
+                        254     COMPARE_OP                      4 (>)
+                        260     POP_JUMP_FORWARD_IF_FALSE       34 (to 330)
+                        262     LOAD_GLOBAL                     19: NULL + showJetvamCountError
+                        274     PRECALL                         0
+                        278     CALL                            0
+                        288     POP_TOP                         
+                        290     LOAD_DEREF                      0: self
+                        292     LOAD_METHOD                     10: closeFunction
+                        314     PRECALL                         0
+                        318     CALL                            0
+                        328     POP_TOP                         
+                        330     LOAD_DEREF                      0: self
+                        332     LOAD_ATTR                       0: automation
+                        342     LOAD_METHOD                     11: makeBlankPreview
+                        364     PRECALL                         0
+                        368     CALL                            0
+                        378     POP_TOP                         
+                        380     LOAD_CONST                      7: True
+                        382     LOAD_DEREF                      0: self
+                        384     LOAD_ATTR                       0: automation
+                        394     STORE_ATTR                      12: image_clock
+                        404     LOAD_DEREF                      0: self
+                        406     LOAD_METHOD                     13: validatePlay
+                        428     PRECALL                         0
+                        432     CALL                            0
+                        442     STORE_FAST                      1: check_froms
+                        444     LOAD_DEREF                      0: self
+                        446     LOAD_METHOD                     14: getMemberByMeli
+                        468     LOAD_DEREF                      0: self
+                        470     LOAD_ATTR                       15: val_meli
+                        480     PRECALL                         1
+                        484     CALL                            1
+                        494     STORE_FAST                      2: user
+                        496     LOAD_FAST                       2: user
+                        498     POP_JUMP_FORWARD_IF_FALSE       106 (to 712)
+                        500     LOAD_DEREF                      0: self
+                        502     LOAD_ATTR                       16: database_list
+                        512     GET_ITER                        
+                        514     FOR_ITER                        98 (to 712)
+                        516     STORE_FAST                      3: i
+                        518     LOAD_FAST                       3: i
+                        520     LOAD_DEREF                      0: self
+                        522     LOAD_ATTR                       17: database_map
+                        532     LOAD_CONST                      8: 'meli'
+                        534     BINARY_SUBSCR                   
+                        544     BINARY_SUBSCR                   
+                        554     LOAD_DEREF                      0: self
+                        556     LOAD_ATTR                       15: val_meli
+                        566     COMPARE_OP                      2 (==)
+                        572     POP_JUMP_FORWARD_IF_FALSE       68 (to 710)
+                        574     LOAD_FAST                       3: i
+                        576     LOAD_DEREF                      0: self
+                        578     LOAD_ATTR                       17: database_map
+                        588     LOAD_CONST                      9: 'status'
+                        590     BINARY_SUBSCR                   
+                        600     BINARY_SUBSCR                   
+                        610     LOAD_CONST                      1: 1
+                        612     COMPARE_OP                      2 (==)
+                        618     POP_JUMP_FORWARD_IF_FALSE       45 (to 710)
+                        620     LOAD_GLOBAL                     37: NULL + notification
+                        632     LOAD_ATTR                       19: make
+                        642     LOAD_CONST                      10: 'خطا'
+                        644     LOAD_CONST                      11: 'این کاربر قبلا ثبت گردیده است'
+                        646     PRECALL                         2
+                        650     CALL                            2
+                        660     POP_TOP                         
+                        662     LOAD_DEREF                      0: self
+                        664     LOAD_METHOD                     20: printError
+                        686     LOAD_CONST                      11: 'این کاربر قبلا ثبت گردیده است'
+                        688     PRECALL                         1
+                        692     CALL                            1
+                        702     POP_TOP                         
+                        704     POP_TOP                         
+                        706     LOAD_CONST                      0: None
+                        708     RETURN_VALUE                    
+                        710     JUMP_BACKWARD                   99 (to 514)
+                        712     LOAD_FAST                       1: check_froms
+                        714     POP_JUMP_FORWARD_IF_TRUE        44 (to 804)
+                        716     LOAD_GLOBAL                     37: NULL + notification
+                        728     LOAD_ATTR                       19: make
+                        738     LOAD_CONST                      10: 'خطا'
+                        740     LOAD_CONST                      12: 'لطفا مقادیر اجباری را به درستی کامل کنید'
+                        742     PRECALL                         2
+                        746     CALL                            2
+                        756     POP_TOP                         
+                        758     LOAD_DEREF                      0: self
+                        760     LOAD_METHOD                     20: printError
+                        782     LOAD_CONST                      12: 'لطفا مقادیر اجباری را به درستی کامل کنید'
+                        784     PRECALL                         1
+                        788     CALL                            1
+                        798     POP_TOP                         
+                        800     LOAD_CONST                      0: None
+                        802     RETURN_VALUE                    
+                        804     LOAD_GLOBAL                     43: NULL + time
+                        816     LOAD_ATTR                       21: time
+                        826     PRECALL                         0
+                        830     CALL                            0
+                        840     LOAD_DEREF                      0: self
+                        842     STORE_ATTR                      22: bank_counter
+                        852     LOAD_GLOBAL                     43: NULL + time
+                        864     LOAD_ATTR                       21: time
+                        874     PRECALL                         0
+                        878     CALL                            0
+                        888     LOAD_DEREF                      0: self
+                        890     STORE_ATTR                      23: form_counter
+                        900     LOAD_GLOBAL                     43: NULL + time
+                        912     LOAD_ATTR                       21: time
+                        922     PRECALL                         0
+                        926     CALL                            0
+                        936     LOAD_DEREF                      0: self
+                        938     STORE_ATTR                      24: captcha_counter
+                        948     LOAD_CONST                      3: False
+                        950     LOAD_DEREF                      0: self
+                        952     LOAD_ATTR                       0: automation
+                        962     STORE_ATTR                      25: refreshForm
+                        972     LOAD_CONST                      3: False
+                        974     LOAD_DEREF                      0: self
+                        976     LOAD_ATTR                       0: automation
+                        986     STORE_ATTR                      26: refreshBank
+                        996     LOAD_CONST                      3: False
+                        998     LOAD_DEREF                      0: self
+                        1000    LOAD_ATTR                       0: automation
+                        1010    STORE_ATTR                      27: refreshCaptcha
+                        1020    LOAD_DEREF                      0: self
+                        1022    LOAD_ATTR                       3: play
+                        1032    UNARY_NOT                       
+                        1034    LOAD_DEREF                      0: self
+                        1036    STORE_ATTR                      3: play
+                        1046    LOAD_DEREF                      0: self
+                        1048    LOAD_ATTR                       3: play
+                        1058    LOAD_DEREF                      0: self
+                        1060    LOAD_ATTR                       0: automation
+                        1070    STORE_ATTR                      28: automation_live
+                        1080    LOAD_DEREF                      0: self
+                        1082    LOAD_ATTR                       29: play_pause_button
+                        1092    LOAD_METHOD                     30: config
+                        1114    LOAD_DEREF                      0: self
+                        1116    LOAD_ATTR                       3: play
+                        1126    POP_JUMP_FORWARD_IF_FALSE       7 (to 1142)
+                        1128    LOAD_DEREF                      0: self
+                        1130    LOAD_ATTR                       31: photo_pause
+                        1140    JUMP_FORWARD                    6 (to 1154)
+                        1142    LOAD_DEREF                      0: self
+                        1144    LOAD_ATTR                       32: photo_play
+                        1154    KW_NAMES                        13: ('image',)
+                        1156    PRECALL                         1
+                        1160    CALL                            1
+                        1170    POP_TOP                         
+                        1172    LOAD_DEREF                      0: self
+                        1174    LOAD_ATTR                       3: play
+                        1184    POP_JUMP_FORWARD_IF_FALSE       85 (to 1356)
+                        1186    LOAD_DEREF                      0: self
+                        1188    LOAD_ATTR                       0: automation
+                        1198    LOAD_ATTR                       33: fully_stopped
+                        1208    POP_JUMP_FORWARD_IF_FALSE       73 (to 1356)
+                        1210    LOAD_GLOBAL                     69: NULL + threading
+                        1222    LOAD_ATTR                       35: Thread
+                        1232    LOAD_DEREF                      0: self
+                        1234    LOAD_ATTR                       0: automation
+                        1244    LOAD_ATTR                       36: start
+                        1254    KW_NAMES                        14: ('target',)
+                        1256    PRECALL                         1
+                        1260    CALL                            1
+                        1270    LOAD_DEREF                      0: self
+                        1272    STORE_ATTR                      37: t
+                        1282    LOAD_CONST                      7: True
+                        1284    LOAD_DEREF                      0: self
+                        1286    LOAD_ATTR                       37: t
+                        1296    STORE_ATTR                      38: daemon
+                        1306    LOAD_DEREF                      0: self
+                        1308    LOAD_ATTR                       37: t
+                        1318    LOAD_METHOD                     36: start
+                        1340    PRECALL                         0
+                        1344    CALL                            0
+                        1354    POP_TOP                         
+                        1356    LOAD_CONST                      0: None
+                        1358    RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: automationStop
+                    Qualified Name: MyApp.automationStop
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'automation_stop_called'
+                        'automation'
+                        'stopWebdriver'
+                        'destroy'
+                        'settings_window'
+                        'automation_live'
+                    [Locals+Names]
+                        'self'
+                    [Constants]
+                        None
+                        True
+                        False
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_CONST                      1: True
+                        4       LOAD_FAST                       0: self
+                        6       STORE_ATTR                      0: automation_stop_called
+                        16      LOAD_FAST                       0: self
+                        18      LOAD_ATTR                       1: automation
+                        28      LOAD_METHOD                     2: stopWebdriver
+                        50      PRECALL                         0
+                        54      CALL                            0
+                        64      POP_TOP                         
+                        66      NOP                             
+                        68      LOAD_FAST                       0: self
+                        70      LOAD_METHOD                     3: destroy
+                        92      PRECALL                         0
+                        96      CALL                            0
+                        106     POP_TOP                         
+                        108     JUMP_FORWARD                    7 (to 124)
+                        110     PUSH_EXC_INFO                   
+                        112     POP_TOP                         
+                        114     POP_EXCEPT                      
+                        116     JUMP_FORWARD                    3 (to 124)
+                        118     COPY                            3
+                        120     POP_EXCEPT                      
+                        122     RERAISE                         1
+                        124     NOP                             
+                        126     LOAD_FAST                       0: self
+                        128     LOAD_ATTR                       4: settings_window
+                        138     LOAD_METHOD                     3: destroy
+                        160     PRECALL                         0
+                        164     CALL                            0
+                        174     POP_TOP                         
+                        176     JUMP_FORWARD                    7 (to 192)
+                        178     PUSH_EXC_INFO                   
+                        180     POP_TOP                         
+                        182     POP_EXCEPT                      
+                        184     JUMP_FORWARD                    3 (to 192)
+                        186     COPY                            3
+                        188     POP_EXCEPT                      
+                        190     RERAISE                         1
+                        192     LOAD_CONST                      2: False
+                        194     LOAD_FAST                       0: self
+                        196     LOAD_ATTR                       1: automation
+                        206     STORE_ATTR                      5: automation_live
+                        216     LOAD_CONST                      0: None
+                        218     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: closeFunction
+                    Qualified Name: MyApp.closeFunction
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 9
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'automation'
+                        'close_signal'
+                        'changeSystemProxy'
+                        'proxyOff'
+                        'settings_window'
+                        'destroy'
+                        'close_function_called'
+                        'automation_live'
+                        'jcs_handle'
+                        'subprocess'
+                        'call'
+                        'str'
+                        'pid'
+                        'print'
+                        'closeChromeWindow'
+                        'driver'
+                        'quit'
+                        'service'
+                        'stop'
+                        'send_remote_shutdown_command'
+                        'jlog'
+                        'sys'
+                        'exit'
+                    [Locals+Names]
+                        'self'
+                    [Constants]
+                        None
+                        True
+                        False
+                        'taskkill'
+                        '/F'
+                        '/T'
+                        '/PID'
+                        'exit - before that'
+                        'step 1'
+                        'step 2'
+                        'step 3'
+                        'error in driver stop'
+                        'exit - after that'
+                        'exit'
+                        0
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_CONST                      1: True
+                        4       LOAD_FAST                       0: self
+                        6       LOAD_ATTR                       0: automation
+                        16      STORE_ATTR                      1: close_signal
+                        26      LOAD_GLOBAL                     5: NULL + changeSystemProxy
+                        38      LOAD_ATTR                       3: proxyOff
+                        48      PRECALL                         0
+                        52      CALL                            0
+                        62      POP_TOP                         
+                        64      NOP                             
+                        66      LOAD_FAST                       0: self
+                        68      LOAD_ATTR                       4: settings_window
+                        78      LOAD_METHOD                     5: destroy
+                        100     PRECALL                         0
+                        104     CALL                            0
+                        114     POP_TOP                         
+                        116     JUMP_FORWARD                    7 (to 132)
+                        118     PUSH_EXC_INFO                   
+                        120     POP_TOP                         
+                        122     POP_EXCEPT                      
+                        124     JUMP_FORWARD                    3 (to 132)
+                        126     COPY                            3
+                        128     POP_EXCEPT                      
+                        130     RERAISE                         1
+                        132     LOAD_CONST                      1: True
+                        134     LOAD_FAST                       0: self
+                        136     STORE_ATTR                      6: close_function_called
+                        146     NOP                             
+                        148     LOAD_FAST                       0: self
+                        150     LOAD_METHOD                     5: destroy
+                        172     PRECALL                         0
+                        176     CALL                            0
+                        186     POP_TOP                         
+                        188     JUMP_FORWARD                    7 (to 204)
+                        190     PUSH_EXC_INFO                   
+                        192     POP_TOP                         
+                        194     POP_EXCEPT                      
+                        196     JUMP_FORWARD                    3 (to 204)
+                        198     COPY                            3
+                        200     POP_EXCEPT                      
+                        202     RERAISE                         1
+                        204     LOAD_CONST                      2: False
+                        206     LOAD_FAST                       0: self
+                        208     LOAD_ATTR                       0: automation
+                        218     STORE_ATTR                      7: automation_live
+                        228     LOAD_GLOBAL                     16: jcs_handle
+                        240     POP_JUMP_FORWARD_IF_NONE        48 (to 338)
+                        242     LOAD_GLOBAL                     19: NULL + subprocess
+                        254     LOAD_ATTR                       10: call
+                        264     LOAD_CONST                      3: 'taskkill'
+                        266     LOAD_CONST                      4: '/F'
+                        268     LOAD_CONST                      5: '/T'
+                        270     LOAD_CONST                      6: '/PID'
+                        272     LOAD_GLOBAL                     23: NULL + str
+                        284     LOAD_GLOBAL                     16: jcs_handle
+                        296     LOAD_ATTR                       12: pid
+                        306     PRECALL                         1
+                        310     CALL                            1
+                        320     BUILD_LIST                      5
+                        322     PRECALL                         1
+                        326     CALL                            1
+                        336     POP_TOP                         
+                        338     LOAD_GLOBAL                     27: NULL + print
+                        350     LOAD_CONST                      7: 'exit - before that'
+                        352     PRECALL                         1
+                        356     CALL                            1
+                        366     POP_TOP                         
+                        368     NOP                             
+                        370     LOAD_FAST                       0: self
+                        372     LOAD_ATTR                       0: automation
+                        382     LOAD_METHOD                     14: closeChromeWindow
+                        404     PRECALL                         0
+                        408     CALL                            0
+                        418     POP_TOP                         
+                        420     LOAD_GLOBAL                     27: NULL + print
+                        432     LOAD_CONST                      8: 'step 1'
+                        434     PRECALL                         1
+                        438     CALL                            1
+                        448     POP_TOP                         
+                        450     LOAD_FAST                       0: self
+                        452     LOAD_ATTR                       0: automation
+                        462     LOAD_ATTR                       15: driver
+                        472     LOAD_METHOD                     16: quit
+                        494     PRECALL                         0
+                        498     CALL                            0
+                        508     POP_TOP                         
+                        510     LOAD_GLOBAL                     27: NULL + print
+                        522     LOAD_CONST                      9: 'step 2'
+                        524     PRECALL                         1
+                        528     CALL                            1
+                        538     POP_TOP                         
+                        540     LOAD_FAST                       0: self
+                        542     LOAD_ATTR                       0: automation
+                        552     LOAD_ATTR                       17: service
+                        562     LOAD_METHOD                     18: stop
+                        584     PRECALL                         0
+                        588     CALL                            0
+                        598     POP_TOP                         
+                        600     LOAD_GLOBAL                     27: NULL + print
+                        612     LOAD_CONST                      10: 'step 3'
+                        614     PRECALL                         1
+                        618     CALL                            1
+                        628     POP_TOP                         
+                        630     LOAD_FAST                       0: self
+                        632     LOAD_ATTR                       0: automation
+                        642     LOAD_ATTR                       17: service
+                        652     LOAD_METHOD                     19: send_remote_shutdown_command
+                        674     PRECALL                         0
+                        678     CALL                            0
+                        688     POP_TOP                         
+                        690     JUMP_FORWARD                    22 (to 736)
+                        692     PUSH_EXC_INFO                   
+                        694     POP_TOP                         
+                        696     LOAD_GLOBAL                     41: NULL + jlog
+                        708     LOAD_CONST                      11: 'error in driver stop'
+                        710     PRECALL                         1
+                        714     CALL                            1
+                        724     POP_TOP                         
+                        726     POP_EXCEPT                      
+                        728     JUMP_FORWARD                    3 (to 736)
+                        730     COPY                            3
+                        732     POP_EXCEPT                      
+                        734     RERAISE                         1
+                        736     LOAD_GLOBAL                     27: NULL + print
+                        748     LOAD_CONST                      12: 'exit - after that'
+                        750     PRECALL                         1
+                        754     CALL                            1
+                        764     POP_TOP                         
+                        766     LOAD_GLOBAL                     41: NULL + jlog
+                        778     LOAD_CONST                      13: 'exit'
+                        780     PRECALL                         1
+                        784     CALL                            1
+                        794     POP_TOP                         
+                        796     LOAD_GLOBAL                     43: NULL + sys
+                        808     LOAD_ATTR                       22: exit
+                        818     LOAD_CONST                      14: 0
+                        820     PRECALL                         1
+                        824     CALL                            1
+                        834     POP_TOP                         
+                        836     LOAD_CONST                      0: None
+                        838     RETURN_VALUE                    
+                (
+                    False
+                )
+                (
+                    None
+                    None
+                )
+                (
+                    None
+                )
+                (
+                    ''
+                )
+                (
+                    ''
+                    3
+                )
+                (
+                    None
+                    None
+                    None
+                    None
+                )
+                (
+                    True
+                )
+            [Disassembly]
+                0       MAKE_CELL                       0: __class__
+                2       RESUME                          0
+                4       LOAD_NAME                       0: __name__
+                6       STORE_NAME                      1: __module__
+                8       LOAD_CONST                      0: 'MyApp'
+                10      STORE_NAME                      2: __qualname__
+                12      LOAD_CLOSURE                    0: __class__
+                14      BUILD_TUPLE                     1
+                16      LOAD_CONST                      1: <CODE> __init__
+                18      MAKE_FUNCTION                   8
+                20      STORE_NAME                      3: __init__
+                22      LOAD_CONST                      2: <CODE> getSmsCode
+                24      MAKE_FUNCTION                   0
+                26      STORE_NAME                      4: getSmsCode
+                28      LOAD_CONST                      3: <CODE> selectFirstMember
+                30      MAKE_FUNCTION                   0
+                32      STORE_NAME                      5: selectFirstMember
+                34      LOAD_CONST                      4: <CODE> selectMemberByMeli
+                36      MAKE_FUNCTION                   0
+                38      STORE_NAME                      6: selectMemberByMeli
+                40      LOAD_CONST                      114: (False,)
+                42      LOAD_CONST                      6: <CODE> selectMemberByBanks
+                44      MAKE_FUNCTION                   1
+                46      STORE_NAME                      7: selectMemberByBanks
+                48      LOAD_CONST                      114: (False,)
+                50      LOAD_CONST                      7: <CODE> safeChangeUserSelect
+                52      MAKE_FUNCTION                   1
+                54      STORE_NAME                      8: safeChangeUserSelect
+                56      LOAD_CONST                      8: <CODE> selectMemberByProvince
+                58      MAKE_FUNCTION                   0
+                60      STORE_NAME                      9: selectMemberByProvince
+                62      LOAD_CONST                      115: (None, None)
+                64      LOAD_CONST                      10: <CODE> validate
+                66      MAKE_FUNCTION                   1
+                68      STORE_NAME                      10: validate
+                70      LOAD_CONST                      115: (None, None)
+                72      LOAD_CONST                      11: <CODE> validateSms
+                74      MAKE_FUNCTION                   1
+                76      STORE_NAME                      11: validateSms
+                78      LOAD_CONST                      12: <CODE> setTemporaryValueWithSettings
+                80      MAKE_FUNCTION                   0
+                82      STORE_NAME                      12: setTemporaryValueWithSettings
+                84      LOAD_CONST                      13: <CODE> parseProxyList
+                86      MAKE_FUNCTION                   0
+                88      STORE_NAME                      13: parseProxyList
+                90      LOAD_CONST                      14: <CODE> getNextProxy
+                92      MAKE_FUNCTION                   0
+                94      STORE_NAME                      14: getNextProxy
+                96      LOAD_CONST                      15: <CODE> readSettings
+                98      MAKE_FUNCTION                   0
+                100     STORE_NAME                      15: readSettings
+                102     LOAD_CONST                      16: <CODE> JCSNotFoundStartup
+                104     MAKE_FUNCTION                   0
+                106     STORE_NAME                      16: JCSNotFoundStartup
+                108     LOAD_CONST                      17: <CODE> saveSettings
+                110     MAKE_FUNCTION                   0
+                112     STORE_NAME                      17: saveSettings
+                114     LOAD_CONST                      18: <CODE> getPriorityByMeli
+                116     MAKE_FUNCTION                   0
+                118     STORE_NAME                      18: getPriorityByMeli
+                120     LOAD_CONST                      19: <CODE> updatePriorityDict
+                122     MAKE_FUNCTION                   0
+                124     STORE_NAME                      19: updatePriorityDict
+                126     LOAD_CONST                      20: <CODE> addNewBlockedNumber
+                128     MAKE_FUNCTION                   0
+                130     STORE_NAME                      20: addNewBlockedNumber
+                132     LOAD_CONST                      21: <CODE> addNewSignedUpBefore
+                134     MAKE_FUNCTION                   0
+                136     STORE_NAME                      21: addNewSignedUpBefore
+                138     LOAD_CONST                      22: <CODE> removeBlockedNumber
+                140     MAKE_FUNCTION                   0
+                142     STORE_NAME                      22: removeBlockedNumber
+                144     LOAD_CONST                      23: <CODE> removeSignedUpBefore
+                146     MAKE_FUNCTION                   0
+                148     STORE_NAME                      23: removeSignedUpBefore
+                150     LOAD_CONST                      24: <CODE> updateBlockedNumberList
+                152     MAKE_FUNCTION                   0
+                154     STORE_NAME                      24: updateBlockedNumberList
+                156     LOAD_CONST                      25: <CODE> updateSignedUpBeforeList
+                158     MAKE_FUNCTION                   0
+                160     STORE_NAME                      25: updateSignedUpBeforeList
+                162     LOAD_CONST                      26: <CODE> getAllDataFromDataBase
+                164     MAKE_FUNCTION                   0
+                166     STORE_NAME                      26: getAllDataFromDataBase
+                168     LOAD_CONST                      27: <CODE> getBanksAlarmFromDatabase
+                170     MAKE_FUNCTION                   0
+                172     STORE_NAME                      27: getBanksAlarmFromDatabase
+                174     LOAD_CONST                      28: <CODE> getRemovedMembers
+                176     MAKE_FUNCTION                   0
+                178     STORE_NAME                      28: getRemovedMembers
+                180     LOAD_CONST                      29: <CODE> getMemberByMeli
+                182     MAKE_FUNCTION                   0
+                184     STORE_NAME                      29: getMemberByMeli
+                186     LOAD_CONST                      30: <CODE> comboSearch
+                188     MAKE_FUNCTION                   0
+                190     STORE_NAME                      30: comboSearch
+                192     LOAD_CONST                      31: <CODE> addSerchToCombobox
+                194     MAKE_FUNCTION                   0
+                196     STORE_NAME                      31: addSerchToCombobox
+                198     LOAD_CONST                      32: <CODE> buildGrid
+                200     MAKE_FUNCTION                   0
+                202     STORE_NAME                      32: buildGrid
+                204     LOAD_CONST                      33: <CODE> hideChromeFunction
+                206     MAKE_FUNCTION                   0
+                208     STORE_NAME                      33: hideChromeFunction
+                210     LOAD_CONST                      34: <CODE> unhideChromeFunction
+                212     MAKE_FUNCTION                   0
+                214     STORE_NAME                      34: unhideChromeFunction
+                216     LOAD_CONST                      35: <CODE> closeAppWithoutChrome
+                218     MAKE_FUNCTION                   0
+                220     STORE_NAME                      35: closeAppWithoutChrome
+                222     LOAD_CONST                      36: <CODE> getNewCodeSecondryProvince
+                224     MAKE_FUNCTION                   0
+                226     STORE_NAME                      36: getNewCodeSecondryProvince
+                228     LOAD_CONST                      37: <CODE> updateGetNewCodeSecondryPageTimer
+                230     MAKE_FUNCTION                   0
+                232     STORE_NAME                      37: updateGetNewCodeSecondryPageTimer
+                234     LOAD_CONST                      38: <CODE> sendWaitIntruptToAutomation
+                236     MAKE_FUNCTION                   0
+                238     STORE_NAME                      38: sendWaitIntruptToAutomation
+                240     LOAD_CONST                      39: <CODE> changeAutoStartState
+                242     MAKE_FUNCTION                   0
+                244     STORE_NAME                      39: changeAutoStartState
+                246     LOAD_CONST                      40: <CODE> activeAutoStartFeature
+                248     MAKE_FUNCTION                   0
+                250     STORE_NAME                      40: activeAutoStartFeature
+                252     LOAD_CONST                      41: <CODE> checkAutoStartAndActive
+                254     MAKE_FUNCTION                   0
+                256     STORE_NAME                      41: checkAutoStartAndActive
+                258     LOAD_CONST                      42: <CODE> getFormData
+                260     MAKE_FUNCTION                   0
+                262     STORE_NAME                      42: getFormData
+                264     LOAD_CONST                      43: <CODE> resetSms
+                266     MAKE_FUNCTION                   0
+                268     STORE_NAME                      43: resetSms
+                270     LOAD_CONST                      44: <CODE> copyRahgiriToClipboard
+                272     MAKE_FUNCTION                   0
+                274     STORE_NAME                      44: copyRahgiriToClipboard
+                276     LOAD_CONST                      45: <CODE> changeCityList
+                278     MAKE_FUNCTION                   0
+                280     STORE_NAME                      45: changeCityList
+                282     LOAD_CONST                      46: <CODE> parseAndAddBanksToHistory
+                284     MAKE_FUNCTION                   0
+                286     STORE_NAME                      46: parseAndAddBanksToHistory
+                288     LOAD_CONST                      47: <CODE> addToBankHistory
+                290     MAKE_FUNCTION                   0
+                292     STORE_NAME                      47: addToBankHistory
+                294     LOAD_CONST                      48: <CODE> showBanksHistory
+                296     MAKE_FUNCTION                   0
+                298     STORE_NAME                      48: showBanksHistory
+                300     LOAD_CONST                      49: <CODE> fillBanksAlarm
+                302     MAKE_FUNCTION                   0
+                304     STORE_NAME                      49: fillBanksAlarm
+                306     LOAD_CONST                      116: (None,)
+                308     LOAD_CONST                      50: <CODE> fillForm
+                310     MAKE_FUNCTION                   1
+                312     STORE_NAME                      50: fillForm
+                314     LOAD_CONST                      117: ('',)
+                316     LOAD_CONST                      52: <CODE> selectMember
+                318     MAKE_FUNCTION                   1
+                320     STORE_NAME                      51: selectMember
+                322     LOAD_CONST                      53: <CODE> showRestoreMember
+                324     MAKE_FUNCTION                   0
+                326     STORE_NAME                      52: showRestoreMember
+                328     LOAD_CONST                      54: <CODE> updateRestoreMemberDialog
+                330     MAKE_FUNCTION                   0
+                332     STORE_NAME                      53: updateRestoreMemberDialog
+                334     LOAD_CONST                      55: <CODE> showRestoreMemberBlockedNumber
+                336     MAKE_FUNCTION                   0
+                338     STORE_NAME                      54: showRestoreMemberBlockedNumber
+                340     LOAD_CONST                      56: <CODE> updateRestoreMemberBlockedNumberDialog
+                342     MAKE_FUNCTION                   0
+                344     STORE_NAME                      55: updateRestoreMemberBlockedNumberDialog
+                346     LOAD_CONST                      57: <CODE> showRestoreMemberSignedUpBefore
+                348     MAKE_FUNCTION                   0
+                350     STORE_NAME                      56: showRestoreMemberSignedUpBefore
+                352     LOAD_CONST                      58: <CODE> updateRestoreMemberSignedUpBefore
+                354     MAKE_FUNCTION                   0
+                356     STORE_NAME                      57: updateRestoreMemberSignedUpBefore
+                358     LOAD_CONST                      118: ('', 3)
+                360     LOAD_CONST                      60: <CODE> printError
+                362     MAKE_FUNCTION                   1
+                364     STORE_NAME                      58: printError
+                366     LOAD_CONST                      61: <CODE> fullyRemoveMember
+                368     MAKE_FUNCTION                   0
+                370     STORE_NAME                      59: fullyRemoveMember
+                372     LOAD_CONST                      62: <CODE> restoreMember
+                374     MAKE_FUNCTION                   0
+                376     STORE_NAME                      60: restoreMember
+                378     LOAD_CONST                      116: (None,)
+                380     LOAD_CONST                      63: <CODE> showBankSeletion_select
+                382     MAKE_FUNCTION                   1
+                384     STORE_NAME                      61: showBankSeletion_select
+                386     LOAD_CONST                      116: (None,)
+                388     LOAD_CONST                      64: <CODE> showBankSeletion_alarm
+                390     MAKE_FUNCTION                   1
+                392     STORE_NAME                      62: showBankSeletion_alarm
+                394     LOAD_CONST                      119: (None, None, None, None)
+                396     LOAD_CONST                      65: <CODE> showBankSeletion
+                398     MAKE_FUNCTION                   1
+                400     STORE_NAME                      63: showBankSeletion
+                402     LOAD_CONST                      66: <CODE> closeDialogBank
+                404     MAKE_FUNCTION                   0
+                406     STORE_NAME                      64: closeDialogBank
+                408     LOAD_CONST                      67: <CODE> selectBank
+                410     MAKE_FUNCTION                   0
+                412     STORE_NAME                      65: selectBank
+                414     LOAD_CONST                      68: <CODE> unselectBank
+                416     MAKE_FUNCTION                   0
+                418     STORE_NAME                      66: unselectBank
+                420     LOAD_CONST                      69: <CODE> changeCaptchaAutomat
+                422     MAKE_FUNCTION                   0
+                424     STORE_NAME                      67: changeCaptchaAutomat
+                426     LOAD_CONST                      70: <CODE> showSupport
+                428     MAKE_FUNCTION                   0
+                430     STORE_NAME                      68: showSupport
+                432     LOAD_CONST                      71: <CODE> showSettings
+                434     MAKE_FUNCTION                   0
+                436     STORE_NAME                      69: showSettings
+                438     LOAD_CONST                      72: <CODE> proxyListTextClean
+                440     MAKE_FUNCTION                   0
+                442     STORE_NAME                      70: proxyListTextClean
+                444     LOAD_CONST                      73: <CODE> saveSettingsFunction
+                446     MAKE_FUNCTION                   0
+                448     STORE_NAME                      71: saveSettingsFunction
+                450     LOAD_CONST                      74: <CODE> meliSmsLink
+                452     MAKE_FUNCTION                   0
+                454     STORE_NAME                      72: meliSmsLink
+                456     LOAD_CONST                      120: (True,)
+                458     LOAD_CONST                      76: <CODE> clearAll
+                460     MAKE_FUNCTION                   1
+                462     STORE_NAME                      73: clearAll
+                464     LOAD_CONST                      120: (True,)
+                466     LOAD_CONST                      77: <CODE> clearStuf
+                468     MAKE_FUNCTION                   1
+                470     STORE_NAME                      74: clearStuf
+                472     LOAD_CONST                      78: <CODE> removeMember
+                474     MAKE_FUNCTION                   0
+                476     STORE_NAME                      75: removeMember
+                478     LOAD_CONST                      79: <CODE> updatePriority
+                480     MAKE_FUNCTION                   0
+                482     STORE_NAME                      76: updatePriority
+                484     LOAD_CONST                      80: <CODE> addMember
+                486     MAKE_FUNCTION                   0
+                488     STORE_NAME                      77: addMember
+                490     LOAD_CONST                      81: <CODE> refreshCAPTCHA
+                492     MAKE_FUNCTION                   0
+                494     STORE_NAME                      78: refreshCAPTCHA
+                496     LOAD_CONST                      82: <CODE> refreshFormPageTwo
+                498     MAKE_FUNCTION                   0
+                500     STORE_NAME                      79: refreshFormPageTwo
+                502     LOAD_CONST                      83: <CODE> refreshFormPageOneOrThree
+                504     MAKE_FUNCTION                   0
+                506     STORE_NAME                      80: refreshFormPageOneOrThree
+                508     LOAD_CONST                      84: <CODE> refreshBank
+                510     MAKE_FUNCTION                   0
+                512     STORE_NAME                      81: refreshBank
+                514     LOAD_CONST                      85: <CODE> refreshTiming
+                516     MAKE_FUNCTION                   0
+                518     STORE_NAME                      82: refreshTiming
+                520     LOAD_CONST                      86: <CODE> sabtNahaei
+                522     MAKE_FUNCTION                   0
+                524     STORE_NAME                      83: sabtNahaei
+                526     LOAD_CONST                      87: <CODE> updateImage
+                528     MAKE_FUNCTION                   0
+                530     STORE_NAME                      84: updateImage
+                532     LOAD_CONST                      88: <CODE> updateAppName
+                534     MAKE_FUNCTION                   0
+                536     STORE_NAME                      85: updateAppName
+                538     LOAD_CONST                      89: <CODE> checkBankAlarm
+                540     MAKE_FUNCTION                   0
+                542     STORE_NAME                      86: checkBankAlarm
+                544     LOAD_CONST                      90: <CODE> checkErrorAndAlarm
+                546     MAKE_FUNCTION                   0
+                548     STORE_NAME                      87: checkErrorAndAlarm
+                550     LOAD_CONST                      91: <CODE> getShobe
+                552     MAKE_FUNCTION                   0
+                554     STORE_NAME                      88: getShobe
+                556     LOAD_CONST                      92: <CODE> fixChromeWindow
+                558     MAKE_FUNCTION                   0
+                560     STORE_NAME                      89: fixChromeWindow
+                562     LOAD_CONST                      93: <CODE> toggleMiddleAppeare
+                564     MAKE_FUNCTION                   0
+                566     STORE_NAME                      90: toggleMiddleAppeare
+                568     LOAD_CONST                      94: <CODE> checkTemporarySettings
+                570     MAKE_FUNCTION                   0
+                572     STORE_NAME                      91: checkTemporarySettings
+                574     LOAD_CONST                      95: <CODE> timerTickPartForThread
+                576     MAKE_FUNCTION                   0
+                578     STORE_NAME                      92: timerTickPartForThread
+                580     LOAD_CONST                      96: <CODE> updateAutomationData
+                582     MAKE_FUNCTION                   0
+                584     STORE_NAME                      93: updateAutomationData
+                586     LOAD_CONST                      97: <CODE> timerTick
+                588     MAKE_FUNCTION                   0
+                590     STORE_NAME                      94: timerTick
+                592     LOAD_CONST                      98: <CODE> updateTopWidget
+                594     MAKE_FUNCTION                   0
+                596     STORE_NAME                      95: updateTopWidget
+                598     LOAD_CONST                      99: <CODE> checkErrorAndChange
+                600     MAKE_FUNCTION                   0
+                602     STORE_NAME                      96: checkErrorAndChange
+                604     LOAD_CONST                      100: <CODE> forceChangeProxy
+                606     MAKE_FUNCTION                   0
+                608     STORE_NAME                      97: forceChangeProxy
+                610     LOAD_CONST                      101: <CODE> changeProxy
+                612     MAKE_FUNCTION                   0
+                614     STORE_NAME                      98: changeProxy
+                616     LOAD_CONST                      102: <CODE> checkBanksIsOpenThenStart
+                618     MAKE_FUNCTION                   0
+                620     STORE_NAME                      99: checkBanksIsOpenThenStart
+                622     LOAD_CONST                      103: <CODE> checkBanksIsOpenThenActiveAutoCaptchaOrAutoCommit
+                624     MAKE_FUNCTION                   0
+                626     STORE_NAME                      100: checkBanksIsOpenThenActiveAutoCaptchaOrAutoCommit
+                628     LOAD_CONST                      104: <CODE> checkBanksIsOpenThenStartAlongAllMember
+                630     MAKE_FUNCTION                   0
+                632     STORE_NAME                      101: checkBanksIsOpenThenStartAlongAllMember
+                634     LOAD_CONST                      105: <CODE> validatePlay
+                636     MAKE_FUNCTION                   0
+                638     STORE_NAME                      102: validatePlay
+                640     LOAD_CONST                      106: <CODE> sabtKhodkar
+                642     MAKE_FUNCTION                   0
+                644     STORE_NAME                      103: sabtKhodkar
+                646     LOAD_CONST                      107: <CODE> sabtPending
+                648     MAKE_FUNCTION                   0
+                650     STORE_NAME                      104: sabtPending
+                652     LOAD_CONST                      108: <CODE> sabtCaptchaPending
+                654     MAKE_FUNCTION                   0
+                656     STORE_NAME                      105: sabtCaptchaPending
+                658     LOAD_CONST                      109: <CODE> getStatus
+                660     MAKE_FUNCTION                   0
+                662     STORE_NAME                      106: getStatus
+                664     LOAD_CONST                      110: <CODE> recoverCode
+                666     MAKE_FUNCTION                   0
+                668     STORE_NAME                      107: recoverCode
+                670     LOAD_CONST                      111: <CODE> playPause
+                672     MAKE_FUNCTION                   0
+                674     STORE_NAME                      108: playPause
+                676     LOAD_CONST                      112: <CODE> automationStop
+                678     MAKE_FUNCTION                   0
+                680     STORE_NAME                      109: automationStop
+                682     LOAD_CONST                      113: <CODE> closeFunction
+                684     MAKE_FUNCTION                   0
+                686     STORE_NAME                      110: closeFunction
+                688     LOAD_CLOSURE                    0: __class__
+                690     COPY                            1
+                692     STORE_NAME                      111: __classcell__
+                694     RETURN_VALUE                    
+        'MyApp'
+        'declare class'
+        '__main__'
+        (
+            None
+        )
+        (
+            '32'
+            None
+        )
+        (
+            '0.de.pool.ntp.org'
+            None
+        )
+        (
+            1
+        )
+    [Disassembly]
+        0       RESUME                          0
+        2       LOAD_CONST                      0: 0
+        4       LOAD_CONST                      1: None
+        6       IMPORT_NAME                     0: showSplash
+        8       STORE_NAME                      0: showSplash
+        10      PUSH_NULL                       
+        12      LOAD_NAME                       0: showSplash
+        14      LOAD_ATTR                       1: MySplash
+        24      PRECALL                         0
+        28      CALL                            0
+        38      STORE_NAME                      2: my_splash
+        40      LOAD_NAME                       2: my_splash
+        42      LOAD_METHOD                     3: show
+        64      PRECALL                         0
+        68      CALL                            0
+        78      POP_TOP                         
+        80      LOAD_CONST                      0: 0
+        82      LOAD_CONST                      1: None
+        84      IMPORT_NAME                     4: time
+        86      STORE_NAME                      4: time
+        88      LOAD_CONST                      0: 0
+        90      LOAD_CONST                      2: ('tt',)
+        92      IMPORT_NAME                     5: tt
+        94      IMPORT_FROM                     5: tt
+        96      STORE_NAME                      5: tt
+        98      POP_TOP                         
+        100     PUSH_NULL                       
+        102     LOAD_NAME                       5: tt
+        104     PRECALL                         0
+        108     CALL                            0
+        118     POP_TOP                         
+        120     LOAD_CONST                      0: 0
+        122     LOAD_CONST                      3: ('*',)
+        124     IMPORT_NAME                     6: tkinter
+        126     IMPORT_STAR                     
+        128     LOAD_CONST                      0: 0
+        130     LOAD_CONST                      4: ('Label',)
+        132     IMPORT_NAME                     6: tkinter
+        134     IMPORT_FROM                     7: Label
+        136     STORE_NAME                      8: tkinter_label
+        138     POP_TOP                         
+        140     LOAD_CONST                      0: 0
+        142     LOAD_CONST                      5: ('Button',)
+        144     IMPORT_NAME                     6: tkinter
+        146     IMPORT_FROM                     9: Button
+        148     STORE_NAME                      10: tkinter_Button
+        150     POP_TOP                         
+        152     LOAD_CONST                      0: 0
+        154     LOAD_CONST                      6: ('Entry',)
+        156     IMPORT_NAME                     6: tkinter
+        158     IMPORT_FROM                     11: Entry
+        160     STORE_NAME                      12: tkinter_Entry
+        162     POP_TOP                         
+        164     LOAD_CONST                      0: 0
+        166     LOAD_CONST                      3: ('*',)
+        168     IMPORT_NAME                     13: tkinter.ttk
+        170     IMPORT_STAR                     
+        172     LOAD_CONST                      0: 0
+        174     LOAD_CONST                      7: ('font',)
+        176     IMPORT_NAME                     6: tkinter
+        178     IMPORT_FROM                     14: font
+        180     STORE_NAME                      14: font
+        182     POP_TOP                         
+        184     LOAD_CONST                      0: 0
+        186     LOAD_CONST                      8: ('BOLD', 'Font')
+        188     IMPORT_NAME                     15: tkinter.font
+        190     IMPORT_FROM                     16: BOLD
+        192     STORE_NAME                      16: BOLD
+        194     IMPORT_FROM                     17: Font
+        196     STORE_NAME                      17: Font
+        198     POP_TOP                         
+        200     LOAD_CONST                      0: 0
+        202     LOAD_CONST                      9: ('Image', 'ImageTk')
+        204     IMPORT_NAME                     18: PIL
+        206     IMPORT_FROM                     19: Image
+        208     STORE_NAME                      19: Image
+        210     IMPORT_FROM                     20: ImageTk
+        212     STORE_NAME                      20: ImageTk
+        214     POP_TOP                         
+        216     LOAD_CONST                      0: 0
+        218     LOAD_CONST                      1: None
+        220     IMPORT_NAME                     21: datetime
+        222     STORE_NAME                      21: datetime
+        224     LOAD_CONST                      0: 0
+        226     LOAD_CONST                      1: None
+        228     IMPORT_NAME                     22: ntplib
+        230     STORE_NAME                      22: ntplib
+        232     LOAD_CONST                      0: 0
+        234     LOAD_CONST                      1: None
+        236     IMPORT_NAME                     23: sqlite3
+        238     STORE_NAME                      23: sqlite3
+        240     LOAD_CONST                      0: 0
+        242     LOAD_CONST                      1: None
+        244     IMPORT_NAME                     24: ctypes
+        246     STORE_NAME                      24: ctypes
+        248     LOAD_CONST                      0: 0
+        250     LOAD_CONST                      10: ('sha256',)
+        252     IMPORT_NAME                     25: hashlib
+        254     IMPORT_FROM                     26: sha256
+        256     STORE_NAME                      26: sha256
+        258     POP_TOP                         
+        260     LOAD_CONST                      0: 0
+        262     LOAD_CONST                      1: None
+        264     IMPORT_NAME                     27: notification
+        266     STORE_NAME                      27: notification
+        268     LOAD_CONST                      0: 0
+        270     LOAD_CONST                      1: None
+        272     IMPORT_NAME                     28: automation
+        274     STORE_NAME                      28: automation
+        276     LOAD_CONST                      0: 0
+        278     LOAD_CONST                      1: None
+        280     IMPORT_NAME                     29: threading
+        282     STORE_NAME                      29: threading
+        284     LOAD_CONST                      0: 0
+        286     LOAD_CONST                      11: ('ScrollableImage',)
+        288     IMPORT_NAME                     30: ImageScroll
+        290     IMPORT_FROM                     31: ScrollableImage
+        292     STORE_NAME                      31: ScrollableImage
+        294     POP_TOP                         
+        296     LOAD_CONST                      0: 0
+        298     LOAD_CONST                      1: None
+        300     IMPORT_NAME                     32: winsound
+        302     STORE_NAME                      32: winsound
+        304     LOAD_CONST                      0: 0
+        306     LOAD_CONST                      1: None
+        308     IMPORT_NAME                     33: sys
+        310     STORE_NAME                      33: sys
+        312     LOAD_CONST                      0: 0
+        314     LOAD_CONST                      1: None
+        316     IMPORT_NAME                     34: os
+        318     STORE_NAME                      34: os
+        320     LOAD_CONST                      0: 0
+        322     LOAD_CONST                      1: None
+        324     IMPORT_NAME                     35: numpy
+        326     STORE_NAME                      36: np
+        328     LOAD_CONST                      0: 0
+        330     LOAD_CONST                      12: ('Fernet',)
+        332     IMPORT_NAME                     37: cryptography.fernet
+        334     IMPORT_FROM                     38: Fernet
+        336     STORE_NAME                      38: Fernet
+        338     POP_TOP                         
+        340     LOAD_CONST                      0: 0
+        342     LOAD_CONST                      13: ('ToolTip',)
+        344     IMPORT_NAME                     39: tktooltip
+        346     IMPORT_FROM                     40: ToolTip
+        348     STORE_NAME                      40: ToolTip
+        350     POP_TOP                         
+        352     LOAD_CONST                      0: 0
+        354     LOAD_CONST                      1: None
+        356     IMPORT_NAME                     41: clipboard
+        358     STORE_NAME                      41: clipboard
+        360     LOAD_CONST                      0: 0
+        362     LOAD_CONST                      1: None
+        364     IMPORT_NAME                     42: subprocess
+        366     STORE_NAME                      42: subprocess
+        368     LOAD_CONST                      0: 0
+        370     LOAD_CONST                      14: ('post',)
+        372     IMPORT_NAME                     43: requests
+        374     IMPORT_FROM                     44: post
+        376     STORE_NAME                      45: postRequest
+        378     POP_TOP                         
+        380     LOAD_CONST                      0: 0
+        382     LOAD_CONST                      15: ('get',)
+        384     IMPORT_NAME                     43: requests
+        386     IMPORT_FROM                     46: get
+        388     STORE_NAME                      47: getRequest
+        390     POP_TOP                         
+        392     LOAD_CONST                      0: 0
+        394     LOAD_CONST                      16: ('getframeinfo', 'stack')
+        396     IMPORT_NAME                     48: inspect
+        398     IMPORT_FROM                     49: getframeinfo
+        400     STORE_NAME                      49: getframeinfo
+        402     IMPORT_FROM                     50: stack
+        404     STORE_NAME                      50: stack
+        406     POP_TOP                         
+        408     LOAD_CONST                      0: 0
+        410     LOAD_CONST                      1: None
+        412     IMPORT_NAME                     51: traceback
+        414     STORE_NAME                      51: traceback
+        416     LOAD_CONST                      0: 0
+        418     LOAD_CONST                      1: None
+        420     IMPORT_NAME                     52: downloadWithDnsAndPercentage
+        422     STORE_NAME                      52: downloadWithDnsAndPercentage
+        424     LOAD_CONST                      0: 0
+        426     LOAD_CONST                      17: ('countJetvam',)
+        428     IMPORT_NAME                     53: openedCounter
+        430     IMPORT_FROM                     54: countJetvam
+        432     STORE_NAME                      54: countJetvam
+        434     POP_TOP                         
+        436     LOAD_CONST                      0: 0
+        438     LOAD_CONST                      1: None
+        440     IMPORT_NAME                     55: webdriverManager
+        442     STORE_NAME                      55: webdriverManager
+        444     LOAD_CONST                      0: 0
+        446     LOAD_CONST                      18: ('BytesIO',)
+        448     IMPORT_NAME                     56: io
+        450     IMPORT_FROM                     57: BytesIO
+        452     STORE_NAME                      57: BytesIO
+        454     POP_TOP                         
+        456     LOAD_CONST                      0: 0
+        458     LOAD_CONST                      1: None
+        460     IMPORT_NAME                     58: db_update
+        462     STORE_NAME                      58: db_update
+        464     LOAD_CONST                      0: 0
+        466     LOAD_CONST                      1: None
+        468     IMPORT_NAME                     59: json
+        470     STORE_NAME                      59: json
+        472     LOAD_CONST                      0: 0
+        474     LOAD_CONST                      1: None
+        476     IMPORT_NAME                     60: pyperclip
+        478     STORE_NAME                      60: pyperclip
+        480     LOAD_CONST                      0: 0
+        482     LOAD_CONST                      1: None
+        484     IMPORT_NAME                     61: struct
+        486     STORE_NAME                      61: struct
+        488     LOAD_CONST                      0: 0
+        490     LOAD_CONST                      1: None
+        492     IMPORT_NAME                     62: signal
+        494     STORE_NAME                      62: signal
+        496     LOAD_CONST                      0: 0
+        498     LOAD_CONST                      1: None
+        500     IMPORT_NAME                     63: socket
+        502     STORE_NAME                      63: socket
+        504     LOAD_CONST                      0: 0
+        506     LOAD_CONST                      1: None
+        508     IMPORT_NAME                     64: changeSystemProxy
+        510     STORE_NAME                      64: changeSystemProxy
+        512     PUSH_NULL                       
+        514     LOAD_NAME                       42: subprocess
+        516     LOAD_ATTR                       65: STARTUPINFO
+        526     PRECALL                         0
+        530     CALL                            0
+        540     STORE_NAME                      66: startupinfo
+        542     LOAD_NAME                       66: startupinfo
+        544     COPY                            1
+        546     LOAD_ATTR                       67: dwFlags
+        556     LOAD_NAME                       42: subprocess
+        558     LOAD_ATTR                       68: STARTF_USESHOWWINDOW
+        568     BINARY_OP                       20 (|=)
+        572     SWAP                            2
+        574     STORE_ATTR                      67: dwFlags
+        584     PUSH_NULL                       
+        586     LOAD_NAME                       5: tt
+        588     LOAD_CONST                      19: 'import'
+        590     PRECALL                         1
+        594     CALL                            1
+        604     POP_TOP                         
+        606     LOAD_CONST                      20: '3.26.5'
+        608     STORE_NAME                      69: app_version
+        610     LOAD_NAME                       34: os
+        612     LOAD_ATTR                       70: path
+        622     LOAD_METHOD                     71: abspath
+        644     LOAD_CONST                      21: ''
+        646     PRECALL                         1
+        650     CALL                            1
+        660     STORE_NAME                      72: driver_root
+        662     LOAD_NAME                       34: os
+        664     LOAD_ATTR                       70: path
+        674     LOAD_METHOD                     73: exists
+        696     LOAD_CONST                      22: 'no-gui'
+        698     PRECALL                         1
+        702     CALL                            1
+        712     POP_JUMP_FORWARD_IF_TRUE        57 (to 828)
+        714     PUSH_NULL                       
+        716     LOAD_NAME                       74: open
+        718     LOAD_CONST                      22: 'no-gui'
+        720     LOAD_CONST                      23: 'w'
+        722     PRECALL                         2
+        726     CALL                            2
+        736     BEFORE_WITH                     
+        738     STORE_NAME                      75: f
+        740     LOAD_NAME                       75: f
+        742     LOAD_METHOD                     76: write
+        764     LOAD_CONST                      21: ''
+        766     PRECALL                         1
+        770     CALL                            1
+        780     POP_TOP                         

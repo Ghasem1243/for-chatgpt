@@ -1,0 +1,2026 @@
+                        84      LOAD_METHOD                     3: updatePriorityDict
+                        106     LOAD_FAST                       2: cur
+                        108     PRECALL                         1
+                        112     CALL                            1
+                        122     POP_TOP                         
+                        124     LOAD_FAST                       0: self
+                        126     LOAD_METHOD                     4: updateBlockedNumberList
+                        148     LOAD_FAST                       2: cur
+                        150     PRECALL                         1
+                        154     CALL                            1
+                        164     POP_TOP                         
+                        166     LOAD_FAST                       0: self
+                        168     LOAD_METHOD                     5: updateSignedUpBeforeList
+                        190     LOAD_FAST                       2: cur
+                        192     PRECALL                         1
+                        196     CALL                            1
+                        206     POP_TOP                         
+                        208     BUILD_LIST                      0
+                        210     LOAD_FAST                       0: self
+                        212     STORE_ATTR                      6: database_list
+                        222     LOAD_GLOBAL                     15: NULL + list
+                        234     LOAD_FAST                       2: cur
+                        236     LOAD_METHOD                     8: execute
+                        258     LOAD_CONST                      2: 'SELECT * FROM members'
+                        260     PRECALL                         1
+                        264     CALL                            1
+                        274     PRECALL                         1
+                        278     CALL                            1
+                        288     STORE_FAST                      3: not_sorted_members
+                        290     LOAD_FAST                       0: self
+                        292     LOAD_ATTR                       9: priority_dict
+                        302     GET_ITER                        
+                        304     FOR_ITER                        127 (to 560)
+                        306     STORE_FAST                      4: mem
+                        308     LOAD_FAST                       0: self
+                        310     LOAD_ATTR                       9: priority_dict
+                        320     LOAD_FAST                       4: mem
+                        322     BINARY_SUBSCR                   
+                        332     LOAD_CONST                      3: 999
+                        334     COMPARE_OP                      2 (==)
+                        340     POP_JUMP_FORWARD_IF_FALSE       2 (to 346)
+                        342     POP_TOP                         
+                        344     JUMP_FORWARD                    107 (to 560)
+                        346     LOAD_GLOBAL                     21: NULL + enumerate
+                        358     LOAD_FAST                       3: not_sorted_members
+                        360     PRECALL                         1
+                        364     CALL                            1
+                        374     GET_ITER                        
+                        376     FOR_ITER                        90 (to 558)
+                        378     UNPACK_SEQUENCE                 2
+                        382     STORE_FAST                      5: index
+                        384     STORE_FAST                      6: j
+                        386     LOAD_GLOBAL                     23: NULL + str
+                        398     LOAD_FAST                       4: mem
+                        400     PRECALL                         1
+                        404     CALL                            1
+                        414     LOAD_FAST                       6: j
+                        416     LOAD_FAST                       0: self
+                        418     LOAD_ATTR                       12: database_map
+                        428     LOAD_CONST                      4: 'meli'
+                        430     BINARY_SUBSCR                   
+                        440     BINARY_SUBSCR                   
+                        450     COMPARE_OP                      2 (==)
+                        456     POP_JUMP_FORWARD_IF_FALSE       49 (to 556)
+                        458     LOAD_FAST                       0: self
+                        460     LOAD_ATTR                       6: database_list
+                        470     LOAD_METHOD                     13: append
+                        492     LOAD_FAST                       6: j
+                        494     PRECALL                         1
+                        498     CALL                            1
+                        508     POP_TOP                         
+                        510     LOAD_FAST                       3: not_sorted_members
+                        512     LOAD_METHOD                     14: pop
+                        534     LOAD_FAST                       5: index
+                        536     PRECALL                         1
+                        540     CALL                            1
+                        550     POP_TOP                         
+                        552     POP_TOP                         
+                        554     JUMP_FORWARD                    1 (to 558)
+                        556     JUMP_BACKWARD                   91 (to 376)
+                        558     JUMP_BACKWARD                   128 (to 304)
+                        560     LOAD_FAST                       3: not_sorted_members
+                        562     GET_ITER                        
+                        564     FOR_ITER                        28 (to 622)
+                        566     STORE_FAST                      6: j
+                        568     LOAD_FAST                       0: self
+                        570     LOAD_ATTR                       6: database_list
+                        580     LOAD_METHOD                     13: append
+                        602     LOAD_FAST                       6: j
+                        604     PRECALL                         1
+                        608     CALL                            1
+                        618     POP_TOP                         
+                        620     JUMP_BACKWARD                   29 (to 564)
+                        622     BUILD_LIST                      0
+                        624     LOAD_FAST                       0: self
+                        626     STORE_ATTR                      15: database_list_motaqazi_index
+                        636     BUILD_LIST                      0
+                        638     LOAD_FAST                       0: self
+                        640     STORE_ATTR                      16: database_list_sabtname_index
+                        650     BUILD_LIST                      0
+                        652     LOAD_FAST                       0: self
+                        654     STORE_ATTR                      17: database_list_removed_index
+                        664     BUILD_LIST                      0
+                        666     LOAD_FAST                       0: self
+                        668     STORE_ATTR                      18: blocked_number_member_list
+                        678     BUILD_LIST                      0
+                        680     LOAD_FAST                       0: self
+                        682     STORE_ATTR                      19: signed_up_before_member_list
+                        692     LOAD_GLOBAL                     21: NULL + enumerate
+                        704     LOAD_FAST                       0: self
+                        706     LOAD_ATTR                       6: database_list
+                        716     PRECALL                         1
+                        720     CALL                            1
+                        730     GET_ITER                        
+                        732     FOR_ITER                        264 (to 1264)
+                        736     UNPACK_SEQUENCE                 2
+                        740     STORE_FAST                      7: i
+                        742     STORE_FAST                      8: member
+                        744     LOAD_FAST                       8: member
+                        746     LOAD_FAST                       0: self
+                        748     LOAD_ATTR                       12: database_map
+                        758     LOAD_CONST                      5: 'status'
+                        760     BINARY_SUBSCR                   
+                        770     BINARY_SUBSCR                   
+                        780     LOAD_CONST                      6: 0
+                        782     COMPARE_OP                      2 (==)
+                        788     POP_JUMP_FORWARD_IF_FALSE       159 (to 1108)
+                        790     LOAD_FAST                       8: member
+                        792     LOAD_FAST                       0: self
+                        794     LOAD_ATTR                       12: database_map
+                        804     LOAD_CONST                      7: 'hamrah'
+                        806     BINARY_SUBSCR                   
+                        816     BINARY_SUBSCR                   
+                        826     LOAD_FAST                       0: self
+                        828     LOAD_ATTR                       20: blocked_number_list
+                        838     CONTAINS_OP                     0 (in)
+                        840     POP_JUMP_FORWARD_IF_TRUE        53 (to 948)
+                        842     LOAD_FAST                       8: member
+                        844     LOAD_FAST                       0: self
+                        846     LOAD_ATTR                       12: database_map
+                        856     LOAD_CONST                      4: 'meli'
+                        858     BINARY_SUBSCR                   
+                        868     BINARY_SUBSCR                   
+                        878     LOAD_FAST                       0: self
+                        880     LOAD_ATTR                       21: signed_up_before_list
+                        890     CONTAINS_OP                     0 (in)
+                        892     POP_JUMP_FORWARD_IF_TRUE        27 (to 948)
+                        894     LOAD_FAST                       0: self
+                        896     LOAD_ATTR                       15: database_list_motaqazi_index
+                        906     LOAD_METHOD                     13: append
+                        928     LOAD_FAST                       7: i
+                        930     PRECALL                         1
+                        934     CALL                            1
+                        944     POP_TOP                         
+                        946     JUMP_BACKWARD                   108 (to 732)
+                        948     LOAD_FAST                       8: member
+                        950     LOAD_FAST                       0: self
+                        952     LOAD_ATTR                       12: database_map
+                        962     LOAD_CONST                      7: 'hamrah'
+                        964     BINARY_SUBSCR                   
+                        974     BINARY_SUBSCR                   
+                        984     LOAD_FAST                       0: self
+                        986     LOAD_ATTR                       20: blocked_number_list
+                        996     CONTAINS_OP                     0 (in)
+                        998     POP_JUMP_FORWARD_IF_FALSE       27 (to 1054)
+                        1000    LOAD_FAST                       0: self
+                        1002    LOAD_ATTR                       18: blocked_number_member_list
+                        1012    LOAD_METHOD                     13: append
+                        1034    LOAD_FAST                       8: member
+                        1036    PRECALL                         1
+                        1040    CALL                            1
+                        1050    POP_TOP                         
+                        1052    JUMP_BACKWARD                   161 (to 732)
+                        1054    LOAD_FAST                       0: self
+                        1056    LOAD_ATTR                       19: signed_up_before_member_list
+                        1066    LOAD_METHOD                     13: append
+                        1088    LOAD_FAST                       8: member
+                        1090    PRECALL                         1
+                        1094    CALL                            1
+                        1104    POP_TOP                         
+                        1106    JUMP_BACKWARD                   188 (to 732)
+                        1108    LOAD_FAST                       8: member
+                        1110    LOAD_FAST                       0: self
+                        1112    LOAD_ATTR                       12: database_map
+                        1122    LOAD_CONST                      5: 'status'
+                        1124    BINARY_SUBSCR                   
+                        1134    BINARY_SUBSCR                   
+                        1144    LOAD_CONST                      8: 1
+                        1146    COMPARE_OP                      2 (==)
+                        1152    POP_JUMP_FORWARD_IF_FALSE       27 (to 1208)
+                        1154    LOAD_FAST                       0: self
+                        1156    LOAD_ATTR                       16: database_list_sabtname_index
+                        1166    LOAD_METHOD                     13: append
+                        1188    LOAD_FAST                       7: i
+                        1190    PRECALL                         1
+                        1194    CALL                            1
+                        1204    POP_TOP                         
+                        1206    JUMP_BACKWARD                   238 (to 732)
+                        1208    LOAD_FAST                       0: self
+                        1210    LOAD_ATTR                       17: database_list_removed_index
+                        1220    LOAD_METHOD                     13: append
+                        1242    LOAD_FAST                       7: i
+                        1244    PRECALL                         1
+                        1248    CALL                            1
+                        1258    POP_TOP                         
+                        1260    JUMP_BACKWARD                   266 (to 732)
+                        1264    LOAD_FAST                       1: con
+                        1266    LOAD_METHOD                     22: close
+                        1288    PRECALL                         0
+                        1292    CALL                            0
+                        1302    POP_TOP                         
+                        1304    LOAD_FAST                       0: self
+                        1306    LOAD_METHOD                     23: getBanksAlarmFromDatabase
+                        1328    PRECALL                         0
+                        1332    CALL                            0
+                        1342    POP_TOP                         
+                        1344    LOAD_CONST                      0: None
+                        1346    RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: getBanksAlarmFromDatabase
+                    Qualified Name: MyApp.getBanksAlarmFromDatabase
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'sqlite3'
+                        'connect'
+                        'cursor'
+                        'list'
+                        'execute'
+                        'banks_alarm_database_dict'
+                        'close'
+                    [Locals+Names]
+                        'self'
+                        'con'
+                        'cur'
+                        'ggg'
+                    [Constants]
+                        None
+                        'members.db'
+                        'SELECT * FROM banks_alarm'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <dictcomp>
+                            Qualified Name: MyApp.getBanksAlarmFromDatabase.<locals>.<dictcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 5
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                            [Constants]
+                                1
+                                2
+                            [Disassembly]
+                                0       RESUME                          0
+                                2       BUILD_MAP                       0
+                                4       LOAD_FAST                       0: .0
+                                6       FOR_ITER                        17 (to 42)
+                                8       STORE_FAST                      1: i
+                                10      LOAD_FAST                       1: i
+                                12      LOAD_CONST                      0: 1
+                                14      BINARY_SUBSCR                   
+                                24      LOAD_FAST                       1: i
+                                26      LOAD_CONST                      1: 2
+                                28      BINARY_SUBSCR                   
+                                38      MAP_ADD                         2
+                                40      JUMP_BACKWARD                   18 (to 6)
+                                42      RETURN_VALUE                    
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + sqlite3
+                        14      LOAD_ATTR                       1: connect
+                        24      LOAD_CONST                      1: 'members.db'
+                        26      PRECALL                         1
+                        30      CALL                            1
+                        40      STORE_FAST                      1: con
+                        42      LOAD_FAST                       1: con
+                        44      LOAD_METHOD                     2: cursor
+                        66      PRECALL                         0
+                        70      CALL                            0
+                        80      STORE_FAST                      2: cur
+                        82      LOAD_GLOBAL                     7: NULL + list
+                        94      LOAD_FAST                       2: cur
+                        96      LOAD_METHOD                     4: execute
+                        118     LOAD_CONST                      2: 'SELECT * FROM banks_alarm'
+                        120     PRECALL                         1
+                        124     CALL                            1
+                        134     PRECALL                         1
+                        138     CALL                            1
+                        148     STORE_FAST                      3: ggg
+                        150     LOAD_CONST                      3: <CODE> <dictcomp>
+                        152     MAKE_FUNCTION                   0
+                        154     LOAD_FAST                       3: ggg
+                        156     GET_ITER                        
+                        158     PRECALL                         0
+                        162     CALL                            0
+                        172     LOAD_FAST                       0: self
+                        174     STORE_ATTR                      5: banks_alarm_database_dict
+                        184     LOAD_FAST                       1: con
+                        186     LOAD_METHOD                     6: close
+                        208     PRECALL                         0
+                        212     CALL                            0
+                        222     POP_TOP                         
+                        224     LOAD_CONST                      0: None
+                        226     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: getRemovedMembers
+                    Qualified Name: MyApp.getRemovedMembers
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'sqlite3'
+                        'connect'
+                        'cursor'
+                        'list'
+                        'execute'
+                        'database_list_removed_members'
+                        'database_list_removed_members_index'
+                        'enumerate'
+                        'database_list_removed_index'
+                        'append'
+                        'close'
+                    [Locals+Names]
+                        'self'
+                        'con'
+                        'cur'
+                        'i'
+                        'member'
+                    [Constants]
+                        None
+                        'members.db'
+                        'SELECT * FROM deleted_members'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + sqlite3
+                        14      LOAD_ATTR                       1: connect
+                        24      LOAD_CONST                      1: 'members.db'
+                        26      PRECALL                         1
+                        30      CALL                            1
+                        40      STORE_FAST                      1: con
+                        42      LOAD_FAST                       1: con
+                        44      LOAD_METHOD                     2: cursor
+                        66      PRECALL                         0
+                        70      CALL                            0
+                        80      STORE_FAST                      2: cur
+                        82      LOAD_GLOBAL                     7: NULL + list
+                        94      LOAD_FAST                       2: cur
+                        96      LOAD_METHOD                     4: execute
+                        118     LOAD_CONST                      2: 'SELECT * FROM deleted_members'
+                        120     PRECALL                         1
+                        124     CALL                            1
+                        134     PRECALL                         1
+                        138     CALL                            1
+                        148     LOAD_FAST                       0: self
+                        150     STORE_ATTR                      5: database_list_removed_members
+                        160     BUILD_LIST                      0
+                        162     LOAD_FAST                       0: self
+                        164     STORE_ATTR                      6: database_list_removed_members_index
+                        174     LOAD_GLOBAL                     15: NULL + enumerate
+                        186     LOAD_FAST                       0: self
+                        188     LOAD_ATTR                       5: database_list_removed_members
+                        198     PRECALL                         1
+                        202     CALL                            1
+                        212     GET_ITER                        
+                        214     FOR_ITER                        31 (to 278)
+                        216     UNPACK_SEQUENCE                 2
+                        220     STORE_FAST                      3: i
+                        222     STORE_FAST                      4: member
+                        224     LOAD_FAST                       0: self
+                        226     LOAD_ATTR                       8: database_list_removed_index
+                        236     LOAD_METHOD                     9: append
+                        258     LOAD_FAST                       3: i
+                        260     PRECALL                         1
+                        264     CALL                            1
+                        274     POP_TOP                         
+                        276     JUMP_BACKWARD                   32 (to 214)
+                        278     LOAD_FAST                       1: con
+                        280     LOAD_METHOD                     10: close
+                        302     PRECALL                         0
+                        306     CALL                            0
+                        316     POP_TOP                         
+                        318     LOAD_CONST                      0: None
+                        320     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: getMemberByMeli
+                    Qualified Name: MyApp.getMemberByMeli
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 6
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'database_list'
+                        'str'
+                        'database_map'
+                    [Locals+Names]
+                        'self'
+                        'meli'
+                        'mem'
+                    [Constants]
+                        None
+                        'meli'
+                        False
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       0: self
+                        4       LOAD_ATTR                       0: database_list
+                        14      GET_ITER                        
+                        16      FOR_ITER                        55 (to 128)
+                        18      STORE_FAST                      2: mem
+                        20      LOAD_GLOBAL                     3: NULL + str
+                        32      LOAD_FAST                       2: mem
+                        34      LOAD_FAST                       0: self
+                        36      LOAD_ATTR                       2: database_map
+                        46      LOAD_CONST                      1: 'meli'
+                        48      BINARY_SUBSCR                   
+                        58      BINARY_SUBSCR                   
+                        68      PRECALL                         1
+                        72      CALL                            1
+                        82      LOAD_GLOBAL                     3: NULL + str
+                        94      LOAD_FAST                       1: meli
+                        96      PRECALL                         1
+                        100     CALL                            1
+                        110     COMPARE_OP                      2 (==)
+                        116     POP_JUMP_FORWARD_IF_FALSE       4 (to 126)
+                        118     LOAD_FAST                       2: mem
+                        120     SWAP                            2
+                        122     POP_TOP                         
+                        124     RETURN_VALUE                    
+                        126     JUMP_BACKWARD                   56 (to 16)
+                        128     LOAD_CONST                      2: False
+                        130     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: comboSearch
+                    Qualified Name: MyApp.comboSearch
+                    Arg Count: 3
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'widget'
+                        'get'
+                        'keysym'
+                        'replace'
+                        'len'
+                        'entry_motaqazian'
+                        'set'
+                        'entry_sabt_nam'
+                        'int'
+                        'split'
+                        'fillForm'
+                        'getCities'
+                        'entry_shahr'
+                        'select_range'
+                        'END'
+                    [Locals+Names]
+                        'self'
+                        'event'
+                        'event_name'
+                        'value'
+                        'fully_equal'
+                        'item'
+                        'index'
+                        'cities'
+                    [Constants]
+                        None
+                        'Return'
+                        False
+                        'values'
+                        'ي'
+                        'ی'
+                        'ک'
+                        'ك'
+                        True
+                        'motaqazian'
+                        'sabt_nam'
+                        ''
+                        '_'
+                        -1
+                        '('
+                        ')'
+                        'ostan'
+                        0
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       1: event
+                        4       LOAD_ATTR                       0: widget
+                        14      LOAD_METHOD                     1: get
+                        36      PRECALL                         0
+                        40      CALL                            0
+                        50      STORE_FAST                      3: value
+                        52      LOAD_FAST                       1: event
+                        54      LOAD_ATTR                       2: keysym
+                        64      LOAD_CONST                      1: 'Return'
+                        66      COMPARE_OP                      2 (==)
+                        72      POP_JUMP_FORWARD_IF_FALSE       435 (to 946)
+                        76      LOAD_CONST                      2: False
+                        78      STORE_FAST                      4: fully_equal
+                        80      LOAD_FAST                       3: value
+                        82      LOAD_FAST                       1: event
+                        84      LOAD_ATTR                       0: widget
+                        94      LOAD_CONST                      3: 'values'
+                        96      BINARY_SUBSCR                   
+                        106     CONTAINS_OP                     0 (in)
+                        108     POP_JUMP_FORWARD_IF_TRUE        55 (to 220)
+                        110     LOAD_FAST                       3: value
+                        112     LOAD_METHOD                     3: replace
+                        134     LOAD_CONST                      4: 'ي'
+                        136     LOAD_CONST                      5: 'ی'
+                        138     PRECALL                         2
+                        142     CALL                            2
+                        152     LOAD_METHOD                     3: replace
+                        174     LOAD_CONST                      6: 'ک'
+                        176     LOAD_CONST                      7: 'ك'
+                        178     PRECALL                         2
+                        182     CALL                            2
+                        192     LOAD_FAST                       1: event
+                        194     LOAD_ATTR                       0: widget
+                        204     LOAD_CONST                      3: 'values'
+                        206     BINARY_SUBSCR                   
+                        216     CONTAINS_OP                     0 (in)
+                        218     POP_JUMP_FORWARD_IF_FALSE       2 (to 224)
+                        220     LOAD_CONST                      8: True
+                        222     STORE_FAST                      4: fully_equal
+                        224     LOAD_FAST                       1: event
+                        226     LOAD_ATTR                       0: widget
+                        236     LOAD_CONST                      3: 'values'
+                        238     BINARY_SUBSCR                   
+                        248     GET_ITER                        
+                        250     FOR_ITER                        312 (to 878)
+                        254     STORE_FAST                      5: item
+                        256     LOAD_FAST                       3: value
+                        258     LOAD_FAST                       5: item
+                        260     CONTAINS_OP                     0 (in)
+                        262     POP_JUMP_FORWARD_IF_TRUE        45 (to 354)
+                        264     LOAD_FAST                       3: value
+                        266     LOAD_METHOD                     3: replace
+                        288     LOAD_CONST                      4: 'ي'
+                        290     LOAD_CONST                      5: 'ی'
+                        292     PRECALL                         2
+                        296     CALL                            2
+                        306     LOAD_METHOD                     3: replace
+                        328     LOAD_CONST                      6: 'ک'
+                        330     LOAD_CONST                      7: 'ك'
+                        332     PRECALL                         2
+                        336     CALL                            2
+                        346     LOAD_FAST                       5: item
+                        348     CONTAINS_OP                     0 (in)
+                        350     POP_JUMP_FORWARD_IF_FALSE       260 (to 874)
+                        354     LOAD_FAST                       4: fully_equal
+                        356     POP_JUMP_FORWARD_IF_FALSE       33 (to 424)
+                        358     LOAD_GLOBAL                     9: NULL + len
+                        370     LOAD_FAST                       3: value
+                        372     PRECALL                         1
+                        376     CALL                            1
+                        386     LOAD_GLOBAL                     9: NULL + len
+                        398     LOAD_FAST                       5: item
+                        400     PRECALL                         1
+                        404     CALL                            1
+                        414     COMPARE_OP                      3 (!=)
+                        420     POP_JUMP_FORWARD_IF_FALSE       1 (to 424)
+                        422     JUMP_BACKWARD                   87 (to 250)
+                        424     LOAD_FAST                       2: event_name
+                        426     LOAD_CONST                      9: 'motaqazian'
+                        428     COMPARE_OP                      2 (==)
+                        434     POP_JUMP_FORWARD_IF_TRUE        6 (to 448)
+                        436     LOAD_FAST                       2: event_name
+                        438     LOAD_CONST                      10: 'sabt_nam'
+                        440     COMPARE_OP                      2 (==)
+                        446     POP_JUMP_FORWARD_IF_FALSE       154 (to 756)
+                        448     LOAD_FAST                       0: self
+                        450     LOAD_ATTR                       5: entry_motaqazian
+                        460     LOAD_METHOD                     6: set
+                        482     LOAD_CONST                      11: ''
+                        484     PRECALL                         1
+                        488     CALL                            1
+                        498     POP_TOP                         
+                        500     LOAD_FAST                       0: self
+                        502     LOAD_ATTR                       7: entry_sabt_nam
+                        512     LOAD_METHOD                     6: set
+                        534     LOAD_CONST                      11: ''
+                        536     PRECALL                         1
+                        540     CALL                            1
+                        550     POP_TOP                         
+                        552     LOAD_GLOBAL                     17: NULL + int
+                        564     LOAD_FAST                       5: item
+                        566     LOAD_METHOD                     9: split
+                        588     LOAD_CONST                      12: '_'
+                        590     PRECALL                         1
+                        594     CALL                            1
+                        604     LOAD_CONST                      13: -1
+                        606     BINARY_SUBSCR                   
+                        616     LOAD_METHOD                     3: replace
+                        638     LOAD_CONST                      14: '('
+                        640     LOAD_CONST                      11: ''
+                        642     PRECALL                         2
+                        646     CALL                            2
+                        656     LOAD_METHOD                     3: replace
+                        678     LOAD_CONST                      15: ')'
+                        680     LOAD_CONST                      11: ''
+                        682     PRECALL                         2
+                        686     CALL                            2
+                        696     PRECALL                         1
+                        700     CALL                            1
+                        710     STORE_FAST                      6: index
+                        712     LOAD_FAST                       0: self
+                        714     LOAD_METHOD                     10: fillForm
+                        736     LOAD_FAST                       6: index
+                        738     PRECALL                         1
+                        742     CALL                            1
+                        752     POP_TOP                         
+                        754     JUMP_FORWARD                    31 (to 818)
+                        756     LOAD_FAST                       2: event_name
+                        758     LOAD_CONST                      16: 'ostan'
+                        760     COMPARE_OP                      2 (==)
+                        766     POP_JUMP_FORWARD_IF_FALSE       25 (to 818)
+                        768     LOAD_GLOBAL                     23: NULL + getCities
+                        780     LOAD_FAST                       5: item
+                        782     PRECALL                         1
+                        786     CALL                            1
+                        796     STORE_FAST                      7: cities
+                        798     LOAD_FAST                       7: cities
+                        800     LOAD_FAST                       0: self
+                        802     LOAD_ATTR                       12: entry_shahr
+                        812     LOAD_CONST                      3: 'values'
+                        814     STORE_SUBSCR                    
+                        818     LOAD_FAST                       1: event
+                        820     LOAD_ATTR                       0: widget
+                        830     LOAD_METHOD                     6: set
+                        852     LOAD_FAST                       5: item
+                        854     PRECALL                         1
+                        858     CALL                            1
+                        868     POP_TOP                         
+                        870     POP_TOP                         
+                        872     JUMP_FORWARD                    2 (to 878)
+                        874     JUMP_BACKWARD                   314 (to 250)
+                        878     LOAD_FAST                       1: event
+                        880     LOAD_ATTR                       0: widget
+                        890     LOAD_METHOD                     13: select_range
+                        912     LOAD_CONST                      17: 0
+                        914     LOAD_GLOBAL                     28: END
+                        926     PRECALL                         2
+                        930     CALL                            2
+                        940     POP_TOP                         
+                        942     LOAD_CONST                      0: None
+                        944     RETURN_VALUE                    
+                        946     LOAD_CONST                      0: None
+                        948     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: addSerchToCombobox
+                    Qualified Name: MyApp.addSerchToCombobox
+                    Arg Count: 3
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'bind'
+                        'ToolTip'
+                    [Locals+Names]
+                        'self'
+                        'component'
+                        'event_name'
+                    [Constants]
+                        None
+                        '<KeyRelease>'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.addSerchToCombobox.<locals>.<lambda>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 4
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'comboSearch'
+                            [Locals+Names]
+                                'x'
+                                'event_name'
+                                'self'
+                            [Constants]
+                                None
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  2
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      2: self
+                                6       LOAD_METHOD                     0: comboSearch
+                                28      LOAD_FAST                       0: x
+                                30      LOAD_DEREF                      1: event_name
+                                32      PRECALL                         2
+                                36      CALL                            2
+                                46      RETURN_VALUE                    
+                        'برای جست‌و‌جو قسمتی از عبارت را نوشته و اینتر را فشار دهید'
+                        0.05
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       MAKE_CELL                       2: event_name
+                        4       RESUME                          0
+                        6       LOAD_FAST                       1: component
+                        8       LOAD_METHOD                     0: bind
+                        30      LOAD_CONST                      1: '<KeyRelease>'
+                        32      LOAD_CLOSURE                    2: event_name
+                        34      LOAD_CLOSURE                    0: self
+                        36      BUILD_TUPLE                     2
+                        38      LOAD_CONST                      2: <CODE> <lambda>
+                        40      MAKE_FUNCTION                   8
+                        42      PRECALL                         2
+                        46      CALL                            2
+                        56      POP_TOP                         
+                        58      LOAD_GLOBAL                     3: NULL + ToolTip
+                        70      LOAD_FAST                       1: component
+                        72      LOAD_CONST                      3: 'برای جست‌و‌جو قسمتی از عبارت را نوشته و اینتر را فشار دهید'
+                        74      LOAD_CONST                      4: 0.05
+                        76      PRECALL                         3
+                        80      CALL                            3
+                        90      POP_TOP                         
+                        92      LOAD_CONST                      0: None
+                        94      RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: buildGrid
+                    Qualified Name: MyApp.buildGrid
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 13
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'title'
+                        'winfo_screenwidth'
+                        'screen_width'
+                        'winfo_screenheight'
+                        'screen_height'
+                        'debug_mode'
+                        'geometry'
+                        'int'
+                        'windows_scale_factor'
+                        'init_left'
+                        'init_top'
+                        'protocol'
+                        'closeFunction'
+                        'Grid'
+                        'rowconfigure'
+                        'columnconfigure'
+                        'Frame'
+                        'grid'
+                        'main_container'
+                        'Image'
+                        'open'
+                        'icon_image'
+                        'ImageTk'
+                        'PhotoImage'
+                        'icon'
+                        'wm_iconphoto'
+                        'LabelFrame'
+                        'frame_show_root'
+                        'default_padx'
+                        'default_pady'
+                        'makeBlank'
+                        'image_show_tk'
+                        'ScrollableImage'
+                        'scroll_image'
+                        'middle_frame_root'
+                        'bottom_button_frame'
+                        'Canvas'
+                        'Scrollbar'
+                        'vertical_extra'
+                        'set'
+                        'canvas_extra_root'
+                        'extra_settings_frame'
+                        'create_window'
+                        'config'
+                        'yview'
+                        'vertical'
+                        'canvas_info_root'
+                        'frame_info_root'
+                        'frame_part_one'
+                        'frame_part_two'
+                        'frame_part_three'
+                        'frame_part_four_left_root'
+                        'frame_part_four_right_root'
+                        'Label'
+                        'Combobox'
+                        'entry_motaqazian'
+                        'addSerchToCombobox'
+                        'database_list_motaqazi_index'
+                        'bind'
+                        'str'
+                        'len'
+                        'label_motaqazian_num'
+                        'entry_sabt_nam'
+                        'database_list_sabtname_index'
+                        'label_sabt_nam_num'
+                        'Entry'
+                        'register'
+                        'validate'
+                        'entry_code_meli'
+                        'RightClicker'
+                        'provinces'
+                        'entry_ostan'
+                        'changeCityList'
+                        'entry_code_meli_malek'
+                        'entry_shahr'
+                        'entry_day_tavalod'
+                        'entry_month_tavalod'
+                        'entry_year_tavalod'
+                        'entry_day_exdevaj'
+                        'entry_month_ezdevaj'
+                        'entry_year_exdevaj'
+                        'frame_vaziat_shobe'
+                        'IntVar'
+                        'var_vaziat_shobe'
+                        'Radiobutton'
+                        'radio_shobe_hozuri'
+                        'radio_shobe_qheir_hozuri'
+                        'entry_name'
+                        'entry_family'
+                        'entry_pedar'
+                        'entry_sabet'
+                        'frame_hamrah'
+                        'entry_hamrah'
+                        'label_sms_counter'
+                        'entry_meli_hamsar'
+                        'entry_posti'
+                        'entry_neshani'
+                        'entry_yaddasht'
+                        'entry_bank_entekhabi'
+                        'showBankSeletion_select'
+                        'entry_email'
+                        'entry_code_shobe'
+                        'ToolTip'
+                        'getShobe'
+                        'hovertip_code_shobe'
+                        'Font'
+                        'master'
+                        'BOLD'
+                        'entry_rahgiri'
+                        'copyRahgiriToClipboard'
+                        'copy_to_clipboard_tool_tip'
+                        'bank_baz'
+                        'entry_alarm_bank'
+                        'showBankSeletion_alarm'
+                        'jbdb_license'
+                        'entry_ostan_get_new_code'
+                        'Button'
+                        'getNewCodeSecondryProvince'
+                        'button_get_new_code_secondry_province'
+                        'entry_get_new_code_secondry_province_timer'
+                        'Checkbutton'
+                        'updateGetNewCodeSecondryPageTimer'
+                        'check_get_new_code_secondry_province_auto_timer'
+                        'state'
+                        'changeAutoStartState'
+                        'auto_start_check'
+                        'auto_start_check_along_all'
+                        'auto_active_captcha_solver_check'
+                        'auto_active_auto_commit_member_check'
+                        'tkinter_Button'
+                        'activeAutoStartFeature'
+                        'temporary_entry_proxy_change_time'
+                        'insert'
+                        'settings'
+                        'temporary_proxy_changer_page_one'
+                        'temporary_proxy_changer_page_two'
+                        'temporary_settings_frame'
+                        'Labelframe'
+                        'entry_temporary_refresh_captcha_time_1'
+                        'entry_temporary_refresh_bank_refresh'
+                        'temporary_refresh_captcha_time_1_val'
+                        'temporary_refresh_bank_val'
+                        'checkTemporarySettings'
+                        'temprory_entry_start_m'
+                        'temprory_entry_start_h'
+                        'temprory_entry_stop_m'
+                        'temprory_entry_stop_h'
+                        'temprory_entry_random_add_refresh_min'
+                        'temprory_entry_random_add_refresh_max'
+                        'Treeview'
+                        'history_tree'
+                        'heading'
+                        'column'
+                        'history_scroll_bar'
+                        'configure'
+                        'frame_sex'
+                        'frame_isar_gari'
+                        'frame_sarbazi'
+                        'frame_tabeiat'
+                        'int_var_sex'
+                        'radio_aqha'
+                        'radio_khanom'
+                        'int_var_isar'
+                        'radio_isar_darad'
+                        'radio_isar_nadarad'
+                        'int_var_sarbazi'
+                        'radio_sarbazi_card'
+                        'radio_sarbazi_sarbaz'
+                        'radio_sarbazi_sayer'
+                        'int_var_tabeiat'
+                        'radio_tabeiat_one'
+                        'radio_tabeiat_two'
+                        'radio_tabeiat_three'
+                        'radio_tabeiat_four'
+                        'frame_captcha'
+                        'changeCaptchaAutomat'
+                        'check_captcha_automat'
+                        'frame_captcha_inner'
+                        'entry_captcha'
+                        'sabtCaptchaPending'
+                        'button_sabt_captcha'
+                        'Style'
+                        'frame_sms_auto_save'
+                        'tkinter_Entry'
+                        'validateSms'
+                        'entry_sms'
+                        'resetSms'
+                        'check_temporary_auto_sms'
+                        'sabtKhodkar'
+                        'sabte_khodkar'
+                        'sabtPending'
+                        'button_sabt'
+                        'frame_member_priority'
+                        'entry_priority'
+                        'frame_buttons'
+                        'subsample'
+                        'photo_play'
+                        'photo_pause'
+                        'photo_remove_member'
+                        'removeMember'
+                        'playPause'
+                        'play_pause_button'
+                        'photo_add_member'
+                        'addMember'
+                        'photo_clear'
+                        'clearStuf'
+                        'photo_status'
+                        'photo_status_paus'
+                        'getStatus'
+                        'button_status'
+                        'photo_recover'
+                        'photo_recover_pause'
+                        'recoverCode'
+                        'button_recover'
+                        'sendWaitIntruptToAutomation'
+                        'button_intrupt'
+                        'check_refresh_time_milisec'
+                        'frame_settings'
+                        'photo_support'
+                        'showSupport'
+                        'photo_settings'
+                        'showSettings'
+                        'photo_restore_member'
+                        'showRestoreMember'
+                        'photo_restore_member_blocked_number'
+                        'showRestoreMemberBlockedNumber'
+                        'photo_restore_member_error'
+                        'showRestoreMemberSignedUpBefore'
+                        'photo_banks_history'
+                        'showBanksHistory'
+                        'photo_hide_chrome'
+                        'hideChromeFunction'
+                        'photo_unhide_chrome'
+                        'unhideChromeFunction'
+                        'photo_close_without_chrome'
+                        'closeAppWithoutChrome'
+                        'tkinter_label'
+                        'app_version'
+                        'label_error'
+                        'toggleMiddleAppeare'
+                        'btn_toggle_middle'
+                        'update'
+                        'bbox'
+                        'format'
+                        'winfo_width'
+                        'init_heigh_size'
+                        'init_width_size'
+                        'extra_space_for_not_debugging_mode'
+                        'jlog'
+                    [Locals+Names]
+                        'self'
+                        'extra_width_value'
+                        'main_container'
+                        'blank_image'
+                        'c'
+                        'motaqazian_text_list'
+                        'sabt_name_text_list'
+                        'font_bold'
+                        'extra_settings'
+                        'plus_settings'
+                        'auto_start_frame'
+                        'font_bold8'
+                        'quick_proxy_settings_frame'
+                        'refresh_time_temporary_frame'
+                        'frame_work_time'
+                        'fram_add_random_refresh_time'
+                        'mystyle'
+                        'frame_message'
+                        'frame_commit_member'
+                        'button_restore_removed_member'
+                        'button_restore_removed_member_blocked_number'
+                        'button_restore_removed_member_error'
+                        'button_show_banks_history'
+                        'button_hide_chrome'
+                        'button_unhide_chrome'
+                        'button_close_app_without_chrome'
+                    [Constants]
+                        None
+                        'jetvam-ezdevaj (Loading...)'
+                        1800
+                        0
+                        34
+                        '+'
+                        940
+                        20
+                        '+0+0'
+                        'WM_DELETE_WINDOW'
+                        1
+                        (
+                            'weight'
+                        )
+                        'nswe'
+                        (
+                            'row'
+                            'column'
+                            'sticky'
+                        )
+                        'resource\\icon.png'
+                        True
+                        'نمایش روند کار'
+                        'ne'
+                        (
+                            'text'
+                            'labelanchor'
+                        )
+                        2
+                        (
+                            'column'
+                            'row'
+                            'columnspan'
+                            'sticky'
+                            'padx'
+                            'pady'
+                        )
+                        1100
+                        750
+                        (
+                            'image'
+                            'scrollbarwidth'
+                            'width'
+                            'height'
+                        )
+                        'nsew'
+                        (
+                            'column'
+                            'row'
+                            'sticky'
+                        )
+                        5
+                        'swe'
+                        (
+                            'borderwidth'
+                        )
+                        (
+                            'column'
+                            'row'
+                        )
+                        'vertical'
+                        (
+                            'orient'
+                        )
+                        3
+                        'nse'
+                        (
+                            'yscrollcommand'
+                        )
+                        ''
+                        'nw'
+                        (
+                            'anchor'
+                            'window'
+                        )
+                        (
+                            'command'
+                        )
+                        4
+                        'ns'
+                        'مشخصات ثبت نام'
+                        (
+                            'master'
+                        )
+                        'e'
+                        (
+                            'row'
+                            'padx'
+                            'pady'
+                            'sticky'
+                        )
+                        (
+                            'row'
+                            'column'
+                            'padx'
+                            'pady'
+                            'sticky'
+                        )
+                        'متقاضیان'
+                        (
+                            'text'
+                        )
+                        (
+                            'column'
+                            'row'
+                            'padx'
+                            'pady'
+                        )
+                        'right'
+                        44
+                        (
+                            'justify'
+                            'width'
+                        )
+                        'motaqazian'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.buildGrid.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 10
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_list'
+                                'database_map'
+                                'split'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'bank'
+                                ','
+                                0
+                                '_('
+                                ')'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        125 (to 260)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_DEREF                      2: self
+                                14      LOAD_ATTR                       0: database_list
+                                24      LOAD_FAST                       1: i
+                                26      BINARY_SUBSCR                   
+                                36      LOAD_DEREF                      2: self
+                                38      LOAD_ATTR                       1: database_map
+                                48      LOAD_CONST                      0: 'name'
+                                50      BINARY_SUBSCR                   
+                                60      BINARY_SUBSCR                   
+                                70      FORMAT_VALUE                    0 (FVC_NONE)
+                                72      LOAD_CONST                      1: '_'
+                                74      LOAD_DEREF                      2: self
+                                76      LOAD_ATTR                       0: database_list
+                                86      LOAD_FAST                       1: i
+                                88      BINARY_SUBSCR                   
+                                98      LOAD_DEREF                      2: self
+                                100     LOAD_ATTR                       1: database_map
+                                110     LOAD_CONST                      2: 'family'
+                                112     BINARY_SUBSCR                   
+                                122     BINARY_SUBSCR                   
+                                132     FORMAT_VALUE                    0 (FVC_NONE)
+                                134     LOAD_CONST                      1: '_'
+                                136     LOAD_DEREF                      2: self
+                                138     LOAD_ATTR                       0: database_list
+                                148     LOAD_FAST                       1: i
+                                150     BINARY_SUBSCR                   
+                                160     LOAD_DEREF                      2: self
+                                162     LOAD_ATTR                       1: database_map
+                                172     LOAD_CONST                      3: 'bank'
+                                174     BINARY_SUBSCR                   
+                                184     BINARY_SUBSCR                   
+                                194     LOAD_METHOD                     2: split
+                                216     LOAD_CONST                      4: ','
+                                218     PRECALL                         1
+                                222     CALL                            1
+                                232     LOAD_CONST                      5: 0
+                                234     BINARY_SUBSCR                   
+                                244     FORMAT_VALUE                    0 (FVC_NONE)
+                                246     LOAD_CONST                      6: '_('
+                                248     LOAD_FAST                       1: i
+                                250     FORMAT_VALUE                    0 (FVC_NONE)
+                                252     LOAD_CONST                      7: ')'
+                                254     BUILD_STRING                    8
+                                256     LIST_APPEND                     2
+                                258     JUMP_BACKWARD                   126 (to 8)
+                                260     RETURN_VALUE                    
+                        'values'
+                        '<<ComboboxSelected>>'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.buildGrid.<locals>.<lambda>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 3
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'selectMember'
+                            [Locals+Names]
+                                '_'
+                                'self'
+                            [Constants]
+                                None
+                                'm'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      1: self
+                                6       LOAD_METHOD                     0: selectMember
+                                28      LOAD_CONST                      1: 'm'
+                                30      PRECALL                         1
+                                34      CALL                            1
+                                44      RETURN_VALUE                    
+                        (
+                            'column'
+                            'row'
+                            'padx'
+                            'pady'
+                            'sticky'
+                        )
+                        'ثبت نام شده ها'
+                        'sabt_nam'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.buildGrid.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 10
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'database_list'
+                                'database_map'
+                                'split'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                                'self'
+                            [Constants]
+                                'name'
+                                '_'
+                                'family'
+                                'bank'
+                                ','
+                                0
+                                '_('
+                                ')'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       BUILD_LIST                      0
+                                6       LOAD_FAST                       0: .0
+                                8       FOR_ITER                        125 (to 260)
+                                10      STORE_FAST                      1: i
+                                12      LOAD_DEREF                      2: self
+                                14      LOAD_ATTR                       0: database_list
+                                24      LOAD_FAST                       1: i
+                                26      BINARY_SUBSCR                   
+                                36      LOAD_DEREF                      2: self
+                                38      LOAD_ATTR                       1: database_map
+                                48      LOAD_CONST                      0: 'name'
+                                50      BINARY_SUBSCR                   
+                                60      BINARY_SUBSCR                   
+                                70      FORMAT_VALUE                    0 (FVC_NONE)
+                                72      LOAD_CONST                      1: '_'
+                                74      LOAD_DEREF                      2: self
+                                76      LOAD_ATTR                       0: database_list
+                                86      LOAD_FAST                       1: i
+                                88      BINARY_SUBSCR                   
+                                98      LOAD_DEREF                      2: self
+                                100     LOAD_ATTR                       1: database_map
+                                110     LOAD_CONST                      2: 'family'
+                                112     BINARY_SUBSCR                   
+                                122     BINARY_SUBSCR                   
+                                132     FORMAT_VALUE                    0 (FVC_NONE)
+                                134     LOAD_CONST                      1: '_'
+                                136     LOAD_DEREF                      2: self
+                                138     LOAD_ATTR                       0: database_list
+                                148     LOAD_FAST                       1: i
+                                150     BINARY_SUBSCR                   
+                                160     LOAD_DEREF                      2: self
+                                162     LOAD_ATTR                       1: database_map
+                                172     LOAD_CONST                      3: 'bank'
+                                174     BINARY_SUBSCR                   
+                                184     BINARY_SUBSCR                   
+                                194     LOAD_METHOD                     2: split
+                                216     LOAD_CONST                      4: ','
+                                218     PRECALL                         1
+                                222     CALL                            1
+                                232     LOAD_CONST                      5: 0
+                                234     BINARY_SUBSCR                   
+                                244     FORMAT_VALUE                    0 (FVC_NONE)
+                                246     LOAD_CONST                      6: '_('
+                                248     LOAD_FAST                       1: i
+                                250     FORMAT_VALUE                    0 (FVC_NONE)
+                                252     LOAD_CONST                      7: ')'
+                                254     BUILD_STRING                    8
+                                256     LIST_APPEND                     2
+                                258     JUMP_BACKWARD                   126 (to 8)
+                                260     RETURN_VALUE                    
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.buildGrid.<locals>.<lambda>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 3
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'selectMember'
+                            [Locals+Names]
+                                '_'
+                                'self'
+                            [Constants]
+                                None
+                                's'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      1: self
+                                6       LOAD_METHOD                     0: selectMember
+                                28      LOAD_CONST                      1: 's'
+                                30      PRECALL                         1
+                                34      CALL                            1
+                                44      RETURN_VALUE                    
+                        '*شماره ملی'
+                        '#E00000'
+                        (
+                            'text'
+                            'foreground'
+                        )
+                        16
+                        'key'
+                        '%P'
+                        10
+                        'int'
+                        (
+                            'justify'
+                            'width'
+                            'validate'
+                            'validatecommand'
+                        )
+                        '<Button-3>'
+                        '*استان'
+                        (
+                            'justify'
+                            'width'
+                            'values'
+                        )
+                        'ostan'
+                        '*شماره ملی مالک'
+                        '*شهر'
+                        '*تاریخ تولد'
+                        14
+                        (
+                            'row'
+                            'column'
+                            'padx'
+                            'pady'
+                        )
+                        11
+                        (
+                            'justify'
+                            'validate'
+                            'validatecommand'
+                            'width'
+                        )
+                        '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31'
+                        'فروردین اردیبهشت خرداد تیر مرداد شهریور مهر آبان آذر دی بهمن اسفند'
+                        (
+                            'validate'
+                            'validatecommand'
+                            'width'
+                        )
+                        'چهار رقم'
+                        '#00A000'
+                        '*تاریخ ازدواج'
+                        'نام'
+                        'نام خانوادگی'
+                        '*تلفن ثابت'
+                        '*تلفن همراه'
+                        'ملی همسر'
+                        '*کد پستی'
+                        6
+                        '*نشانی'
+                        7
+                        'یادداشت'
+                        8
+                        'بانک انتخابی'
+                        9
+                        'کد شعبه'
+                        'کد رهگیری'
+                        13
+                        'آلارم بانک'
+                        'بانک های باز'
+                        15
+                        30
+                        '*وضعیت شعبه'
+                        12
+                        'حضوری'
+                        (
+                            'text'
+                            'value'
+                            'variable'
+                        )
+                        'مجازی '
+                        (
+                            'row'
+                            'column'
+                            'padx'
+                        )
+                        (
+                            'width'
+                            'validate'
+                            'validatecommand'
+                        )
+                        (
+                            'width'
+                        )
+                        '0000'
+                        '#00bb00'
+                        (
+                            'text'
+                            'width'
+                            'justify'
+                            'foreground'
+                        )
+                        (
+                            'width'
+                            'justify'
+                        )
+                        '<1>'
+                        0.05
+                        (
+                            'size'
+                            'weight'
+                        )
+                        '------'
+                        '#AA0000'
+                        (
+                            'text'
+                            'width'
+                            'foreground'
+                            'font'
+                        )
+                        '<Button-1>'
+                        'برای کپی کردن کلیک کنید'
+                        128
+                        (
+                            'text'
+                            'justify'
+                            'wraplength'
+                        )
+                        'دریافت کد ثانویه'
+                        'news'
+                        'دریافت کد'
+                        (
+                            'column'
+                            'row'
+                            'padx'
+                        )
+                        'دریافت'
+                        (
+                            'text'
+                            'width'
+                            'command'
+                        )
+                        'تایمر خودکار   |'
+                        'تایمر خودکار دریافت کد پیامک ثانویه (ثانیه)\nبرای فعال سازی مقدار ۱۰ یا بیشتر را قرار دهید'
+                        'فعال'
+                        'normal'
+                        (
+                            'text'
+                            'state'
+                            'command'
+                        )
+                        '!alternate'
+                        'برای فعال سازی تایمر تیک را قرار دهید\nزمان تایمر با فعال سازی تیک صفر می‌شود'
+                        'پلاس'
+                        'جِنوک پلاس'
+                        17
+                        '< اولویت اول >استارت کاربر انتخابی'
+                        (
+                            'text'
+                            'justify'
+                        )
+                        '< اولویت دوم >استارت کاربران دیگر'
+                        'تنها کاربران با ردیف اولویت کمتر ۱۰۰ بررسی می‌شوند'
+                        '< پری >فعال کردن حل خودکار کپچا'
+                        'با فعال سازی این تیک در صورتی که حل خودکار کپچا\nرا غیر فعال کرده باشید و بانک مورد نظر باز شود\nبه صورت خودکار حل خودکار کپچا فعال می‌شود'
+                        '< حوریوک >فعال کردن ثبت خودکار کاربر'
+                        'با فعال سازی این تیک در صورتی که ثبت خودکار کاربر\nرا غیر فعال کرده باشید و بانک مورد نظر باز شود\nبه صورت خودکار ثبت خودکار کاربر فعال می‌شود'
+                        'disabled'
+                        'فعال سازی'
+                        '#0099FF'
+                        'white'
+                        (
+                            'text'
+                            'width'
+                            'command'
+                            'background'
+                            'foreground'
+                            'font'
+                        )
+                        'nsw'
+                        (
+                            'column'
+                            'row'
+                            'columnspan'
+                            'rowspan'
+                            'padx'
+                            'pady'
+                            'sticky'
+                        )
+                        'اتصال پلاس'
+                        'زمان رفرش (0=غیرفعال)'
+                        (
+                            'state'
+                            'width'
+                            'validate'
+                            'validatecommand'
+                        )
+                        't6e1'
+                        '< فعال در صفحات ورود'
+                        '< فعال در صفحه انتخاب بانک'
+                        25
+                        't6c2'
+                        'selected'
+                        't6c3'
+                        'تنظیمات موقت'
+                        18
+                        'تنظیمات رفرش'
+                        (
+                            'row'
+                            'column'
+                            'columnspan'
+                            'padx'
+                            'pady'
+                            'sticky'
+                        )
+                        'رفرش کپچای صفحه اول'
+                        'رفرش لیست بانک‌ها'
+                        'ثبت'
+                        'زمان کار نرم افزار'
+                        'ساعت شروع'
+                        't2e5'
+                        ':'
+                        't2e4'
+                        'ساعت اتمام'
+                        't2e7'
+                        't2e6'
+                        'افزایش رندوم زمان رفرش'
+                        'هنگام خطا'
+                        (
+                            'column'
+                            'row'
+                            'pady'
+                            'sticky'
+                        )
+                        '0'
+                        'ثانیه تا'
+                        'ثانیه، رندوم به زمان رفرش اضافه شود'
+                        (
+                            'time'
+                            'city'
+                            'banks'
+                        )
+                        'headings'
+                        (
+                            'columns'
+                            'show'
+                        )
+                        'time'
+                        '    زمان'
+                        'city'
+                        'شهر'
+                        'banks'
+                        'بانک ها'
+                        'center'
+                        (
+                            'width'
+                            'anchor'
+                        )
+                        50
+                        (
+                            'anchor'
+                            'width'
+                        )
+                        (
+                            'anchor'
+                        )
+                        (
+                            'orient'
+                            'command'
+                        )
+                        'جنسیت'
+                        'ایثارگری'
+                        'وضعیت سربازی'
+                        'تابعیت'
+                        'آقا'
+                        'خانم'
+                        4.4
+                        'دارد'
+                        'ندارد'
+                        'کارت'
+                        'سرباز'
+                        'سایر'
+                        1.2
+                        '1'
+                        '2'
+                        '3'
+                        '4'
+                        1.4
+                        1.5
+                        'CAPTCHA'
+                        'حل خودکار'
+                        'w'
+                        (
+                            'width'
+                            'state'
+                        )
+                        (
+                            'column'
+                            'row'
+                            'pady'
+                        )
+                        (
+                            'text'
+                            'width'
+                            'state'
+                            'command'
+                        )
+                        'MyStyle.TLabelframe.Label'
+                        (
+                            'courier'
+                            12
+                        )
+                        'red'
+                        (
+                            'font'
+                            'foreground'
+                        )
+                        'پیامک'
+                        'MyStyle.TLabelframe'
+                        (
+                            'text'
+                            'labelanchor'
+                            'style'
+                        )
+                        (
+                            'column'
+                            'row'
+                            'columnspan'
+                        )
+                        (
+                            'width'
+                            'validate'
+                            'validatecommand'
+                            'font'
+                        )
+                        'خودکار'
+                        'active'
+                        't3c1'
+                        'کد پیامک'
+                        (
+                            'width'
+                            'text'
+                            'justify'
+                        )
+                        'ثبت کاربر'
+                        'ثبت خودکار کاربر'
+                        (
+                            'column'
+                            'row'
+                            'columnspan'
+                            'padx'
+                            'pady'
+                            'sticky'
+                        )
+                        'اولویت کاربر'
+                        'ردیف اولویت'
+                        'در ردیف اولویت، مقدار کمتر اولویت بالاتر را نمایش می‌دهد. مقدار صفر بالاترین اولویت و خالی گذاشتن این کادر برابر ۹۹۹ و پایین ترین اولویت را نمایش می‌دهد'
+                        'دکمه های راهبردی'
+                        's'
+                        'resource\\play-256.png'
+                        (
+                            'file'
+                        )
+                        'resource\\pause-256.png'
+                        'resource\\remove-member-256.png'
+                        (
+                            'image'
+                            'command'
+                        )
+                        (
+                            'row'
+                            'column'
+                            'padx'
+                            'ipady'
+                            'pady'
+                        )
+                        (
+                            'image'
+                            'width'
+                            'command'
+                        )
+                        (
+                            'row'
+                            'column'
+                            'rowspan'
+                            'padx'
+                            'sticky'
+                            'pady'
+                            'ipady'
+                        )
+                        'resource\\add-member-256.png'
+                        (
+                            'row'
+                            'column'
+                            'padx'
+                            'ipady'
+                        )
+                        'resource\\clear-256.png'
+                        'resource\\status-256.png'
+                        'resource\\status-pause-256.png'
+                        'resource\\recover-code-256.png'
+                        'resource\\recover-code-pause-256.png'
+                        'بازیابی کد رهگیری'
+                        'مشاهده وضعیت'
+                        'رد کردن انتظار'
+                        (
+                            'text'
+                            'command'
+                        )
+                        (
+                            'row'
+                            'column'
+                            'columnspan'
+                            'padx'
+                            'ipady'
+                            'pady'
+                            'sticky'
+                        )
+                        'عبور از زمان انتظار فعلی'
+                        '0REF'
+                        'تمامی زمان‌های رفرش با فعال کردن این تیک\nبه 0 کاهش پیدا می‌کند'
+                        'sw'
+                        (
+                            'row'
+                            'column'
+                            'sticky'
+                            'rowspan'
+                        )
+                        'resource\\support-256.png'
+                        'resource\\setting-256.png'
+                        'resource\\restore-member-256.png'
+                        'بازیابی کاربران پاک شده'
+                        'resource\\restore-member-blocked-number-256.png'
+                        'بازیابی کاربران با شماره مسدود شده'
+                        'resource\\restore-member-error-256.png'
+                        'بازیابی کاربران از پیش ثبت نام شده'
+                        'resource\\banks-history-256.png'
+                        'مشاهده تاریخچه بانک‌ها'
+                        'resource\\hide-chrome-256.png'
+                        'مخفی کردن کروم'
+                        'resource\\unhide-chrome-256.png'
+                        'ظاهر کردن کروم'
+                        'resource\\close-without-chrome-256.png'
+                        'بستن نرم‌افزار بدون بستن کروم'
+                        'به نرم افزار خوش آمدید. نسخه ی نرم افزار شما برابر '
+                        ' است'
+                        '#E01C24'
+                        'groove'
+                        (
+                            'arial'
+                            12
+                        )
+                        (
+                            'text'
+                            'foreground'
+                            'borderwidth'
+                            'relief'
+                            'justify'
+                            'font'
+                            'anchor'
+                            'padx'
+                        )
+                        '#209fab'
+                        'left'
+                        (
+                            'text'
+                            'borderwidth'
+                            'bg'
+                            'relief'
+                            'justify'
+                            'font'
+                            'anchor'
+                            'padx'
+                            'command'
+                            'width'
+                        )
+                        'all'
+                        (
+                            'scrollregion'
+                        )
+                        '{}x{}'
+                        120
+                        'ui build function ran'
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       RESUME                          0
+                        4       LOAD_DEREF                      0: self
+                        6       LOAD_METHOD                     0: title
+                        28      LOAD_CONST                      1: 'jetvam-ezdevaj (Loading...)'
+                        30      PRECALL                         1
+                        34      CALL                            1
+                        44      POP_TOP                         
+                        46      LOAD_DEREF                      0: self
+                        48      LOAD_METHOD                     1: winfo_screenwidth
+                        70      PRECALL                         0
+                        74      CALL                            0
+                        84      LOAD_DEREF                      0: self
+                        86      STORE_ATTR                      2: screen_width
+                        96      LOAD_DEREF                      0: self
+                        98      LOAD_METHOD                     3: winfo_screenheight
+                        120     PRECALL                         0
+                        124     CALL                            0
+                        134     LOAD_DEREF                      0: self
+                        136     STORE_ATTR                      4: screen_height
+                        146     LOAD_DEREF                      0: self
+                        148     LOAD_ATTR                       5: debug_mode
+                        158     POP_JUMP_FORWARD_IF_FALSE       99 (to 358)
+                        160     LOAD_DEREF                      0: self
+                        162     LOAD_ATTR                       2: screen_width
+                        172     LOAD_CONST                      2: 1800
+                        174     COMPARE_OP                      0 (<)
+                        180     POP_JUMP_FORWARD_IF_FALSE       2 (to 186)
+                        182     LOAD_CONST                      3: 0
+                        184     JUMP_FORWARD                    1 (to 188)
+                        186     LOAD_CONST                      4: 34
+                        188     STORE_FAST                      1: extra_width_value
+                        190     LOAD_DEREF                      0: self
+                        192     LOAD_METHOD                     6: geometry
+                        214     LOAD_CONST                      5: '+'
+                        216     LOAD_GLOBAL                     15: NULL + int
+                        228     LOAD_DEREF                      0: self
+                        230     LOAD_ATTR                       2: screen_width
+                        240     LOAD_CONST                      6: 940
+                        242     LOAD_FAST                       1: extra_width_value
+                        244     BINARY_OP                       10 (-)
+                        248     LOAD_CONST                      7: 20
+                        250     BINARY_OP                       0 (+)
+                        254     LOAD_DEREF                      0: self
+                        256     LOAD_ATTR                       8: windows_scale_factor
+                        266     BINARY_OP                       5 (*)
+                        270     BINARY_OP                       10 (-)
+                        274     PRECALL                         1
+                        278     CALL                            1
+                        288     FORMAT_VALUE                    0 (FVC_NONE)
+                        290     LOAD_CONST                      5: '+'
+                        292     LOAD_GLOBAL                     15: NULL + int
+                        304     LOAD_CONST                      7: 20
+                        306     LOAD_DEREF                      0: self
+                        308     LOAD_ATTR                       8: windows_scale_factor
+                        318     BINARY_OP                       5 (*)
+                        322     PRECALL                         1
+                        326     CALL                            1
+                        336     FORMAT_VALUE                    0 (FVC_NONE)
+                        338     BUILD_STRING                    4
+                        340     PRECALL                         1
+                        344     CALL                            1
+                        354     POP_TOP                         
+                        356     JUMP_FORWARD                    21 (to 400)
+                        358     LOAD_DEREF                      0: self
+                        360     LOAD_METHOD                     6: geometry
+                        382     LOAD_CONST                      8: '+0+0'
+                        384     PRECALL                         1
+                        388     CALL                            1
+                        398     POP_TOP                         
+                        400     LOAD_DEREF                      0: self
+                        402     LOAD_ATTR                       2: screen_width
+                        412     LOAD_CONST                      2: 1800
+                        414     COMPARE_OP                      0 (<)
+                        420     POP_JUMP_FORWARD_IF_FALSE       2 (to 426)
+                        422     LOAD_CONST                      3: 0
+                        424     JUMP_FORWARD                    1 (to 428)
+                        426     LOAD_CONST                      4: 34
+                        428     STORE_FAST                      1: extra_width_value
+                        430     LOAD_GLOBAL                     15: NULL + int
+                        442     LOAD_DEREF                      0: self
+                        444     LOAD_ATTR                       2: screen_width
+                        454     LOAD_CONST                      6: 940
+                        456     LOAD_FAST                       1: extra_width_value
+                        458     BINARY_OP                       10 (-)
+                        462     LOAD_CONST                      7: 20
+                        464     BINARY_OP                       0 (+)
+                        468     LOAD_DEREF                      0: self
+                        470     LOAD_ATTR                       8: windows_scale_factor
+                        480     BINARY_OP                       5 (*)
+                        484     BINARY_OP                       10 (-)
+                        488     PRECALL                         1
+                        492     CALL                            1
+                        502     LOAD_GLOBAL                     15: NULL + int
+                        514     LOAD_CONST                      7: 20
+                        516     LOAD_DEREF                      0: self
+                        518     LOAD_ATTR                       8: windows_scale_factor
+                        528     BINARY_OP                       5 (*)
+                        532     PRECALL                         1
+                        536     CALL                            1
+                        546     SWAP                            2
+                        548     LOAD_DEREF                      0: self
+                        550     STORE_ATTR                      9: init_left
+                        560     LOAD_DEREF                      0: self
+                        562     STORE_ATTR                      10: init_top
+                        572     LOAD_DEREF                      0: self
+                        574     LOAD_METHOD                     11: protocol
+                        596     LOAD_CONST                      9: 'WM_DELETE_WINDOW'
+                        598     LOAD_DEREF                      0: self
+                        600     LOAD_ATTR                       12: closeFunction
+                        610     PRECALL                         2
+                        614     CALL                            2
+                        624     POP_TOP                         
+                        626     LOAD_GLOBAL                     26: Grid
+                        638     LOAD_METHOD                     14: rowconfigure
+                        660     LOAD_DEREF                      0: self
+                        662     LOAD_CONST                      3: 0
+                        664     LOAD_CONST                      10: 1
+                        666     KW_NAMES                        11: ('weight',)
+                        668     PRECALL                         3
+                        672     CALL                            3
+                        682     POP_TOP                         
+                        684     LOAD_GLOBAL                     26: Grid
+                        696     LOAD_METHOD                     15: columnconfigure
+                        718     LOAD_DEREF                      0: self
+                        720     LOAD_CONST                      3: 0
+                        722     LOAD_CONST                      10: 1
+                        724     KW_NAMES                        11: ('weight',)
+                        726     PRECALL                         3
+                        730     CALL                            3
+                        740     POP_TOP                         
+                        742     LOAD_GLOBAL                     33: NULL + Frame
+                        754     LOAD_DEREF                      0: self
+                        756     PRECALL                         1
+                        760     CALL                            1
+                        770     STORE_FAST                      2: main_container
+                        772     LOAD_FAST                       2: main_container
+                        774     LOAD_METHOD                     17: grid
+                        796     LOAD_CONST                      3: 0
+                        798     LOAD_CONST                      3: 0
+                        800     LOAD_CONST                      12: 'nswe'
+                        802     KW_NAMES                        13: ('row', 'column', 'sticky')
+                        804     PRECALL                         3
+                        808     CALL                            3
+                        818     POP_TOP                         
+                        820     LOAD_GLOBAL                     26: Grid
+                        832     LOAD_METHOD                     14: rowconfigure
+                        854     LOAD_FAST                       2: main_container
+                        856     LOAD_CONST                      3: 0
+                        858     LOAD_CONST                      10: 1
+                        860     KW_NAMES                        11: ('weight',)
+                        862     PRECALL                         3
+                        866     CALL                            3
+                        876     POP_TOP                         
+                        878     LOAD_GLOBAL                     26: Grid
+                        890     LOAD_METHOD                     15: columnconfigure
+                        912     LOAD_FAST                       2: main_container
+                        914     LOAD_CONST                      3: 0
+                        916     LOAD_CONST                      10: 1
+                        918     KW_NAMES                        11: ('weight',)
+                        920     PRECALL                         3
+                        924     CALL                            3
+                        934     POP_TOP                         
+                        936     LOAD_FAST                       2: main_container
+                        938     LOAD_DEREF                      0: self
+                        940     STORE_ATTR                      18: main_container
+                        950     LOAD_GLOBAL                     39: NULL + Image
+                        962     LOAD_ATTR                       20: open
+                        972     LOAD_CONST                      14: 'resource\\icon.png'
+                        974     PRECALL                         1
+                        978     CALL                            1
+                        988     LOAD_DEREF                      0: self
+                        990     STORE_ATTR                      21: icon_image
+                        1000    LOAD_GLOBAL                     45: NULL + ImageTk
+                        1012    LOAD_ATTR                       23: PhotoImage
+                        1022    LOAD_DEREF                      0: self
+                        1024    LOAD_ATTR                       21: icon_image
+                        1034    PRECALL                         1
+                        1038    CALL                            1
+                        1048    LOAD_DEREF                      0: self
+                        1050    STORE_ATTR                      24: icon
+                        1060    LOAD_DEREF                      0: self
+                        1062    LOAD_METHOD                     25: wm_iconphoto
+                        1084    LOAD_CONST                      15: True
+                        1086    LOAD_DEREF                      0: self

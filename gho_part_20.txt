@@ -1,0 +1,2026 @@
+        782     LOAD_CONST                      1: None
+        784     LOAD_CONST                      1: None
+        786     LOAD_CONST                      1: None
+        788     PRECALL                         2
+        792     CALL                            2
+        802     POP_TOP                         
+        804     JUMP_FORWARD                    11 (to 828)
+        806     PUSH_EXC_INFO                   
+        808     WITH_EXCEPT_START               
+        810     POP_JUMP_FORWARD_IF_TRUE        4 (to 820)
+        812     RERAISE                         2
+        814     COPY                            3
+        816     POP_EXCEPT                      
+        818     RERAISE                         1
+        820     POP_TOP                         
+        822     POP_EXCEPT                      
+        824     POP_TOP                         
+        826     POP_TOP                         
+        828     LOAD_NAME                       34: os
+        830     LOAD_ATTR                       70: path
+        840     LOAD_METHOD                     73: exists
+        862     LOAD_CONST                      24: 'debug'
+        864     PRECALL                         1
+        868     CALL                            1
+        878     POP_JUMP_FORWARD_IF_TRUE        57 (to 994)
+        880     PUSH_NULL                       
+        882     LOAD_NAME                       74: open
+        884     LOAD_CONST                      24: 'debug'
+        886     LOAD_CONST                      23: 'w'
+        888     PRECALL                         2
+        892     CALL                            2
+        902     BEFORE_WITH                     
+        904     STORE_NAME                      75: f
+        906     LOAD_NAME                       75: f
+        908     LOAD_METHOD                     76: write
+        930     LOAD_CONST                      21: ''
+        932     PRECALL                         1
+        936     CALL                            1
+        946     POP_TOP                         
+        948     LOAD_CONST                      1: None
+        950     LOAD_CONST                      1: None
+        952     LOAD_CONST                      1: None
+        954     PRECALL                         2
+        958     CALL                            2
+        968     POP_TOP                         
+        970     JUMP_FORWARD                    11 (to 994)
+        972     PUSH_EXC_INFO                   
+        974     WITH_EXCEPT_START               
+        976     POP_JUMP_FORWARD_IF_TRUE        4 (to 986)
+        978     RERAISE                         2
+        980     COPY                            3
+        982     POP_EXCEPT                      
+        984     RERAISE                         1
+        986     POP_TOP                         
+        988     POP_EXCEPT                      
+        990     POP_TOP                         
+        992     POP_TOP                         
+        994     LOAD_CONST                      25: <CODE> showJetvamCountError
+        996     MAKE_FUNCTION                   0
+        998     STORE_NAME                      77: showJetvamCountError
+        1000    PUSH_NULL                       
+        1002    LOAD_NAME                       54: countJetvam
+        1004    PRECALL                         0
+        1008    CALL                            0
+        1018    LOAD_CONST                      26: 4
+        1020    COMPARE_OP                      4 (>)
+        1026    POP_JUMP_FORWARD_IF_FALSE       26 (to 1080)
+        1028    PUSH_NULL                       
+        1030    LOAD_NAME                       77: showJetvamCountError
+        1032    PRECALL                         0
+        1036    CALL                            0
+        1046    POP_TOP                         
+        1048    PUSH_NULL                       
+        1050    LOAD_NAME                       33: sys
+        1052    LOAD_ATTR                       78: exit
+        1062    LOAD_CONST                      0: 0
+        1064    PRECALL                         1
+        1068    CALL                            1
+        1078    POP_TOP                         
+        1080    LOAD_CONST                      27: b'64-bit'
+        1082    PUSH_NULL                       
+        1084    LOAD_NAME                       42: subprocess
+        1086    LOAD_ATTR                       79: check_output
+        1096    LOAD_CONST                      28: 'wmic OS get OSArchitecture'
+        1098    LOAD_NAME                       66: startupinfo
+        1100    KW_NAMES                        29: ('startupinfo',)
+        1102    PRECALL                         2
+        1106    CALL                            2
+        1116    CONTAINS_OP                     0 (in)
+        1118    POP_JUMP_FORWARD_IF_FALSE       2 (to 1124)
+        1120    LOAD_CONST                      30: 'win64'
+        1122    JUMP_FORWARD                    1 (to 1126)
+        1124    LOAD_CONST                      31: 'win32'
+        1126    STORE_NAME                      80: os_platform
+        1128    LOAD_CONST                      32: <CODE> disableButtonChildren
+        1130    MAKE_FUNCTION                   0
+        1132    STORE_NAME                      81: disableButtonChildren
+        1134    LOAD_CONST                      33: <CODE> jlog
+        1136    MAKE_FUNCTION                   0
+        1138    STORE_NAME                      82: jlog
+        1140    LOAD_CONST                      34: <CODE> delJlog
+        1142    MAKE_FUNCTION                   0
+        1144    STORE_NAME                      83: delJlog
+        1146    PUSH_NULL                       
+        1148    LOAD_NAME                       83: delJlog
+        1150    PRECALL                         0
+        1154    CALL                            0
+        1164    POP_TOP                         
+        1166    PUSH_NULL                       
+        1168    LOAD_NAME                       82: jlog
+        1170    LOAD_CONST                      35: 'start logging'
+        1172    PRECALL                         1
+        1176    CALL                            1
+        1186    POP_TOP                         
+        1188    LOAD_CONST                      36: <CODE> getVersionCode
+        1190    MAKE_FUNCTION                   0
+        1192    STORE_NAME                      84: getVersionCode
+        1194    LOAD_CONST                      21: ''
+        1196    STORE_GLOBAL                    85: last_version_name
+        1198    LOAD_CONST                      37: <CODE> isUpdate
+        1200    MAKE_FUNCTION                   0
+        1202    STORE_NAME                      86: isUpdate
+        1204    LOAD_NAME                       34: os
+        1206    LOAD_ATTR                       70: path
+        1216    LOAD_METHOD                     73: exists
+        1238    LOAD_NAME                       34: os
+        1240    LOAD_ATTR                       70: path
+        1250    LOAD_METHOD                     87: join
+        1272    LOAD_NAME                       72: driver_root
+        1274    LOAD_CONST                      38: 'members.db'
+        1276    PRECALL                         2
+        1280    CALL                            2
+        1290    PRECALL                         1
+        1294    CALL                            1
+        1304    POP_JUMP_FORWARD_IF_TRUE        16 (to 1338)
+        1306    PUSH_NULL                       
+        1308    LOAD_NAME                       58: db_update
+        1310    LOAD_ATTR                       88: createDB
+        1320    LOAD_CONST                      38: 'members.db'
+        1322    PRECALL                         1
+        1326    CALL                            1
+        1336    POP_TOP                         
+        1338    PUSH_NULL                       
+        1340    LOAD_NAME                       58: db_update
+        1342    LOAD_ATTR                       89: checkAndCreateSmsCounter
+        1352    LOAD_CONST                      38: 'members.db'
+        1354    PRECALL                         1
+        1358    CALL                            1
+        1368    POP_TOP                         
+        1370    PUSH_NULL                       
+        1372    LOAD_NAME                       58: db_update
+        1374    LOAD_ATTR                       90: checkAndCreatePriority
+        1384    LOAD_CONST                      38: 'members.db'
+        1386    PRECALL                         1
+        1390    CALL                            1
+        1400    POP_TOP                         
+        1402    PUSH_NULL                       
+        1404    LOAD_NAME                       58: db_update
+        1406    LOAD_ATTR                       91: checkAndCreateDeletedUsers
+        1416    LOAD_CONST                      38: 'members.db'
+        1418    PRECALL                         1
+        1422    CALL                            1
+        1432    POP_TOP                         
+        1434    PUSH_NULL                       
+        1436    LOAD_NAME                       58: db_update
+        1438    LOAD_ATTR                       92: checkAndCreateBanksAlarm
+        1448    LOAD_CONST                      38: 'members.db'
+        1450    PRECALL                         1
+        1454    CALL                            1
+        1464    POP_TOP                         
+        1466    PUSH_NULL                       
+        1468    LOAD_NAME                       58: db_update
+        1470    LOAD_ATTR                       93: checkAndCreateBlockedPhone
+        1480    LOAD_CONST                      38: 'members.db'
+        1482    PRECALL                         1
+        1486    CALL                            1
+        1496    POP_TOP                         
+        1498    PUSH_NULL                       
+        1500    LOAD_NAME                       58: db_update
+        1502    LOAD_ATTR                       94: checkAndCreateSigendUpBefore
+        1512    LOAD_CONST                      38: 'members.db'
+        1514    PRECALL                         1
+        1518    CALL                            1
+        1528    POP_TOP                         
+        1530    LOAD_CONST                      39: '{"t1c1": true, "t1c2": true, "t1c3": true, "t1c4": false, "t1c5": true, "t1c6": true, "t1c7": true, "t1c8": false, "t1c9": false, "t1c10": false, "t2e1": "2", "t2e2": "600", "t2e3": "2", "t2e4": "", "t2e5": "", "t2e6": "", "t2e7": "", "t2c1": false, "t2c2": false, "t2e8": "30", "t2c3": false, "t3c1": false}'
+        1532    STORE_NAME                      95: def_settings
+        1534    LOAD_NAME                       34: os
+        1536    LOAD_ATTR                       70: path
+        1546    LOAD_METHOD                     96: isfile
+        1568    LOAD_CONST                      40: 'settings.json'
+        1570    PRECALL                         1
+        1574    CALL                            1
+        1584    POP_JUMP_FORWARD_IF_TRUE        69 (to 1724)
+        1586    PUSH_NULL                       
+        1588    LOAD_NAME                       59: json
+        1590    LOAD_ATTR                       97: loads
+        1600    LOAD_NAME                       95: def_settings
+        1602    PRECALL                         1
+        1606    CALL                            1
+        1616    STORE_NAME                      98: def_settings_json
+        1618    PUSH_NULL                       
+        1620    LOAD_NAME                       74: open
+        1622    LOAD_CONST                      40: 'settings.json'
+        1624    LOAD_CONST                      23: 'w'
+        1626    PRECALL                         2
+        1630    CALL                            2
+        1640    BEFORE_WITH                     
+        1642    STORE_NAME                      75: f
+        1644    PUSH_NULL                       
+        1646    LOAD_NAME                       59: json
+        1648    LOAD_ATTR                       99: dump
+        1658    LOAD_NAME                       98: def_settings_json
+        1660    LOAD_NAME                       75: f
+        1662    PRECALL                         2
+        1666    CALL                            2
+        1676    POP_TOP                         
+        1678    LOAD_CONST                      1: None
+        1680    LOAD_CONST                      1: None
+        1682    LOAD_CONST                      1: None
+        1684    PRECALL                         2
+        1688    CALL                            2
+        1698    POP_TOP                         
+        1700    JUMP_FORWARD                    11 (to 1724)
+        1702    PUSH_EXC_INFO                   
+        1704    WITH_EXCEPT_START               
+        1706    POP_JUMP_FORWARD_IF_TRUE        4 (to 1716)
+        1708    RERAISE                         2
+        1710    COPY                            3
+        1712    POP_EXCEPT                      
+        1714    RERAISE                         1
+        1716    POP_TOP                         
+        1718    POP_EXCEPT                      
+        1720    POP_TOP                         
+        1722    POP_TOP                         
+        1724    PUSH_NULL                       
+        1726    LOAD_NAME                       42: subprocess
+        1728    LOAD_ATTR                       79: check_output
+        1738    LOAD_CONST                      41: 'wmic csproduct get uuid'
+        1740    LOAD_NAME                       66: startupinfo
+        1742    KW_NAMES                        29: ('startupinfo',)
+        1744    PRECALL                         2
+        1748    CALL                            2
+        1758    LOAD_METHOD                     100: decode
+        1780    PRECALL                         0
+        1784    CALL                            0
+        1794    LOAD_METHOD                     101: split
+        1816    LOAD_CONST                      42: '\n'
+        1818    PRECALL                         1
+        1822    CALL                            1
+        1832    LOAD_CONST                      43: 1
+        1834    BINARY_SUBSCR                   
+        1844    LOAD_METHOD                     102: strip
+        1866    PRECALL                         0
+        1870    CALL                            0
+        1880    STORE_NAME                      103: current_machine_id
+        1882    LOAD_CONST                      44: False
+        1884    STORE_GLOBAL                    104: close_pending
+        1886    LOAD_CONST                      45: <CODE> turnOnClosePending
+        1888    MAKE_FUNCTION                   0
+        1890    STORE_NAME                      105: turnOnClosePending
+        1892    LOAD_CONST                      0: 0
+        1894    STORE_NAME                      106: error_counter
+        1896    LOAD_GLOBAL                     208: close_pending
+        1908    POP_JUMP_FORWARD_IF_TRUE        481 (to 2874)
+        1912    NOP                             
+        1914    PUSH_NULL                       
+        1916    LOAD_NAME                       86: isUpdate
+        1918    PUSH_NULL                       
+        1920    LOAD_NAME                       84: getVersionCode
+        1922    LOAD_NAME                       69: app_version
+        1924    PRECALL                         1
+        1928    CALL                            1
+        1938    LOAD_CONST                      46: 'https://jve.amoria.ir'
+        1940    PRECALL                         2
+        1944    CALL                            2
+        1954    POP_JUMP_FORWARD_IF_TRUE        292 (to 2542)
+        1958    PUSH_NULL                       
+        1960    LOAD_NAME                       107: Tk
+        1962    PRECALL                         0
+        1966    CALL                            0
+        1976    STORE_NAME                      108: j
+        1978    LOAD_NAME                       108: j
+        1980    LOAD_METHOD                     109: title
+        2002    LOAD_CONST                      47: 'بروزرسانی'
+        2004    PRECALL                         1
+        2008    CALL                            1
+        2018    POP_TOP                         
+        2020    PUSH_NULL                       
+        2022    LOAD_NAME                       19: Image
+        2024    LOAD_ATTR                       74: open
+        2034    LOAD_CONST                      48: 'resource\\icon.png'
+        2036    PRECALL                         1
+        2040    CALL                            1
+        2050    STORE_NAME                      110: icon_image
+        2052    PUSH_NULL                       
+        2054    LOAD_NAME                       20: ImageTk
+        2056    LOAD_ATTR                       111: PhotoImage
+        2066    LOAD_NAME                       110: icon_image
+        2068    PRECALL                         1
+        2072    CALL                            1
+        2082    STORE_NAME                      112: icon
+        2084    LOAD_NAME                       108: j
+        2086    LOAD_METHOD                     113: wm_iconphoto
+        2108    LOAD_CONST                      49: True
+        2110    LOAD_NAME                       112: icon
+        2112    PRECALL                         2
+        2116    CALL                            2
+        2126    POP_TOP                         
+        2128    PUSH_NULL                       
+        2130    LOAD_NAME                       7: Label
+        2132    LOAD_NAME                       108: j
+        2134    LOAD_CONST                      50: 'نسخه ی جدید تری از نرم افزار یافت شد، آیا مایل به بروزرسانی هستید؟'
+        2136    LOAD_CONST                      51: 580
+        2138    LOAD_CONST                      52: 'center'
+        2140    LOAD_CONST                      53: ('arial', 16)
+        2142    KW_NAMES                        54: ('text', 'wraplength', 'justify', 'font')
+        2144    PRECALL                         5
+        2148    CALL                            5
+        2158    LOAD_METHOD                     114: pack
+        2180    LOAD_CONST                      55: 20
+        2182    LOAD_CONST                      55: 20
+        2184    KW_NAMES                        56: ('padx', 'pady')
+        2186    PRECALL                         2
+        2190    CALL                            2
+        2200    POP_TOP                         
+        2202    PUSH_NULL                       
+        2204    LOAD_NAME                       7: Label
+        2206    LOAD_NAME                       108: j
+        2208    LOAD_NAME                       69: app_version
+        2210    FORMAT_VALUE                    0 (FVC_NONE)
+        2212    LOAD_CONST                      57: '  →  '
+        2214    LOAD_GLOBAL                     170: last_version_name
+        2226    LOAD_ATTR                       115: text
+        2236    FORMAT_VALUE                    0 (FVC_NONE)
+        2238    BUILD_STRING                    3
+        2240    LOAD_CONST                      51: 580
+        2242    LOAD_CONST                      52: 'center'
+        2244    LOAD_CONST                      58: ('arial', 10)
+        2246    KW_NAMES                        54: ('text', 'wraplength', 'justify', 'font')
+        2248    PRECALL                         5
+        2252    CALL                            5
+        2262    LOAD_METHOD                     114: pack
+        2284    LOAD_CONST                      55: 20
+        2286    LOAD_CONST                      55: 20
+        2288    KW_NAMES                        56: ('padx', 'pady')
+        2290    PRECALL                         2
+        2294    CALL                            2
+        2304    POP_TOP                         
+        2306    PUSH_NULL                       
+        2308    LOAD_NAME                       9: Button
+        2310    LOAD_NAME                       108: j
+        2312    LOAD_CONST                      59: 'بله'
+        2314    LOAD_CONST                      60: <CODE> <lambda>
+        2316    MAKE_FUNCTION                   0
+        2318    KW_NAMES                        61: ('text', 'command')
+        2320    PRECALL                         3
+        2324    CALL                            3
+        2334    LOAD_METHOD                     114: pack
+        2356    LOAD_CONST                      49: True
+        2358    LOAD_CONST                      62: 'right'
+        2360    LOAD_NAME                       116: BOTH
+        2362    LOAD_CONST                      0: 0
+        2364    LOAD_CONST                      63: 10
+        2366    KW_NAMES                        64: ('expand', 'side', 'fill', 'pady', 'padx')
+        2368    PRECALL                         5
+        2372    CALL                            5
+        2382    POP_TOP                         
+        2384    PUSH_NULL                       
+        2386    LOAD_NAME                       9: Button
+        2388    LOAD_NAME                       108: j
+        2390    LOAD_CONST                      65: 'خیر'
+        2392    LOAD_CONST                      66: <CODE> <lambda>
+        2394    MAKE_FUNCTION                   0
+        2396    KW_NAMES                        61: ('text', 'command')
+        2398    PRECALL                         3
+        2402    CALL                            3
+        2412    LOAD_METHOD                     114: pack
+        2434    LOAD_CONST                      49: True
+        2436    LOAD_CONST                      67: 'left'
+        2438    LOAD_NAME                       116: BOTH
+        2440    LOAD_CONST                      0: 0
+        2442    LOAD_CONST                      63: 10
+        2444    KW_NAMES                        64: ('expand', 'side', 'fill', 'pady', 'padx')
+        2446    PRECALL                         5
+        2450    CALL                            5
+        2460    POP_TOP                         
+        2462    LOAD_NAME                       2: my_splash
+        2464    LOAD_METHOD                     117: close
+        2486    PRECALL                         0
+        2490    CALL                            0
+        2500    POP_TOP                         
+        2502    LOAD_NAME                       108: j
+        2504    LOAD_METHOD                     118: mainloop
+        2526    PRECALL                         0
+        2530    CALL                            0
+        2540    POP_TOP                         
+        2542    JUMP_FORWARD                    165 (to 2874)
+        2544    PUSH_EXC_INFO                   
+        2546    POP_TOP                         
+        2548    LOAD_NAME                       106: error_counter
+        2550    LOAD_CONST                      43: 1
+        2552    BINARY_OP                       13 (+=)
+        2556    STORE_NAME                      106: error_counter
+        2558    PUSH_NULL                       
+        2560    LOAD_NAME                       82: jlog
+        2562    LOAD_CONST                      68: 'error in update checking'
+        2564    PRECALL                         1
+        2568    CALL                            1
+        2578    POP_TOP                         
+        2580    LOAD_NAME                       106: error_counter
+        2582    LOAD_CONST                      69: 5
+        2584    COMPARE_OP                      4 (>)
+        2590    POP_JUMP_FORWARD_IF_FALSE       125 (to 2842)
+        2592    PUSH_NULL                       
+        2594    LOAD_NAME                       107: Tk
+        2596    PRECALL                         0
+        2600    CALL                            0
+        2610    STORE_NAME                      108: j
+        2612    LOAD_NAME                       108: j
+        2614    LOAD_METHOD                     109: title
+        2636    LOAD_CONST                      70: 'خطای اینترنت'
+        2638    PRECALL                         1
+        2642    CALL                            1
+        2652    POP_TOP                         
+        2654    PUSH_NULL                       
+        2656    LOAD_NAME                       7: Label
+        2658    LOAD_NAME                       108: j
+        2660    LOAD_CONST                      71: 'لطفا از اتصال خود به اینترنت اطمینان یابید'
+        2662    LOAD_CONST                      51: 580
+        2664    LOAD_CONST                      52: 'center'
+        2666    LOAD_CONST                      53: ('arial', 16)
+        2668    KW_NAMES                        54: ('text', 'wraplength', 'justify', 'font')
+        2670    PRECALL                         5
+        2674    CALL                            5
+        2684    LOAD_METHOD                     114: pack
+        2706    LOAD_CONST                      55: 20
+        2708    LOAD_CONST                      55: 20
+        2710    KW_NAMES                        56: ('padx', 'pady')
+        2712    PRECALL                         2
+        2716    CALL                            2
+        2726    POP_TOP                         
+        2728    LOAD_NAME                       2: my_splash
+        2730    LOAD_METHOD                     117: close
+        2752    PRECALL                         0
+        2756    CALL                            0
+        2766    POP_TOP                         
+        2768    LOAD_NAME                       108: j
+        2770    LOAD_METHOD                     118: mainloop
+        2792    PRECALL                         0
+        2796    CALL                            0
+        2806    POP_TOP                         
+        2808    PUSH_NULL                       
+        2810    LOAD_NAME                       33: sys
+        2812    LOAD_ATTR                       78: exit
+        2822    LOAD_CONST                      0: 0
+        2824    PRECALL                         1
+        2828    CALL                            1
+        2838    POP_TOP                         
+        2840    JUMP_FORWARD                    3 (to 2848)
+        2842    POP_EXCEPT                      
+        2844    JUMP_BACKWARD                   476 (to 1896)
+        2848    POP_EXCEPT                      
+        2850    JUMP_FORWARD                    3 (to 2858)
+        2852    COPY                            3
+        2854    POP_EXCEPT                      
+        2856    RERAISE                         1
+        2858    LOAD_GLOBAL                     208: close_pending
+        2870    POP_JUMP_BACKWARD_IF_FALSE      481 (to 1912)
+        2874    LOAD_GLOBAL                     208: close_pending
+        2886    POP_JUMP_FORWARD_IF_FALSE       26 (to 2940)
+        2888    PUSH_NULL                       
+        2890    LOAD_NAME                       33: sys
+        2892    LOAD_ATTR                       78: exit
+        2902    LOAD_CONST                      0: 0
+        2904    PRECALL                         1
+        2908    CALL                            1
+        2918    POP_TOP                         
+        2920    PUSH_NULL                       
+        2922    LOAD_NAME                       78: exit
+        2924    PRECALL                         0
+        2928    CALL                            0
+        2938    POP_TOP                         
+        2940    LOAD_CONST                      1: None
+        2942    STORE_GLOBAL                    119: jcs_handle
+        2944    LOAD_CONST                      72: <CODE> startJCS
+        2946    MAKE_FUNCTION                   0
+        2948    STORE_NAME                      120: startJCS
+        2950    LOAD_CONST                      73: <CODE> downloadJCSThread
+        2952    MAKE_FUNCTION                   0
+        2954    STORE_NAME                      121: downloadJCSThread
+        2956    LOAD_CONST                      1: None
+        2958    STORE_GLOBAL                    122: download_jcs_thread
+        2960    LOAD_CONST                      186: (None,)
+        2962    LOAD_CONST                      74: <CODE> downloadJCS
+        2964    MAKE_FUNCTION                   1
+        2966    STORE_NAME                      123: downloadJCS
+        2968    LOAD_CONST                      186: (None,)
+        2970    LOAD_CONST                      75: <CODE> showDownloadJCS
+        2972    MAKE_FUNCTION                   1
+        2974    STORE_NAME                      124: showDownloadJCS
+        2976    NOP                             
+        2978    PUSH_NULL                       
+        2980    LOAD_NAME                       55: webdriverManager
+        2982    LOAD_ATTR                       125: getLocalWebDriverVersion
+        2992    LOAD_NAME                       72: driver_root
+        2994    PRECALL                         1
+        2998    CALL                            1
+        3008    STORE_NAME                      126: local_driver_version
+        3010    PUSH_NULL                       
+        3012    LOAD_NAME                       55: webdriverManager
+        3014    LOAD_ATTR                       127: getOnlineWebDriverVersion
+        3024    PRECALL                         0
+        3028    CALL                            0
+        3038    UNPACK_SEQUENCE                 3
+        3042    STORE_NAME                      128: online_driver_version
+        3044    STORE_NAME                      129: online_driver_link_x64
+        3046    STORE_NAME                      130: online_driver_link_x86
+        3048    PUSH_NULL                       
+        3050    LOAD_NAME                       55: webdriverManager
+        3052    LOAD_ATTR                       131: getChromeVersion
+        3062    PRECALL                         0
+        3066    CALL                            0
+        3076    STORE_NAME                      132: chrome_version
+        3078    JUMP_FORWARD                    164 (to 3408)
+        3080    PUSH_EXC_INFO                   
+        3082    LOAD_NAME                       133: Exception
+        3084    CHECK_EXC_MATCH                 
+        3086    POP_JUMP_FORWARD_IF_FALSE       156 (to 3400)
+        3088    STORE_NAME                      134: e
+        3090    PUSH_NULL                       
+        3092    LOAD_NAME                       82: jlog
+        3094    LOAD_CONST                      76: 'get driver info'
+        3096    PRECALL                         1
+        3100    CALL                            1
+        3110    POP_TOP                         
+        3112    PUSH_NULL                       
+        3114    LOAD_NAME                       135: print
+        3116    LOAD_NAME                       134: e
+        3118    PRECALL                         1
+        3122    CALL                            1
+        3132    POP_TOP                         
+        3134    PUSH_NULL                       
+        3136    LOAD_NAME                       107: Tk
+        3138    PRECALL                         0
+        3142    CALL                            0
+        3152    STORE_NAME                      108: j
+        3154    LOAD_NAME                       108: j
+        3156    LOAD_METHOD                     109: title
+        3178    LOAD_CONST                      70: 'خطای اینترنت'
+        3180    PRECALL                         1
+        3184    CALL                            1
+        3194    POP_TOP                         
+        3196    PUSH_NULL                       
+        3198    LOAD_NAME                       7: Label
+        3200    LOAD_NAME                       108: j
+        3202    LOAD_CONST                      71: 'لطفا از اتصال خود به اینترنت اطمینان یابید'
+        3204    LOAD_CONST                      51: 580
+        3206    LOAD_CONST                      52: 'center'
+        3208    LOAD_CONST                      53: ('arial', 16)
+        3210    KW_NAMES                        54: ('text', 'wraplength', 'justify', 'font')
+        3212    PRECALL                         5
+        3216    CALL                            5
+        3226    LOAD_METHOD                     114: pack
+        3248    LOAD_CONST                      55: 20
+        3250    LOAD_CONST                      55: 20
+        3252    KW_NAMES                        56: ('padx', 'pady')
+        3254    PRECALL                         2
+        3258    CALL                            2
+        3268    POP_TOP                         
+        3270    LOAD_NAME                       2: my_splash
+        3272    LOAD_METHOD                     117: close
+        3294    PRECALL                         0
+        3298    CALL                            0
+        3308    POP_TOP                         
+        3310    LOAD_NAME                       108: j
+        3312    LOAD_METHOD                     118: mainloop
+        3334    PRECALL                         0
+        3338    CALL                            0
+        3348    POP_TOP                         
+        3350    PUSH_NULL                       
+        3352    LOAD_NAME                       33: sys
+        3354    LOAD_ATTR                       78: exit
+        3364    LOAD_CONST                      0: 0
+        3366    PRECALL                         1
+        3370    CALL                            1
+        3380    POP_TOP                         
+        3382    POP_EXCEPT                      
+        3384    LOAD_CONST                      1: None
+        3386    STORE_NAME                      134: e
+        3388    DELETE_NAME                     134: e
+        3390    JUMP_FORWARD                    8 (to 3408)
+        3392    LOAD_CONST                      1: None
+        3394    STORE_NAME                      134: e
+        3396    DELETE_NAME                     134: e
+        3398    RERAISE                         1
+        3400    RERAISE                         0
+        3402    COPY                            3
+        3404    POP_EXCEPT                      
+        3406    RERAISE                         1
+        3408    LOAD_CONST                      77: <CODE> downloadUpdate
+        3410    MAKE_FUNCTION                   0
+        3412    STORE_NAME                      136: downloadUpdate
+        3414    LOAD_CONST                      1: None
+        3416    STORE_GLOBAL                    137: download_driver_thread
+        3418    LOAD_CONST                      187: ('32', None)
+        3420    LOAD_CONST                      79: <CODE> updateDriver
+        3422    MAKE_FUNCTION                   1
+        3424    STORE_NAME                      138: updateDriver
+        3426    LOAD_CONST                      186: (None,)
+        3428    LOAD_CONST                      80: <CODE> showDownloadDriver
+        3430    MAKE_FUNCTION                   1
+        3432    STORE_NAME                      139: showDownloadDriver
+        3434    LOAD_CONST                      81: 'برای نصب یا فیکس کردن درایور کروم می توانید از گزینه های زیر یکی را به دلخواه انتخاب کرده تا نرم افزار دانلود و نصب شود. پیشنهاد می شود از نسخه 32 بیتی استفاده کنید'
+        3436    STORE_NAME                      140: download_driver_message
+        3438    PUSH_NULL                       
+        3440    LOAD_NAME                       135: print
+        3442    LOAD_CONST                      82: 'current driver version: '
+        3444    LOAD_NAME                       126: local_driver_version
+        3446    FORMAT_VALUE                    0 (FVC_NONE)
+        3448    LOAD_CONST                      83: '\nonline driver version: '
+        3450    LOAD_NAME                       128: online_driver_version
+        3452    FORMAT_VALUE                    0 (FVC_NONE)
+        3454    LOAD_CONST                      84: '\nchrome version: '
+        3456    LOAD_NAME                       132: chrome_version
+        3458    FORMAT_VALUE                    0 (FVC_NONE)
+        3460    BUILD_STRING                    6
+        3462    PRECALL                         1
+        3466    CALL                            1
+        3476    POP_TOP                         
+        3478    LOAD_NAME                       126: local_driver_version
+        3480    LOAD_CONST                      1: None
+        3482    COMPARE_OP                      2 (==)
+        3488    POP_JUMP_FORWARD_IF_FALSE       14 (to 3518)
+        3490    LOAD_CONST                      85: 'درایور کروم یافت نشد. لطفا با استفاده از دکمه ی دانلود آن را بارگیری کرده سپس دوباره تلاش کنید'
+        3492    STORE_NAME                      141: dialog_message
+        3494    PUSH_NULL                       
+        3496    LOAD_NAME                       139: showDownloadDriver
+        3498    LOAD_NAME                       141: dialog_message
+        3500    PRECALL                         1
+        3504    CALL                            1
+        3514    POP_TOP                         
+        3516    JUMP_FORWARD                    19 (to 3556)
+        3518    LOAD_NAME                       126: local_driver_version
+        3520    LOAD_NAME                       128: online_driver_version
+        3522    COMPARE_OP                      3 (!=)
+        3528    POP_JUMP_FORWARD_IF_FALSE       13 (to 3556)
+        3530    LOAD_CONST                      86: 'درایور کروم آپدیت نیست در صورت مشاهده هرگونه مشکل ابتدا از بروز بودن کروم اطمینان حاصل کنید. سپس با استفاده از دکمه زیر درایور را آپدیت نمایید'
+        3532    STORE_NAME                      141: dialog_message
+        3534    PUSH_NULL                       
+        3536    LOAD_NAME                       139: showDownloadDriver
+        3538    LOAD_NAME                       141: dialog_message
+        3540    PRECALL                         1
+        3544    CALL                            1
+        3554    POP_TOP                         
+        3556    PUSH_NULL                       
+        3558    LOAD_NAME                       26: sha256
+        3560    LOAD_NAME                       103: current_machine_id
+        3562    LOAD_METHOD                     142: encode
+        3584    LOAD_CONST                      87: 'utf-8'
+        3586    PRECALL                         1
+        3590    CALL                            1
+        3600    PRECALL                         1
+        3604    CALL                            1
+        3614    LOAD_METHOD                     143: hexdigest
+        3636    PRECALL                         0
+        3640    CALL                            0
+        3650    STORE_NAME                      144: system_id_hash
+        3652    LOAD_CONST                      188: ('0.de.pool.ntp.org', None)
+        3654    LOAD_CONST                      89: <CODE> RequestTimefromNtp
+        3656    MAKE_FUNCTION                   1
+        3658    STORE_NAME                      145: RequestTimefromNtp
+        3660    LOAD_CONST                      90: <CODE> getNtpTime
+        3662    MAKE_FUNCTION                   0
+        3664    STORE_NAME                      146: getNtpTime
+        3666    PUSH_NULL                       
+        3668    LOAD_BUILD_CLASS                
+        3670    LOAD_CONST                      91: <CODE> RightClicker
+        3672    MAKE_FUNCTION                   0
+        3674    LOAD_CONST                      92: 'RightClicker'
+        3676    PRECALL                         2
+        3680    CALL                            2
+        3690    STORE_NAME                      147: RightClicker
+        3692    LOAD_CONST                      93: 'https://jsms.amoria.ir'
+        3694    STORE_NAME                      148: server_domain
+        3696    LOAD_CONST                      94: <CODE> copyuuid
+        3698    MAKE_FUNCTION                   0
+        3700    STORE_NAME                      149: copyuuid
+        3702    LOAD_CONST                      95: <CODE> checkLicense
+        3704    MAKE_FUNCTION                   0
+        3706    STORE_NAME                      150: checkLicense
+        3708    LOAD_CONST                      96: <CODE> paste
+        3710    MAKE_FUNCTION                   0
+        3712    STORE_NAME                      151: paste
+        3714    LOAD_CONST                      97: <CODE> autoUpdateLicense
+        3716    MAKE_FUNCTION                   0
+        3718    STORE_NAME                      152: autoUpdateLicense
+        3720    PUSH_NULL                       
+        3722    LOAD_NAME                       135: print
+        3724    LOAD_CONST                      98: 'before ntp'
+        3726    PRECALL                         1
+        3730    CALL                            1
+        3740    POP_TOP                         
+        3742    PUSH_NULL                       
+        3744    LOAD_NAME                       146: getNtpTime
+        3746    PRECALL                         0
+        3750    CALL                            0
+        3760    STORE_NAME                      153: current_ntp_time
+        3762    PUSH_NULL                       
+        3764    LOAD_NAME                       135: print
+        3766    LOAD_CONST                      99: 'after ntp'
+        3768    PRECALL                         1
+        3772    CALL                            1
+        3782    POP_TOP                         
+        3784    LOAD_NAME                       153: current_ntp_time
+        3786    LOAD_CONST                      44: False
+        3788    COMPARE_OP                      2 (==)
+        3794    POP_JUMP_FORWARD_IF_FALSE       124 (to 4044)
+        3796    PUSH_NULL                       
+        3798    LOAD_NAME                       107: Tk
+        3800    PRECALL                         0
+        3804    CALL                            0
+        3814    STORE_NAME                      108: j
+        3816    LOAD_NAME                       108: j
+        3818    LOAD_METHOD                     109: title
+        3840    LOAD_CONST                      70: 'خطای اینترنت'
+        3842    PRECALL                         1
+        3846    CALL                            1
+        3856    POP_TOP                         
+        3858    PUSH_NULL                       
+        3860    LOAD_NAME                       7: Label
+        3862    LOAD_NAME                       108: j
+        3864    LOAD_CONST                      71: 'لطفا از اتصال خود به اینترنت اطمینان یابید'
+        3866    LOAD_CONST                      51: 580
+        3868    LOAD_CONST                      52: 'center'
+        3870    LOAD_CONST                      53: ('arial', 16)
+        3872    KW_NAMES                        54: ('text', 'wraplength', 'justify', 'font')
+        3874    PRECALL                         5
+        3878    CALL                            5
+        3888    LOAD_METHOD                     114: pack
+        3910    LOAD_CONST                      55: 20
+        3912    LOAD_CONST                      55: 20
+        3914    KW_NAMES                        56: ('padx', 'pady')
+        3916    PRECALL                         2
+        3920    CALL                            2
+        3930    POP_TOP                         
+        3932    LOAD_NAME                       2: my_splash
+        3934    LOAD_METHOD                     117: close
+        3956    PRECALL                         0
+        3960    CALL                            0
+        3970    POP_TOP                         
+        3972    LOAD_NAME                       108: j
+        3974    LOAD_METHOD                     118: mainloop
+        3996    PRECALL                         0
+        4000    CALL                            0
+        4010    POP_TOP                         
+        4012    PUSH_NULL                       
+        4014    LOAD_NAME                       33: sys
+        4016    LOAD_ATTR                       78: exit
+        4026    LOAD_CONST                      0: 0
+        4028    PRECALL                         1
+        4032    CALL                            1
+        4042    POP_TOP                         
+        4044    PUSH_NULL                       
+        4046    LOAD_NAME                       4: time
+        4048    LOAD_ATTR                       4: time
+        4058    PRECALL                         0
+        4062    CALL                            0
+        4072    STORE_NAME                      154: system_time_time
+        4074    PUSH_NULL                       
+        4076    LOAD_NAME                       155: abs
+        4078    LOAD_NAME                       153: current_ntp_time
+        4080    LOAD_NAME                       154: system_time_time
+        4082    BINARY_OP                       10 (-)
+        4086    PRECALL                         1
+        4090    CALL                            1
+        4100    STORE_NAME                      156: real_differ_time
+        4102    LOAD_NAME                       156: real_differ_time
+        4104    LOAD_CONST                      100: 86400
+        4106    COMPARE_OP                      4 (>)
+        4112    POP_JUMP_FORWARD_IF_FALSE       143 (to 4400)
+        4114    PUSH_NULL                       
+        4116    LOAD_NAME                       107: Tk
+        4118    PRECALL                         0
+        4122    CALL                            0
+        4132    STORE_NAME                      157: a
+        4134    LOAD_NAME                       157: a
+        4136    LOAD_METHOD                     158: resizable
+        4158    LOAD_CONST                      0: 0
+        4160    LOAD_CONST                      0: 0
+        4162    PRECALL                         2
+        4166    CALL                            2
+        4176    POP_TOP                         
+        4178    LOAD_NAME                       157: a
+        4180    LOAD_METHOD                     109: title
+        4202    LOAD_CONST                      101: 'خطای زمان سیستم'
+        4204    PRECALL                         1
+        4208    CALL                            1
+        4218    POP_TOP                         
+        4220    PUSH_NULL                       
+        4222    LOAD_NAME                       7: Label
+        4224    LOAD_NAME                       157: a
+        4226    LOAD_CONST                      102: 'اختلاف زیاد بین ساعت سیستم و زمان حقیقی'
+        4228    LOAD_CONST                      53: ('arial', 16)
+        4230    KW_NAMES                        103: ('text', 'font')
+        4232    PRECALL                         3
+        4236    CALL                            3
+        4246    LOAD_METHOD                     114: pack
+        4268    LOAD_CONST                      55: 20
+        4270    LOAD_CONST                      55: 20
+        4272    KW_NAMES                        56: ('padx', 'pady')
+        4274    PRECALL                         2
+        4278    CALL                            2
+        4288    POP_TOP                         
+        4290    LOAD_NAME                       2: my_splash
+        4292    LOAD_METHOD                     117: close
+        4314    PRECALL                         0
+        4318    CALL                            0
+        4328    POP_TOP                         
+        4330    LOAD_NAME                       157: a
+        4332    LOAD_METHOD                     118: mainloop
+        4354    PRECALL                         0
+        4358    CALL                            0
+        4368    POP_TOP                         
+        4370    PUSH_NULL                       
+        4372    LOAD_NAME                       33: sys
+        4374    LOAD_ATTR                       78: exit
+        4384    PRECALL                         0
+        4388    CALL                            0
+        4398    POP_TOP                         
+        4400    LOAD_CONST                      104: b'O2TDwkpynt-6E3zVDvR-wgvJf_GnZfecepwL7HSTQXg='
+        4402    STORE_NAME                      159: key
+        4404    PUSH_NULL                       
+        4406    LOAD_NAME                       38: Fernet
+        4408    LOAD_NAME                       159: key
+        4410    PRECALL                         1
+        4414    CALL                            1
+        4424    STORE_NAME                      160: c
+        4426    LOAD_NAME                       34: os
+        4428    LOAD_ATTR                       70: path
+        4438    LOAD_METHOD                     73: exists
+        4460    LOAD_CONST                      105: 'jetvam.lic'
+        4462    PRECALL                         1
+        4466    CALL                            1
+        4476    POP_JUMP_FORWARD_IF_TRUE        496 (to 5472)
+        4480    PUSH_NULL                       
+        4482    LOAD_NAME                       107: Tk
+        4484    PRECALL                         0
+        4488    CALL                            0
+        4498    STORE_NAME                      157: a
+        4500    LOAD_NAME                       157: a
+        4502    LOAD_METHOD                     158: resizable
+        4524    LOAD_CONST                      0: 0
+        4526    LOAD_CONST                      0: 0
+        4528    PRECALL                         2
+        4532    CALL                            2
+        4542    POP_TOP                         
+        4544    LOAD_NAME                       157: a
+        4546    LOAD_METHOD                     109: title
+        4568    LOAD_CONST                      106: 'خطای لایسنس'
+        4570    PRECALL                         1
+        4574    CALL                            1
+        4584    POP_TOP                         
+        4586    PUSH_NULL                       
+        4588    LOAD_NAME                       7: Label
+        4590    LOAD_NAME                       157: a
+        4592    LOAD_CONST                      107: 'فایل لایسنس یافت نشد'
+        4594    LOAD_CONST                      53: ('arial', 16)
+        4596    KW_NAMES                        103: ('text', 'font')
+        4598    PRECALL                         3
+        4602    CALL                            3
+        4612    LOAD_METHOD                     114: pack
+        4634    LOAD_CONST                      55: 20
+        4636    LOAD_CONST                      55: 20
+        4638    KW_NAMES                        56: ('padx', 'pady')
+        4640    PRECALL                         2
+        4644    CALL                            2
+        4654    POP_TOP                         
+        4656    PUSH_NULL                       
+        4658    LOAD_NAME                       161: LabelFrame
+        4660    LOAD_NAME                       157: a
+        4662    LOAD_CONST                      108: 'کد سیستم'
+        4664    LOAD_CONST                      109: 'ne'
+        4666    KW_NAMES                        110: ('text', 'labelanchor')
+        4668    PRECALL                         3
+        4672    CALL                            3
+        4682    STORE_NAME                      162: uuid_tframe
+        4684    LOAD_NAME                       162: uuid_tframe
+        4686    LOAD_METHOD                     114: pack
+        4708    LOAD_CONST                      63: 10
+        4710    LOAD_CONST                      63: 10
+        4712    KW_NAMES                        56: ('padx', 'pady')
+        4714    PRECALL                         2
+        4718    CALL                            2
+        4728    POP_TOP                         
+        4730    PUSH_NULL                       
+        4732    LOAD_NAME                       7: Label
+        4734    LOAD_NAME                       162: uuid_tframe
+        4736    LOAD_NAME                       144: system_id_hash
+        4738    KW_NAMES                        111: ('text',)
+        4740    PRECALL                         2
+        4744    CALL                            2
+        4754    STORE_NAME                      163: label_uuid
+        4756    LOAD_NAME                       163: label_uuid
+        4758    LOAD_METHOD                     114: pack
+        4780    LOAD_CONST                      55: 20
+        4782    LOAD_CONST                      55: 20
+        4784    KW_NAMES                        56: ('padx', 'pady')
+        4786    PRECALL                         2
+        4790    CALL                            2
+        4800    POP_TOP                         
+        4802    PUSH_NULL                       
+        4804    LOAD_NAME                       40: ToolTip
+        4806    LOAD_NAME                       163: label_uuid
+        4808    LOAD_CONST                      112: 'برای کپی کردن کلیک کنید'
+        4810    LOAD_CONST                      113: 0.05
+        4812    PRECALL                         3
+        4816    CALL                            3
+        4826    STORE_NAME                      164: copy_to_clipboard_tool_tip
+        4828    PUSH_NULL                       
+        4830    LOAD_NAME                       161: LabelFrame
+        4832    LOAD_NAME                       157: a
+        4834    LOAD_CONST                      114: 'کد لایسنس'
+        4836    LOAD_CONST                      109: 'ne'
+        4838    KW_NAMES                        110: ('text', 'labelanchor')
+        4840    PRECALL                         3
+        4844    CALL                            3
+        4854    STORE_NAME                      165: license_entry_frame
+        4856    LOAD_NAME                       165: license_entry_frame
+        4858    LOAD_METHOD                     114: pack
+        4880    LOAD_CONST                      63: 10
+        4882    LOAD_CONST                      63: 10
+        4884    LOAD_CONST                      115: 'both'
+        4886    KW_NAMES                        116: ('padx', 'pady', 'fill')
+        4888    PRECALL                         3
+        4892    CALL                            3
+        4902    POP_TOP                         
+        4904    PUSH_NULL                       
+        4906    LOAD_NAME                       166: Text
+        4908    LOAD_NAME                       165: license_entry_frame
+        4910    LOAD_CONST                      117: 42
+        4912    LOAD_CONST                      69: 5
+        4914    KW_NAMES                        118: ('width', 'height')
+        4916    PRECALL                         3
+        4920    CALL                            3
+        4930    STORE_NAME                      167: entry_license
+        4932    LOAD_NAME                       167: entry_license
+        4934    LOAD_METHOD                     114: pack
+        4956    LOAD_CONST                      49: True
+        4958    LOAD_CONST                      115: 'both'
+        4960    LOAD_CONST                      0: 0
+        4962    LOAD_CONST                      63: 10
+        4964    KW_NAMES                        119: ('expand', 'fill', 'padx', 'pady')
+        4966    PRECALL                         4
+        4970    CALL                            4
+        4980    POP_TOP                         
+        4982    LOAD_NAME                       167: entry_license
+        4984    LOAD_METHOD                     168: bind
+        5006    LOAD_CONST                      120: '<Button-3>'
+        5008    LOAD_NAME                       147: RightClicker
+        5010    PRECALL                         2
+        5014    CALL                            2
+        5024    POP_TOP                         
+        5026    PUSH_NULL                       
+        5028    LOAD_NAME                       9: Button
+        5030    LOAD_NAME                       165: license_entry_frame
+        5032    LOAD_CONST                      121: 'ذخیره کردن لایسنس'
+        5034    LOAD_CONST                      69: 5
+        5036    LOAD_CONST                      122: <CODE> <lambda>
+        5038    MAKE_FUNCTION                   0
+        5040    KW_NAMES                        123: ('text', 'padding', 'command')
+        5042    PRECALL                         4
+        5046    CALL                            4
+        5056    STORE_NAME                      169: button_check_licens
+        5058    LOAD_NAME                       169: button_check_licens
+        5060    LOAD_METHOD                     114: pack
+        5082    LOAD_CONST                      124: 'e'
+        5084    LOAD_CONST                      63: 10
+        5086    LOAD_CONST                      69: 5
+        5088    LOAD_CONST                      62: 'right'
+        5090    KW_NAMES                        125: ('anchor', 'padx', 'pady', 'side')
+        5092    PRECALL                         4
+        5096    CALL                            4
+        5106    POP_TOP                         
+        5108    PUSH_NULL                       
+        5110    LOAD_NAME                       9: Button
+        5112    LOAD_NAME                       165: license_entry_frame
+        5114    LOAD_CONST                      126: 'وارد کردن مقدار کپی شده'
+        5116    LOAD_CONST                      127: <CODE> <lambda>
+        5118    MAKE_FUNCTION                   0
+        5120    KW_NAMES                        61: ('text', 'command')
+        5122    PRECALL                         3
+        5126    CALL                            3
+        5136    STORE_NAME                      170: paste_button
+        5138    LOAD_NAME                       170: paste_button
+        5140    LOAD_METHOD                     114: pack
+        5162    LOAD_CONST                      23: 'w'
+        5164    LOAD_CONST                      67: 'left'
+        5166    LOAD_CONST                      63: 10
+        5168    LOAD_CONST                      69: 5
+        5170    KW_NAMES                        128: ('anchor', 'side', 'padx', 'pady')
+        5172    PRECALL                         4
+        5176    CALL                            4
+        5186    POP_TOP                         
+        5188    PUSH_NULL                       
+        5190    LOAD_NAME                       9: Button
+        5192    LOAD_NAME                       165: license_entry_frame
+        5194    LOAD_CONST                      129: 'دانلود خودکار لایسنس'
+        5196    LOAD_CONST                      130: <CODE> <lambda>
+        5198    MAKE_FUNCTION                   0
+        5200    KW_NAMES                        61: ('text', 'command')
+        5202    PRECALL                         3
+        5206    CALL                            3
+        5216    LOAD_METHOD                     114: pack
+        5238    LOAD_CONST                      23: 'w'
+        5240    LOAD_CONST                      67: 'left'
+        5242    LOAD_CONST                      63: 10
+        5244    LOAD_CONST                      69: 5
+        5246    KW_NAMES                        128: ('anchor', 'side', 'padx', 'pady')
+        5248    PRECALL                         4
+        5252    CALL                            4
+        5262    POP_TOP                         
+        5264    LOAD_NAME                       163: label_uuid
+        5266    LOAD_METHOD                     168: bind
+        5288    LOAD_CONST                      131: '<Button-1>'
+        5290    LOAD_CONST                      132: <CODE> <lambda>
+        5292    MAKE_FUNCTION                   0
+        5294    PRECALL                         2
+        5298    CALL                            2
+        5308    POP_TOP                         
+        5310    LOAD_NAME                       162: uuid_tframe
+        5312    LOAD_METHOD                     168: bind
+        5334    LOAD_CONST                      131: '<Button-1>'
+        5336    LOAD_CONST                      133: <CODE> <lambda>
+        5338    MAKE_FUNCTION                   0
+        5340    PRECALL                         2
+        5344    CALL                            2
+        5354    POP_TOP                         
+        5356    LOAD_NAME                       2: my_splash
+        5358    LOAD_METHOD                     117: close
+        5380    PRECALL                         0
+        5384    CALL                            0
+        5394    POP_TOP                         
+        5396    LOAD_NAME                       157: a
+        5398    LOAD_METHOD                     118: mainloop
+        5420    PRECALL                         0
+        5424    CALL                            0
+        5434    POP_TOP                         
+        5436    PUSH_NULL                       
+        5438    LOAD_NAME                       33: sys
+        5440    LOAD_ATTR                       78: exit
+        5450    LOAD_CONST                      0: 0
+        5452    PRECALL                         1
+        5456    CALL                            1
+        5466    POP_TOP                         
+        5468    JUMP_FORWARD                    1179 (to 7830)
+        5472    LOAD_CONST                      0: 0
+        5474    STORE_GLOBAL                    171: expire_time
+        5476    NOP                             
+        5478    PUSH_NULL                       
+        5480    LOAD_NAME                       74: open
+        5482    LOAD_CONST                      105: 'jetvam.lic'
+        5484    LOAD_CONST                      134: 'rb'
+        5486    PRECALL                         2
+        5490    CALL                            2
+        5500    BEFORE_WITH                     
+        5502    STORE_NAME                      75: f
+        5504    LOAD_NAME                       75: f
+        5506    LOAD_METHOD                     172: read
+        5528    PRECALL                         0
+        5532    CALL                            0
+        5542    STORE_NAME                      173: jj
+        5544    LOAD_CONST                      1: None
+        5546    LOAD_CONST                      1: None
+        5548    LOAD_CONST                      1: None
+        5550    PRECALL                         2
+        5554    CALL                            2
+        5564    POP_TOP                         
+        5566    JUMP_FORWARD                    11 (to 5590)
+        5568    PUSH_EXC_INFO                   
+        5570    WITH_EXCEPT_START               
+        5572    POP_JUMP_FORWARD_IF_TRUE        4 (to 5582)
+        5574    RERAISE                         2
+        5576    COPY                            3
+        5578    POP_EXCEPT                      
+        5580    RERAISE                         1
+        5582    POP_TOP                         
+        5584    POP_EXCEPT                      
+        5586    POP_TOP                         
+        5588    POP_TOP                         
+        5590    LOAD_NAME                       160: c
+        5592    LOAD_METHOD                     174: decrypt
+        5614    LOAD_NAME                       173: jj
+        5616    PRECALL                         1
+        5620    CALL                            1
+        5630    LOAD_METHOD                     100: decode
+        5652    LOAD_CONST                      87: 'utf-8'
+        5654    PRECALL                         1
+        5658    CALL                            1
+        5668    STORE_NAME                      175: dfile
+        5670    LOAD_NAME                       175: dfile
+        5672    LOAD_METHOD                     101: split
+        5694    LOAD_CONST                      135: ':'
+        5696    PRECALL                         1
+        5700    CALL                            1
+        5710    UNPACK_SEQUENCE                 2
+        5714    STORE_NAME                      176: sys_id
+        5716    STORE_NAME                      177: exptime
+        5718    LOAD_NAME                       176: sys_id
+        5720    LOAD_NAME                       144: system_id_hash
+        5722    COMPARE_OP                      3 (!=)
+        5728    POP_JUMP_FORWARD_IF_FALSE       5 (to 5740)
+        5730    LOAD_CONST                      0: 0
+        5732    LOAD_CONST                      0: 0
+        5734    BINARY_OP                       11 (/)
+        5738    POP_TOP                         
+        5740    PUSH_NULL                       
+        5742    LOAD_NAME                       178: float
+        5744    LOAD_NAME                       177: exptime
+        5746    PRECALL                         1
+        5750    CALL                            1
+        5760    STORE_GLOBAL                    171: expire_time
+        5762    LOAD_GLOBAL                     342: expire_time
+        5776    LOAD_NAME                       153: current_ntp_time
+        5778    BINARY_OP                       10 (-)
+        5782    STORE_GLOBAL                    179: until_time
+        5784    JUMP_FORWARD                    501 (to 6790)
+        5788    PUSH_EXC_INFO                   
+        5790    POP_TOP                         
+        5792    PUSH_NULL                       
+        5794    LOAD_NAME                       107: Tk
+        5796    PRECALL                         0
+        5800    CALL                            0
+        5810    STORE_NAME                      157: a
+        5812    LOAD_NAME                       157: a
+        5814    LOAD_METHOD                     158: resizable
+        5836    LOAD_CONST                      0: 0
+        5838    LOAD_CONST                      0: 0
+        5840    PRECALL                         2
+        5844    CALL                            2
+        5854    POP_TOP                         
+        5856    LOAD_NAME                       157: a
+        5858    LOAD_METHOD                     109: title
+        5880    LOAD_CONST                      106: 'خطای لایسنس'
+        5882    PRECALL                         1
+        5886    CALL                            1
+        5896    POP_TOP                         
+        5898    PUSH_NULL                       
+        5900    LOAD_NAME                       7: Label
+        5902    LOAD_NAME                       157: a
+        5904    LOAD_CONST                      136: 'عدم مطابقت فایل لایسنس با سیستم'
+        5906    LOAD_CONST                      53: ('arial', 16)
+        5908    KW_NAMES                        103: ('text', 'font')
+        5910    PRECALL                         3
+        5914    CALL                            3
+        5924    LOAD_METHOD                     114: pack
+        5946    LOAD_CONST                      55: 20
+        5948    LOAD_CONST                      55: 20
+        5950    KW_NAMES                        56: ('padx', 'pady')
+        5952    PRECALL                         2
+        5956    CALL                            2
+        5966    POP_TOP                         
+        5968    PUSH_NULL                       
+        5970    LOAD_NAME                       161: LabelFrame
+        5972    LOAD_NAME                       157: a
+        5974    LOAD_CONST                      108: 'کد سیستم'
+        5976    LOAD_CONST                      109: 'ne'
+        5978    KW_NAMES                        110: ('text', 'labelanchor')
+        5980    PRECALL                         3
+        5984    CALL                            3
+        5994    STORE_NAME                      162: uuid_tframe
+        5996    LOAD_NAME                       162: uuid_tframe
+        5998    LOAD_METHOD                     114: pack
+        6020    LOAD_CONST                      63: 10
+        6022    LOAD_CONST                      63: 10
+        6024    KW_NAMES                        56: ('padx', 'pady')
+        6026    PRECALL                         2
+        6030    CALL                            2
+        6040    POP_TOP                         
+        6042    PUSH_NULL                       
+        6044    LOAD_NAME                       7: Label
+        6046    LOAD_NAME                       162: uuid_tframe
+        6048    LOAD_NAME                       144: system_id_hash
+        6050    KW_NAMES                        111: ('text',)
+        6052    PRECALL                         2
+        6056    CALL                            2
+        6066    STORE_NAME                      163: label_uuid
+        6068    LOAD_NAME                       163: label_uuid
+        6070    LOAD_METHOD                     114: pack
+        6092    LOAD_CONST                      55: 20
+        6094    LOAD_CONST                      55: 20
+        6096    KW_NAMES                        56: ('padx', 'pady')
+        6098    PRECALL                         2
+        6102    CALL                            2
+        6112    POP_TOP                         
+        6114    PUSH_NULL                       
+        6116    LOAD_NAME                       40: ToolTip
+        6118    LOAD_NAME                       163: label_uuid
+        6120    LOAD_CONST                      112: 'برای کپی کردن کلیک کنید'
+        6122    LOAD_CONST                      113: 0.05
+        6124    PRECALL                         3
+        6128    CALL                            3
+        6138    STORE_NAME                      164: copy_to_clipboard_tool_tip
+        6140    PUSH_NULL                       
+        6142    LOAD_NAME                       161: LabelFrame
+        6144    LOAD_NAME                       157: a
+        6146    LOAD_CONST                      114: 'کد لایسنس'
+        6148    LOAD_CONST                      109: 'ne'
+        6150    KW_NAMES                        110: ('text', 'labelanchor')
+        6152    PRECALL                         3
+        6156    CALL                            3
+        6166    STORE_NAME                      165: license_entry_frame
+        6168    LOAD_NAME                       165: license_entry_frame
+        6170    LOAD_METHOD                     114: pack
+        6192    LOAD_CONST                      63: 10
+        6194    LOAD_CONST                      63: 10
+        6196    LOAD_CONST                      115: 'both'
+        6198    KW_NAMES                        116: ('padx', 'pady', 'fill')
+        6200    PRECALL                         3
+        6204    CALL                            3
+        6214    POP_TOP                         
+        6216    PUSH_NULL                       
+        6218    LOAD_NAME                       166: Text
+        6220    LOAD_NAME                       165: license_entry_frame
+        6222    LOAD_CONST                      117: 42
+        6224    LOAD_CONST                      69: 5
+        6226    KW_NAMES                        118: ('width', 'height')
+        6228    PRECALL                         3
+        6232    CALL                            3
+        6242    STORE_NAME                      167: entry_license
+        6244    LOAD_NAME                       167: entry_license
+        6246    LOAD_METHOD                     114: pack
+        6268    LOAD_CONST                      49: True
+        6270    LOAD_CONST                      115: 'both'
+        6272    LOAD_CONST                      0: 0
+        6274    LOAD_CONST                      63: 10
+        6276    KW_NAMES                        119: ('expand', 'fill', 'padx', 'pady')
+        6278    PRECALL                         4
+        6282    CALL                            4
+        6292    POP_TOP                         
+        6294    LOAD_NAME                       167: entry_license
+        6296    LOAD_METHOD                     168: bind
+        6318    LOAD_CONST                      120: '<Button-3>'
+        6320    LOAD_NAME                       147: RightClicker
+        6322    PRECALL                         2
+        6326    CALL                            2
+        6336    POP_TOP                         
+        6338    PUSH_NULL                       
+        6340    LOAD_NAME                       9: Button
+        6342    LOAD_NAME                       165: license_entry_frame
+        6344    LOAD_CONST                      121: 'ذخیره کردن لایسنس'
+        6346    LOAD_CONST                      69: 5
+        6348    LOAD_CONST                      137: <CODE> <lambda>
+        6350    MAKE_FUNCTION                   0
+        6352    KW_NAMES                        123: ('text', 'padding', 'command')
+        6354    PRECALL                         4
+        6358    CALL                            4
+        6368    STORE_NAME                      169: button_check_licens
+        6370    LOAD_NAME                       169: button_check_licens
+        6372    LOAD_METHOD                     114: pack
+        6394    LOAD_CONST                      124: 'e'
+        6396    LOAD_CONST                      63: 10
+        6398    LOAD_CONST                      69: 5
+        6400    LOAD_CONST                      62: 'right'
+        6402    KW_NAMES                        125: ('anchor', 'padx', 'pady', 'side')
+        6404    PRECALL                         4
+        6408    CALL                            4
+        6418    POP_TOP                         
+        6420    PUSH_NULL                       
+        6422    LOAD_NAME                       9: Button
+        6424    LOAD_NAME                       165: license_entry_frame
+        6426    LOAD_CONST                      126: 'وارد کردن مقدار کپی شده'
+        6428    LOAD_CONST                      138: <CODE> <lambda>
+        6430    MAKE_FUNCTION                   0
+        6432    KW_NAMES                        61: ('text', 'command')
+        6434    PRECALL                         3
+        6438    CALL                            3
+        6448    STORE_NAME                      170: paste_button
+        6450    LOAD_NAME                       170: paste_button
+        6452    LOAD_METHOD                     114: pack
+        6474    LOAD_CONST                      23: 'w'
+        6476    LOAD_CONST                      67: 'left'
+        6478    LOAD_CONST                      63: 10
+        6480    LOAD_CONST                      69: 5
+        6482    KW_NAMES                        128: ('anchor', 'side', 'padx', 'pady')
+        6484    PRECALL                         4
+        6488    CALL                            4
+        6498    POP_TOP                         
+        6500    PUSH_NULL                       
+        6502    LOAD_NAME                       9: Button
+        6504    LOAD_NAME                       165: license_entry_frame
+        6506    LOAD_CONST                      129: 'دانلود خودکار لایسنس'
+        6508    LOAD_CONST                      139: <CODE> <lambda>
+        6510    MAKE_FUNCTION                   0
+        6512    KW_NAMES                        61: ('text', 'command')
+        6514    PRECALL                         3
+        6518    CALL                            3
+        6528    LOAD_METHOD                     114: pack
+        6550    LOAD_CONST                      23: 'w'
+        6552    LOAD_CONST                      67: 'left'
+        6554    LOAD_CONST                      63: 10
+        6556    LOAD_CONST                      69: 5
+        6558    KW_NAMES                        128: ('anchor', 'side', 'padx', 'pady')
+        6560    PRECALL                         4
+        6564    CALL                            4
+        6574    POP_TOP                         
+        6576    LOAD_NAME                       163: label_uuid
+        6578    LOAD_METHOD                     168: bind
+        6600    LOAD_CONST                      131: '<Button-1>'
+        6602    LOAD_CONST                      140: <CODE> <lambda>
+        6604    MAKE_FUNCTION                   0
+        6606    PRECALL                         2
+        6610    CALL                            2
+        6620    POP_TOP                         
+        6622    LOAD_NAME                       162: uuid_tframe
+        6624    LOAD_METHOD                     168: bind
+        6646    LOAD_CONST                      131: '<Button-1>'
+        6648    LOAD_CONST                      141: <CODE> <lambda>
+        6650    MAKE_FUNCTION                   0
+        6652    PRECALL                         2
+        6656    CALL                            2
+        6666    POP_TOP                         
+        6668    LOAD_NAME                       2: my_splash
+        6670    LOAD_METHOD                     117: close
+        6692    PRECALL                         0
+        6696    CALL                            0
+        6706    POP_TOP                         
+        6708    LOAD_NAME                       157: a
+        6710    LOAD_METHOD                     118: mainloop
+        6732    PRECALL                         0
+        6736    CALL                            0
+        6746    POP_TOP                         
+        6748    PUSH_NULL                       
+        6750    LOAD_NAME                       33: sys
+        6752    LOAD_ATTR                       78: exit
+        6762    LOAD_CONST                      0: 0
+        6764    PRECALL                         1
+        6768    CALL                            1
+        6778    POP_TOP                         
+        6780    POP_EXCEPT                      
+        6782    JUMP_FORWARD                    3 (to 6790)
+        6784    COPY                            3
+        6786    POP_EXCEPT                      
+        6788    RERAISE                         1
+        6790    PUSH_NULL                       
+        6792    LOAD_NAME                       4: time
+        6794    LOAD_ATTR                       4: time
+        6804    PRECALL                         0
+        6808    CALL                            0
+        6818    LOAD_GLOBAL                     342: expire_time
+        6832    COMPARE_OP                      4 (>)
+        6838    POP_JUMP_FORWARD_IF_FALSE       494 (to 7830)
+        6842    PUSH_NULL                       
+        6844    LOAD_NAME                       107: Tk
+        6846    PRECALL                         0
+        6850    CALL                            0
+        6860    STORE_NAME                      157: a
+        6862    LOAD_NAME                       157: a
+        6864    LOAD_METHOD                     158: resizable
+        6886    LOAD_CONST                      0: 0
+        6888    LOAD_CONST                      0: 0
+        6890    PRECALL                         2
+        6894    CALL                            2
+        6904    POP_TOP                         
+        6906    LOAD_NAME                       157: a
+        6908    LOAD_METHOD                     109: title
+        6930    LOAD_CONST                      106: 'خطای لایسنس'
+        6932    PRECALL                         1
+        6936    CALL                            1
+        6946    POP_TOP                         
+        6948    PUSH_NULL                       
+        6950    LOAD_NAME                       7: Label
+        6952    LOAD_NAME                       157: a
+        6954    LOAD_CONST                      142: 'لایسنس منقضی شده است'
+        6956    LOAD_CONST                      53: ('arial', 16)
+        6958    KW_NAMES                        103: ('text', 'font')
+        6960    PRECALL                         3
+        6964    CALL                            3
+        6974    LOAD_METHOD                     114: pack
+        6996    LOAD_CONST                      55: 20
+        6998    LOAD_CONST                      55: 20
+        7000    KW_NAMES                        56: ('padx', 'pady')
+        7002    PRECALL                         2
+        7006    CALL                            2
+        7016    POP_TOP                         
+        7018    PUSH_NULL                       
+        7020    LOAD_NAME                       161: LabelFrame
+        7022    LOAD_NAME                       157: a
+        7024    LOAD_CONST                      108: 'کد سیستم'
+        7026    LOAD_CONST                      109: 'ne'
+        7028    KW_NAMES                        110: ('text', 'labelanchor')
+        7030    PRECALL                         3
+        7034    CALL                            3
+        7044    STORE_NAME                      162: uuid_tframe
+        7046    LOAD_NAME                       162: uuid_tframe
+        7048    LOAD_METHOD                     114: pack
+        7070    LOAD_CONST                      63: 10
+        7072    LOAD_CONST                      63: 10
+        7074    KW_NAMES                        56: ('padx', 'pady')
+        7076    PRECALL                         2
+        7080    CALL                            2
+        7090    POP_TOP                         
+        7092    PUSH_NULL                       
+        7094    LOAD_NAME                       7: Label
+        7096    LOAD_NAME                       162: uuid_tframe
+        7098    LOAD_NAME                       144: system_id_hash
+        7100    KW_NAMES                        111: ('text',)
+        7102    PRECALL                         2
+        7106    CALL                            2
+        7116    STORE_NAME                      163: label_uuid
+        7118    LOAD_NAME                       163: label_uuid
+        7120    LOAD_METHOD                     114: pack
+        7142    LOAD_CONST                      55: 20
+        7144    LOAD_CONST                      55: 20
+        7146    KW_NAMES                        56: ('padx', 'pady')
+        7148    PRECALL                         2
+        7152    CALL                            2
+        7162    POP_TOP                         
+        7164    PUSH_NULL                       
+        7166    LOAD_NAME                       40: ToolTip
+        7168    LOAD_NAME                       163: label_uuid
+        7170    LOAD_CONST                      112: 'برای کپی کردن کلیک کنید'
+        7172    LOAD_CONST                      113: 0.05
+        7174    PRECALL                         3
+        7178    CALL                            3
+        7188    STORE_NAME                      164: copy_to_clipboard_tool_tip
+        7190    PUSH_NULL                       
+        7192    LOAD_NAME                       161: LabelFrame
+        7194    LOAD_NAME                       157: a
+        7196    LOAD_CONST                      114: 'کد لایسنس'
+        7198    LOAD_CONST                      109: 'ne'
+        7200    KW_NAMES                        110: ('text', 'labelanchor')
+        7202    PRECALL                         3
+        7206    CALL                            3
+        7216    STORE_NAME                      165: license_entry_frame
+        7218    LOAD_NAME                       165: license_entry_frame
+        7220    LOAD_METHOD                     114: pack
+        7242    LOAD_CONST                      63: 10
+        7244    LOAD_CONST                      63: 10
+        7246    LOAD_CONST                      115: 'both'
+        7248    KW_NAMES                        116: ('padx', 'pady', 'fill')
+        7250    PRECALL                         3
+        7254    CALL                            3
+        7264    POP_TOP                         
+        7266    PUSH_NULL                       
+        7268    LOAD_NAME                       166: Text
+        7270    LOAD_NAME                       165: license_entry_frame
+        7272    LOAD_CONST                      117: 42
+        7274    LOAD_CONST                      69: 5
+        7276    KW_NAMES                        118: ('width', 'height')
+        7278    PRECALL                         3
+        7282    CALL                            3
+        7292    STORE_NAME                      167: entry_license
+        7294    LOAD_NAME                       167: entry_license
+        7296    LOAD_METHOD                     114: pack
+        7318    LOAD_CONST                      49: True
+        7320    LOAD_CONST                      115: 'both'
+        7322    LOAD_CONST                      0: 0
+        7324    LOAD_CONST                      63: 10
+        7326    KW_NAMES                        119: ('expand', 'fill', 'padx', 'pady')
+        7328    PRECALL                         4
+        7332    CALL                            4
+        7342    POP_TOP                         
+        7344    LOAD_NAME                       167: entry_license
+        7346    LOAD_METHOD                     168: bind
+        7368    LOAD_CONST                      120: '<Button-3>'
+        7370    LOAD_NAME                       147: RightClicker
+        7372    PRECALL                         2
+        7376    CALL                            2
+        7386    POP_TOP                         
+        7388    PUSH_NULL                       
+        7390    LOAD_NAME                       9: Button
+        7392    LOAD_NAME                       165: license_entry_frame
+        7394    LOAD_CONST                      121: 'ذخیره کردن لایسنس'
+        7396    LOAD_CONST                      69: 5
+        7398    LOAD_CONST                      143: <CODE> <lambda>
+        7400    MAKE_FUNCTION                   0
+        7402    KW_NAMES                        123: ('text', 'padding', 'command')
+        7404    PRECALL                         4
+        7408    CALL                            4
+        7418    STORE_NAME                      169: button_check_licens
+        7420    LOAD_NAME                       169: button_check_licens
+        7422    LOAD_METHOD                     114: pack
+        7444    LOAD_CONST                      124: 'e'
+        7446    LOAD_CONST                      63: 10
+        7448    LOAD_CONST                      69: 5
+        7450    LOAD_CONST                      62: 'right'
+        7452    KW_NAMES                        125: ('anchor', 'padx', 'pady', 'side')
+        7454    PRECALL                         4
+        7458    CALL                            4
+        7468    POP_TOP                         
+        7470    PUSH_NULL                       
+        7472    LOAD_NAME                       9: Button
+        7474    LOAD_NAME                       165: license_entry_frame
+        7476    LOAD_CONST                      126: 'وارد کردن مقدار کپی شده'
+        7478    LOAD_CONST                      144: <CODE> <lambda>
+        7480    MAKE_FUNCTION                   0
+        7482    KW_NAMES                        61: ('text', 'command')
+        7484    PRECALL                         3
+        7488    CALL                            3
+        7498    STORE_NAME                      170: paste_button
+        7500    LOAD_NAME                       170: paste_button
+        7502    LOAD_METHOD                     114: pack
+        7524    LOAD_CONST                      23: 'w'
+        7526    LOAD_CONST                      67: 'left'
+        7528    LOAD_CONST                      63: 10
+        7530    LOAD_CONST                      69: 5
+        7532    KW_NAMES                        128: ('anchor', 'side', 'padx', 'pady')
+        7534    PRECALL                         4
+        7538    CALL                            4
+        7548    POP_TOP                         
+        7550    PUSH_NULL                       
+        7552    LOAD_NAME                       9: Button
+        7554    LOAD_NAME                       165: license_entry_frame
+        7556    LOAD_CONST                      129: 'دانلود خودکار لایسنس'
+        7558    LOAD_CONST                      145: <CODE> <lambda>
+        7560    MAKE_FUNCTION                   0
+        7562    KW_NAMES                        61: ('text', 'command')
+        7564    PRECALL                         3
+        7568    CALL                            3
+        7578    LOAD_METHOD                     114: pack
+        7600    LOAD_CONST                      23: 'w'
+        7602    LOAD_CONST                      67: 'left'
+        7604    LOAD_CONST                      63: 10
+        7606    LOAD_CONST                      69: 5
+        7608    KW_NAMES                        128: ('anchor', 'side', 'padx', 'pady')
+        7610    PRECALL                         4
+        7614    CALL                            4
+        7624    POP_TOP                         
+        7626    LOAD_NAME                       163: label_uuid
+        7628    LOAD_METHOD                     168: bind
+        7650    LOAD_CONST                      131: '<Button-1>'
+        7652    LOAD_CONST                      146: <CODE> <lambda>
+        7654    MAKE_FUNCTION                   0
+        7656    PRECALL                         2
+        7660    CALL                            2
+        7670    POP_TOP                         
+        7672    LOAD_NAME                       162: uuid_tframe
+        7674    LOAD_METHOD                     168: bind
+        7696    LOAD_CONST                      131: '<Button-1>'
+        7698    LOAD_CONST                      147: <CODE> <lambda>
+        7700    MAKE_FUNCTION                   0
+        7702    PRECALL                         2
+        7706    CALL                            2
+        7716    POP_TOP                         
+        7718    LOAD_NAME                       2: my_splash
+        7720    LOAD_METHOD                     117: close
+        7742    PRECALL                         0
+        7746    CALL                            0
+        7756    POP_TOP                         
+        7758    LOAD_NAME                       157: a
+        7760    LOAD_METHOD                     118: mainloop
+        7782    PRECALL                         0
+        7786    CALL                            0
+        7796    POP_TOP                         
+        7798    PUSH_NULL                       
+        7800    LOAD_NAME                       33: sys
+        7802    LOAD_ATTR                       78: exit
+        7812    LOAD_CONST                      0: 0
+        7814    PRECALL                         1
+        7818    CALL                            1
+        7828    POP_TOP                         
+        7830    LOAD_CONST                      44: False
+        7832    STORE_NAME                      180: jbdb_license
+        7834    LOAD_NAME                       34: os
+        7836    LOAD_ATTR                       70: path
+        7846    LOAD_METHOD                     73: exists
+        7868    LOAD_CONST                      148: 'jetvamjbdb.lic'
+        7870    PRECALL                         1
+        7874    CALL                            1
+        7884    POP_JUMP_FORWARD_IF_FALSE       191 (to 8268)
+        7886    LOAD_CONST                      0: 0
+        7888    STORE_NAME                      181: jbdb_expire_time
+        7890    NOP                             
+        7892    PUSH_NULL                       
+        7894    LOAD_NAME                       74: open
+        7896    LOAD_CONST                      148: 'jetvamjbdb.lic'
+        7898    LOAD_CONST                      134: 'rb'
+        7900    PRECALL                         2
+        7904    CALL                            2
+        7914    BEFORE_WITH                     
+        7916    STORE_NAME                      75: f
+        7918    LOAD_NAME                       75: f
+        7920    LOAD_METHOD                     172: read
+        7942    PRECALL                         0
+        7946    CALL                            0
+        7956    STORE_NAME                      173: jj
+        7958    LOAD_CONST                      1: None
+        7960    LOAD_CONST                      1: None
+        7962    LOAD_CONST                      1: None
+        7964    PRECALL                         2
+        7968    CALL                            2
+        7978    POP_TOP                         
+        7980    JUMP_FORWARD                    11 (to 8004)
+        7982    PUSH_EXC_INFO                   
+        7984    WITH_EXCEPT_START               
+        7986    POP_JUMP_FORWARD_IF_TRUE        4 (to 7996)
+        7988    RERAISE                         2
+        7990    COPY                            3
+        7992    POP_EXCEPT                      
+        7994    RERAISE                         1
+        7996    POP_TOP                         
+        7998    POP_EXCEPT                      
+        8000    POP_TOP                         
+        8002    POP_TOP                         
+        8004    LOAD_NAME                       160: c
+        8006    LOAD_METHOD                     174: decrypt
+        8028    LOAD_NAME                       173: jj
+        8030    PRECALL                         1
+        8034    CALL                            1
+        8044    LOAD_METHOD                     100: decode
+        8066    LOAD_CONST                      87: 'utf-8'
+        8068    PRECALL                         1
+        8072    CALL                            1
+        8082    STORE_NAME                      175: dfile
+        8084    LOAD_NAME                       175: dfile
+        8086    LOAD_METHOD                     101: split
+        8108    LOAD_CONST                      135: ':'
+        8110    PRECALL                         1
+        8114    CALL                            1
+        8124    UNPACK_SEQUENCE                 3
+        8128    STORE_NAME                      182: license_code
+        8130    STORE_NAME                      183: jbdb_sys_id
+        8132    STORE_NAME                      184: jbdb_exptime
+        8134    LOAD_NAME                       182: license_code
+        8136    LOAD_CONST                      149: 'jbdb'
+        8138    COMPARE_OP                      3 (!=)
+        8144    POP_JUMP_FORWARD_IF_FALSE       5 (to 8156)
+        8146    LOAD_CONST                      0: 0
+        8148    LOAD_CONST                      0: 0
+        8150    BINARY_OP                       11 (/)
+        8154    POP_TOP                         
+        8156    LOAD_NAME                       183: jbdb_sys_id
+        8158    LOAD_NAME                       144: system_id_hash
+        8160    COMPARE_OP                      3 (!=)
+        8166    POP_JUMP_FORWARD_IF_FALSE       5 (to 8178)
+        8168    LOAD_CONST                      0: 0
+        8170    LOAD_CONST                      0: 0
+        8172    BINARY_OP                       11 (/)
+        8176    POP_TOP                         
+        8178    PUSH_NULL                       
+        8180    LOAD_NAME                       178: float
+        8182    LOAD_NAME                       184: jbdb_exptime
+        8184    PRECALL                         1
+        8188    CALL                            1
+        8198    STORE_NAME                      181: jbdb_expire_time
+        8200    LOAD_NAME                       181: jbdb_expire_time
+        8202    LOAD_NAME                       153: current_ntp_time
+        8204    BINARY_OP                       10 (-)
+        8208    STORE_NAME                      185: jbdb_until_time
+        8210    LOAD_NAME                       181: jbdb_expire_time
+        8212    PUSH_NULL                       
+        8214    LOAD_NAME                       4: time
+        8216    LOAD_ATTR                       4: time
+        8226    PRECALL                         0
+        8230    CALL                            0
+        8240    COMPARE_OP                      4 (>)
+        8246    POP_JUMP_FORWARD_IF_FALSE       2 (to 8252)
+        8248    LOAD_CONST                      49: True
+        8250    STORE_NAME                      180: jbdb_license
+        8252    JUMP_FORWARD                    7 (to 8268)
+        8254    PUSH_EXC_INFO                   
+        8256    POP_TOP                         
+        8258    POP_EXCEPT                      
+        8260    JUMP_FORWARD                    3 (to 8268)
+        8262    COPY                            3
+        8264    POP_EXCEPT                      
+        8266    RERAISE                         1
+        8268    LOAD_CONST                      150: <CODE> yourChromeNotUpdateDialog
+        8270    MAKE_FUNCTION                   0
+        8272    STORE_NAME                      186: yourChromeNotUpdateDialog
+        8274    LOAD_CONST                      151: <CODE> licenseCheckCloseDialog
+        8276    MAKE_FUNCTION                   0
+        8278    STORE_NAME                      187: licenseCheckCloseDialog
+        8280    LOAD_CONST                      152: <CODE> checkLicenseTime
+        8282    MAKE_FUNCTION                   0
+        8284    STORE_NAME                      188: checkLicenseTime
+        8286    PUSH_NULL                       
+        8288    LOAD_NAME                       5: tt
+        8290    LOAD_CONST                      153: 'check license'
+        8292    PRECALL                         1
+        8296    CALL                            1
+        8306    POP_TOP                         
+        8308    LOAD_CONST                      154: 'jetvam-ezdevaj'
+        8310    STORE_NAME                      189: myappid
+        8312    LOAD_NAME                       24: ctypes
+        8314    LOAD_ATTR                       190: windll
+        8324    LOAD_ATTR                       191: shell32
+        8334    LOAD_METHOD                     192: SetCurrentProcessExplicitAppUserModelID
+        8356    LOAD_NAME                       189: myappid
+        8358    PRECALL                         1
+        8362    CALL                            1
+        8372    POP_TOP                         
+        8374    LOAD_CONST                      155: <CODE> sendSystemIdAndLicenseTime
+        8376    MAKE_FUNCTION                   0
+        8378    STORE_NAME                      193: sendSystemIdAndLicenseTime
+        8380    LOAD_CONST                      0: 0
+        8382    STORE_NAME                      106: error_counter
+        8384    NOP                             
+        8386    NOP                             
+        8388    LOAD_NAME                       34: os
+        8390    LOAD_ATTR                       70: path
+        8400    LOAD_METHOD                     73: exists
+        8422    LOAD_CONST                      156: '.no-login-log'
+        8424    PRECALL                         1
+        8428    CALL                            1
+        8438    POP_JUMP_FORWARD_IF_TRUE        11 (to 8462)
+        8440    PUSH_NULL                       
+        8442    LOAD_NAME                       193: sendSystemIdAndLicenseTime
+        8444    LOAD_NAME                       144: system_id_hash
+        8446    PRECALL                         1
+        8450    CALL                            1
+        8460    POP_TOP                         
+        8462    JUMP_FORWARD                    153 (to 8770)
+        8464    PUSH_EXC_INFO                   
+        8466    POP_TOP                         
+        8468    LOAD_NAME                       106: error_counter
+        8470    LOAD_CONST                      43: 1
+        8472    BINARY_OP                       13 (+=)
+        8476    STORE_NAME                      106: error_counter
+        8478    LOAD_NAME                       106: error_counter
+        8480    LOAD_CONST                      69: 5
+        8482    COMPARE_OP                      4 (>)
+        8488    POP_JUMP_FORWARD_IF_FALSE       124 (to 8738)
+        8490    PUSH_NULL                       
+        8492    LOAD_NAME                       107: Tk
+        8494    PRECALL                         0
+        8498    CALL                            0
+        8508    STORE_NAME                      108: j
+        8510    LOAD_NAME                       108: j
+        8512    LOAD_METHOD                     109: title
+        8534    LOAD_CONST                      70: 'خطای اینترنت'
+        8536    PRECALL                         1
+        8540    CALL                            1
+        8550    POP_TOP                         
+        8552    PUSH_NULL                       
+        8554    LOAD_NAME                       7: Label
+        8556    LOAD_NAME                       108: j
+        8558    LOAD_CONST                      71: 'لطفا از اتصال خود به اینترنت اطمینان یابید'
+        8560    LOAD_CONST                      51: 580
+        8562    LOAD_CONST                      52: 'center'
+        8564    LOAD_CONST                      53: ('arial', 16)
+        8566    KW_NAMES                        54: ('text', 'wraplength', 'justify', 'font')
+        8568    PRECALL                         5
+        8572    CALL                            5
+        8582    LOAD_METHOD                     114: pack
+        8604    LOAD_CONST                      55: 20
+        8606    LOAD_CONST                      55: 20
+        8608    KW_NAMES                        56: ('padx', 'pady')
+        8610    PRECALL                         2
+        8614    CALL                            2
+        8624    POP_TOP                         
+        8626    LOAD_NAME                       2: my_splash
+        8628    LOAD_METHOD                     117: close
+        8650    PRECALL                         0
+        8654    CALL                            0
+        8664    POP_TOP                         
+        8666    LOAD_NAME                       108: j
+        8668    LOAD_METHOD                     118: mainloop
+        8690    PRECALL                         0
+        8694    CALL                            0
+        8704    POP_TOP                         
+        8706    PUSH_NULL                       
+        8708    LOAD_NAME                       33: sys
+        8710    LOAD_ATTR                       78: exit
+        8720    LOAD_CONST                      0: 0
+        8722    PRECALL                         1
+        8726    CALL                            1
+        8736    POP_TOP                         
+        8738    PUSH_NULL                       
+        8740    LOAD_NAME                       82: jlog
+        8742    LOAD_CONST                      157: 'error in send open log!'
+        8744    PRECALL                         1
+        8748    CALL                            1
+        8758    POP_TOP                         
+        8760    POP_EXCEPT                      
+        8762    JUMP_BACKWARD                   190 (to 8384)
+        8764    COPY                            3
+        8766    POP_EXCEPT                      
+        8768    RERAISE                         1
+        8770    PUSH_NULL                       
+        8772    LOAD_NAME                       74: open
+        8774    LOAD_CONST                      158: 'resource\\irans-cities.json'
+        8776    LOAD_CONST                      134: 'rb'
+        8778    PRECALL                         2
+        8782    CALL                            2
+        8792    BEFORE_WITH                     
+        8794    STORE_NAME                      75: f
+        8796    PUSH_NULL                       
+        8798    LOAD_NAME                       59: json
+        8800    LOAD_ATTR                       97: loads
+        8810    LOAD_NAME                       75: f
+        8812    LOAD_METHOD                     172: read
+        8834    PRECALL                         0
+        8838    CALL                            0
+        8848    PRECALL                         1
+        8852    CALL                            1
+        8862    STORE_NAME                      194: iran_json
+        8864    LOAD_CONST                      1: None
+        8866    LOAD_CONST                      1: None
+        8868    LOAD_CONST                      1: None
+        8870    PRECALL                         2
+        8874    CALL                            2
+        8884    POP_TOP                         
+        8886    JUMP_FORWARD                    11 (to 8910)
+        8888    PUSH_EXC_INFO                   
+        8890    WITH_EXCEPT_START               
+        8892    POP_JUMP_FORWARD_IF_TRUE        4 (to 8902)
+        8894    RERAISE                         2
+        8896    COPY                            3
+        8898    POP_EXCEPT                      
+        8900    RERAISE                         1
+        8902    POP_TOP                         
+        8904    POP_EXCEPT                      
+        8906    POP_TOP                         
+        8908    POP_TOP                         
+        8910    LOAD_CONST                      159: <CODE> <listcomp>
+        8912    MAKE_FUNCTION                   0
+        8914    LOAD_NAME                       194: iran_json
+        8916    GET_ITER                        
+        8918    PRECALL                         0
+        8922    CALL                            0
+        8932    STORE_NAME                      195: provinces
+        8934    BUILD_MAP                       0
+        8936    STORE_NAME                      196: province_number_dict
+        8938    BUILD_MAP                       0
+        8940    STORE_NAME                      197: province_name_dict
+        8942    PUSH_NULL                       
+        8944    LOAD_NAME                       198: enumerate
+        8946    LOAD_NAME                       194: iran_json
+        8948    PRECALL                         1
+        8952    CALL                            1
+        8962    GET_ITER                        
+        8964    FOR_ITER                        27 (to 9020)
+        8966    UNPACK_SEQUENCE                 2
+        8970    STORE_NAME                      199: province_number
+        8972    STORE_NAME                      200: province
+        8974    LOAD_NAME                       200: province
+        8976    LOAD_CONST                      160: 'province'
+        8978    BINARY_SUBSCR                   
+        8988    LOAD_NAME                       196: province_number_dict
+        8990    LOAD_NAME                       199: province_number
+        8992    STORE_SUBSCR                    
+        8996    LOAD_NAME                       199: province_number
+        8998    LOAD_NAME                       197: province_name_dict
+        9000    LOAD_NAME                       200: province
+        9002    LOAD_CONST                      160: 'province'
+        9004    BINARY_SUBSCR                   
+        9014    STORE_SUBSCR                    
+        9018    JUMP_BACKWARD                   28 (to 8964)
+        9020    LOAD_CONST                      0: 0
+        9022    STORE_GLOBAL                    201: last_send_bank_time
+        9024    LOAD_CONST                      161: <CODE> sendBankToServer
+        9026    MAKE_FUNCTION                   0
+        9028    STORE_NAME                      202: sendBankToServer
+        9030    LOAD_CONST                      0: 0
+        9032    STORE_GLOBAL                    203: last_send_bank_time_2
+        9034    LOAD_CONST                      162: <CODE> sendBankToJBDB
+        9036    MAKE_FUNCTION                   0
+        9038    STORE_NAME                      204: sendBankToJBDB
+        9040    LOAD_CONST                      163: 'province_name'
+        9042    LOAD_NAME                       205: str
+        9044    LOAD_CONST                      164: 'return'
+        9046    LOAD_NAME                       206: int
+        9048    BUILD_TUPLE                     4
+        9050    LOAD_CONST                      165: <CODE> getProvinceIdFromName
+        9052    MAKE_FUNCTION                   4
+        9054    STORE_NAME                      207: getProvinceIdFromName
+        9056    LOAD_CONST                      166: 'banks_list'
+        9058    LOAD_NAME                       208: list
+        9060    LOAD_CONST                      164: 'return'
+        9062    LOAD_NAME                       205: str
+        9064    BUILD_TUPLE                     4
+        9066    LOAD_CONST                      167: <CODE> getCleanedBanksString
+        9068    MAKE_FUNCTION                   4
+        9070    STORE_NAME                      209: getCleanedBanksString
+        9072    LOAD_CONST                      163: 'province_name'
+        9074    LOAD_NAME                       205: str
+        9076    LOAD_CONST                      166: 'banks_list'
+        9078    LOAD_NAME                       208: list
+        9080    BUILD_TUPLE                     4
+        9082    LOAD_CONST                      168: <CODE> updateServerBanksList
+        9084    MAKE_FUNCTION                   4
+        9086    STORE_NAME                      210: updateServerBanksList
+        9088    LOAD_CONST                      169: <CODE> getCities
+        9090    MAKE_FUNCTION                   0
+        9092    STORE_NAME                      211: getCities
+        9094    PUSH_NULL                       
+        9096    LOAD_NAME                       74: open
+        9098    LOAD_CONST                      170: 'resource\\banks.txt'
+        9100    LOAD_CONST                      134: 'rb'
+        9102    PRECALL                         2
+        9106    CALL                            2
+        9116    BEFORE_WITH                     
+        9118    STORE_NAME                      75: f
+        9120    LOAD_NAME                       75: f
+        9122    LOAD_METHOD                     172: read
+        9144    PRECALL                         0
+        9148    CALL                            0
+        9158    LOAD_METHOD                     100: decode
+        9180    LOAD_CONST                      87: 'utf-8'
+        9182    PRECALL                         1
+        9186    CALL                            1
+        9196    LOAD_METHOD                     212: splitlines
+        9218    PRECALL                         0
+        9222    CALL                            0
+        9232    STORE_NAME                      213: banks
+        9234    LOAD_CONST                      1: None
+        9236    LOAD_CONST                      1: None
+        9238    LOAD_CONST                      1: None
+        9240    PRECALL                         2
+        9244    CALL                            2
+        9254    POP_TOP                         
+        9256    JUMP_FORWARD                    11 (to 9280)
+        9258    PUSH_EXC_INFO                   
+        9260    WITH_EXCEPT_START               
+        9262    POP_JUMP_FORWARD_IF_TRUE        4 (to 9272)
+        9264    RERAISE                         2
+        9266    COPY                            3
+        9268    POP_EXCEPT                      
+        9270    RERAISE                         1
+        9272    POP_TOP                         
+        9274    POP_EXCEPT                      
+        9276    POP_TOP                         
+        9278    POP_TOP                         
+        9280    PUSH_NULL                       
+        9282    LOAD_NAME                       198: enumerate
+        9284    LOAD_NAME                       213: banks
+        9286    PRECALL                         1
+        9290    CALL                            1
+        9300    GET_ITER                        
+        9302    FOR_ITER                        40 (to 9384)
+        9304    UNPACK_SEQUENCE                 2
+        9308    STORE_NAME                      214: index
+        9310    STORE_NAME                      215: bank
+        9312    LOAD_NAME                       215: bank
+        9314    LOAD_CONST                      171: 'بانک ملی'
+        9316    COMPARE_OP                      2 (==)
+        9322    POP_JUMP_FORWARD_IF_FALSE       6 (to 9336)
+        9324    LOAD_CONST                      172: 'بانک ملی ایران'
+        9326    LOAD_NAME                       213: banks
+        9328    LOAD_NAME                       214: index
+        9330    STORE_SUBSCR                    
+        9334    JUMP_BACKWARD                   17 (to 9302)
+        9336    LOAD_NAME                       215: bank
+        9338    LOAD_CONST                      173: 'بانک اقتصاد نوین'
+        9340    COMPARE_OP                      2 (==)
+        9346    POP_JUMP_FORWARD_IF_FALSE       6 (to 9360)
+        9348    LOAD_CONST                      174: 'بانک اقتصادنوین'
+        9350    LOAD_NAME                       213: banks
+        9352    LOAD_NAME                       214: index
+        9354    STORE_SUBSCR                    
+        9358    JUMP_BACKWARD                   29 (to 9302)
+        9360    LOAD_NAME                       215: bank
+        9362    LOAD_CONST                      175: 'پست بانک'
+        9364    COMPARE_OP                      2 (==)
+        9370    POP_JUMP_FORWARD_IF_FALSE       5 (to 9382)
+        9372    LOAD_CONST                      176: 'پست بانک ایران'
+        9374    LOAD_NAME                       213: banks
+        9376    LOAD_NAME                       214: index
+        9378    STORE_SUBSCR                    
+        9382    JUMP_BACKWARD                   41 (to 9302)
+        9384    PUSH_NULL                       
+        9386    LOAD_NAME                       5: tt
+        9388    LOAD_CONST                      177: 'configured'
+        9390    PRECALL                         1
+        9394    CALL                            1
+        9404    POP_TOP                         
+        9406    LOAD_CONST                      189: (1,)
+        9408    LOAD_CONST                      178: <CODE> alarmSound
+        9410    MAKE_FUNCTION                   1
+        9412    STORE_NAME                      216: alarmSound
+        9414    LOAD_CONST                      179: <CODE> makeBlank
+        9416    MAKE_FUNCTION                   0
+        9418    STORE_NAME                      217: makeBlank
+        9420    PUSH_NULL                       
+        9422    LOAD_NAME                       5: tt
+        9424    LOAD_CONST                      180: 'declare func'
+        9426    PRECALL                         1
+        9430    CALL                            1
+        9440    POP_TOP                         
+        9442    LOAD_NAME                       24: ctypes
+        9444    LOAD_ATTR                       190: windll
+        9454    LOAD_ATTR                       218: shcore
+        9464    LOAD_METHOD                     219: SetProcessDpiAwareness
+        9486    LOAD_CONST                      181: 2
+        9488    PRECALL                         1
+        9492    CALL                            1
+        9502    POP_TOP                         
+        9504    PUSH_NULL                       
+        9506    LOAD_BUILD_CLASS                
+        9508    LOAD_CONST                      182: <CODE> MyApp
+        9510    MAKE_FUNCTION                   0
+        9512    LOAD_CONST                      183: 'MyApp'
+        9514    LOAD_NAME                       107: Tk
+        9516    PRECALL                         3
+        9520    CALL                            3
+        9530    STORE_NAME                      220: MyApp
+        9532    PUSH_NULL                       
+        9534    LOAD_NAME                       5: tt
+        9536    LOAD_CONST                      184: 'declare class'
+        9538    PRECALL                         1
+        9542    CALL                            1
+        9552    POP_TOP                         
+        9554    LOAD_NAME                       221: __name__
+        9556    LOAD_CONST                      185: '__main__'
+        9558    COMPARE_OP                      2 (==)
+        9564    POP_JUMP_FORWARD_IF_FALSE       52 (to 9670)
+        9566    PUSH_NULL                       
+        9568    LOAD_NAME                       220: MyApp
+        9570    PRECALL                         0
+        9574    CALL                            0
+        9584    STORE_NAME                      222: app
+        9586    LOAD_NAME                       2: my_splash
+        9588    LOAD_METHOD                     117: close
+        9610    PRECALL                         0
+        9614    CALL                            0
+        9624    POP_TOP                         
+        9626    LOAD_NAME                       222: app
+        9628    LOAD_METHOD                     118: mainloop
+        9650    PRECALL                         0
+        9654    CALL                            0
+        9664    POP_TOP                         
+        9666    LOAD_CONST                      1: None
+        9668    RETURN_VALUE                    
+        9670    LOAD_CONST                      1: None
+        9672    RETURN_VALUE                    

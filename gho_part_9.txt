@@ -1,0 +1,2026 @@
+                    [Locals+Names]
+                        'self'
+                        'jbdb_expire_time'
+                        'f'
+                        'jj'
+                        'dfile'
+                        'license_code'
+                        'jbdb_sys_id'
+                        'jbdb_exptime'
+                        'jbdb_until_time'
+                        'jbdb_license'
+                    [Constants]
+                        None
+                        'jetvamjbdb.lic'
+                        0
+                        'rb'
+                        'utf-8'
+                        ':'
+                        'jbdb'
+                        True
+                        '!alternate'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     0: os
+                        14      LOAD_ATTR                       1: path
+                        24      LOAD_METHOD                     2: exists
+                        46      LOAD_CONST                      1: 'jetvamjbdb.lic'
+                        48      PRECALL                         1
+                        52      CALL                            1
+                        62      POP_JUMP_FORWARD_IF_FALSE       218 (to 500)
+                        64      LOAD_CONST                      2: 0
+                        66      STORE_FAST                      1: jbdb_expire_time
+                        68      NOP                             
+                        70      LOAD_GLOBAL                     7: NULL + open
+                        82      LOAD_CONST                      1: 'jetvamjbdb.lic'
+                        84      LOAD_CONST                      3: 'rb'
+                        86      PRECALL                         2
+                        90      CALL                            2
+                        100     BEFORE_WITH                     
+                        102     STORE_FAST                      2: f
+                        104     LOAD_FAST                       2: f
+                        106     LOAD_METHOD                     4: read
+                        128     PRECALL                         0
+                        132     CALL                            0
+                        142     STORE_FAST                      3: jj
+                        144     LOAD_CONST                      0: None
+                        146     LOAD_CONST                      0: None
+                        148     LOAD_CONST                      0: None
+                        150     PRECALL                         2
+                        154     CALL                            2
+                        164     POP_TOP                         
+                        166     JUMP_FORWARD                    11 (to 190)
+                        168     PUSH_EXC_INFO                   
+                        170     WITH_EXCEPT_START               
+                        172     POP_JUMP_FORWARD_IF_TRUE        4 (to 182)
+                        174     RERAISE                         2
+                        176     COPY                            3
+                        178     POP_EXCEPT                      
+                        180     RERAISE                         1
+                        182     POP_TOP                         
+                        184     POP_EXCEPT                      
+                        186     POP_TOP                         
+                        188     POP_TOP                         
+                        190     LOAD_GLOBAL                     10: c
+                        202     LOAD_METHOD                     6: decrypt
+                        224     LOAD_FAST                       3: jj
+                        226     PRECALL                         1
+                        230     CALL                            1
+                        240     LOAD_METHOD                     7: decode
+                        262     LOAD_CONST                      4: 'utf-8'
+                        264     PRECALL                         1
+                        268     CALL                            1
+                        278     STORE_FAST                      4: dfile
+                        280     LOAD_FAST                       4: dfile
+                        282     LOAD_METHOD                     8: split
+                        304     LOAD_CONST                      5: ':'
+                        306     PRECALL                         1
+                        310     CALL                            1
+                        320     UNPACK_SEQUENCE                 3
+                        324     STORE_FAST                      5: license_code
+                        326     STORE_FAST                      6: jbdb_sys_id
+                        328     STORE_FAST                      7: jbdb_exptime
+                        330     LOAD_FAST                       5: license_code
+                        332     LOAD_CONST                      6: 'jbdb'
+                        334     COMPARE_OP                      3 (!=)
+                        340     POP_JUMP_FORWARD_IF_FALSE       5 (to 352)
+                        342     LOAD_CONST                      2: 0
+                        344     LOAD_CONST                      2: 0
+                        346     BINARY_OP                       11 (/)
+                        350     POP_TOP                         
+                        352     LOAD_FAST                       6: jbdb_sys_id
+                        354     LOAD_GLOBAL                     18: system_id_hash
+                        366     COMPARE_OP                      3 (!=)
+                        372     POP_JUMP_FORWARD_IF_FALSE       5 (to 384)
+                        374     LOAD_CONST                      2: 0
+                        376     LOAD_CONST                      2: 0
+                        378     BINARY_OP                       11 (/)
+                        382     POP_TOP                         
+                        384     LOAD_GLOBAL                     21: NULL + float
+                        396     LOAD_FAST                       7: jbdb_exptime
+                        398     PRECALL                         1
+                        402     CALL                            1
+                        412     STORE_FAST                      1: jbdb_expire_time
+                        414     LOAD_FAST                       1: jbdb_expire_time
+                        416     LOAD_GLOBAL                     22: current_ntp_time
+                        428     BINARY_OP                       10 (-)
+                        432     STORE_FAST                      8: jbdb_until_time
+                        434     LOAD_FAST                       1: jbdb_expire_time
+                        436     LOAD_GLOBAL                     25: NULL + time
+                        448     LOAD_ATTR                       12: time
+                        458     PRECALL                         0
+                        462     CALL                            0
+                        472     COMPARE_OP                      4 (>)
+                        478     POP_JUMP_FORWARD_IF_FALSE       2 (to 484)
+                        480     LOAD_CONST                      7: True
+                        482     STORE_FAST                      9: jbdb_license
+                        484     JUMP_FORWARD                    7 (to 500)
+                        486     PUSH_EXC_INFO                   
+                        488     POP_TOP                         
+                        490     POP_EXCEPT                      
+                        492     JUMP_FORWARD                    3 (to 500)
+                        494     COPY                            3
+                        496     POP_EXCEPT                      
+                        498     RERAISE                         1
+                        500     LOAD_FAST                       9: jbdb_license
+                        502     POP_JUMP_FORWARD_IF_FALSE       56 (to 616)
+                        504     LOAD_FAST                       0: self
+                        506     LOAD_ATTR                       13: auto_start_check
+                        516     LOAD_METHOD                     14: state
+                        538     LOAD_CONST                      8: '!alternate'
+                        540     BUILD_LIST                      1
+                        542     PRECALL                         1
+                        546     CALL                            1
+                        556     POP_TOP                         
+                        558     LOAD_FAST                       0: self
+                        560     LOAD_ATTR                       15: auto_start_check_along_all
+                        570     LOAD_METHOD                     14: state
+                        592     LOAD_CONST                      8: '!alternate'
+                        594     BUILD_LIST                      1
+                        596     PRECALL                         1
+                        600     CALL                            1
+                        610     POP_TOP                         
+                        612     LOAD_CONST                      0: None
+                        614     RETURN_VALUE                    
+                        616     LOAD_CONST                      0: None
+                        618     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: getFormData
+                    Qualified Name: MyApp.getFormData
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 3
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'entry_code_meli'
+                        'get'
+                        'val_meli'
+                        'entry_code_meli_malek'
+                        'val_malek'
+                        'entry_ostan'
+                        'val_ostan'
+                        'entry_shahr'
+                        'val_shahr'
+                        'entry_day_tavalod'
+                        'val_birth_day'
+                        'entry_month_tavalod'
+                        'val_birth_month'
+                        'entry_year_tavalod'
+                        'val_birth_year'
+                        'entry_day_exdevaj'
+                        'val_marry_day'
+                        'entry_month_ezdevaj'
+                        'val_marry_month'
+                        'entry_year_exdevaj'
+                        'val_marry_year'
+                        'entry_name'
+                        'val_name'
+                        'entry_family'
+                        'val_family'
+                        'entry_pedar'
+                        'val_pedar'
+                        'entry_sabet'
+                        'val_sabet'
+                        'entry_hamrah'
+                        'val_hamrah'
+                        'entry_meli_hamsar'
+                        'val_hamsar'
+                        'entry_posti'
+                        'val_posti'
+                        'entry_neshani'
+                        'val_neshani'
+                        'entry_yaddasht'
+                        'val_yaddasht'
+                        'entry_bank_entekhabi'
+                        'val_bank'
+                        'entry_email'
+                        'val_email'
+                        'entry_code_shobe'
+                        'val_shobe'
+                        'var_vaziat_shobe'
+                        'val_vaziat_shobe'
+                        'entry_rahgiri'
+                        'val_rahgiri'
+                        'entry_alarm_bank'
+                        'val_bank_alarm'
+                        'bank_baz'
+                        'val_bank_baz'
+                        'int_var_sex'
+                        'val_jensiat'
+                        'int_var_isar'
+                        'val_isar'
+                        'int_var_sarbazi'
+                        'val_sarbazi'
+                        'int_var_tabeiat'
+                        'val_tabeiat'
+                        'check_captcha_automat'
+                        'state'
+                        'val_captcha_status'
+                        'entry_captcha'
+                        'val_captcha'
+                        'entry_sms'
+                        'val_payamak'
+                        'sabte_khodkar'
+                        'val_sabt_khodkar'
+                        'entry_ostan_get_new_code'
+                        'val_ostan_secondry'
+                        'check_get_new_code_secondry_province_auto_timer'
+                        'val_check_secondry'
+                        'entry_get_new_code_secondry_province_timer'
+                        'val_secondry_page_timer'
+                    [Locals+Names]
+                        'self'
+                    [Constants]
+                        None
+                        'text'
+                        'selected'
+                        True
+                        False
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       0: self
+                        4       LOAD_ATTR                       0: entry_code_meli
+                        14      LOAD_METHOD                     1: get
+                        36      PRECALL                         0
+                        40      CALL                            0
+                        50      LOAD_FAST                       0: self
+                        52      STORE_ATTR                      2: val_meli
+                        62      LOAD_FAST                       0: self
+                        64      LOAD_ATTR                       3: entry_code_meli_malek
+                        74      LOAD_METHOD                     1: get
+                        96      PRECALL                         0
+                        100     CALL                            0
+                        110     LOAD_FAST                       0: self
+                        112     STORE_ATTR                      4: val_malek
+                        122     LOAD_FAST                       0: self
+                        124     LOAD_ATTR                       5: entry_ostan
+                        134     LOAD_METHOD                     1: get
+                        156     PRECALL                         0
+                        160     CALL                            0
+                        170     LOAD_FAST                       0: self
+                        172     STORE_ATTR                      6: val_ostan
+                        182     LOAD_FAST                       0: self
+                        184     LOAD_ATTR                       7: entry_shahr
+                        194     LOAD_METHOD                     1: get
+                        216     PRECALL                         0
+                        220     CALL                            0
+                        230     LOAD_FAST                       0: self
+                        232     STORE_ATTR                      8: val_shahr
+                        242     LOAD_FAST                       0: self
+                        244     LOAD_ATTR                       9: entry_day_tavalod
+                        254     LOAD_METHOD                     1: get
+                        276     PRECALL                         0
+                        280     CALL                            0
+                        290     LOAD_FAST                       0: self
+                        292     STORE_ATTR                      10: val_birth_day
+                        302     LOAD_FAST                       0: self
+                        304     LOAD_ATTR                       11: entry_month_tavalod
+                        314     LOAD_METHOD                     1: get
+                        336     PRECALL                         0
+                        340     CALL                            0
+                        350     LOAD_FAST                       0: self
+                        352     STORE_ATTR                      12: val_birth_month
+                        362     LOAD_FAST                       0: self
+                        364     LOAD_ATTR                       13: entry_year_tavalod
+                        374     LOAD_METHOD                     1: get
+                        396     PRECALL                         0
+                        400     CALL                            0
+                        410     LOAD_FAST                       0: self
+                        412     STORE_ATTR                      14: val_birth_year
+                        422     LOAD_FAST                       0: self
+                        424     LOAD_ATTR                       15: entry_day_exdevaj
+                        434     LOAD_METHOD                     1: get
+                        456     PRECALL                         0
+                        460     CALL                            0
+                        470     LOAD_FAST                       0: self
+                        472     STORE_ATTR                      16: val_marry_day
+                        482     LOAD_FAST                       0: self
+                        484     LOAD_ATTR                       17: entry_month_ezdevaj
+                        494     LOAD_METHOD                     1: get
+                        516     PRECALL                         0
+                        520     CALL                            0
+                        530     LOAD_FAST                       0: self
+                        532     STORE_ATTR                      18: val_marry_month
+                        542     LOAD_FAST                       0: self
+                        544     LOAD_ATTR                       19: entry_year_exdevaj
+                        554     LOAD_METHOD                     1: get
+                        576     PRECALL                         0
+                        580     CALL                            0
+                        590     LOAD_FAST                       0: self
+                        592     STORE_ATTR                      20: val_marry_year
+                        602     LOAD_FAST                       0: self
+                        604     LOAD_ATTR                       21: entry_name
+                        614     LOAD_METHOD                     1: get
+                        636     PRECALL                         0
+                        640     CALL                            0
+                        650     LOAD_FAST                       0: self
+                        652     STORE_ATTR                      22: val_name
+                        662     LOAD_FAST                       0: self
+                        664     LOAD_ATTR                       23: entry_family
+                        674     LOAD_METHOD                     1: get
+                        696     PRECALL                         0
+                        700     CALL                            0
+                        710     LOAD_FAST                       0: self
+                        712     STORE_ATTR                      24: val_family
+                        722     LOAD_FAST                       0: self
+                        724     LOAD_ATTR                       25: entry_pedar
+                        734     LOAD_METHOD                     1: get
+                        756     PRECALL                         0
+                        760     CALL                            0
+                        770     LOAD_FAST                       0: self
+                        772     STORE_ATTR                      26: val_pedar
+                        782     LOAD_FAST                       0: self
+                        784     LOAD_ATTR                       27: entry_sabet
+                        794     LOAD_METHOD                     1: get
+                        816     PRECALL                         0
+                        820     CALL                            0
+                        830     LOAD_FAST                       0: self
+                        832     STORE_ATTR                      28: val_sabet
+                        842     LOAD_FAST                       0: self
+                        844     LOAD_ATTR                       29: entry_hamrah
+                        854     LOAD_METHOD                     1: get
+                        876     PRECALL                         0
+                        880     CALL                            0
+                        890     LOAD_FAST                       0: self
+                        892     STORE_ATTR                      30: val_hamrah
+                        902     LOAD_FAST                       0: self
+                        904     LOAD_ATTR                       31: entry_meli_hamsar
+                        914     LOAD_METHOD                     1: get
+                        936     PRECALL                         0
+                        940     CALL                            0
+                        950     LOAD_FAST                       0: self
+                        952     STORE_ATTR                      32: val_hamsar
+                        962     LOAD_FAST                       0: self
+                        964     LOAD_ATTR                       33: entry_posti
+                        974     LOAD_METHOD                     1: get
+                        996     PRECALL                         0
+                        1000    CALL                            0
+                        1010    LOAD_FAST                       0: self
+                        1012    STORE_ATTR                      34: val_posti
+                        1022    LOAD_FAST                       0: self
+                        1024    LOAD_ATTR                       35: entry_neshani
+                        1034    LOAD_METHOD                     1: get
+                        1056    PRECALL                         0
+                        1060    CALL                            0
+                        1070    LOAD_FAST                       0: self
+                        1072    STORE_ATTR                      36: val_neshani
+                        1082    LOAD_FAST                       0: self
+                        1084    LOAD_ATTR                       37: entry_yaddasht
+                        1094    LOAD_METHOD                     1: get
+                        1116    PRECALL                         0
+                        1120    CALL                            0
+                        1130    LOAD_FAST                       0: self
+                        1132    STORE_ATTR                      38: val_yaddasht
+                        1142    LOAD_FAST                       0: self
+                        1144    LOAD_ATTR                       39: entry_bank_entekhabi
+                        1154    LOAD_METHOD                     1: get
+                        1176    PRECALL                         0
+                        1180    CALL                            0
+                        1190    LOAD_FAST                       0: self
+                        1192    STORE_ATTR                      40: val_bank
+                        1202    LOAD_FAST                       0: self
+                        1204    LOAD_ATTR                       41: entry_email
+                        1214    LOAD_METHOD                     1: get
+                        1236    PRECALL                         0
+                        1240    CALL                            0
+                        1250    LOAD_FAST                       0: self
+                        1252    STORE_ATTR                      42: val_email
+                        1262    LOAD_FAST                       0: self
+                        1264    LOAD_ATTR                       43: entry_code_shobe
+                        1274    LOAD_METHOD                     1: get
+                        1296    PRECALL                         0
+                        1300    CALL                            0
+                        1310    LOAD_FAST                       0: self
+                        1312    STORE_ATTR                      44: val_shobe
+                        1322    LOAD_FAST                       0: self
+                        1324    LOAD_ATTR                       45: var_vaziat_shobe
+                        1334    LOAD_METHOD                     1: get
+                        1356    PRECALL                         0
+                        1360    CALL                            0
+                        1370    LOAD_FAST                       0: self
+                        1372    STORE_ATTR                      46: val_vaziat_shobe
+                        1382    LOAD_FAST                       0: self
+                        1384    LOAD_ATTR                       47: entry_rahgiri
+                        1394    LOAD_CONST                      1: 'text'
+                        1396    BINARY_SUBSCR                   
+                        1406    LOAD_FAST                       0: self
+                        1408    STORE_ATTR                      48: val_rahgiri
+                        1418    LOAD_FAST                       0: self
+                        1420    LOAD_ATTR                       49: entry_alarm_bank
+                        1430    LOAD_METHOD                     1: get
+                        1452    PRECALL                         0
+                        1456    CALL                            0
+                        1466    LOAD_FAST                       0: self
+                        1468    STORE_ATTR                      50: val_bank_alarm
+                        1478    LOAD_FAST                       0: self
+                        1480    LOAD_ATTR                       51: bank_baz
+                        1490    LOAD_CONST                      1: 'text'
+                        1492    BINARY_SUBSCR                   
+                        1502    LOAD_FAST                       0: self
+                        1504    STORE_ATTR                      52: val_bank_baz
+                        1514    LOAD_FAST                       0: self
+                        1516    LOAD_ATTR                       53: int_var_sex
+                        1526    LOAD_METHOD                     1: get
+                        1548    PRECALL                         0
+                        1552    CALL                            0
+                        1562    LOAD_FAST                       0: self
+                        1564    STORE_ATTR                      54: val_jensiat
+                        1574    LOAD_FAST                       0: self
+                        1576    LOAD_ATTR                       55: int_var_isar
+                        1586    LOAD_METHOD                     1: get
+                        1608    PRECALL                         0
+                        1612    CALL                            0
+                        1622    LOAD_FAST                       0: self
+                        1624    STORE_ATTR                      56: val_isar
+                        1634    LOAD_FAST                       0: self
+                        1636    LOAD_ATTR                       57: int_var_sarbazi
+                        1646    LOAD_METHOD                     1: get
+                        1668    PRECALL                         0
+                        1672    CALL                            0
+                        1682    LOAD_FAST                       0: self
+                        1684    STORE_ATTR                      58: val_sarbazi
+                        1694    LOAD_FAST                       0: self
+                        1696    LOAD_ATTR                       59: int_var_tabeiat
+                        1706    LOAD_METHOD                     1: get
+                        1728    PRECALL                         0
+                        1732    CALL                            0
+                        1742    LOAD_FAST                       0: self
+                        1744    STORE_ATTR                      60: val_tabeiat
+                        1754    LOAD_CONST                      2: 'selected'
+                        1756    LOAD_FAST                       0: self
+                        1758    LOAD_ATTR                       61: check_captcha_automat
+                        1768    LOAD_METHOD                     62: state
+                        1790    PRECALL                         0
+                        1794    CALL                            0
+                        1804    CONTAINS_OP                     0 (in)
+                        1806    POP_JUMP_FORWARD_IF_FALSE       2 (to 1812)
+                        1808    LOAD_CONST                      3: True
+                        1810    JUMP_FORWARD                    1 (to 1814)
+                        1812    LOAD_CONST                      4: False
+                        1814    LOAD_FAST                       0: self
+                        1816    STORE_ATTR                      63: val_captcha_status
+                        1826    LOAD_FAST                       0: self
+                        1828    LOAD_ATTR                       64: entry_captcha
+                        1838    LOAD_METHOD                     1: get
+                        1860    PRECALL                         0
+                        1864    CALL                            0
+                        1874    LOAD_FAST                       0: self
+                        1876    STORE_ATTR                      65: val_captcha
+                        1886    LOAD_FAST                       0: self
+                        1888    LOAD_ATTR                       66: entry_sms
+                        1898    LOAD_METHOD                     1: get
+                        1920    PRECALL                         0
+                        1924    CALL                            0
+                        1934    LOAD_FAST                       0: self
+                        1936    STORE_ATTR                      67: val_payamak
+                        1946    LOAD_CONST                      2: 'selected'
+                        1948    LOAD_FAST                       0: self
+                        1950    LOAD_ATTR                       68: sabte_khodkar
+                        1960    LOAD_METHOD                     62: state
+                        1982    PRECALL                         0
+                        1986    CALL                            0
+                        1996    CONTAINS_OP                     0 (in)
+                        1998    POP_JUMP_FORWARD_IF_FALSE       2 (to 2004)
+                        2000    LOAD_CONST                      3: True
+                        2002    JUMP_FORWARD                    1 (to 2006)
+                        2004    LOAD_CONST                      4: False
+                        2006    LOAD_FAST                       0: self
+                        2008    STORE_ATTR                      69: val_sabt_khodkar
+                        2018    LOAD_FAST                       0: self
+                        2020    LOAD_ATTR                       70: entry_ostan_get_new_code
+                        2030    LOAD_METHOD                     1: get
+                        2052    PRECALL                         0
+                        2056    CALL                            0
+                        2066    LOAD_FAST                       0: self
+                        2068    STORE_ATTR                      71: val_ostan_secondry
+                        2078    LOAD_CONST                      2: 'selected'
+                        2080    LOAD_FAST                       0: self
+                        2082    LOAD_ATTR                       72: check_get_new_code_secondry_province_auto_timer
+                        2092    LOAD_METHOD                     62: state
+                        2114    PRECALL                         0
+                        2118    CALL                            0
+                        2128    CONTAINS_OP                     0 (in)
+                        2130    POP_JUMP_FORWARD_IF_FALSE       2 (to 2136)
+                        2132    LOAD_CONST                      3: True
+                        2134    JUMP_FORWARD                    1 (to 2138)
+                        2136    LOAD_CONST                      4: False
+                        2138    LOAD_FAST                       0: self
+                        2140    STORE_ATTR                      73: val_check_secondry
+                        2150    LOAD_FAST                       0: self
+                        2152    LOAD_ATTR                       74: entry_get_new_code_secondry_province_timer
+                        2162    LOAD_METHOD                     1: get
+                        2184    PRECALL                         0
+                        2188    CALL                            0
+                        2198    LOAD_FAST                       0: self
+                        2200    STORE_ATTR                      75: val_secondry_page_timer
+                        2210    LOAD_CONST                      0: None
+                        2212    RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: resetSms
+                    Qualified Name: MyApp.resetSms
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'check_temporary_auto_sms'
+                        'state'
+                        'entry_sms'
+                        'delete'
+                        'END'
+                    [Locals+Names]
+                        'self'
+                        'temporary_auto_sms_is_on'
+                    [Constants]
+                        None
+                        'selected'
+                        True
+                        False
+                        0
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_CONST                      1: 'selected'
+                        4       LOAD_FAST                       0: self
+                        6       LOAD_ATTR                       0: check_temporary_auto_sms
+                        16      LOAD_METHOD                     1: state
+                        38      PRECALL                         0
+                        42      CALL                            0
+                        52      CONTAINS_OP                     0 (in)
+                        54      POP_JUMP_FORWARD_IF_FALSE       2 (to 60)
+                        56      LOAD_CONST                      2: True
+                        58      JUMP_FORWARD                    1 (to 62)
+                        60      LOAD_CONST                      3: False
+                        62      STORE_FAST                      1: temporary_auto_sms_is_on
+                        64      LOAD_FAST                       1: temporary_auto_sms_is_on
+                        66      POP_JUMP_FORWARD_IF_TRUE        34 (to 136)
+                        68      LOAD_FAST                       0: self
+                        70      LOAD_ATTR                       2: entry_sms
+                        80      LOAD_METHOD                     3: delete
+                        102     LOAD_CONST                      4: 0
+                        104     LOAD_GLOBAL                     8: END
+                        116     PRECALL                         2
+                        120     CALL                            2
+                        130     POP_TOP                         
+                        132     LOAD_CONST                      0: None
+                        134     RETURN_VALUE                    
+                        136     LOAD_CONST                      0: None
+                        138     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: copyRahgiriToClipboard
+                    Qualified Name: MyApp.copyRahgiriToClipboard
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'copy_to_clipboard_tool_tip'
+                        'msg'
+                        'clipboard'
+                        'copy'
+                        'val_rahgiri'
+                        'after'
+                    [Locals+Names]
+                        'self'
+                        '_'
+                        'cttm'
+                    [Constants]
+                        None
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: cttm
+                            Qualified Name: MyApp.copyRahgiriToClipboard.<locals>.cttm
+                            Arg Count: 0
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 2
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'copy_to_clipboard_tool_tip'
+                                'msg'
+                            [Locals+Names]
+                                'self'
+                            [Constants]
+                                None
+                                'برای کپی کردن کلیک کنید'
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       LOAD_CONST                      1: 'برای کپی کردن کلیک کنید'
+                                6       LOAD_DEREF                      0: self
+                                8       LOAD_ATTR                       0: copy_to_clipboard_tool_tip
+                                18      STORE_ATTR                      1: msg
+                                28      LOAD_CONST                      0: None
+                                30      RETURN_VALUE                    
+                        'کپی شد'
+                        2000
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       RESUME                          0
+                        4       LOAD_CLOSURE                    0: self
+                        6       BUILD_TUPLE                     1
+                        8       LOAD_CONST                      1: <CODE> cttm
+                        10      MAKE_FUNCTION                   8
+                        12      STORE_FAST                      2: cttm
+                        14      LOAD_CONST                      2: 'کپی شد'
+                        16      LOAD_DEREF                      0: self
+                        18      LOAD_ATTR                       0: copy_to_clipboard_tool_tip
+                        28      STORE_ATTR                      1: msg
+                        38      LOAD_GLOBAL                     5: NULL + clipboard
+                        50      LOAD_ATTR                       3: copy
+                        60      LOAD_DEREF                      0: self
+                        62      LOAD_ATTR                       4: val_rahgiri
+                        72      PRECALL                         1
+                        76      CALL                            1
+                        86      POP_TOP                         
+                        88      LOAD_DEREF                      0: self
+                        90      LOAD_METHOD                     5: after
+                        112     LOAD_CONST                      3: 2000
+                        114     LOAD_FAST                       2: cttm
+                        116     PRECALL                         2
+                        120     CALL                            2
+                        130     POP_TOP                         
+                        132     LOAD_CONST                      0: None
+                        134     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: changeCityList
+                    Qualified Name: MyApp.changeCityList
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'getCities'
+                        'entry_ostan'
+                        'get'
+                        'entry_shahr'
+                    [Locals+Names]
+                        'self'
+                        '_'
+                        'cities'
+                    [Constants]
+                        None
+                        'values'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + getCities
+                        14      LOAD_FAST                       0: self
+                        16      LOAD_ATTR                       1: entry_ostan
+                        26      LOAD_METHOD                     2: get
+                        48      PRECALL                         0
+                        52      CALL                            0
+                        62      PRECALL                         1
+                        66      CALL                            1
+                        76      STORE_FAST                      2: cities
+                        78      LOAD_FAST                       2: cities
+                        80      LOAD_FAST                       0: self
+                        82      LOAD_ATTR                       3: entry_shahr
+                        92      LOAD_CONST                      1: 'values'
+                        94      STORE_SUBSCR                    
+                        98      LOAD_CONST                      0: None
+                        100     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: parseAndAddBanksToHistory
+                    Qualified Name: MyApp.parseAndAddBanksToHistory
+                    Arg Count: 3
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'remove'
+                        'join'
+                        'addToBankHistory'
+                    [Locals+Names]
+                        'self'
+                        'bank_list'
+                        'city'
+                        'banks_list'
+                        'banks_list_string'
+                    [Constants]
+                        None
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.parseAndAddBanksToHistory.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 5
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'split'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                            [Constants]
+                                '-'
+                                0
+                            [Disassembly]
+                                0       RESUME                          0
+                                2       BUILD_LIST                      0
+                                4       LOAD_FAST                       0: .0
+                                6       FOR_ITER                        29 (to 66)
+                                8       STORE_FAST                      1: i
+                                10      LOAD_FAST                       1: i
+                                12      LOAD_METHOD                     0: split
+                                34      LOAD_CONST                      0: '-'
+                                36      PRECALL                         1
+                                40      CALL                            1
+                                50      LOAD_CONST                      1: 0
+                                52      BINARY_SUBSCR                   
+                                62      LIST_APPEND                     2
+                                64      JUMP_BACKWARD                   30 (to 6)
+                                66      RETURN_VALUE                    
+                        ''
+                        ', '
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_CONST                      1: <CODE> <listcomp>
+                        4       MAKE_FUNCTION                   0
+                        6       LOAD_FAST                       1: bank_list
+                        8       GET_ITER                        
+                        10      PRECALL                         0
+                        14      CALL                            0
+                        24      STORE_FAST                      3: banks_list
+                        26      LOAD_CONST                      2: ''
+                        28      LOAD_FAST                       1: bank_list
+                        30      CONTAINS_OP                     0 (in)
+                        32      POP_JUMP_FORWARD_IF_FALSE       21 (to 76)
+                        34      LOAD_FAST                       3: banks_list
+                        36      LOAD_METHOD                     0: remove
+                        58      LOAD_CONST                      2: ''
+                        60      PRECALL                         1
+                        64      CALL                            1
+                        74      POP_TOP                         
+                        76      LOAD_CONST                      3: ', '
+                        78      LOAD_METHOD                     1: join
+                        100     LOAD_FAST                       3: banks_list
+                        102     PRECALL                         1
+                        106     CALL                            1
+                        116     STORE_FAST                      4: banks_list_string
+                        118     LOAD_FAST                       0: self
+                        120     LOAD_METHOD                     2: addToBankHistory
+                        142     LOAD_FAST                       4: banks_list_string
+                        144     LOAD_FAST                       2: city
+                        146     PRECALL                         2
+                        150     CALL                            2
+                        160     POP_TOP                         
+                        162     LOAD_CONST                      0: None
+                        164     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: addToBankHistory
+                    Qualified Name: MyApp.addToBankHistory
+                    Arg Count: 3
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 6
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'datetime'
+                        'now'
+                        'hour'
+                        'minute'
+                        'second'
+                        'banks_history_list'
+                        'append'
+                        'banks_history_dialog_initialized'
+                        'history_tree_in_dialog'
+                        'insert'
+                    [Locals+Names]
+                        'self'
+                        'banks_string'
+                        'city'
+                        'now'
+                        'item_to_add'
+                    [Constants]
+                        None
+                        '   '
+                        ':'
+                        ''
+                        '0'
+                        (
+                            'values'
+                        )
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     0: datetime
+                        14      LOAD_ATTR                       0: datetime
+                        24      LOAD_METHOD                     1: now
+                        46      PRECALL                         0
+                        50      CALL                            0
+                        60      STORE_FAST                      3: now
+                        62      LOAD_CONST                      1: '   '
+                        64      LOAD_FAST                       3: now
+                        66      LOAD_ATTR                       2: hour
+                        76      FORMAT_VALUE                    0 (FVC_NONE)
+                        78      LOAD_CONST                      2: ':'
+                        80      LOAD_FAST                       3: now
+                        82      LOAD_ATTR                       3: minute
+                        92      FORMAT_VALUE                    0 (FVC_NONE)
+                        94      LOAD_CONST                      2: ':'
+                        96      LOAD_FAST                       3: now
+                        98      LOAD_ATTR                       4: second
+                        108     FORMAT_VALUE                    0 (FVC_NONE)
+                        110     BUILD_STRING                    6
+                        112     LOAD_FAST                       2: city
+                        114     LOAD_FAST                       1: banks_string
+                        116     BUILD_TUPLE                     3
+                        118     STORE_FAST                      4: item_to_add
+                        120     LOAD_FAST                       0: self
+                        122     LOAD_ATTR                       5: banks_history_list
+                        132     LOAD_METHOD                     6: append
+                        154     LOAD_FAST                       4: item_to_add
+                        156     PRECALL                         1
+                        160     CALL                            1
+                        170     POP_TOP                         
+                        172     LOAD_FAST                       0: self
+                        174     LOAD_ATTR                       7: banks_history_dialog_initialized
+                        184     POP_JUMP_FORWARD_IF_FALSE       40 (to 266)
+                        186     NOP                             
+                        188     LOAD_FAST                       0: self
+                        190     LOAD_ATTR                       8: history_tree_in_dialog
+                        200     LOAD_METHOD                     9: insert
+                        222     LOAD_CONST                      3: ''
+                        224     LOAD_CONST                      4: '0'
+                        226     LOAD_FAST                       4: item_to_add
+                        228     KW_NAMES                        5: ('values',)
+                        230     PRECALL                         3
+                        234     CALL                            3
+                        244     POP_TOP                         
+                        246     LOAD_CONST                      0: None
+                        248     RETURN_VALUE                    
+                        250     PUSH_EXC_INFO                   
+                        252     POP_TOP                         
+                        254     POP_EXCEPT                      
+                        256     LOAD_CONST                      0: None
+                        258     RETURN_VALUE                    
+                        260     COPY                            3
+                        262     POP_EXCEPT                      
+                        264     RERAISE                         1
+                        266     LOAD_CONST                      0: None
+                        268     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: showBanksHistory
+                    Qualified Name: MyApp.showBanksHistory
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'Tk'
+                        'geometry'
+                        'title'
+                        'Grid'
+                        'rowconfigure'
+                        'columnconfigure'
+                        'Treeview'
+                        'history_tree_in_dialog'
+                        'banks_history_dialog_initialized'
+                        'heading'
+                        'column'
+                        'grid'
+                        'Scrollbar'
+                        'yview'
+                        'configure'
+                        'set'
+                        'banks_history_list'
+                        'insert'
+                        'mainloop'
+                    [Locals+Names]
+                        'self'
+                        'a'
+                        'history_tree'
+                        'history_scroll_bar'
+                        'item_to_add'
+                    [Constants]
+                        None
+                        '600x450'
+                        'تاریخچه بانک‌های باز'
+                        0
+                        1
+                        (
+                            'weight'
+                        )
+                        (
+                            'time'
+                            'city'
+                            'banks'
+                        )
+                        'headings'
+                        (
+                            'columns'
+                            'show'
+                        )
+                        True
+                        'time'
+                        '    زمان'
+                        (
+                            'text'
+                        )
+                        'city'
+                        'شهر'
+                        'banks'
+                        'بانک ها'
+                        10
+                        'center'
+                        (
+                            'width'
+                            'anchor'
+                        )
+                        50
+                        (
+                            'anchor'
+                            'width'
+                        )
+                        'e'
+                        (
+                            'anchor'
+                        )
+                        2
+                        'nsew'
+                        (
+                            'column'
+                            'row'
+                            'columnspan'
+                            'sticky'
+                        )
+                        'vertical'
+                        (
+                            'orient'
+                            'command'
+                        )
+                        'nsw'
+                        (
+                            'column'
+                            'row'
+                            'sticky'
+                            'padx'
+                            'pady'
+                        )
+                        (
+                            'yscrollcommand'
+                        )
+                        ''
+                        '0'
+                        (
+                            'values'
+                        )
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + Tk
+                        14      PRECALL                         0
+                        18      CALL                            0
+                        28      STORE_FAST                      1: a
+                        30      LOAD_FAST                       1: a
+                        32      LOAD_METHOD                     1: geometry
+                        54      LOAD_CONST                      1: '600x450'
+                        56      PRECALL                         1
+                        60      CALL                            1
+                        70      POP_TOP                         
+                        72      LOAD_FAST                       1: a
+                        74      LOAD_METHOD                     2: title
+                        96      LOAD_CONST                      2: 'تاریخچه بانک‌های باز'
+                        98      PRECALL                         1
+                        102     CALL                            1
+                        112     POP_TOP                         
+                        114     LOAD_GLOBAL                     6: Grid
+                        126     LOAD_METHOD                     4: rowconfigure
+                        148     LOAD_FAST                       1: a
+                        150     LOAD_CONST                      3: 0
+                        152     LOAD_CONST                      4: 1
+                        154     KW_NAMES                        5: ('weight',)
+                        156     PRECALL                         3
+                        160     CALL                            3
+                        170     POP_TOP                         
+                        172     LOAD_GLOBAL                     6: Grid
+                        184     LOAD_METHOD                     5: columnconfigure
+                        206     LOAD_FAST                       1: a
+                        208     LOAD_CONST                      3: 0
+                        210     LOAD_CONST                      4: 1
+                        212     KW_NAMES                        5: ('weight',)
+                        214     PRECALL                         3
+                        218     CALL                            3
+                        228     POP_TOP                         
+                        230     LOAD_GLOBAL                     13: NULL + Treeview
+                        242     LOAD_FAST                       1: a
+                        244     LOAD_CONST                      6: ('time', 'city', 'banks')
+                        246     LOAD_CONST                      7: 'headings'
+                        248     KW_NAMES                        8: ('columns', 'show')
+                        250     PRECALL                         3
+                        254     CALL                            3
+                        264     LOAD_FAST                       0: self
+                        266     STORE_ATTR                      7: history_tree_in_dialog
+                        276     LOAD_CONST                      9: True
+                        278     LOAD_FAST                       0: self
+                        280     STORE_ATTR                      8: banks_history_dialog_initialized
+                        290     LOAD_FAST                       0: self
+                        292     LOAD_ATTR                       7: history_tree_in_dialog
+                        302     STORE_FAST                      2: history_tree
+                        304     LOAD_FAST                       2: history_tree
+                        306     LOAD_METHOD                     9: heading
+                        328     LOAD_CONST                      10: 'time'
+                        330     LOAD_CONST                      11: '    زمان'
+                        332     KW_NAMES                        12: ('text',)
+                        334     PRECALL                         2
+                        338     CALL                            2
+                        348     POP_TOP                         
+                        350     LOAD_FAST                       2: history_tree
+                        352     LOAD_METHOD                     9: heading
+                        374     LOAD_CONST                      13: 'city'
+                        376     LOAD_CONST                      14: 'شهر'
+                        378     KW_NAMES                        12: ('text',)
+                        380     PRECALL                         2
+                        384     CALL                            2
+                        394     POP_TOP                         
+                        396     LOAD_FAST                       2: history_tree
+                        398     LOAD_METHOD                     9: heading
+                        420     LOAD_CONST                      15: 'banks'
+                        422     LOAD_CONST                      16: 'بانک ها'
+                        424     KW_NAMES                        12: ('text',)
+                        426     PRECALL                         2
+                        430     CALL                            2
+                        440     POP_TOP                         
+                        442     LOAD_FAST                       2: history_tree
+                        444     LOAD_METHOD                     10: column
+                        466     LOAD_CONST                      10: 'time'
+                        468     LOAD_CONST                      17: 10
+                        470     LOAD_CONST                      18: 'center'
+                        472     KW_NAMES                        19: ('width', 'anchor')
+                        474     PRECALL                         3
+                        478     CALL                            3
+                        488     POP_TOP                         
+                        490     LOAD_FAST                       2: history_tree
+                        492     LOAD_METHOD                     10: column
+                        514     LOAD_CONST                      13: 'city'
+                        516     LOAD_CONST                      18: 'center'
+                        518     LOAD_CONST                      20: 50
+                        520     KW_NAMES                        21: ('anchor', 'width')
+                        522     PRECALL                         3
+                        526     CALL                            3
+                        536     POP_TOP                         
+                        538     LOAD_FAST                       2: history_tree
+                        540     LOAD_METHOD                     10: column
+                        562     LOAD_CONST                      15: 'banks'
+                        564     LOAD_CONST                      22: 'e'
+                        566     KW_NAMES                        23: ('anchor',)
+                        568     PRECALL                         2
+                        572     CALL                            2
+                        582     POP_TOP                         
+                        584     LOAD_FAST                       2: history_tree
+                        586     LOAD_METHOD                     11: grid
+                        608     LOAD_CONST                      3: 0
+                        610     LOAD_CONST                      3: 0
+                        612     LOAD_CONST                      24: 2
+                        614     LOAD_CONST                      25: 'nsew'
+                        616     KW_NAMES                        26: ('column', 'row', 'columnspan', 'sticky')
+                        618     PRECALL                         4
+                        622     CALL                            4
+                        632     POP_TOP                         
+                        634     LOAD_GLOBAL                     25: NULL + Scrollbar
+                        646     LOAD_FAST                       1: a
+                        648     LOAD_CONST                      27: 'vertical'
+                        650     LOAD_FAST                       2: history_tree
+                        652     LOAD_ATTR                       13: yview
+                        662     KW_NAMES                        28: ('orient', 'command')
+                        664     PRECALL                         3
+                        668     CALL                            3
+                        678     STORE_FAST                      3: history_scroll_bar
+                        680     LOAD_FAST                       3: history_scroll_bar
+                        682     LOAD_METHOD                     11: grid
+                        704     LOAD_CONST                      3: 0
+                        706     LOAD_CONST                      3: 0
+                        708     LOAD_CONST                      29: 'nsw'
+                        710     LOAD_CONST                      4: 1
+                        712     LOAD_CONST                      4: 1
+                        714     KW_NAMES                        30: ('column', 'row', 'sticky', 'padx', 'pady')
+                        716     PRECALL                         5
+                        720     CALL                            5
+                        730     POP_TOP                         
+                        732     LOAD_FAST                       2: history_tree
+                        734     LOAD_METHOD                     14: configure
+                        756     LOAD_FAST                       3: history_scroll_bar
+                        758     LOAD_ATTR                       15: set
+                        768     KW_NAMES                        31: ('yscrollcommand',)
+                        770     PRECALL                         1
+                        774     CALL                            1
+                        784     POP_TOP                         
+                        786     LOAD_FAST                       0: self
+                        788     LOAD_ATTR                       16: banks_history_list
+                        798     GET_ITER                        
+                        800     FOR_ITER                        26 (to 854)
+                        802     STORE_FAST                      4: item_to_add
+                        804     LOAD_FAST                       2: history_tree
+                        806     LOAD_METHOD                     17: insert
+                        828     LOAD_CONST                      32: ''
+                        830     LOAD_CONST                      33: '0'
+                        832     LOAD_FAST                       4: item_to_add
+                        834     KW_NAMES                        34: ('values',)
+                        836     PRECALL                         3
+                        840     CALL                            3
+                        850     POP_TOP                         
+                        852     JUMP_BACKWARD                   27 (to 800)
+                        854     LOAD_FAST                       1: a
+                        856     LOAD_METHOD                     18: mainloop
+                        878     PRECALL                         0
+                        882     CALL                            0
+                        892     POP_TOP                         
+                        894     LOAD_CONST                      0: None
+                        896     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: fillBanksAlarm
+                    Qualified Name: MyApp.fillBanksAlarm
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'int'
+                        'banks_alarm_database_dict'
+                        'replace'
+                        'entry_alarm_bank'
+                        'insert'
+                        'split'
+                        'list'
+                        'selected_bank_list_alarm'
+                        'unselected_bank_list_alarm'
+                        'remove'
+                    [Locals+Names]
+                        'self'
+                        'meli'
+                        'alarm_banks'
+                        'new_banks_name'
+                        's_bank_list'
+                        'i'
+                    [Constants]
+                        None
+                        'بانک اقتصاد نوین'
+                        'بانک اقتصادنوین'
+                        'بانک ملی ایران'
+                        'بانک ملی'
+                        'پست بانک ایران'
+                        'پست بانک'
+                        0
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.fillBanksAlarm.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 5
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'len'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                            [Constants]
+                                0
+                                ' '
+                                1
+                                None
+                                ''
+                            [Disassembly]
+                                0       RESUME                          0
+                                2       BUILD_LIST                      0
+                                4       LOAD_FAST                       0: .0
+                                6       FOR_ITER                        47 (to 102)
+                                8       STORE_FAST                      1: i
+                                10      LOAD_GLOBAL                     1: NULL + len
+                                22      LOAD_FAST                       1: i
+                                24      PRECALL                         1
+                                28      CALL                            1
+                                38      LOAD_CONST                      0: 0
+                                40      COMPARE_OP                      4 (>)
+                                46      POP_JUMP_FORWARD_IF_FALSE       24 (to 96)
+                                48      LOAD_FAST                       1: i
+                                50      LOAD_CONST                      0: 0
+                                52      BINARY_SUBSCR                   
+                                62      LOAD_CONST                      1: ' '
+                                64      COMPARE_OP                      3 (!=)
+                                70      POP_JUMP_FORWARD_IF_FALSE       2 (to 76)
+                                72      LOAD_FAST                       1: i
+                                74      JUMP_FORWARD                    11 (to 98)
+                                76      LOAD_FAST                       1: i
+                                78      LOAD_CONST                      2: 1
+                                80      LOAD_CONST                      3: None
+                                82      BUILD_SLICE                     2
+                                84      BINARY_SUBSCR                   
+                                94      JUMP_FORWARD                    1 (to 98)
+                                96      LOAD_CONST                      4: ''
+                                98      LIST_APPEND                     2
+                                100     JUMP_BACKWARD                   48 (to 6)
+                                102     RETURN_VALUE                    
+                        ','
+                        ''
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + int
+                        14      LOAD_FAST                       1: meli
+                        16      PRECALL                         1
+                        20      CALL                            1
+                        30      LOAD_FAST                       0: self
+                        32      LOAD_ATTR                       1: banks_alarm_database_dict
+                        42      CONTAINS_OP                     1 (not in)
+                        44      POP_JUMP_FORWARD_IF_FALSE       2 (to 50)
+                        46      LOAD_CONST                      0: None
+                        48      RETURN_VALUE                    
+                        50      LOAD_FAST                       0: self
+                        52      LOAD_ATTR                       1: banks_alarm_database_dict
+                        62      LOAD_GLOBAL                     1: NULL + int
+                        74      LOAD_FAST                       1: meli
+                        76      PRECALL                         1
+                        80      CALL                            1
+                        90      BINARY_SUBSCR                   
+                        100     STORE_FAST                      2: alarm_banks
+                        102     LOAD_FAST                       2: alarm_banks
+                        104     LOAD_METHOD                     2: replace
+                        126     LOAD_CONST                      1: 'بانک اقتصاد نوین'
+                        128     LOAD_CONST                      2: 'بانک اقتصادنوین'
+                        130     PRECALL                         2
+                        134     CALL                            2
+                        144     STORE_FAST                      3: new_banks_name
+                        146     LOAD_CONST                      3: 'بانک ملی ایران'
+                        148     LOAD_FAST                       3: new_banks_name
+                        150     CONTAINS_OP                     1 (not in)
+                        152     POP_JUMP_FORWARD_IF_FALSE       22 (to 198)
+                        154     LOAD_FAST                       3: new_banks_name
+                        156     LOAD_METHOD                     2: replace
+                        178     LOAD_CONST                      4: 'بانک ملی'
+                        180     LOAD_CONST                      3: 'بانک ملی ایران'
+                        182     PRECALL                         2
+                        186     CALL                            2
+                        196     STORE_FAST                      3: new_banks_name
+                        198     LOAD_CONST                      5: 'پست بانک ایران'
+                        200     LOAD_FAST                       3: new_banks_name
+                        202     CONTAINS_OP                     1 (not in)
+                        204     POP_JUMP_FORWARD_IF_FALSE       22 (to 250)
+                        206     LOAD_FAST                       3: new_banks_name
+                        208     LOAD_METHOD                     2: replace
+                        230     LOAD_CONST                      6: 'پست بانک'
+                        232     LOAD_CONST                      5: 'پست بانک ایران'
+                        234     PRECALL                         2
+                        238     CALL                            2
+                        248     STORE_FAST                      3: new_banks_name
+                        250     LOAD_FAST                       0: self
+                        252     LOAD_ATTR                       3: entry_alarm_bank
+                        262     LOAD_METHOD                     4: insert
+                        284     LOAD_CONST                      7: 0
+                        286     LOAD_FAST                       3: new_banks_name
+                        288     PRECALL                         2
+                        292     CALL                            2
+                        302     POP_TOP                         
+                        304     LOAD_CONST                      8: <CODE> <listcomp>
+                        306     MAKE_FUNCTION                   0
+                        308     LOAD_FAST                       3: new_banks_name
+                        310     LOAD_METHOD                     5: split
+                        332     LOAD_CONST                      9: ','
+                        334     PRECALL                         1
+                        338     CALL                            1
+                        348     GET_ITER                        
+                        350     PRECALL                         0
+                        354     CALL                            0
+                        364     STORE_FAST                      4: s_bank_list
+                        366     LOAD_GLOBAL                     13: NULL + list
+                        378     LOAD_FAST                       4: s_bank_list
+                        380     LOAD_CONST                      7: 0
+                        382     BINARY_SUBSCR                   
+                        392     LOAD_CONST                      10: ''
+                        394     COMPARE_OP                      3 (!=)
+                        400     POP_JUMP_FORWARD_IF_FALSE       2 (to 406)
+                        402     LOAD_FAST                       4: s_bank_list
+                        404     JUMP_FORWARD                    1 (to 408)
+                        406     BUILD_LIST                      0
+                        408     PRECALL                         1
+                        412     CALL                            1
+                        422     LOAD_FAST                       0: self
+                        424     STORE_ATTR                      7: selected_bank_list_alarm
+                        434     LOAD_FAST                       4: s_bank_list
+                        436     GET_ITER                        
+                        438     FOR_ITER                        42 (to 524)
+                        440     STORE_FAST                      5: i
+                        442     LOAD_FAST                       4: s_bank_list
+                        444     LOAD_CONST                      7: 0
+                        446     BINARY_SUBSCR                   
+                        456     LOAD_CONST                      10: ''
+                        458     COMPARE_OP                      3 (!=)
+                        464     POP_JUMP_FORWARD_IF_FALSE       26 (to 518)
+                        466     LOAD_FAST                       0: self
+                        468     LOAD_ATTR                       8: unselected_bank_list_alarm
+                        478     LOAD_METHOD                     9: remove
+                        500     LOAD_FAST                       5: i
+                        502     PRECALL                         1
+                        506     CALL                            1
+                        516     JUMP_FORWARD                    1 (to 520)
+                        518     LOAD_CONST                      10: ''
+                        520     POP_TOP                         
+                        522     JUMP_BACKWARD                   43 (to 438)
+                        524     LOAD_CONST                      0: None
+                        526     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: fillForm
+                    Qualified Name: MyApp.fillForm
+                    Arg Count: 3
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 8
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'database_list'
+                        'clearAll'
+                        'entry_code_meli'
+                        'insert'
+                        'database_map'
+                        'entry_ostan'
+                        'entry_code_meli_malek'
+                        'entry_shahr'
+                        'entry_day_tavalod'
+                        'entry_month_tavalod'
+                        'entry_year_tavalod'
+                        'entry_day_exdevaj'
+                        'entry_month_ezdevaj'
+                        'entry_year_exdevaj'
+                        'entry_name'
+                        'entry_family'
+                        'entry_pedar'
+                        'entry_sabet'
+                        'entry_hamrah'
+                        'entry_meli_hamsar'
+                        'entry_posti'
+                        'entry_neshani'
+                        'entry_yaddasht'
+                        'replace'
+                        'entry_bank_entekhabi'
+                        'split'
+                        'list'
+                        'selected_bank_list'
+                        'unselected_bank_list'
+                        'remove'
+                        'fillBanksAlarm'
+                        'entry_email'
+                        'entry_code_shobe'
+                        'var_vaziat_shobe'
+                        'set'
+                        'int'
+                        'entry_rahgiri'
+                        'int_var_sex'
+                        'int_var_isar'
+                        'int_var_sarbazi'
+                        'int_var_tabeiat'
+                        'entry_priority'
+                        'getPriorityByMeli'
+                    [Locals+Names]
+                        'self'
+                        'index'
+                        'member'
+                        'new_banks_name'
+                        's_bank_list'
+                        'i'
+                    [Constants]
+                        None
+                        False
+                        0
+                        'meli'
+                        'ostan'
+                        'malek'
+                        'shahr'
+                        'b-day'
+                        'b-month'
+                        'b-year'
+                        'e-day'
+                        'e-month'
+                        'e-year'
+                        'name'
+                        'family'
+                        'pedar'
+                        'sabet'
+                        'hamrah'
+                        'hamsar'
+                        'posti'
+                        'neshani'
+                        'yaddasht'
+                        'bank'
+                        'بانک اقتصاد نوین'
+                        'بانک اقتصادنوین'
+                        'بانک ملی ایران'
+                        'بانک ملی'
+                        'پست بانک ایران'
+                        'پست بانک'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.fillForm.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 5
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'len'
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                            [Constants]
+                                0
+                                ' '
+                                1
+                                None
+                                ''
+                            [Disassembly]
+                                0       RESUME                          0
+                                2       BUILD_LIST                      0
+                                4       LOAD_FAST                       0: .0
+                                6       FOR_ITER                        47 (to 102)
+                                8       STORE_FAST                      1: i
+                                10      LOAD_GLOBAL                     1: NULL + len
+                                22      LOAD_FAST                       1: i
+                                24      PRECALL                         1
+                                28      CALL                            1
+                                38      LOAD_CONST                      0: 0
+                                40      COMPARE_OP                      4 (>)
+                                46      POP_JUMP_FORWARD_IF_FALSE       24 (to 96)
+                                48      LOAD_FAST                       1: i
+                                50      LOAD_CONST                      0: 0
+                                52      BINARY_SUBSCR                   
+                                62      LOAD_CONST                      1: ' '
+                                64      COMPARE_OP                      3 (!=)
+                                70      POP_JUMP_FORWARD_IF_FALSE       2 (to 76)
+                                72      LOAD_FAST                       1: i
+                                74      JUMP_FORWARD                    11 (to 98)
+                                76      LOAD_FAST                       1: i
+                                78      LOAD_CONST                      2: 1
+                                80      LOAD_CONST                      3: None
+                                82      BUILD_SLICE                     2
+                                84      BINARY_SUBSCR                   
+                                94      JUMP_FORWARD                    1 (to 98)
+                                96      LOAD_CONST                      4: ''
+                                98      LIST_APPEND                     2
+                                100     JUMP_BACKWARD                   48 (to 6)
+                                102     RETURN_VALUE                    
+                        ','
+                        ''
+                        'email'
+                        'shobe'
+                        'vaziat-shobe'
+                        'rahgiri'
+                        'text'
+                        'jensiat'
+                        'isar'
+                        'sarbazi'
+                        'tabeiat'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       2: member
+                        4       LOAD_CONST                      0: None
+                        6       COMPARE_OP                      2 (==)
+                        12      POP_JUMP_FORWARD_IF_FALSE       13 (to 40)
+                        14      LOAD_FAST                       0: self
+                        16      LOAD_ATTR                       0: database_list
+                        26      LOAD_FAST                       1: index
+                        28      BINARY_SUBSCR                   
+                        38      STORE_FAST                      2: member
+                        40      LOAD_FAST                       0: self
+                        42      LOAD_METHOD                     1: clearAll
+                        64      LOAD_CONST                      1: False
+                        66      PRECALL                         1
+                        70      CALL                            1
+                        80      POP_TOP                         
+                        82      LOAD_FAST                       0: self
+                        84      LOAD_ATTR                       2: entry_code_meli
+                        94      LOAD_METHOD                     3: insert
+                        116     LOAD_CONST                      2: 0
+                        118     LOAD_FAST                       2: member
+                        120     LOAD_FAST                       0: self
+                        122     LOAD_ATTR                       4: database_map
+                        132     LOAD_CONST                      3: 'meli'
+                        134     BINARY_SUBSCR                   
+                        144     BINARY_SUBSCR                   
+                        154     PRECALL                         2
+                        158     CALL                            2
+                        168     POP_TOP                         
+                        170     LOAD_FAST                       0: self
+                        172     LOAD_ATTR                       5: entry_ostan
+                        182     LOAD_METHOD                     3: insert
+                        204     LOAD_CONST                      2: 0
+                        206     LOAD_FAST                       2: member
+                        208     LOAD_FAST                       0: self
+                        210     LOAD_ATTR                       4: database_map
+                        220     LOAD_CONST                      4: 'ostan'
+                        222     BINARY_SUBSCR                   
+                        232     BINARY_SUBSCR                   
+                        242     PRECALL                         2
+                        246     CALL                            2
+                        256     POP_TOP                         
+                        258     LOAD_FAST                       0: self
+                        260     LOAD_ATTR                       6: entry_code_meli_malek
+                        270     LOAD_METHOD                     3: insert
+                        292     LOAD_CONST                      2: 0
+                        294     LOAD_FAST                       2: member
+                        296     LOAD_FAST                       0: self
+                        298     LOAD_ATTR                       4: database_map
+                        308     LOAD_CONST                      5: 'malek'
+                        310     BINARY_SUBSCR                   
+                        320     BINARY_SUBSCR                   
+                        330     PRECALL                         2
+                        334     CALL                            2
+                        344     POP_TOP                         
+                        346     LOAD_FAST                       0: self
+                        348     LOAD_ATTR                       7: entry_shahr
+                        358     LOAD_METHOD                     3: insert
+                        380     LOAD_CONST                      2: 0
+                        382     LOAD_FAST                       2: member
+                        384     LOAD_FAST                       0: self
+                        386     LOAD_ATTR                       4: database_map
+                        396     LOAD_CONST                      6: 'shahr'
+                        398     BINARY_SUBSCR                   
+                        408     BINARY_SUBSCR                   
+                        418     PRECALL                         2
+                        422     CALL                            2
+                        432     POP_TOP                         
+                        434     LOAD_FAST                       0: self
+                        436     LOAD_ATTR                       8: entry_day_tavalod
+                        446     LOAD_METHOD                     3: insert
+                        468     LOAD_CONST                      2: 0
+                        470     LOAD_FAST                       2: member
+                        472     LOAD_FAST                       0: self
+                        474     LOAD_ATTR                       4: database_map
+                        484     LOAD_CONST                      7: 'b-day'
+                        486     BINARY_SUBSCR                   
+                        496     BINARY_SUBSCR                   
+                        506     PRECALL                         2
+                        510     CALL                            2
+                        520     POP_TOP                         
+                        522     LOAD_FAST                       0: self
+                        524     LOAD_ATTR                       9: entry_month_tavalod
+                        534     LOAD_METHOD                     3: insert
+                        556     LOAD_CONST                      2: 0
+                        558     LOAD_FAST                       2: member
+                        560     LOAD_FAST                       0: self
+                        562     LOAD_ATTR                       4: database_map
+                        572     LOAD_CONST                      8: 'b-month'
+                        574     BINARY_SUBSCR                   
+                        584     BINARY_SUBSCR                   
+                        594     PRECALL                         2
+                        598     CALL                            2
+                        608     POP_TOP                         
+                        610     LOAD_FAST                       0: self
+                        612     LOAD_ATTR                       10: entry_year_tavalod
+                        622     LOAD_METHOD                     3: insert
+                        644     LOAD_CONST                      2: 0
+                        646     LOAD_FAST                       2: member
+                        648     LOAD_FAST                       0: self
+                        650     LOAD_ATTR                       4: database_map
+                        660     LOAD_CONST                      9: 'b-year'
+                        662     BINARY_SUBSCR                   
+                        672     BINARY_SUBSCR                   
+                        682     PRECALL                         2
+                        686     CALL                            2
+                        696     POP_TOP                         
+                        698     LOAD_FAST                       0: self
+                        700     LOAD_ATTR                       11: entry_day_exdevaj
+                        710     LOAD_METHOD                     3: insert
+                        732     LOAD_CONST                      2: 0
+                        734     LOAD_FAST                       2: member
+                        736     LOAD_FAST                       0: self
+                        738     LOAD_ATTR                       4: database_map
+                        748     LOAD_CONST                      10: 'e-day'
+                        750     BINARY_SUBSCR                   
+                        760     BINARY_SUBSCR                   
+                        770     PRECALL                         2
+                        774     CALL                            2
+                        784     POP_TOP                         
+                        786     LOAD_FAST                       0: self
+                        788     LOAD_ATTR                       12: entry_month_ezdevaj
+                        798     LOAD_METHOD                     3: insert
+                        820     LOAD_CONST                      2: 0
+                        822     LOAD_FAST                       2: member
+                        824     LOAD_FAST                       0: self
+                        826     LOAD_ATTR                       4: database_map
+                        836     LOAD_CONST                      11: 'e-month'
+                        838     BINARY_SUBSCR                   
+                        848     BINARY_SUBSCR                   
+                        858     PRECALL                         2
+                        862     CALL                            2
+                        872     POP_TOP                         
+                        874     LOAD_FAST                       0: self
+                        876     LOAD_ATTR                       13: entry_year_exdevaj
+                        886     LOAD_METHOD                     3: insert
+                        908     LOAD_CONST                      2: 0
+                        910     LOAD_FAST                       2: member
+                        912     LOAD_FAST                       0: self
+                        914     LOAD_ATTR                       4: database_map
+                        924     LOAD_CONST                      12: 'e-year'
+                        926     BINARY_SUBSCR                   
+                        936     BINARY_SUBSCR                   
+                        946     PRECALL                         2
+                        950     CALL                            2
+                        960     POP_TOP                         
+                        962     LOAD_FAST                       0: self
+                        964     LOAD_ATTR                       14: entry_name
+                        974     LOAD_METHOD                     3: insert
+                        996     LOAD_CONST                      2: 0
+                        998     LOAD_FAST                       2: member
+                        1000    LOAD_FAST                       0: self
+                        1002    LOAD_ATTR                       4: database_map
+                        1012    LOAD_CONST                      13: 'name'
+                        1014    BINARY_SUBSCR                   
+                        1024    BINARY_SUBSCR                   
+                        1034    PRECALL                         2
+                        1038    CALL                            2
+                        1048    POP_TOP                         
+                        1050    LOAD_FAST                       0: self
+                        1052    LOAD_ATTR                       15: entry_family
+                        1062    LOAD_METHOD                     3: insert
+                        1084    LOAD_CONST                      2: 0
+                        1086    LOAD_FAST                       2: member
+                        1088    LOAD_FAST                       0: self
+                        1090    LOAD_ATTR                       4: database_map
+                        1100    LOAD_CONST                      14: 'family'
+                        1102    BINARY_SUBSCR                   
+                        1112    BINARY_SUBSCR                   
+                        1122    PRECALL                         2
+                        1126    CALL                            2
+                        1136    POP_TOP                         
+                        1138    LOAD_FAST                       0: self
+                        1140    LOAD_ATTR                       16: entry_pedar
+                        1150    LOAD_METHOD                     3: insert
+                        1172    LOAD_CONST                      2: 0
+                        1174    LOAD_FAST                       2: member
+                        1176    LOAD_FAST                       0: self
+                        1178    LOAD_ATTR                       4: database_map
+                        1188    LOAD_CONST                      15: 'pedar'
+                        1190    BINARY_SUBSCR                   
+                        1200    BINARY_SUBSCR                   
+                        1210    PRECALL                         2
+                        1214    CALL                            2
+                        1224    POP_TOP                         
+                        1226    LOAD_FAST                       0: self
+                        1228    LOAD_ATTR                       17: entry_sabet
+                        1238    LOAD_METHOD                     3: insert
+                        1260    LOAD_CONST                      2: 0
+                        1262    LOAD_FAST                       2: member
+                        1264    LOAD_FAST                       0: self
+                        1266    LOAD_ATTR                       4: database_map
+                        1276    LOAD_CONST                      16: 'sabet'
+                        1278    BINARY_SUBSCR                   
+                        1288    BINARY_SUBSCR                   
+                        1298    PRECALL                         2
+                        1302    CALL                            2
+                        1312    POP_TOP                         
+                        1314    LOAD_FAST                       0: self
+                        1316    LOAD_ATTR                       18: entry_hamrah
+                        1326    LOAD_METHOD                     3: insert
+                        1348    LOAD_CONST                      2: 0
+                        1350    LOAD_FAST                       2: member
+                        1352    LOAD_FAST                       0: self
+                        1354    LOAD_ATTR                       4: database_map
+                        1364    LOAD_CONST                      17: 'hamrah'
+                        1366    BINARY_SUBSCR                   
+                        1376    BINARY_SUBSCR                   
+                        1386    PRECALL                         2
+                        1390    CALL                            2
+                        1400    POP_TOP                         
+                        1402    LOAD_FAST                       0: self
+                        1404    LOAD_ATTR                       19: entry_meli_hamsar
+                        1414    LOAD_METHOD                     3: insert
+                        1436    LOAD_CONST                      2: 0
+                        1438    LOAD_FAST                       2: member
+                        1440    LOAD_FAST                       0: self
+                        1442    LOAD_ATTR                       4: database_map
+                        1452    LOAD_CONST                      18: 'hamsar'
+                        1454    BINARY_SUBSCR                   
+                        1464    BINARY_SUBSCR                   
+                        1474    PRECALL                         2
+                        1478    CALL                            2
+                        1488    POP_TOP                         
+                        1490    LOAD_FAST                       0: self
+                        1492    LOAD_ATTR                       20: entry_posti
+                        1502    LOAD_METHOD                     3: insert
+                        1524    LOAD_CONST                      2: 0
+                        1526    LOAD_FAST                       2: member
+                        1528    LOAD_FAST                       0: self
+                        1530    LOAD_ATTR                       4: database_map
+                        1540    LOAD_CONST                      19: 'posti'
+                        1542    BINARY_SUBSCR                   
+                        1552    BINARY_SUBSCR                   
+                        1562    PRECALL                         2
+                        1566    CALL                            2
+                        1576    POP_TOP                         
+                        1578    LOAD_FAST                       0: self
+                        1580    LOAD_ATTR                       21: entry_neshani
+                        1590    LOAD_METHOD                     3: insert
+                        1612    LOAD_CONST                      2: 0
+                        1614    LOAD_FAST                       2: member
+                        1616    LOAD_FAST                       0: self
+                        1618    LOAD_ATTR                       4: database_map
+                        1628    LOAD_CONST                      20: 'neshani'
+                        1630    BINARY_SUBSCR                   
+                        1640    BINARY_SUBSCR                   
+                        1650    PRECALL                         2
+                        1654    CALL                            2
+                        1664    POP_TOP                         
+                        1666    LOAD_FAST                       0: self
+                        1668    LOAD_ATTR                       22: entry_yaddasht
+                        1678    LOAD_METHOD                     3: insert
+                        1700    LOAD_CONST                      2: 0
+                        1702    LOAD_FAST                       2: member
+                        1704    LOAD_FAST                       0: self
+                        1706    LOAD_ATTR                       4: database_map
+                        1716    LOAD_CONST                      21: 'yaddasht'
+                        1718    BINARY_SUBSCR                   
+                        1728    BINARY_SUBSCR                   
+                        1738    PRECALL                         2
+                        1742    CALL                            2
+                        1752    POP_TOP                         
+                        1754    LOAD_FAST                       2: member
+                        1756    LOAD_FAST                       0: self
+                        1758    LOAD_ATTR                       4: database_map
+                        1768    LOAD_CONST                      22: 'bank'
+                        1770    BINARY_SUBSCR                   
+                        1780    BINARY_SUBSCR                   
+                        1790    LOAD_METHOD                     23: replace
+                        1812    LOAD_CONST                      23: 'بانک اقتصاد نوین'
+                        1814    LOAD_CONST                      24: 'بانک اقتصادنوین'
+                        1816    PRECALL                         2
+                        1820    CALL                            2
+                        1830    STORE_FAST                      3: new_banks_name
+                        1832    LOAD_CONST                      25: 'بانک ملی ایران'
+                        1834    LOAD_FAST                       3: new_banks_name
+                        1836    CONTAINS_OP                     1 (not in)
+                        1838    POP_JUMP_FORWARD_IF_FALSE       22 (to 1884)
+                        1840    LOAD_FAST                       3: new_banks_name
+                        1842    LOAD_METHOD                     23: replace
+                        1864    LOAD_CONST                      26: 'بانک ملی'
+                        1866    LOAD_CONST                      25: 'بانک ملی ایران'
+                        1868    PRECALL                         2
+                        1872    CALL                            2
+                        1882    STORE_FAST                      3: new_banks_name
+                        1884    LOAD_CONST                      27: 'پست بانک ایران'
+                        1886    LOAD_FAST                       3: new_banks_name
+                        1888    CONTAINS_OP                     1 (not in)
+                        1890    POP_JUMP_FORWARD_IF_FALSE       22 (to 1936)
+                        1892    LOAD_FAST                       3: new_banks_name
+                        1894    LOAD_METHOD                     23: replace
+                        1916    LOAD_CONST                      28: 'پست بانک'
+                        1918    LOAD_CONST                      27: 'پست بانک ایران'
+                        1920    PRECALL                         2
+                        1924    CALL                            2
+                        1934    STORE_FAST                      3: new_banks_name
+                        1936    LOAD_FAST                       0: self
+                        1938    LOAD_ATTR                       24: entry_bank_entekhabi
+                        1948    LOAD_METHOD                     3: insert
+                        1970    LOAD_CONST                      2: 0
+                        1972    LOAD_FAST                       3: new_banks_name
+                        1974    PRECALL                         2
+                        1978    CALL                            2
+                        1988    POP_TOP                         
+                        1990    LOAD_CONST                      29: <CODE> <listcomp>
+                        1992    MAKE_FUNCTION                   0
+                        1994    LOAD_FAST                       3: new_banks_name
+                        1996    LOAD_METHOD                     25: split
+                        2018    LOAD_CONST                      30: ','
+                        2020    PRECALL                         1
+                        2024    CALL                            1
+                        2034    GET_ITER                        
+                        2036    PRECALL                         0
+                        2040    CALL                            0
+                        2050    STORE_FAST                      4: s_bank_list
+                        2052    LOAD_GLOBAL                     53: NULL + list
+                        2064    LOAD_FAST                       4: s_bank_list
+                        2066    LOAD_CONST                      2: 0
+                        2068    BINARY_SUBSCR                   
+                        2078    LOAD_CONST                      31: ''
+                        2080    COMPARE_OP                      3 (!=)
+                        2086    POP_JUMP_FORWARD_IF_FALSE       2 (to 2092)
+                        2088    LOAD_FAST                       4: s_bank_list
+                        2090    JUMP_FORWARD                    1 (to 2094)
+                        2092    BUILD_LIST                      0
+                        2094    PRECALL                         1
+                        2098    CALL                            1
+                        2108    LOAD_FAST                       0: self
+                        2110    STORE_ATTR                      27: selected_bank_list
+                        2120    LOAD_FAST                       4: s_bank_list
+                        2122    GET_ITER                        
+                        2124    FOR_ITER                        42 (to 2210)
+                        2126    STORE_FAST                      5: i
+                        2128    LOAD_FAST                       4: s_bank_list
+                        2130    LOAD_CONST                      2: 0
+                        2132    BINARY_SUBSCR                   
+                        2142    LOAD_CONST                      31: ''
+                        2144    COMPARE_OP                      3 (!=)
+                        2150    POP_JUMP_FORWARD_IF_FALSE       26 (to 2204)
+                        2152    LOAD_FAST                       0: self
+                        2154    LOAD_ATTR                       28: unselected_bank_list
+                        2164    LOAD_METHOD                     29: remove
+                        2186    LOAD_FAST                       5: i
+                        2188    PRECALL                         1
+                        2192    CALL                            1
+                        2202    JUMP_FORWARD                    1 (to 2206)
+                        2204    LOAD_CONST                      31: ''
+                        2206    POP_TOP                         
+                        2208    JUMP_BACKWARD                   43 (to 2124)
+                        2210    LOAD_FAST                       0: self
+                        2212    LOAD_METHOD                     30: fillBanksAlarm
+                        2234    LOAD_FAST                       2: member
+                        2236    LOAD_FAST                       0: self
+                        2238    LOAD_ATTR                       4: database_map
+                        2248    LOAD_CONST                      3: 'meli'
+                        2250    BINARY_SUBSCR                   
+                        2260    BINARY_SUBSCR                   
+                        2270    PRECALL                         1
+                        2274    CALL                            1
+                        2284    POP_TOP                         
+                        2286    LOAD_FAST                       0: self
+                        2288    LOAD_ATTR                       31: entry_email
+                        2298    LOAD_METHOD                     3: insert
+                        2320    LOAD_CONST                      2: 0
+                        2322    LOAD_FAST                       2: member
+                        2324    LOAD_FAST                       0: self
+                        2326    LOAD_ATTR                       4: database_map
+                        2336    LOAD_CONST                      32: 'email'
+                        2338    BINARY_SUBSCR                   
+                        2348    BINARY_SUBSCR                   
+                        2358    PRECALL                         2
+                        2362    CALL                            2
+                        2372    POP_TOP                         
+                        2374    LOAD_FAST                       0: self
+                        2376    LOAD_ATTR                       32: entry_code_shobe
+                        2386    LOAD_METHOD                     3: insert
+                        2408    LOAD_CONST                      2: 0
+                        2410    LOAD_FAST                       2: member
+                        2412    LOAD_FAST                       0: self
+                        2414    LOAD_ATTR                       4: database_map
+                        2424    LOAD_CONST                      33: 'shobe'
+                        2426    BINARY_SUBSCR                   
+                        2436    BINARY_SUBSCR                   
+                        2446    PRECALL                         2
+                        2450    CALL                            2
+                        2460    POP_TOP                         
+                        2462    LOAD_FAST                       0: self
+                        2464    LOAD_ATTR                       33: var_vaziat_shobe
+                        2474    LOAD_METHOD                     34: set
+                        2496    LOAD_GLOBAL                     71: NULL + int
+                        2508    LOAD_FAST                       2: member
+                        2510    LOAD_FAST                       0: self
+                        2512    LOAD_ATTR                       4: database_map
+                        2522    LOAD_CONST                      34: 'vaziat-shobe'
+                        2524    BINARY_SUBSCR                   
+                        2534    BINARY_SUBSCR                   
+                        2544    PRECALL                         1
+                        2548    CALL                            1
+                        2558    PRECALL                         1
+                        2562    CALL                            1
+                        2572    POP_TOP                         
+                        2574    LOAD_FAST                       2: member
+                        2576    LOAD_FAST                       0: self
+                        2578    LOAD_ATTR                       4: database_map
+                        2588    LOAD_CONST                      35: 'rahgiri'
+                        2590    BINARY_SUBSCR                   
+                        2600    BINARY_SUBSCR                   
+                        2610    LOAD_FAST                       0: self
+                        2612    LOAD_ATTR                       36: entry_rahgiri
+                        2622    LOAD_CONST                      36: 'text'
+                        2624    STORE_SUBSCR                    
+                        2628    LOAD_FAST                       0: self
+                        2630    LOAD_ATTR                       37: int_var_sex
+                        2640    LOAD_METHOD                     34: set
+                        2662    LOAD_FAST                       2: member
+                        2664    LOAD_FAST                       0: self
+                        2666    LOAD_ATTR                       4: database_map
+                        2676    LOAD_CONST                      37: 'jensiat'
+                        2678    BINARY_SUBSCR                   
+                        2688    BINARY_SUBSCR                   
+                        2698    PRECALL                         1
+                        2702    CALL                            1
+                        2712    POP_TOP                         
+                        2714    LOAD_FAST                       0: self
+                        2716    LOAD_ATTR                       38: int_var_isar
+                        2726    LOAD_METHOD                     34: set
+                        2748    LOAD_FAST                       2: member
+                        2750    LOAD_FAST                       0: self
+                        2752    LOAD_ATTR                       4: database_map
+                        2762    LOAD_CONST                      38: 'isar'
+                        2764    BINARY_SUBSCR                   
+                        2774    BINARY_SUBSCR                   
+                        2784    PRECALL                         1
+                        2788    CALL                            1
+                        2798    POP_TOP                         
+                        2800    LOAD_FAST                       0: self
+                        2802    LOAD_ATTR                       39: int_var_sarbazi
+                        2812    LOAD_METHOD                     34: set
+                        2834    LOAD_FAST                       2: member
+                        2836    LOAD_FAST                       0: self
+                        2838    LOAD_ATTR                       4: database_map
+                        2848    LOAD_CONST                      39: 'sarbazi'
+                        2850    BINARY_SUBSCR                   
+                        2860    BINARY_SUBSCR                   
+                        2870    PRECALL                         1
+                        2874    CALL                            1
+                        2884    POP_TOP                         
+                        2886    LOAD_FAST                       0: self
+                        2888    LOAD_ATTR                       40: int_var_tabeiat
+                        2898    LOAD_METHOD                     34: set
+                        2920    LOAD_FAST                       2: member
+                        2922    LOAD_FAST                       0: self
+                        2924    LOAD_ATTR                       4: database_map
+                        2934    LOAD_CONST                      40: 'tabeiat'
+                        2936    BINARY_SUBSCR                   
+                        2946    BINARY_SUBSCR                   
+                        2956    PRECALL                         1
+                        2960    CALL                            1
+                        2970    POP_TOP                         
+                        2972    LOAD_FAST                       0: self
+                        2974    LOAD_ATTR                       41: entry_priority
+                        2984    LOAD_METHOD                     3: insert
+                        3006    LOAD_CONST                      2: 0
+                        3008    LOAD_FAST                       0: self
+                        3010    LOAD_METHOD                     42: getPriorityByMeli
+                        3032    LOAD_FAST                       2: member
+                        3034    LOAD_FAST                       0: self
+                        3036    LOAD_ATTR                       4: database_map
+                        3046    LOAD_CONST                      3: 'meli'
+                        3048    BINARY_SUBSCR                   
+                        3058    BINARY_SUBSCR                   
+                        3068    PRECALL                         1
+                        3072    CALL                            1
+                        3082    PRECALL                         2
+                        3086    CALL                            2
+                        3096    POP_TOP                         
+                        3098    LOAD_CONST                      0: None
+                        3100    RETURN_VALUE                    
+                ''
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: selectMember
+                    Qualified Name: MyApp.selectMember
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'play'
+                        'automation'
+                        'idle'
+                        'entry_motaqazian'
+                        'get'
+                        'split'
+                        'replace'
+                        'entry_sabt_nam'
+                        'delete'
+                        'END'
+                        'int'
+                        'fillForm'
+                    [Locals+Names]
+                        'self'
+                        'mode'
+                        'index'
+                    [Constants]
+                        None
+                        'm'
+                        '_'
+                        -1
+                        '('
+                        ''
+                        ')'
+                        0
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       0: self
+                        4       LOAD_ATTR                       0: play
+                        14      POP_JUMP_FORWARD_IF_TRUE        25 (to 66)
+                        16      LOAD_FAST                       0: self
+                        18      LOAD_ATTR                       1: automation
+                        28      LOAD_METHOD                     2: idle
+                        50      PRECALL                         0
+                        54      CALL                            0
+                        64      POP_TOP                         
+                        66      LOAD_FAST                       1: mode
+                        68      LOAD_CONST                      1: 'm'
+                        70      COMPARE_OP                      2 (==)
+                        76      POP_JUMP_FORWARD_IF_FALSE       123 (to 324)
+                        78      LOAD_FAST                       0: self
+                        80      LOAD_ATTR                       3: entry_motaqazian
+                        90      LOAD_METHOD                     4: get
+                        112     PRECALL                         0
+                        116     CALL                            0
+                        126     LOAD_METHOD                     5: split
+                        148     LOAD_CONST                      2: '_'
+                        150     PRECALL                         1
+                        154     CALL                            1
+                        164     LOAD_CONST                      3: -1

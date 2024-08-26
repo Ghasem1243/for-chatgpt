@@ -1,0 +1,2026 @@
+                        608     LOAD_METHOD                     5: grid
+                        630     LOAD_CONST                      11: 2
+                        632     LOAD_CONST                      5: 0
+                        634     LOAD_CONST                      12: 'nswe'
+                        636     KW_NAMES                        13: ('column', 'row', 'sticky')
+                        638     PRECALL                         3
+                        642     CALL                            3
+                        652     POP_TOP                         
+                        654     LOAD_FAST                       0: self
+                        656     LOAD_ATTR                       4: vertical_extra
+                        666     LOAD_METHOD                     5: grid
+                        688     LOAD_CONST                      14: 3
+                        690     LOAD_CONST                      5: 0
+                        692     LOAD_CONST                      15: 'nse'
+                        694     KW_NAMES                        13: ('column', 'row', 'sticky')
+                        696     PRECALL                         3
+                        700     CALL                            3
+                        710     POP_TOP                         
+                        712     LOAD_FAST                       0: self
+                        714     LOAD_ATTR                       0: middle_is_appeare
+                        724     UNARY_NOT                       
+                        726     LOAD_FAST                       0: self
+                        728     STORE_ATTR                      0: middle_is_appeare
+                        738     LOAD_FAST                       0: self
+                        740     LOAD_ATTR                       3: btn_toggle_middle
+                        750     LOAD_METHOD                     5: grid
+                        772     LOAD_CONST                      11: 2
+                        774     LOAD_CONST                      2: 20
+                        776     LOAD_CONST                      3: 1
+                        778     LOAD_CONST                      4: 'nsw'
+                        780     LOAD_CONST                      5: 0
+                        782     LOAD_CONST                      5: 0
+                        784     KW_NAMES                        6: ('column', 'row', 'columnspan', 'sticky', 'padx', 'pady')
+                        786     PRECALL                         6
+                        790     CALL                            6
+                        800     POP_TOP                         
+                        802     LOAD_FAST                       0: self
+                        804     LOAD_METHOD                     6: geometry
+                        826     LOAD_CONST                      7: '{}x{}'
+                        828     LOAD_METHOD                     7: format
+                        850     LOAD_FAST                       0: self
+                        852     LOAD_ATTR                       14: init_width_size
+                        862     LOAD_FAST                       0: self
+                        864     LOAD_ATTR                       10: init_heigh_size
+                        874     PRECALL                         2
+                        878     CALL                            2
+                        888     PRECALL                         1
+                        892     CALL                            1
+                        902     POP_TOP                         
+                        904     LOAD_FAST                       0: self
+                        906     LOAD_METHOD                     6: geometry
+                        928     LOAD_CONST                      9: '+{}+{}'
+                        930     LOAD_METHOD                     7: format
+                        952     LOAD_FAST                       0: self
+                        954     LOAD_ATTR                       15: init_left
+                        964     LOAD_FAST                       0: self
+                        966     LOAD_ATTR                       16: extra_space_for_not_debugging_mode
+                        976     BINARY_OP                       10 (-)
+                        980     LOAD_FAST                       0: self
+                        982     LOAD_ATTR                       13: init_top
+                        992     PRECALL                         2
+                        996     CALL                            2
+                        1006    PRECALL                         1
+                        1010    CALL                            1
+                        1020    POP_TOP                         
+                        1022    LOAD_CONST                      16: True
+                        1024    LOAD_FAST                       0: self
+                        1026    STORE_ATTR                      17: change_screen_size_pending
+                        1036    LOAD_CONST                      0: None
+                        1038    RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: checkTemporarySettings
+                    Qualified Name: MyApp.checkTemporarySettings
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'len'
+                        'entry_temporary_refresh_captcha_time_1'
+                        'get'
+                        'settings'
+                        'temporary_refresh_captcha_time_1_val'
+                        'int'
+                        'entry_temporary_refresh_bank_refresh'
+                        'temporary_refresh_bank_val'
+                        'temprory_entry_start_h'
+                        'temprory_entry_start_m'
+                        'temporary_start_work_time_h_val'
+                        'temporary_start_work_time_m_val'
+                        'temprory_entry_stop_h'
+                        'temprory_entry_stop_m'
+                        'temporary_stop_work_time_h_val'
+                        'temporary_stop_work_time_m_val'
+                        'temprory_entry_random_add_refresh_min'
+                        'temprory_entry_random_add_refresh_max'
+                        'delete'
+                        'END'
+                        'insert'
+                        'automation'
+                        'add_random_refresh_time_min'
+                        'add_random_refresh_time_max'
+                        'last_error'
+                        'time'
+                        'last_error_time'
+                    [Locals+Names]
+                        'self'
+                    [Constants]
+                        None
+                        0
+                        't2e1'
+                        't2e3'
+                        ''
+                        '0'
+                        'تنظیمات موقت اعمال شد'
+                        3
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + len
+                        14      LOAD_FAST                       0: self
+                        16      LOAD_ATTR                       1: entry_temporary_refresh_captcha_time_1
+                        26      LOAD_METHOD                     2: get
+                        48      PRECALL                         0
+                        52      CALL                            0
+                        62      PRECALL                         1
+                        66      CALL                            1
+                        76      LOAD_CONST                      1: 0
+                        78      COMPARE_OP                      2 (==)
+                        84      POP_JUMP_FORWARD_IF_FALSE       70 (to 226)
+                        86      LOAD_GLOBAL                     1: NULL + len
+                        98      LOAD_FAST                       0: self
+                        100     LOAD_ATTR                       3: settings
+                        110     LOAD_CONST                      2: 't2e1'
+                        112     BINARY_SUBSCR                   
+                        122     PRECALL                         1
+                        126     CALL                            1
+                        136     LOAD_CONST                      1: 0
+                        138     COMPARE_OP                      2 (==)
+                        144     POP_JUMP_FORWARD_IF_FALSE       8 (to 162)
+                        146     LOAD_CONST                      1: 0
+                        148     LOAD_FAST                       0: self
+                        150     STORE_ATTR                      4: temporary_refresh_captcha_time_1_val
+                        160     JUMP_FORWARD                    75 (to 312)
+                        162     LOAD_GLOBAL                     11: NULL + int
+                        174     LOAD_FAST                       0: self
+                        176     LOAD_ATTR                       3: settings
+                        186     LOAD_CONST                      2: 't2e1'
+                        188     BINARY_SUBSCR                   
+                        198     PRECALL                         1
+                        202     CALL                            1
+                        212     LOAD_FAST                       0: self
+                        214     STORE_ATTR                      4: temporary_refresh_captcha_time_1_val
+                        224     JUMP_FORWARD                    43 (to 312)
+                        226     LOAD_GLOBAL                     11: NULL + int
+                        238     LOAD_FAST                       0: self
+                        240     LOAD_ATTR                       1: entry_temporary_refresh_captcha_time_1
+                        250     LOAD_METHOD                     2: get
+                        272     PRECALL                         0
+                        276     CALL                            0
+                        286     PRECALL                         1
+                        290     CALL                            1
+                        300     LOAD_FAST                       0: self
+                        302     STORE_ATTR                      4: temporary_refresh_captcha_time_1_val
+                        312     LOAD_GLOBAL                     1: NULL + len
+                        324     LOAD_FAST                       0: self
+                        326     LOAD_ATTR                       6: entry_temporary_refresh_bank_refresh
+                        336     LOAD_METHOD                     2: get
+                        358     PRECALL                         0
+                        362     CALL                            0
+                        372     PRECALL                         1
+                        376     CALL                            1
+                        386     LOAD_CONST                      1: 0
+                        388     COMPARE_OP                      2 (==)
+                        394     POP_JUMP_FORWARD_IF_FALSE       70 (to 536)
+                        396     LOAD_GLOBAL                     1: NULL + len
+                        408     LOAD_FAST                       0: self
+                        410     LOAD_ATTR                       3: settings
+                        420     LOAD_CONST                      3: 't2e3'
+                        422     BINARY_SUBSCR                   
+                        432     PRECALL                         1
+                        436     CALL                            1
+                        446     LOAD_CONST                      1: 0
+                        448     COMPARE_OP                      2 (==)
+                        454     POP_JUMP_FORWARD_IF_FALSE       8 (to 472)
+                        456     LOAD_CONST                      1: 0
+                        458     LOAD_FAST                       0: self
+                        460     STORE_ATTR                      7: temporary_refresh_bank_val
+                        470     JUMP_FORWARD                    75 (to 622)
+                        472     LOAD_GLOBAL                     11: NULL + int
+                        484     LOAD_FAST                       0: self
+                        486     LOAD_ATTR                       3: settings
+                        496     LOAD_CONST                      3: 't2e3'
+                        498     BINARY_SUBSCR                   
+                        508     PRECALL                         1
+                        512     CALL                            1
+                        522     LOAD_FAST                       0: self
+                        524     STORE_ATTR                      7: temporary_refresh_bank_val
+                        534     JUMP_FORWARD                    43 (to 622)
+                        536     LOAD_GLOBAL                     11: NULL + int
+                        548     LOAD_FAST                       0: self
+                        550     LOAD_ATTR                       6: entry_temporary_refresh_bank_refresh
+                        560     LOAD_METHOD                     2: get
+                        582     PRECALL                         0
+                        586     CALL                            0
+                        596     PRECALL                         1
+                        600     CALL                            1
+                        610     LOAD_FAST                       0: self
+                        612     STORE_ATTR                      7: temporary_refresh_bank_val
+                        622     LOAD_GLOBAL                     1: NULL + len
+                        634     LOAD_FAST                       0: self
+                        636     LOAD_ATTR                       8: temprory_entry_start_h
+                        646     LOAD_METHOD                     2: get
+                        668     PRECALL                         0
+                        672     CALL                            0
+                        682     PRECALL                         1
+                        686     CALL                            1
+                        696     LOAD_CONST                      1: 0
+                        698     COMPARE_OP                      2 (==)
+                        704     POP_JUMP_FORWARD_IF_TRUE        42 (to 790)
+                        706     LOAD_GLOBAL                     1: NULL + len
+                        718     LOAD_FAST                       0: self
+                        720     LOAD_ATTR                       9: temprory_entry_start_m
+                        730     LOAD_METHOD                     2: get
+                        752     PRECALL                         0
+                        756     CALL                            0
+                        766     PRECALL                         1
+                        770     CALL                            1
+                        780     LOAD_CONST                      1: 0
+                        782     COMPARE_OP                      2 (==)
+                        788     POP_JUMP_FORWARD_IF_FALSE       15 (to 820)
+                        790     LOAD_CONST                      4: ''
+                        792     LOAD_FAST                       0: self
+                        794     STORE_ATTR                      10: temporary_start_work_time_h_val
+                        804     LOAD_CONST                      4: ''
+                        806     LOAD_FAST                       0: self
+                        808     STORE_ATTR                      11: temporary_start_work_time_m_val
+                        818     JUMP_FORWARD                    60 (to 940)
+                        820     LOAD_FAST                       0: self
+                        822     LOAD_ATTR                       8: temprory_entry_start_h
+                        832     LOAD_METHOD                     2: get
+                        854     PRECALL                         0
+                        858     CALL                            0
+                        868     LOAD_FAST                       0: self
+                        870     STORE_ATTR                      10: temporary_start_work_time_h_val
+                        880     LOAD_FAST                       0: self
+                        882     LOAD_ATTR                       9: temprory_entry_start_m
+                        892     LOAD_METHOD                     2: get
+                        914     PRECALL                         0
+                        918     CALL                            0
+                        928     LOAD_FAST                       0: self
+                        930     STORE_ATTR                      11: temporary_start_work_time_m_val
+                        940     LOAD_GLOBAL                     1: NULL + len
+                        952     LOAD_FAST                       0: self
+                        954     LOAD_ATTR                       12: temprory_entry_stop_h
+                        964     LOAD_METHOD                     2: get
+                        986     PRECALL                         0
+                        990     CALL                            0
+                        1000    PRECALL                         1
+                        1004    CALL                            1
+                        1014    LOAD_CONST                      1: 0
+                        1016    COMPARE_OP                      2 (==)
+                        1022    POP_JUMP_FORWARD_IF_TRUE        42 (to 1108)
+                        1024    LOAD_GLOBAL                     1: NULL + len
+                        1036    LOAD_FAST                       0: self
+                        1038    LOAD_ATTR                       13: temprory_entry_stop_m
+                        1048    LOAD_METHOD                     2: get
+                        1070    PRECALL                         0
+                        1074    CALL                            0
+                        1084    PRECALL                         1
+                        1088    CALL                            1
+                        1098    LOAD_CONST                      1: 0
+                        1100    COMPARE_OP                      2 (==)
+                        1106    POP_JUMP_FORWARD_IF_FALSE       15 (to 1138)
+                        1108    LOAD_CONST                      4: ''
+                        1110    LOAD_FAST                       0: self
+                        1112    STORE_ATTR                      14: temporary_stop_work_time_h_val
+                        1122    LOAD_CONST                      4: ''
+                        1124    LOAD_FAST                       0: self
+                        1126    STORE_ATTR                      15: temporary_stop_work_time_m_val
+                        1136    JUMP_FORWARD                    60 (to 1258)
+                        1138    LOAD_FAST                       0: self
+                        1140    LOAD_ATTR                       12: temprory_entry_stop_h
+                        1150    LOAD_METHOD                     2: get
+                        1172    PRECALL                         0
+                        1176    CALL                            0
+                        1186    LOAD_FAST                       0: self
+                        1188    STORE_ATTR                      14: temporary_stop_work_time_h_val
+                        1198    LOAD_FAST                       0: self
+                        1200    LOAD_ATTR                       13: temprory_entry_stop_m
+                        1210    LOAD_METHOD                     2: get
+                        1232    PRECALL                         0
+                        1236    CALL                            0
+                        1246    LOAD_FAST                       0: self
+                        1248    STORE_ATTR                      15: temporary_stop_work_time_m_val
+                        1258    LOAD_GLOBAL                     1: NULL + len
+                        1270    LOAD_FAST                       0: self
+                        1272    LOAD_ATTR                       16: temprory_entry_random_add_refresh_min
+                        1282    LOAD_METHOD                     2: get
+                        1304    PRECALL                         0
+                        1308    CALL                            0
+                        1318    PRECALL                         1
+                        1322    CALL                            1
+                        1332    LOAD_CONST                      1: 0
+                        1334    COMPARE_OP                      2 (==)
+                        1340    POP_JUMP_FORWARD_IF_TRUE        42 (to 1426)
+                        1342    LOAD_GLOBAL                     1: NULL + len
+                        1354    LOAD_FAST                       0: self
+                        1356    LOAD_ATTR                       17: temprory_entry_random_add_refresh_max
+                        1366    LOAD_METHOD                     2: get
+                        1388    PRECALL                         0
+                        1392    CALL                            0
+                        1402    PRECALL                         1
+                        1406    CALL                            1
+                        1416    LOAD_CONST                      1: 0
+                        1418    COMPARE_OP                      2 (==)
+                        1424    POP_JUMP_FORWARD_IF_FALSE       144 (to 1714)
+                        1426    LOAD_FAST                       0: self
+                        1428    LOAD_ATTR                       16: temprory_entry_random_add_refresh_min
+                        1438    LOAD_METHOD                     18: delete
+                        1460    LOAD_CONST                      1: 0
+                        1462    LOAD_GLOBAL                     38: END
+                        1474    PRECALL                         2
+                        1478    CALL                            2
+                        1488    POP_TOP                         
+                        1490    LOAD_FAST                       0: self
+                        1492    LOAD_ATTR                       17: temprory_entry_random_add_refresh_max
+                        1502    LOAD_METHOD                     18: delete
+                        1524    LOAD_CONST                      1: 0
+                        1526    LOAD_GLOBAL                     38: END
+                        1538    PRECALL                         2
+                        1542    CALL                            2
+                        1552    POP_TOP                         
+                        1554    LOAD_FAST                       0: self
+                        1556    LOAD_ATTR                       16: temprory_entry_random_add_refresh_min
+                        1566    LOAD_METHOD                     20: insert
+                        1588    LOAD_CONST                      1: 0
+                        1590    LOAD_CONST                      5: '0'
+                        1592    PRECALL                         2
+                        1596    CALL                            2
+                        1606    POP_TOP                         
+                        1608    LOAD_FAST                       0: self
+                        1610    LOAD_ATTR                       17: temprory_entry_random_add_refresh_max
+                        1620    LOAD_METHOD                     20: insert
+                        1642    LOAD_CONST                      1: 0
+                        1644    LOAD_CONST                      5: '0'
+                        1646    PRECALL                         2
+                        1650    CALL                            2
+                        1660    POP_TOP                         
+                        1662    LOAD_CONST                      1: 0
+                        1664    LOAD_FAST                       0: self
+                        1666    LOAD_ATTR                       21: automation
+                        1676    STORE_ATTR                      22: add_random_refresh_time_min
+                        1686    LOAD_CONST                      1: 0
+                        1688    LOAD_FAST                       0: self
+                        1690    LOAD_ATTR                       21: automation
+                        1700    STORE_ATTR                      23: add_random_refresh_time_max
+                        1710    JUMP_FORWARD                    264 (to 2242)
+                        1714    LOAD_GLOBAL                     11: NULL + int
+                        1726    LOAD_FAST                       0: self
+                        1728    LOAD_ATTR                       16: temprory_entry_random_add_refresh_min
+                        1738    LOAD_METHOD                     2: get
+                        1760    PRECALL                         0
+                        1764    CALL                            0
+                        1774    PRECALL                         1
+                        1778    CALL                            1
+                        1788    LOAD_FAST                       0: self
+                        1790    LOAD_ATTR                       21: automation
+                        1800    STORE_ATTR                      22: add_random_refresh_time_min
+                        1810    LOAD_GLOBAL                     11: NULL + int
+                        1822    LOAD_FAST                       0: self
+                        1824    LOAD_ATTR                       17: temprory_entry_random_add_refresh_max
+                        1834    LOAD_METHOD                     2: get
+                        1856    PRECALL                         0
+                        1860    CALL                            0
+                        1870    PRECALL                         1
+                        1874    CALL                            1
+                        1884    LOAD_FAST                       0: self
+                        1886    LOAD_ATTR                       21: automation
+                        1896    STORE_ATTR                      23: add_random_refresh_time_max
+                        1906    LOAD_FAST                       0: self
+                        1908    LOAD_ATTR                       21: automation
+                        1918    LOAD_ATTR                       22: add_random_refresh_time_min
+                        1928    LOAD_FAST                       0: self
+                        1930    LOAD_ATTR                       21: automation
+                        1940    LOAD_ATTR                       23: add_random_refresh_time_max
+                        1950    COMPARE_OP                      4 (>)
+                        1956    POP_JUMP_FORWARD_IF_FALSE       142 (to 2242)
+                        1958    LOAD_FAST                       0: self
+                        1960    LOAD_ATTR                       16: temprory_entry_random_add_refresh_min
+                        1970    LOAD_METHOD                     18: delete
+                        1992    LOAD_CONST                      1: 0
+                        1994    LOAD_GLOBAL                     38: END
+                        2006    PRECALL                         2
+                        2010    CALL                            2
+                        2020    POP_TOP                         
+                        2022    LOAD_FAST                       0: self
+                        2024    LOAD_ATTR                       17: temprory_entry_random_add_refresh_max
+                        2034    LOAD_METHOD                     18: delete
+                        2056    LOAD_CONST                      1: 0
+                        2058    LOAD_GLOBAL                     38: END
+                        2070    PRECALL                         2
+                        2074    CALL                            2
+                        2084    POP_TOP                         
+                        2086    LOAD_FAST                       0: self
+                        2088    LOAD_ATTR                       16: temprory_entry_random_add_refresh_min
+                        2098    LOAD_METHOD                     20: insert
+                        2120    LOAD_CONST                      1: 0
+                        2122    LOAD_CONST                      5: '0'
+                        2124    PRECALL                         2
+                        2128    CALL                            2
+                        2138    POP_TOP                         
+                        2140    LOAD_FAST                       0: self
+                        2142    LOAD_ATTR                       17: temprory_entry_random_add_refresh_max
+                        2152    LOAD_METHOD                     20: insert
+                        2174    LOAD_CONST                      1: 0
+                        2176    LOAD_CONST                      5: '0'
+                        2178    PRECALL                         2
+                        2182    CALL                            2
+                        2192    POP_TOP                         
+                        2194    LOAD_CONST                      1: 0
+                        2196    LOAD_FAST                       0: self
+                        2198    LOAD_ATTR                       21: automation
+                        2208    STORE_ATTR                      22: add_random_refresh_time_min
+                        2218    LOAD_CONST                      1: 0
+                        2220    LOAD_FAST                       0: self
+                        2222    LOAD_ATTR                       21: automation
+                        2232    STORE_ATTR                      23: add_random_refresh_time_max
+                        2242    LOAD_FAST                       0: self
+                        2244    LOAD_ATTR                       1: entry_temporary_refresh_captcha_time_1
+                        2254    LOAD_METHOD                     18: delete
+                        2276    LOAD_CONST                      1: 0
+                        2278    LOAD_GLOBAL                     38: END
+                        2290    PRECALL                         2
+                        2294    CALL                            2
+                        2304    POP_TOP                         
+                        2306    LOAD_FAST                       0: self
+                        2308    LOAD_ATTR                       6: entry_temporary_refresh_bank_refresh
+                        2318    LOAD_METHOD                     18: delete
+                        2340    LOAD_CONST                      1: 0
+                        2342    LOAD_GLOBAL                     38: END
+                        2354    PRECALL                         2
+                        2358    CALL                            2
+                        2368    POP_TOP                         
+                        2370    LOAD_FAST                       0: self
+                        2372    LOAD_ATTR                       1: entry_temporary_refresh_captcha_time_1
+                        2382    LOAD_METHOD                     20: insert
+                        2404    LOAD_CONST                      1: 0
+                        2406    LOAD_FAST                       0: self
+                        2408    LOAD_ATTR                       4: temporary_refresh_captcha_time_1_val
+                        2418    PRECALL                         2
+                        2422    CALL                            2
+                        2432    POP_TOP                         
+                        2434    LOAD_FAST                       0: self
+                        2436    LOAD_ATTR                       6: entry_temporary_refresh_bank_refresh
+                        2446    LOAD_METHOD                     20: insert
+                        2468    LOAD_CONST                      1: 0
+                        2470    LOAD_FAST                       0: self
+                        2472    LOAD_ATTR                       7: temporary_refresh_bank_val
+                        2482    PRECALL                         2
+                        2486    CALL                            2
+                        2496    POP_TOP                         
+                        2498    LOAD_FAST                       0: self
+                        2500    LOAD_ATTR                       8: temprory_entry_start_h
+                        2510    LOAD_METHOD                     18: delete
+                        2532    LOAD_CONST                      1: 0
+                        2534    LOAD_GLOBAL                     38: END
+                        2546    PRECALL                         2
+                        2550    CALL                            2
+                        2560    POP_TOP                         
+                        2562    LOAD_FAST                       0: self
+                        2564    LOAD_ATTR                       9: temprory_entry_start_m
+                        2574    LOAD_METHOD                     18: delete
+                        2596    LOAD_CONST                      1: 0
+                        2598    LOAD_GLOBAL                     38: END
+                        2610    PRECALL                         2
+                        2614    CALL                            2
+                        2624    POP_TOP                         
+                        2626    LOAD_FAST                       0: self
+                        2628    LOAD_ATTR                       12: temprory_entry_stop_h
+                        2638    LOAD_METHOD                     18: delete
+                        2660    LOAD_CONST                      1: 0
+                        2662    LOAD_GLOBAL                     38: END
+                        2674    PRECALL                         2
+                        2678    CALL                            2
+                        2688    POP_TOP                         
+                        2690    LOAD_FAST                       0: self
+                        2692    LOAD_ATTR                       13: temprory_entry_stop_m
+                        2702    LOAD_METHOD                     18: delete
+                        2724    LOAD_CONST                      1: 0
+                        2726    LOAD_GLOBAL                     38: END
+                        2738    PRECALL                         2
+                        2742    CALL                            2
+                        2752    POP_TOP                         
+                        2754    LOAD_FAST                       0: self
+                        2756    LOAD_ATTR                       8: temprory_entry_start_h
+                        2766    LOAD_METHOD                     20: insert
+                        2788    LOAD_CONST                      1: 0
+                        2790    LOAD_FAST                       0: self
+                        2792    LOAD_ATTR                       10: temporary_start_work_time_h_val
+                        2802    PRECALL                         2
+                        2806    CALL                            2
+                        2816    POP_TOP                         
+                        2818    LOAD_FAST                       0: self
+                        2820    LOAD_ATTR                       9: temprory_entry_start_m
+                        2830    LOAD_METHOD                     20: insert
+                        2852    LOAD_CONST                      1: 0
+                        2854    LOAD_FAST                       0: self
+                        2856    LOAD_ATTR                       11: temporary_start_work_time_m_val
+                        2866    PRECALL                         2
+                        2870    CALL                            2
+                        2880    POP_TOP                         
+                        2882    LOAD_FAST                       0: self
+                        2884    LOAD_ATTR                       12: temprory_entry_stop_h
+                        2894    LOAD_METHOD                     20: insert
+                        2916    LOAD_CONST                      1: 0
+                        2918    LOAD_FAST                       0: self
+                        2920    LOAD_ATTR                       14: temporary_stop_work_time_h_val
+                        2930    PRECALL                         2
+                        2934    CALL                            2
+                        2944    POP_TOP                         
+                        2946    LOAD_FAST                       0: self
+                        2948    LOAD_ATTR                       13: temprory_entry_stop_m
+                        2958    LOAD_METHOD                     20: insert
+                        2980    LOAD_CONST                      1: 0
+                        2982    LOAD_FAST                       0: self
+                        2984    LOAD_ATTR                       15: temporary_stop_work_time_m_val
+                        2994    PRECALL                         2
+                        2998    CALL                            2
+                        3008    POP_TOP                         
+                        3010    LOAD_CONST                      6: 'تنظیمات موقت اعمال شد'
+                        3012    LOAD_FAST                       0: self
+                        3014    LOAD_ATTR                       21: automation
+                        3024    STORE_ATTR                      24: last_error
+                        3034    LOAD_GLOBAL                     51: NULL + time
+                        3046    LOAD_ATTR                       25: time
+                        3056    PRECALL                         0
+                        3060    CALL                            0
+                        3070    LOAD_CONST                      7: 3
+                        3072    BINARY_OP                       0 (+)
+                        3076    LOAD_FAST                       0: self
+                        3078    LOAD_ATTR                       21: automation
+                        3088    STORE_ATTR                      26: last_error_time
+                        3098    LOAD_CONST                      0: None
+                        3100    RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: timerTickPartForThread
+                    Qualified Name: MyApp.timerTickPartForThread
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'label_motaqazian_num'
+                        'config'
+                        'str'
+                        'len'
+                        'database_list_motaqazi_index'
+                        'label_sabt_nam_num'
+                        'database_list_sabtname_index'
+                        'getFormData'
+                        'val_name'
+                        'automation'
+                        'real_name'
+                        'val_family'
+                        'real_family'
+                        'fully_stopped'
+                        'play'
+                        'play_pause_button'
+                        'button_intrupt'
+                        'updateAppName'
+                        'db_update'
+                        'getSmsCount'
+                        'val_hamrah'
+                        'label_sms_counter'
+                        'timer_tick_part_thread_is_run'
+                    [Locals+Names]
+                        'self'
+                        'status'
+                        'sms_count'
+                    [Constants]
+                        None
+                        (
+                            'text'
+                        )
+                        'درحال اجرا'
+                        'متوقف'
+                        'disabled'
+                        'state'
+                        ''
+                        True
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       0: self
+                        4       LOAD_ATTR                       0: label_motaqazian_num
+                        14      LOAD_METHOD                     1: config
+                        36      LOAD_GLOBAL                     5: NULL + str
+                        48      LOAD_GLOBAL                     7: NULL + len
+                        60      LOAD_FAST                       0: self
+                        62      LOAD_ATTR                       4: database_list_motaqazi_index
+                        72      PRECALL                         1
+                        76      CALL                            1
+                        86      PRECALL                         1
+                        90      CALL                            1
+                        100     KW_NAMES                        1: ('text',)
+                        102     PRECALL                         1
+                        106     CALL                            1
+                        116     POP_TOP                         
+                        118     LOAD_FAST                       0: self
+                        120     LOAD_ATTR                       5: label_sabt_nam_num
+                        130     LOAD_METHOD                     1: config
+                        152     LOAD_GLOBAL                     5: NULL + str
+                        164     LOAD_GLOBAL                     7: NULL + len
+                        176     LOAD_FAST                       0: self
+                        178     LOAD_ATTR                       6: database_list_sabtname_index
+                        188     PRECALL                         1
+                        192     CALL                            1
+                        202     PRECALL                         1
+                        206     CALL                            1
+                        216     KW_NAMES                        1: ('text',)
+                        218     PRECALL                         1
+                        222     CALL                            1
+                        232     POP_TOP                         
+                        234     LOAD_FAST                       0: self
+                        236     LOAD_METHOD                     7: getFormData
+                        258     PRECALL                         0
+                        262     CALL                            0
+                        272     POP_TOP                         
+                        274     LOAD_FAST                       0: self
+                        276     LOAD_ATTR                       8: val_name
+                        286     LOAD_FAST                       0: self
+                        288     LOAD_ATTR                       9: automation
+                        298     STORE_ATTR                      10: real_name
+                        308     LOAD_FAST                       0: self
+                        310     LOAD_ATTR                       11: val_family
+                        320     LOAD_FAST                       0: self
+                        322     LOAD_ATTR                       9: automation
+                        332     STORE_ATTR                      12: real_family
+                        342     LOAD_FAST                       0: self
+                        344     LOAD_ATTR                       9: automation
+                        354     LOAD_ATTR                       13: fully_stopped
+                        364     POP_JUMP_FORWARD_IF_TRUE        2 (to 370)
+                        366     LOAD_CONST                      2: 'درحال اجرا'
+                        368     JUMP_FORWARD                    1 (to 372)
+                        370     LOAD_CONST                      3: 'متوقف'
+                        372     STORE_FAST                      1: status
+                        374     LOAD_FAST                       0: self
+                        376     LOAD_ATTR                       9: automation
+                        386     LOAD_ATTR                       13: fully_stopped
+                        396     POP_JUMP_FORWARD_IF_TRUE        17 (to 432)
+                        398     LOAD_FAST                       0: self
+                        400     LOAD_ATTR                       14: play
+                        410     POP_JUMP_FORWARD_IF_TRUE        10 (to 432)
+                        412     LOAD_CONST                      4: 'disabled'
+                        414     LOAD_FAST                       0: self
+                        416     LOAD_ATTR                       15: play_pause_button
+                        426     LOAD_CONST                      5: 'state'
+                        428     STORE_SUBSCR                    
+                        432     LOAD_FAST                       0: self
+                        434     LOAD_ATTR                       14: play
+                        444     POP_JUMP_FORWARD_IF_FALSE       2 (to 450)
+                        446     LOAD_CONST                      6: ''
+                        448     JUMP_FORWARD                    1 (to 452)
+                        450     LOAD_CONST                      4: 'disabled'
+                        452     LOAD_FAST                       0: self
+                        454     LOAD_ATTR                       16: button_intrupt
+                        464     LOAD_CONST                      5: 'state'
+                        466     STORE_SUBSCR                    
+                        470     LOAD_FAST                       0: self
+                        472     LOAD_METHOD                     17: updateAppName
+                        494     LOAD_FAST                       1: status
+                        496     PRECALL                         1
+                        500     CALL                            1
+                        510     POP_TOP                         
+                        512     LOAD_GLOBAL                     37: NULL + db_update
+                        524     LOAD_ATTR                       19: getSmsCount
+                        534     LOAD_FAST                       0: self
+                        536     LOAD_ATTR                       20: val_hamrah
+                        546     PRECALL                         1
+                        550     CALL                            1
+                        560     STORE_FAST                      2: sms_count
+                        562     LOAD_FAST                       0: self
+                        564     LOAD_ATTR                       21: label_sms_counter
+                        574     LOAD_METHOD                     1: config
+                        596     LOAD_GLOBAL                     5: NULL + str
+                        608     LOAD_FAST                       2: sms_count
+                        610     PRECALL                         1
+                        614     CALL                            1
+                        624     KW_NAMES                        1: ('text',)
+                        626     PRECALL                         1
+                        630     CALL                            1
+                        640     POP_TOP                         
+                        642     LOAD_CONST                      7: True
+                        644     LOAD_FAST                       0: self
+                        646     STORE_ATTR                      22: timer_tick_part_thread_is_run
+                        656     LOAD_CONST                      0: None
+                        658     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: updateAutomationData
+                    Qualified Name: MyApp.updateAutomationData
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'temporary_refresh_bank_val'
+                        'temporary_refresh_captcha_time_1_val'
+                        'settings'
+                        'int'
+                        'jbdb_license'
+                        'automation'
+                        'updateData'
+                        'val_meli'
+                        'val_malek'
+                        'val_ostan'
+                        'val_shahr'
+                        'val_birth_day'
+                        'val_birth_month'
+                        'val_birth_year'
+                        'val_marry_day'
+                        'val_marry_month'
+                        'val_marry_year'
+                        'val_sabet'
+                        'val_hamrah'
+                        'val_hamsar'
+                        'val_posti'
+                        'val_neshani'
+                        'val_bank_selected'
+                        'val_email'
+                        'val_shobe'
+                        'val_vaziat_shobe'
+                        'val_isar'
+                        'val_sarbazi'
+                        'val_tabeiat'
+                        'val_captcha_status'
+                        'val_sabt_khodkar'
+                        'val_captcha'
+                        'val_payamak'
+                        'val_bank'
+                        'val_ostan_secondry'
+                    [Locals+Names]
+                        'self'
+                        'refresh_bank_time'
+                        'refresh_captcha_time'
+                        'refresh_captcha_time_2'
+                        'refresh_captcha_time_unrecognize'
+                        'safe_change_time'
+                        'commit_wait_time'
+                        'change_alternative_bank_in_budjet'
+                        'refresh_captcha_time_page_one_step_two'
+                    [Constants]
+                        None
+                        't2e1p2'
+                        ''
+                        0
+                        't2e1p3'
+                        't2p2e1'
+                        't2e9'
+                        't2c6'
+                        False
+                        't2e10'
+                        1
+                        't2e8'
+                        't2c5'
+                        't2c7'
+                        't2c8'
+                        't2c9'
+                        't2c10'
+                        't3c2'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       0: self
+                        4       LOAD_ATTR                       0: temporary_refresh_bank_val
+                        14      STORE_FAST                      1: refresh_bank_time
+                        16      LOAD_FAST                       0: self
+                        18      LOAD_ATTR                       1: temporary_refresh_captcha_time_1_val
+                        28      STORE_FAST                      2: refresh_captcha_time
+                        30      LOAD_FAST                       0: self
+                        32      LOAD_ATTR                       2: settings
+                        42      LOAD_CONST                      1: 't2e1p2'
+                        44      BINARY_SUBSCR                   
+                        54      LOAD_CONST                      2: ''
+                        56      COMPARE_OP                      3 (!=)
+                        62      POP_JUMP_FORWARD_IF_FALSE       53 (to 170)
+                        64      LOAD_GLOBAL                     7: NULL + int
+                        76      LOAD_FAST                       0: self
+                        78      LOAD_ATTR                       2: settings
+                        88      LOAD_CONST                      1: 't2e1p2'
+                        90      BINARY_SUBSCR                   
+                        100     PRECALL                         1
+                        104     CALL                            1
+                        114     POP_JUMP_FORWARD_IF_FALSE       27 (to 170)
+                        116     LOAD_GLOBAL                     7: NULL + int
+                        128     LOAD_FAST                       0: self
+                        130     LOAD_ATTR                       2: settings
+                        140     LOAD_CONST                      1: 't2e1p2'
+                        142     BINARY_SUBSCR                   
+                        152     PRECALL                         1
+                        156     CALL                            1
+                        166     STORE_FAST                      3: refresh_captcha_time_2
+                        168     JUMP_FORWARD                    2 (to 174)
+                        170     LOAD_CONST                      3: 0
+                        172     STORE_FAST                      3: refresh_captcha_time_2
+                        174     LOAD_FAST                       0: self
+                        176     LOAD_ATTR                       2: settings
+                        186     LOAD_CONST                      4: 't2e1p3'
+                        188     BINARY_SUBSCR                   
+                        198     LOAD_CONST                      2: ''
+                        200     COMPARE_OP                      3 (!=)
+                        206     POP_JUMP_FORWARD_IF_FALSE       53 (to 314)
+                        208     LOAD_GLOBAL                     7: NULL + int
+                        220     LOAD_FAST                       0: self
+                        222     LOAD_ATTR                       2: settings
+                        232     LOAD_CONST                      4: 't2e1p3'
+                        234     BINARY_SUBSCR                   
+                        244     PRECALL                         1
+                        248     CALL                            1
+                        258     POP_JUMP_FORWARD_IF_FALSE       27 (to 314)
+                        260     LOAD_GLOBAL                     7: NULL + int
+                        272     LOAD_FAST                       0: self
+                        274     LOAD_ATTR                       2: settings
+                        284     LOAD_CONST                      4: 't2e1p3'
+                        286     BINARY_SUBSCR                   
+                        296     PRECALL                         1
+                        300     CALL                            1
+                        310     STORE_FAST                      4: refresh_captcha_time_unrecognize
+                        312     JUMP_FORWARD                    2 (to 318)
+                        314     LOAD_CONST                      3: 0
+                        316     STORE_FAST                      4: refresh_captcha_time_unrecognize
+                        318     LOAD_FAST                       0: self
+                        320     LOAD_ATTR                       2: settings
+                        330     LOAD_CONST                      5: 't2p2e1'
+                        332     BINARY_SUBSCR                   
+                        342     LOAD_CONST                      2: ''
+                        344     COMPARE_OP                      3 (!=)
+                        350     POP_JUMP_FORWARD_IF_FALSE       53 (to 458)
+                        352     LOAD_GLOBAL                     7: NULL + int
+                        364     LOAD_FAST                       0: self
+                        366     LOAD_ATTR                       2: settings
+                        376     LOAD_CONST                      5: 't2p2e1'
+                        378     BINARY_SUBSCR                   
+                        388     PRECALL                         1
+                        392     CALL                            1
+                        402     POP_JUMP_FORWARD_IF_FALSE       27 (to 458)
+                        404     LOAD_GLOBAL                     7: NULL + int
+                        416     LOAD_FAST                       0: self
+                        418     LOAD_ATTR                       2: settings
+                        428     LOAD_CONST                      5: 't2p2e1'
+                        430     BINARY_SUBSCR                   
+                        440     PRECALL                         1
+                        444     CALL                            1
+                        454     STORE_FAST                      5: safe_change_time
+                        456     JUMP_FORWARD                    2 (to 462)
+                        458     LOAD_CONST                      3: 0
+                        460     STORE_FAST                      5: safe_change_time
+                        462     LOAD_FAST                       0: self
+                        464     LOAD_ATTR                       2: settings
+                        474     LOAD_CONST                      6: 't2e9'
+                        476     BINARY_SUBSCR                   
+                        486     LOAD_CONST                      2: ''
+                        488     COMPARE_OP                      3 (!=)
+                        494     POP_JUMP_FORWARD_IF_FALSE       53 (to 602)
+                        496     LOAD_GLOBAL                     7: NULL + int
+                        508     LOAD_FAST                       0: self
+                        510     LOAD_ATTR                       2: settings
+                        520     LOAD_CONST                      6: 't2e9'
+                        522     BINARY_SUBSCR                   
+                        532     PRECALL                         1
+                        536     CALL                            1
+                        546     POP_JUMP_FORWARD_IF_FALSE       27 (to 602)
+                        548     LOAD_GLOBAL                     7: NULL + int
+                        560     LOAD_FAST                       0: self
+                        562     LOAD_ATTR                       2: settings
+                        572     LOAD_CONST                      6: 't2e9'
+                        574     BINARY_SUBSCR                   
+                        584     PRECALL                         1
+                        588     CALL                            1
+                        598     STORE_FAST                      6: commit_wait_time
+                        600     JUMP_FORWARD                    2 (to 606)
+                        602     LOAD_CONST                      3: 0
+                        604     STORE_FAST                      6: commit_wait_time
+                        606     LOAD_GLOBAL                     8: jbdb_license
+                        618     POP_JUMP_FORWARD_IF_FALSE       14 (to 648)
+                        620     LOAD_FAST                       0: self
+                        622     LOAD_ATTR                       2: settings
+                        632     LOAD_CONST                      7: 't2c6'
+                        634     BINARY_SUBSCR                   
+                        644     STORE_FAST                      7: change_alternative_bank_in_budjet
+                        646     JUMP_FORWARD                    2 (to 652)
+                        648     LOAD_CONST                      8: False
+                        650     STORE_FAST                      7: change_alternative_bank_in_budjet
+                        652     LOAD_FAST                       0: self
+                        654     LOAD_ATTR                       2: settings
+                        664     LOAD_CONST                      9: 't2e10'
+                        666     BINARY_SUBSCR                   
+                        676     LOAD_CONST                      2: ''
+                        678     COMPARE_OP                      3 (!=)
+                        684     POP_JUMP_FORWARD_IF_FALSE       53 (to 792)
+                        686     LOAD_GLOBAL                     7: NULL + int
+                        698     LOAD_FAST                       0: self
+                        700     LOAD_ATTR                       2: settings
+                        710     LOAD_CONST                      9: 't2e10'
+                        712     BINARY_SUBSCR                   
+                        722     PRECALL                         1
+                        726     CALL                            1
+                        736     POP_JUMP_FORWARD_IF_FALSE       27 (to 792)
+                        738     LOAD_GLOBAL                     7: NULL + int
+                        750     LOAD_FAST                       0: self
+                        752     LOAD_ATTR                       2: settings
+                        762     LOAD_CONST                      9: 't2e10'
+                        764     BINARY_SUBSCR                   
+                        774     PRECALL                         1
+                        778     CALL                            1
+                        788     STORE_FAST                      8: refresh_captcha_time_page_one_step_two
+                        790     JUMP_FORWARD                    2 (to 796)
+                        792     LOAD_CONST                      3: 0
+                        794     STORE_FAST                      8: refresh_captcha_time_page_one_step_two
+                        796     PUSH_NULL                       
+                        798     LOAD_FAST                       0: self
+                        800     LOAD_ATTR                       5: automation
+                        810     LOAD_ATTR                       6: updateData
+                        820     BUILD_LIST                      0
+                        822     LOAD_FAST                       0: self
+                        824     LOAD_ATTR                       7: val_meli
+                        834     LIST_APPEND                     1
+                        836     LOAD_FAST                       0: self
+                        838     LOAD_ATTR                       8: val_malek
+                        848     LIST_APPEND                     1
+                        850     LOAD_FAST                       0: self
+                        852     LOAD_ATTR                       9: val_ostan
+                        862     LIST_APPEND                     1
+                        864     LOAD_FAST                       0: self
+                        866     LOAD_ATTR                       10: val_shahr
+                        876     LIST_APPEND                     1
+                        878     LOAD_FAST                       0: self
+                        880     LOAD_ATTR                       11: val_birth_day
+                        890     LIST_APPEND                     1
+                        892     LOAD_FAST                       0: self
+                        894     LOAD_ATTR                       12: val_birth_month
+                        904     LIST_APPEND                     1
+                        906     LOAD_FAST                       0: self
+                        908     LOAD_ATTR                       13: val_birth_year
+                        918     LIST_APPEND                     1
+                        920     LOAD_FAST                       0: self
+                        922     LOAD_ATTR                       14: val_marry_day
+                        932     LIST_APPEND                     1
+                        934     LOAD_FAST                       0: self
+                        936     LOAD_ATTR                       15: val_marry_month
+                        946     LIST_APPEND                     1
+                        948     LOAD_FAST                       0: self
+                        950     LOAD_ATTR                       16: val_marry_year
+                        960     LIST_APPEND                     1
+                        962     LOAD_FAST                       0: self
+                        964     LOAD_ATTR                       17: val_sabet
+                        974     LIST_APPEND                     1
+                        976     LOAD_FAST                       0: self
+                        978     LOAD_ATTR                       18: val_hamrah
+                        988     LIST_APPEND                     1
+                        990     LOAD_FAST                       0: self
+                        992     LOAD_ATTR                       19: val_hamsar
+                        1002    LIST_APPEND                     1
+                        1004    LOAD_FAST                       0: self
+                        1006    LOAD_ATTR                       20: val_posti
+                        1016    LIST_APPEND                     1
+                        1018    LOAD_FAST                       0: self
+                        1020    LOAD_ATTR                       21: val_neshani
+                        1030    LIST_APPEND                     1
+                        1032    LOAD_FAST                       0: self
+                        1034    LOAD_ATTR                       22: val_bank_selected
+                        1044    LIST_APPEND                     1
+                        1046    LOAD_FAST                       0: self
+                        1048    LOAD_ATTR                       23: val_email
+                        1058    LIST_APPEND                     1
+                        1060    LOAD_FAST                       0: self
+                        1062    LOAD_ATTR                       24: val_shobe
+                        1072    LIST_APPEND                     1
+                        1074    LOAD_FAST                       0: self
+                        1076    LOAD_ATTR                       25: val_vaziat_shobe
+                        1086    LIST_APPEND                     1
+                        1088    LOAD_FAST                       0: self
+                        1090    LOAD_ATTR                       26: val_isar
+                        1100    LIST_APPEND                     1
+                        1102    LOAD_FAST                       0: self
+                        1104    LOAD_ATTR                       27: val_sarbazi
+                        1114    LIST_APPEND                     1
+                        1116    LOAD_FAST                       0: self
+                        1118    LOAD_ATTR                       28: val_tabeiat
+                        1128    LOAD_CONST                      10: 1
+                        1130    BINARY_OP                       0 (+)
+                        1134    LIST_APPEND                     1
+                        1136    LOAD_FAST                       0: self
+                        1138    LOAD_ATTR                       29: val_captcha_status
+                        1148    LIST_APPEND                     1
+                        1150    LOAD_FAST                       0: self
+                        1152    LOAD_ATTR                       30: val_sabt_khodkar
+                        1162    LIST_APPEND                     1
+                        1164    LOAD_FAST                       0: self
+                        1166    LOAD_ATTR                       31: val_captcha
+                        1176    LIST_APPEND                     1
+                        1178    LOAD_FAST                       0: self
+                        1180    LOAD_ATTR                       32: val_payamak
+                        1190    LIST_APPEND                     1
+                        1192    LOAD_FAST                       2: refresh_captcha_time
+                        1194    LIST_APPEND                     1
+                        1196    LOAD_FAST                       3: refresh_captcha_time_2
+                        1198    LIST_APPEND                     1
+                        1200    LOAD_FAST                       4: refresh_captcha_time_unrecognize
+                        1202    LIST_APPEND                     1
+                        1204    LOAD_FAST                       1: refresh_bank_time
+                        1206    LIST_APPEND                     1
+                        1208    LOAD_FAST                       0: self
+                        1210    LOAD_ATTR                       2: settings
+                        1220    LOAD_CONST                      11: 't2e8'
+                        1222    BINARY_SUBSCR                   
+                        1232    LIST_APPEND                     1
+                        1234    LOAD_FAST                       0: self
+                        1236    LOAD_ATTR                       33: val_bank
+                        1246    LIST_APPEND                     1
+                        1248    LOAD_FAST                       5: safe_change_time
+                        1250    LIST_APPEND                     1
+                        1252    LOAD_FAST                       6: commit_wait_time
+                        1254    LIST_APPEND                     1
+                        1256    LOAD_FAST                       0: self
+                        1258    LOAD_ATTR                       2: settings
+                        1268    LOAD_CONST                      12: 't2c5'
+                        1270    BINARY_SUBSCR                   
+                        1280    LIST_APPEND                     1
+                        1282    LOAD_FAST                       0: self
+                        1284    LOAD_ATTR                       34: val_ostan_secondry
+                        1294    LIST_APPEND                     1
+                        1296    LOAD_FAST                       7: change_alternative_bank_in_budjet
+                        1298    LIST_APPEND                     1
+                        1300    LOAD_FAST                       0: self
+                        1302    LOAD_ATTR                       2: settings
+                        1312    LOAD_CONST                      13: 't2c7'
+                        1314    BINARY_SUBSCR                   
+                        1324    LIST_APPEND                     1
+                        1326    LOAD_FAST                       8: refresh_captcha_time_page_one_step_two
+                        1328    LIST_APPEND                     1
+                        1330    LOAD_FAST                       0: self
+                        1332    LOAD_ATTR                       2: settings
+                        1342    LOAD_CONST                      14: 't2c8'
+                        1344    BINARY_SUBSCR                   
+                        1354    LIST_APPEND                     1
+                        1356    LOAD_FAST                       0: self
+                        1358    LOAD_ATTR                       2: settings
+                        1368    LOAD_CONST                      15: 't2c9'
+                        1370    BINARY_SUBSCR                   
+                        1380    LIST_APPEND                     1
+                        1382    LOAD_FAST                       0: self
+                        1384    LOAD_ATTR                       2: settings
+                        1394    LOAD_CONST                      16: 't2c10'
+                        1396    BINARY_SUBSCR                   
+                        1406    LIST_APPEND                     1
+                        1408    LOAD_FAST                       0: self
+                        1410    LOAD_ATTR                       2: settings
+                        1420    LOAD_CONST                      17: 't3c2'
+                        1422    BINARY_SUBSCR                   
+                        1432    LIST_APPEND                     1
+                        1434    LIST_TO_TUPLE                   
+                        1436    CALL_FUNCTION_EX                0
+                        1438    POP_TOP                         
+                        1440    LOAD_CONST                      0: None
+                        1442    RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: timerTick
+                    Qualified Name: MyApp.timerTick
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 14
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'automation'
+                        'update_server_banks_list_clock'
+                        'update_server_banks_list_clock2'
+                        'updateServerBanksList'
+                        'update_server_province_name'
+                        'update_server_banks_list'
+                        'parseAndAddBanksToHistory'
+                        'banks_list'
+                        'val_shahr'
+                        'is_show_setting_windos'
+                        'automation_live'
+                        'recover_live'
+                        'button_status'
+                        'status_live'
+                        'button_recover'
+                        'play_pause_button'
+                        'updateImage'
+                        'success'
+                        'sabtNahaei'
+                        'label_motaqazian_num'
+                        'config'
+                        'str'
+                        'len'
+                        'database_list_motaqazi_index'
+                        'label_sabt_nam_num'
+                        'database_list_sabtname_index'
+                        'getFormData'
+                        'updateAutomationData'
+                        'settings'
+                        'automation_is_in_page_three'
+                        'page_three_auto_captcha_wait_for_reactive_permission'
+                        'auto_captcha'
+                        'check_captcha_automat'
+                        'state'
+                        'val_name'
+                        'real_name'
+                        'val_family'
+                        'real_family'
+                        'fully_stopped'
+                        'play'
+                        'button_intrupt'
+                        'updateAppName'
+                        'db_update'
+                        'getSmsCount'
+                        'val_hamrah'
+                        'label_sms_counter'
+                        'get_status_play'
+                        'getStatus'
+                        'recover_code_play'
+                        'entry_rahgiri'
+                        'rahgiri'
+                        'recoverCode'
+                        'time'
+                        'last_error_time'
+                        'middle_is_appeare'
+                        'label_error'
+                        'last_error'
+                        'checkErrorAndAlarm'
+                        'add_one_sms_count_pending'
+                        'IncreaseSmsCount'
+                        'form_counter'
+                        'int'
+                        'updateRahgiriForCheck'
+                        'val_rahgiri'
+                        'val_meli'
+                        'val_captcha'
+                        'val_captcha_status'
+                        'updateRecoverCode'
+                        'val_birth_day'
+                        'val_birth_month'
+                        'val_birth_year'
+                        'val_marry_day'
+                        'val_marry_month'
+                        'val_marry_year'
+                        'safe_change_pending'
+                        'safeChangeUserSelect'
+                        'checkBankAlarm'
+                        'banks_list_without_space'
+                        'val_bank_selected'
+                        'main_bank_selected_alarm_pending'
+                        'safe_run_refresh_permission'
+                        'last_bank_selected_time'
+                        'notification'
+                        'make'
+                        'alarmSound'
+                        'last_bank_time'
+                        'banks_list_string'
+                        'bank_baz'
+                        'main_check_new_bank_list_pending'
+                        'selectMemberByBanks'
+                        'stopTime'
+                        'temporary_entry_proxy_change_time'
+                        'get'
+                        'jbdb_license'
+                        'proxy_change_state'
+                        'temporary_proxy_changer_page_one'
+                        'proxy_changer_page_one_state'
+                        'temporary_proxy_changer_page_two'
+                        'proxy_changer_page_two_state'
+                        'refreshTiming'
+                        'checkErrorAndChange'
+                        'datetime'
+                        'now'
+                        'hour'
+                        'minute'
+                        'playPause'
+                        'form_refresh_pending'
+                        'jlog'
+                        'refresh_bank_phase'
+                        'last_bank_alarm_time'
+                        'refresh_forms_pending'
+                        'captcha_counter'
+                        'bank_counter'
+                        'start_pending'
+                        'alarm_unrecognized_captcha'
+                        'alarm_start_page_two'
+                        'auto_start_status'
+                        'auto_start_along_all_status'
+                        'alarm_start_page_one_part_two'
+                        'check_temporary_auto_sms'
+                        'getSmsCode'
+                        'auto_sms_code'
+                        'last_auto_sms_code'
+                        'entry_sms'
+                        'delete'
+                        'END'
+                        'insert'
+                        'val_payamak'
+                        'wait_for_new_sms_code'
+                        'checkBanksIsOpenThenStart'
+                        'checkBanksIsOpenThenStartAlongAllMember'
+                        'auto_active_captcha_solver_status'
+                        'val_sabt_khodkar'
+                        'auto_active_auto_commit_member'
+                        'checkBanksIsOpenThenActiveAutoCaptchaOrAutoCommit'
+                        'changeProxy'
+                        'check_refresh_time_milisec'
+                        'milisecend_delay_time'
+                        'val_check_secondry'
+                        'val_secondry_page_timer'
+                        'last_get_new_code_secondry_page_timer_time'
+                        'get_new_code_secondry_province_pending'
+                        'change_screen_size_pending'
+                        'last_width_size'
+                        'winfo_width'
+                        'fixChromeWindow'
+                        'after'
+                    [Locals+Names]
+                        'self'
+                        'tick_time'
+                        'status'
+                        'sms_count'
+                        'refresh_captcha_time_unrecognize'
+                        'proxy_refresh_time'
+                        'now'
+                        'temporary_auto_sms_is_on'
+                        'real_val_secondry_page_timer'
+                    [Constants]
+                        '\n        meli, malek, ostan, shahr, tavalod_day, tavalod_month, \n        tavalod_year, ezdevaj_day, ezdevaj_month, ezdevaj_year, sabet, \n        hamrah, hamsar, posti, neshani, bank, email, shobe, vaziat_shobe, \n        isargari, sarbazi, tabeiat, auto_captcha, auto_save, captcha_code\n        '
+                        False
+                        'disabled'
+                        ''
+                        'state'
+                        (
+                            'text'
+                        )
+                        't2c9'
+                        '!alternate'
+                        '!selected'
+                        True
+                        'درحال اجرا'
+                        'متوقف'
+                        5
+                        '...'
+                        None
+                        64
+                        't2c4'
+                        't2e1p3'
+                        0
+                        (
+                            '-1'
+                            ''
+                        )
+                        't1c1'
+                        3
+                        'اعلان بانک'
+                        ' انتخاب شد'
+                        't1c2'
+                        'text'
+                        't2c2'
+                        't2e6'
+                        't2e7'
+                        't6c1'
+                        1
+                        'selected'
+                        't2e4'
+                        't2e5'
+                        'refresh pending'
+                        'انتظار برای شروع مجدد، لطفا مقداری صبر کنید'
+                        't1c7'
+                        'هشدار'
+                        'کپچای ناشناخته'
+                        't1c8'
+                        2
+                        't1c13'
+                        'نرم‌افزار وارد صفحه‌ی سوم وبسایت وام ازدواج شد'
+                        't1c14'
+                        6
+                        't1c15'
+                        '(جنوک) نرم‌افزار وارد صفحه‌ی سوم وبسایت وام ازدواج شد'
+                        't1c16'
+                        7
+                        't1c17'
+                        'نرم‌افزار وارد صفحه‌ی دوم وبسایت وام ازدواج شد'
+                        't1c18'
+                        'False'
+                        'background'
+                        '#06d630'
+                        '#1765eb'
+                        '#e0eb17'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.timerTick.<locals>.<lambda>
+                            Arg Count: 0
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 3
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'timerTick'
+                            [Locals+Names]
+                                'self'
+                                'tick_time'
+                            [Constants]
+                                None
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  2
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      0: self
+                                6       LOAD_METHOD                     0: timerTick
+                                28      LOAD_DEREF                      1: tick_time
+                                30      PRECALL                         1
+                                34      CALL                            1
+                                44      RETURN_VALUE                    
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       MAKE_CELL                       1: tick_time
+                        4       RESUME                          0
+                        6       LOAD_DEREF                      0: self
+                        8       LOAD_ATTR                       0: automation
+                        18      LOAD_ATTR                       1: update_server_banks_list_clock
+                        28      POP_JUMP_FORWARD_IF_FALSE       109 (to 248)
+                        30      LOAD_DEREF                      0: self
+                        32      LOAD_ATTR                       0: automation
+                        42      LOAD_ATTR                       2: update_server_banks_list_clock2
+                        52      POP_JUMP_FORWARD_IF_FALSE       97 (to 248)
+                        54      LOAD_CONST                      1: False
+                        56      LOAD_DEREF                      0: self
+                        58      LOAD_ATTR                       0: automation
+                        68      STORE_ATTR                      1: update_server_banks_list_clock
+                        78      LOAD_CONST                      1: False
+                        80      LOAD_DEREF                      0: self
+                        82      LOAD_ATTR                       0: automation
+                        92      STORE_ATTR                      2: update_server_banks_list_clock2
+                        102     LOAD_GLOBAL                     7: NULL + updateServerBanksList
+                        114     LOAD_DEREF                      0: self
+                        116     LOAD_ATTR                       0: automation
+                        126     LOAD_ATTR                       4: update_server_province_name
+                        136     LOAD_DEREF                      0: self
+                        138     LOAD_ATTR                       0: automation
+                        148     LOAD_ATTR                       5: update_server_banks_list
+                        158     PRECALL                         2
+                        162     CALL                            2
+                        172     POP_TOP                         
+                        174     LOAD_DEREF                      0: self
+                        176     LOAD_METHOD                     6: parseAndAddBanksToHistory
+                        198     LOAD_DEREF                      0: self
+                        200     LOAD_ATTR                       0: automation
+                        210     LOAD_ATTR                       7: banks_list
+                        220     LOAD_DEREF                      0: self
+                        222     LOAD_ATTR                       8: val_shahr
+                        232     PRECALL                         2
+                        236     CALL                            2
+                        246     POP_TOP                         
+                        248     LOAD_DEREF                      0: self
+                        250     LOAD_ATTR                       9: is_show_setting_windos
+                        260     POP_JUMP_FORWARD_IF_TRUE        108 (to 478)
+                        262     LOAD_DEREF                      0: self
+                        264     LOAD_ATTR                       0: automation
+                        274     LOAD_ATTR                       10: automation_live
+                        284     POP_JUMP_FORWARD_IF_TRUE        12 (to 310)
+                        286     LOAD_DEREF                      0: self
+                        288     LOAD_ATTR                       0: automation
+                        298     LOAD_ATTR                       11: recover_live
+                        308     POP_JUMP_FORWARD_IF_FALSE       2 (to 314)
+                        310     LOAD_CONST                      2: 'disabled'
+                        312     JUMP_FORWARD                    1 (to 316)
+                        314     LOAD_CONST                      3: ''
+                        316     LOAD_DEREF                      0: self
+                        318     LOAD_ATTR                       12: button_status
+                        328     LOAD_CONST                      4: 'state'
+                        330     STORE_SUBSCR                    
+                        334     LOAD_DEREF                      0: self
+                        336     LOAD_ATTR                       0: automation
+                        346     LOAD_ATTR                       10: automation_live
+                        356     POP_JUMP_FORWARD_IF_TRUE        12 (to 382)
+                        358     LOAD_DEREF                      0: self
+                        360     LOAD_ATTR                       0: automation
+                        370     LOAD_ATTR                       13: status_live
+                        380     POP_JUMP_FORWARD_IF_FALSE       2 (to 386)
+                        382     LOAD_CONST                      2: 'disabled'
+                        384     JUMP_FORWARD                    1 (to 388)
+                        386     LOAD_CONST                      3: ''
+                        388     LOAD_DEREF                      0: self
+                        390     LOAD_ATTR                       14: button_recover
+                        400     LOAD_CONST                      4: 'state'
+                        402     STORE_SUBSCR                    
+                        406     LOAD_DEREF                      0: self
+                        408     LOAD_ATTR                       0: automation
+                        418     LOAD_ATTR                       13: status_live
+                        428     POP_JUMP_FORWARD_IF_TRUE        12 (to 454)
+                        430     LOAD_DEREF                      0: self
+                        432     LOAD_ATTR                       0: automation
+                        442     LOAD_ATTR                       11: recover_live
+                        452     POP_JUMP_FORWARD_IF_FALSE       2 (to 458)
+                        454     LOAD_CONST                      2: 'disabled'
+                        456     JUMP_FORWARD                    1 (to 460)
+                        458     LOAD_CONST                      3: ''
+                        460     LOAD_DEREF                      0: self
+                        462     LOAD_ATTR                       15: play_pause_button
+                        472     LOAD_CONST                      4: 'state'
+                        474     STORE_SUBSCR                    
+                        478     LOAD_DEREF                      0: self
+                        480     LOAD_METHOD                     16: updateImage
+                        502     PRECALL                         0
+                        506     CALL                            0
+                        516     POP_TOP                         
+                        518     LOAD_DEREF                      0: self
+                        520     LOAD_ATTR                       0: automation
+                        530     LOAD_ATTR                       17: success
+                        540     POP_JUMP_FORWARD_IF_FALSE       20 (to 582)
+                        542     LOAD_DEREF                      0: self
+                        544     LOAD_METHOD                     18: sabtNahaei
+                        566     PRECALL                         0
+                        570     CALL                            0
+                        580     POP_TOP                         
+                        582     LOAD_DEREF                      0: self
+                        584     LOAD_ATTR                       19: label_motaqazian_num
+                        594     LOAD_METHOD                     20: config
+                        616     LOAD_GLOBAL                     43: NULL + str
+                        628     LOAD_GLOBAL                     45: NULL + len
+                        640     LOAD_DEREF                      0: self
+                        642     LOAD_ATTR                       23: database_list_motaqazi_index
+                        652     PRECALL                         1
+                        656     CALL                            1
+                        666     PRECALL                         1
+                        670     CALL                            1
+                        680     KW_NAMES                        5: ('text',)
+                        682     PRECALL                         1
+                        686     CALL                            1
+                        696     POP_TOP                         
+                        698     LOAD_DEREF                      0: self
+                        700     LOAD_ATTR                       24: label_sabt_nam_num
+                        710     LOAD_METHOD                     20: config
+                        732     LOAD_GLOBAL                     43: NULL + str
+                        744     LOAD_GLOBAL                     45: NULL + len
+                        756     LOAD_DEREF                      0: self
+                        758     LOAD_ATTR                       25: database_list_sabtname_index
+                        768     PRECALL                         1
+                        772     CALL                            1
+                        782     PRECALL                         1
+                        786     CALL                            1
+                        796     KW_NAMES                        5: ('text',)
+                        798     PRECALL                         1
+                        802     CALL                            1
+                        812     POP_TOP                         
+                        814     LOAD_DEREF                      0: self
+                        816     LOAD_METHOD                     26: getFormData
+                        838     PRECALL                         0
+                        842     CALL                            0
+                        852     POP_TOP                         
+                        854     LOAD_DEREF                      0: self
+                        856     LOAD_METHOD                     27: updateAutomationData
+                        878     PRECALL                         0
+                        882     CALL                            0
+                        892     POP_TOP                         
+                        894     LOAD_DEREF                      0: self
+                        896     LOAD_ATTR                       28: settings
+                        906     LOAD_CONST                      6: 't2c9'
+                        908     BINARY_SUBSCR                   
+                        918     POP_JUMP_FORWARD_IF_FALSE       76 (to 1072)
+                        920     LOAD_DEREF                      0: self
+                        922     LOAD_ATTR                       0: automation
+                        932     LOAD_ATTR                       29: automation_is_in_page_three
+                        942     POP_JUMP_FORWARD_IF_FALSE       64 (to 1072)
+                        944     LOAD_DEREF                      0: self
+                        946     LOAD_ATTR                       0: automation
+                        956     LOAD_ATTR                       30: page_three_auto_captcha_wait_for_reactive_permission
+                        966     POP_JUMP_FORWARD_IF_TRUE        52 (to 1072)
+                        968     LOAD_CONST                      1: False
+                        970     LOAD_DEREF                      0: self
+                        972     LOAD_ATTR                       0: automation
+                        982     STORE_ATTR                      31: auto_captcha
+                        992     LOAD_DEREF                      0: self
+                        994     LOAD_ATTR                       32: check_captcha_automat
+                        1004    LOAD_METHOD                     33: state
+                        1026    LOAD_CONST                      7: '!alternate'
+                        1028    LOAD_CONST                      8: '!selected'
+                        1030    BUILD_LIST                      2
+                        1032    PRECALL                         1
+                        1036    CALL                            1
+                        1046    POP_TOP                         
+                        1048    LOAD_CONST                      9: True
+                        1050    LOAD_DEREF                      0: self
+                        1052    LOAD_ATTR                       0: automation
+                        1062    STORE_ATTR                      30: page_three_auto_captcha_wait_for_reactive_permission
+                        1072    LOAD_DEREF                      0: self
+                        1074    LOAD_ATTR                       34: val_name
+                        1084    LOAD_DEREF                      0: self
+                        1086    LOAD_ATTR                       0: automation
+                        1096    STORE_ATTR                      35: real_name
+                        1106    LOAD_DEREF                      0: self
+                        1108    LOAD_ATTR                       36: val_family
+                        1118    LOAD_DEREF                      0: self
+                        1120    LOAD_ATTR                       0: automation
+                        1130    STORE_ATTR                      37: real_family
+                        1140    LOAD_DEREF                      0: self
+                        1142    LOAD_ATTR                       0: automation
+                        1152    LOAD_ATTR                       38: fully_stopped
+                        1162    POP_JUMP_FORWARD_IF_TRUE        2 (to 1168)
+                        1164    LOAD_CONST                      10: 'درحال اجرا'
+                        1166    JUMP_FORWARD                    1 (to 1170)
+                        1168    LOAD_CONST                      11: 'متوقف'
+                        1170    STORE_FAST                      2: status
+                        1172    LOAD_DEREF                      0: self
+                        1174    LOAD_ATTR                       0: automation
+                        1184    LOAD_ATTR                       38: fully_stopped
+                        1194    POP_JUMP_FORWARD_IF_TRUE        17 (to 1230)
+                        1196    LOAD_DEREF                      0: self
+                        1198    LOAD_ATTR                       39: play
+                        1208    POP_JUMP_FORWARD_IF_TRUE        10 (to 1230)
+                        1210    LOAD_CONST                      2: 'disabled'
+                        1212    LOAD_DEREF                      0: self
+                        1214    LOAD_ATTR                       15: play_pause_button
+                        1224    LOAD_CONST                      4: 'state'
+                        1226    STORE_SUBSCR                    
+                        1230    LOAD_DEREF                      0: self
+                        1232    LOAD_ATTR                       39: play
+                        1242    POP_JUMP_FORWARD_IF_FALSE       2 (to 1248)
+                        1244    LOAD_CONST                      3: ''
+                        1246    JUMP_FORWARD                    1 (to 1250)
+                        1248    LOAD_CONST                      2: 'disabled'
+                        1250    LOAD_DEREF                      0: self
+                        1252    LOAD_ATTR                       40: button_intrupt
+                        1262    LOAD_CONST                      4: 'state'
+                        1264    STORE_SUBSCR                    
+                        1268    LOAD_DEREF                      0: self
+                        1270    LOAD_METHOD                     41: updateAppName
+                        1292    LOAD_FAST                       2: status
+                        1294    PRECALL                         1
+                        1298    CALL                            1
+                        1308    POP_TOP                         
+                        1310    LOAD_GLOBAL                     85: NULL + db_update
+                        1322    LOAD_ATTR                       43: getSmsCount
+                        1332    LOAD_DEREF                      0: self
+                        1334    LOAD_ATTR                       44: val_hamrah
+                        1344    PRECALL                         1
+                        1348    CALL                            1
+                        1358    STORE_FAST                      3: sms_count
+                        1360    LOAD_DEREF                      0: self
+                        1362    LOAD_ATTR                       45: label_sms_counter
+                        1372    LOAD_METHOD                     20: config
+                        1394    LOAD_GLOBAL                     43: NULL + str
+                        1406    LOAD_FAST                       3: sms_count
+                        1408    PRECALL                         1
+                        1412    CALL                            1
+                        1422    KW_NAMES                        5: ('text',)
+                        1424    PRECALL                         1
+                        1428    CALL                            1
+                        1438    POP_TOP                         
+                        1440    LOAD_DEREF                      0: self
+                        1442    LOAD_ATTR                       0: automation
+                        1452    LOAD_ATTR                       13: status_live
+                        1462    POP_JUMP_FORWARD_IF_TRUE        27 (to 1518)
+                        1464    LOAD_DEREF                      0: self
+                        1466    LOAD_ATTR                       46: get_status_play
+                        1476    POP_JUMP_FORWARD_IF_FALSE       20 (to 1518)
+                        1478    LOAD_DEREF                      0: self
+                        1480    LOAD_METHOD                     47: getStatus
+                        1502    PRECALL                         0
+                        1506    CALL                            0
+                        1516    POP_TOP                         
+                        1518    LOAD_DEREF                      0: self
+                        1520    LOAD_ATTR                       0: automation
+                        1530    LOAD_ATTR                       11: recover_live
+                        1540    POP_JUMP_FORWARD_IF_TRUE        64 (to 1670)
+                        1542    LOAD_DEREF                      0: self
+                        1544    LOAD_ATTR                       48: recover_code_play
+                        1554    POP_JUMP_FORWARD_IF_FALSE       57 (to 1670)
+                        1556    LOAD_DEREF                      0: self
+                        1558    LOAD_ATTR                       49: entry_rahgiri
+                        1568    LOAD_METHOD                     20: config
+                        1590    LOAD_DEREF                      0: self
+                        1592    LOAD_ATTR                       0: automation
+                        1602    LOAD_ATTR                       50: rahgiri
+                        1612    KW_NAMES                        5: ('text',)
+                        1614    PRECALL                         1
+                        1618    CALL                            1
+                        1628    POP_TOP                         
+                        1630    LOAD_DEREF                      0: self
+                        1632    LOAD_METHOD                     51: recoverCode
+                        1654    PRECALL                         0
+                        1658    CALL                            0
+                        1668    POP_TOP                         
+                        1670    LOAD_GLOBAL                     105: NULL + time
+                        1682    LOAD_ATTR                       52: time
+                        1692    PRECALL                         0
+                        1696    CALL                            0
+                        1706    LOAD_DEREF                      0: self
+                        1708    LOAD_ATTR                       0: automation
+                        1718    LOAD_ATTR                       53: last_error_time
+                        1728    BINARY_OP                       10 (-)
+                        1732    LOAD_CONST                      12: 5
+                        1734    COMPARE_OP                      0 (<)
+                        1740    POP_JUMP_FORWARD_IF_FALSE       156 (to 2054)
+                        1742    LOAD_DEREF                      0: self
+                        1744    LOAD_ATTR                       54: middle_is_appeare
+                        1754    POP_JUMP_FORWARD_IF_FALSE       69 (to 1894)
+                        1756    LOAD_DEREF                      0: self
+                        1758    LOAD_ATTR                       55: label_error
+                        1768    LOAD_METHOD                     20: config
+                        1790    LOAD_DEREF                      0: self
+                        1792    LOAD_ATTR                       0: automation
+                        1802    LOAD_ATTR                       56: last_error
+                        1812    KW_NAMES                        5: ('text',)
+                        1814    PRECALL                         1
+                        1818    CALL                            1
+                        1828    POP_TOP                         
+                        1830    LOAD_DEREF                      0: self
+                        1832    LOAD_METHOD                     57: checkErrorAndAlarm
+                        1854    LOAD_DEREF                      0: self
+                        1856    LOAD_ATTR                       0: automation
+                        1866    LOAD_ATTR                       56: last_error
+                        1876    PRECALL                         1
+                        1880    CALL                            1
+                        1890    POP_TOP                         
+                        1892    JUMP_FORWARD                    107 (to 2108)
+                        1894    LOAD_DEREF                      0: self
+                        1896    LOAD_ATTR                       55: label_error
+                        1906    LOAD_METHOD                     20: config
+                        1928    LOAD_CONST                      13: '...'
+                        1930    LOAD_DEREF                      0: self
+                        1932    LOAD_ATTR                       0: automation
+                        1942    LOAD_ATTR                       56: last_error
+                        1952    LOAD_CONST                      14: None
+                        1954    LOAD_CONST                      15: 64
+                        1956    BUILD_SLICE                     2
+                        1958    BINARY_SUBSCR                   
+                        1968    BINARY_OP                       0 (+)
+                        1972    KW_NAMES                        5: ('text',)
+                        1974    PRECALL                         1
+                        1978    CALL                            1
+                        1988    POP_TOP                         
+                        1990    LOAD_DEREF                      0: self
+                        1992    LOAD_METHOD                     57: checkErrorAndAlarm
+                        2014    LOAD_DEREF                      0: self
+                        2016    LOAD_ATTR                       0: automation
+                        2026    LOAD_ATTR                       56: last_error
+                        2036    PRECALL                         1
+                        2040    CALL                            1
+                        2050    POP_TOP                         
+                        2052    JUMP_FORWARD                    27 (to 2108)
+                        2054    LOAD_DEREF                      0: self
+                        2056    LOAD_ATTR                       55: label_error
+                        2066    LOAD_METHOD                     20: config
+                        2088    LOAD_CONST                      3: ''
+                        2090    KW_NAMES                        5: ('text',)
+                        2092    PRECALL                         1
+                        2096    CALL                            1
+                        2106    POP_TOP                         
+                        2108    LOAD_DEREF                      0: self
+                        2110    LOAD_ATTR                       0: automation
+                        2120    LOAD_ATTR                       58: add_one_sms_count_pending
+                        2130    POP_JUMP_FORWARD_IF_FALSE       74 (to 2280)
+                        2132    LOAD_GLOBAL                     85: NULL + db_update
+                        2144    LOAD_ATTR                       59: IncreaseSmsCount
+                        2154    LOAD_DEREF                      0: self
+                        2156    LOAD_ATTR                       44: val_hamrah
+                        2166    PRECALL                         1
+                        2170    CALL                            1
+                        2180    POP_TOP                         
+                        2182    LOAD_CONST                      1: False
+                        2184    LOAD_DEREF                      0: self
+                        2186    LOAD_ATTR                       0: automation
+                        2196    STORE_ATTR                      58: add_one_sms_count_pending
+                        2206    LOAD_DEREF                      0: self
+                        2208    LOAD_ATTR                       28: settings
+                        2218    LOAD_CONST                      16: 't2c4'
+                        2220    BINARY_SUBSCR                   
+                        2230    POP_JUMP_FORWARD_IF_FALSE       24 (to 2280)
+                        2232    LOAD_GLOBAL                     105: NULL + time
+                        2244    LOAD_ATTR                       52: time
+                        2254    PRECALL                         0
+                        2258    CALL                            0
+                        2268    LOAD_DEREF                      0: self
+                        2270    STORE_ATTR                      60: form_counter
+                        2280    LOAD_DEREF                      0: self
+                        2282    LOAD_ATTR                       46: get_status_play
+                        2292    POP_JUMP_FORWARD_IF_FALSE       122 (to 2538)
+                        2294    LOAD_DEREF                      0: self
+                        2296    LOAD_ATTR                       28: settings
+                        2306    LOAD_CONST                      17: 't2e1p3'
+                        2308    BINARY_SUBSCR                   
+                        2318    LOAD_CONST                      3: ''
+                        2320    COMPARE_OP                      3 (!=)
+                        2326    POP_JUMP_FORWARD_IF_FALSE       53 (to 2434)
+                        2328    LOAD_GLOBAL                     123: NULL + int
+                        2340    LOAD_DEREF                      0: self
+                        2342    LOAD_ATTR                       28: settings
+                        2352    LOAD_CONST                      17: 't2e1p3'
+                        2354    BINARY_SUBSCR                   
+                        2364    PRECALL                         1
+                        2368    CALL                            1
+                        2378    POP_JUMP_FORWARD_IF_FALSE       27 (to 2434)
+                        2380    LOAD_GLOBAL                     123: NULL + int
+                        2392    LOAD_DEREF                      0: self
+                        2394    LOAD_ATTR                       28: settings
+                        2404    LOAD_CONST                      17: 't2e1p3'
+                        2406    BINARY_SUBSCR                   
+                        2416    PRECALL                         1
+                        2420    CALL                            1
+                        2430    STORE_FAST                      4: refresh_captcha_time_unrecognize
+                        2432    JUMP_FORWARD                    2 (to 2438)
+                        2434    LOAD_CONST                      18: 0
+                        2436    STORE_FAST                      4: refresh_captcha_time_unrecognize
+                        2438    LOAD_DEREF                      0: self
+                        2440    LOAD_ATTR                       0: automation
+                        2450    LOAD_METHOD                     62: updateRahgiriForCheck
+                        2472    LOAD_DEREF                      0: self
+                        2474    LOAD_ATTR                       63: val_rahgiri
+                        2484    LOAD_DEREF                      0: self
+                        2486    LOAD_ATTR                       64: val_meli
+                        2496    LOAD_DEREF                      0: self
+                        2498    LOAD_ATTR                       65: val_captcha
+                        2508    LOAD_DEREF                      0: self
+                        2510    LOAD_ATTR                       66: val_captcha_status
+                        2520    LOAD_FAST                       4: refresh_captcha_time_unrecognize
+                        2522    PRECALL                         5
+                        2526    CALL                            5
+                        2536    POP_TOP                         
+                        2538    LOAD_DEREF                      0: self
+                        2540    LOAD_ATTR                       48: recover_code_play
+                        2550    POP_JUMP_FORWARD_IF_FALSE       164 (to 2880)
+                        2552    LOAD_DEREF                      0: self
+                        2554    LOAD_ATTR                       28: settings
+                        2564    LOAD_CONST                      17: 't2e1p3'
+                        2566    BINARY_SUBSCR                   
+                        2576    LOAD_CONST                      3: ''
+                        2578    COMPARE_OP                      3 (!=)
+                        2584    POP_JUMP_FORWARD_IF_FALSE       53 (to 2692)
+                        2586    LOAD_GLOBAL                     123: NULL + int
+                        2598    LOAD_DEREF                      0: self
+                        2600    LOAD_ATTR                       28: settings
+                        2610    LOAD_CONST                      17: 't2e1p3'
+                        2612    BINARY_SUBSCR                   
+                        2622    PRECALL                         1
+                        2626    CALL                            1
+                        2636    POP_JUMP_FORWARD_IF_FALSE       27 (to 2692)
+                        2638    LOAD_GLOBAL                     123: NULL + int
+                        2650    LOAD_DEREF                      0: self
+                        2652    LOAD_ATTR                       28: settings
+                        2662    LOAD_CONST                      17: 't2e1p3'
+                        2664    BINARY_SUBSCR                   
+                        2674    PRECALL                         1
+                        2678    CALL                            1
+                        2688    STORE_FAST                      4: refresh_captcha_time_unrecognize
+                        2690    JUMP_FORWARD                    2 (to 2696)
+                        2692    LOAD_CONST                      18: 0
+                        2694    STORE_FAST                      4: refresh_captcha_time_unrecognize
+                        2696    LOAD_DEREF                      0: self
+                        2698    LOAD_ATTR                       0: automation
+                        2708    LOAD_METHOD                     67: updateRecoverCode
+                        2730    LOAD_DEREF                      0: self
+                        2732    LOAD_ATTR                       64: val_meli
+                        2742    LOAD_DEREF                      0: self
+                        2744    LOAD_ATTR                       34: val_name
+                        2754    LOAD_DEREF                      0: self
+                        2756    LOAD_ATTR                       36: val_family
+                        2766    LOAD_DEREF                      0: self
+                        2768    LOAD_ATTR                       68: val_birth_day
+                        2778    LOAD_DEREF                      0: self
+                        2780    LOAD_ATTR                       69: val_birth_month
+                        2790    LOAD_DEREF                      0: self
+                        2792    LOAD_ATTR                       70: val_birth_year
+                        2802    LOAD_DEREF                      0: self
+                        2804    LOAD_ATTR                       71: val_marry_day
+                        2814    LOAD_DEREF                      0: self
+                        2816    LOAD_ATTR                       72: val_marry_month
+                        2826    LOAD_DEREF                      0: self
+                        2828    LOAD_ATTR                       73: val_marry_year
+                        2838    LOAD_DEREF                      0: self
+                        2840    LOAD_ATTR                       65: val_captcha
+                        2850    LOAD_DEREF                      0: self
+                        2852    LOAD_ATTR                       66: val_captcha_status
+                        2862    LOAD_FAST                       4: refresh_captcha_time_unrecognize
+                        2864    PRECALL                         12
+                        2868    CALL                            12
+                        2878    POP_TOP                         
+                        2880    LOAD_DEREF                      0: self
+                        2882    LOAD_ATTR                       39: play
+                        2892    POP_JUMP_FORWARD_IF_FALSE       721 (to 4338)
+                        2896    LOAD_DEREF                      0: self
+                        2898    LOAD_ATTR                       0: automation
+                        2908    LOAD_ATTR                       74: safe_change_pending
+                        2918    POP_JUMP_FORWARD_IF_FALSE       20 (to 2960)
+                        2920    LOAD_DEREF                      0: self
+                        2922    LOAD_METHOD                     75: safeChangeUserSelect
+                        2944    PRECALL                         0
+                        2948    CALL                            0
+                        2958    POP_TOP                         
+                        2960    LOAD_DEREF                      0: self
+                        2962    LOAD_METHOD                     76: checkBankAlarm
+                        2984    LOAD_DEREF                      0: self
+                        2986    LOAD_ATTR                       0: automation
+                        2996    LOAD_ATTR                       77: banks_list_without_space
+                        3006    PRECALL                         1
+                        3010    CALL                            1
+                        3020    POP_TOP                         
+                        3022    LOAD_DEREF                      0: self
+                        3024    LOAD_ATTR                       0: automation
+                        3034    LOAD_ATTR                       78: val_bank_selected
+                        3044    LOAD_CONST                      19: ('-1', '')
+                        3046    CONTAINS_OP                     1 (not in)
+                        3048    POP_JUMP_FORWARD_IF_FALSE       208 (to 3466)
+                        3050    LOAD_DEREF                      0: self
+                        3052    LOAD_ATTR                       0: automation
+                        3062    LOAD_ATTR                       79: main_bank_selected_alarm_pending
+                        3072    POP_JUMP_FORWARD_IF_FALSE       196 (to 3466)
+                        3074    LOAD_CONST                      9: True
+                        3076    LOAD_DEREF                      0: self
+                        3078    STORE_ATTR                      80: safe_run_refresh_permission
+                        3088    LOAD_DEREF                      0: self
+                        3090    LOAD_ATTR                       28: settings
+                        3100    LOAD_CONST                      20: 't1c1'
+                        3102    BINARY_SUBSCR                   
+                        3112    POP_JUMP_FORWARD_IF_FALSE       65 (to 3244)
+                        3114    LOAD_GLOBAL                     105: NULL + time
+                        3126    LOAD_ATTR                       52: time
+                        3136    PRECALL                         0
+                        3140    CALL                            0
+                        3150    LOAD_DEREF                      0: self
+                        3152    LOAD_ATTR                       81: last_bank_selected_time
+                        3162    BINARY_OP                       10 (-)
+                        3166    LOAD_CONST                      21: 3
+                        3168    COMPARE_OP                      4 (>)
+                        3174    POP_JUMP_FORWARD_IF_FALSE       34 (to 3244)
+                        3176    LOAD_GLOBAL                     165: NULL + notification
+                        3188    LOAD_ATTR                       83: make
+                        3198    LOAD_CONST                      22: 'اعلان بانک'
+                        3200    LOAD_DEREF                      0: self
+                        3202    LOAD_ATTR                       0: automation
+                        3212    LOAD_ATTR                       78: val_bank_selected
+                        3222    FORMAT_VALUE                    0 (FVC_NONE)
+                        3224    LOAD_CONST                      23: ' انتخاب شد'
+                        3226    BUILD_STRING                    2
+                        3228    PRECALL                         2
+                        3232    CALL                            2
+                        3242    POP_TOP                         
+                        3244    LOAD_DEREF                      0: self
+                        3246    LOAD_ATTR                       28: settings
+                        3256    LOAD_CONST                      24: 't1c2'
+                        3258    BINARY_SUBSCR                   
+                        3268    POP_JUMP_FORWARD_IF_FALSE       45 (to 3360)
+                        3270    LOAD_GLOBAL                     105: NULL + time
+                        3282    LOAD_ATTR                       52: time
+                        3292    PRECALL                         0
+                        3296    CALL                            0
+                        3306    LOAD_DEREF                      0: self
+                        3308    LOAD_ATTR                       81: last_bank_selected_time
+                        3318    BINARY_OP                       10 (-)
+                        3322    LOAD_CONST                      21: 3
+                        3324    COMPARE_OP                      4 (>)
+                        3330    POP_JUMP_FORWARD_IF_FALSE       14 (to 3360)
+                        3332    LOAD_GLOBAL                     169: NULL + alarmSound
+                        3344    PRECALL                         0
+                        3348    CALL                            0
+                        3358    POP_TOP                         
+                        3360    LOAD_CONST                      1: False
+                        3362    LOAD_DEREF                      0: self
+                        3364    LOAD_ATTR                       0: automation
+                        3374    STORE_ATTR                      79: main_bank_selected_alarm_pending
+                        3384    LOAD_GLOBAL                     105: NULL + time
+                        3396    LOAD_ATTR                       52: time
+                        3406    PRECALL                         0
+                        3410    CALL                            0
+                        3420    LOAD_DEREF                      0: self
+                        3422    STORE_ATTR                      81: last_bank_selected_time
+                        3432    LOAD_DEREF                      0: self
+                        3434    LOAD_ATTR                       0: automation
+                        3444    LOAD_ATTR                       85: last_bank_time
+                        3454    LOAD_DEREF                      0: self
+                        3456    STORE_ATTR                      85: last_bank_time
+                        3466    LOAD_DEREF                      0: self
+                        3468    LOAD_ATTR                       0: automation
+                        3478    LOAD_ATTR                       86: banks_list_string
+                        3488    LOAD_DEREF                      0: self
+                        3490    LOAD_ATTR                       87: bank_baz
+                        3500    LOAD_CONST                      25: 'text'
+                        3502    STORE_SUBSCR                    
+                        3506    LOAD_DEREF                      0: self
+                        3508    LOAD_ATTR                       0: automation
+                        3518    LOAD_ATTR                       88: main_check_new_bank_list_pending
+                        3528    POP_JUMP_FORWARD_IF_FALSE       71 (to 3672)
+                        3530    LOAD_DEREF                      0: self
+                        3532    LOAD_ATTR                       28: settings
+                        3542    LOAD_CONST                      26: 't2c2'
+                        3544    BINARY_SUBSCR                   
+                        3554    POP_JUMP_FORWARD_IF_FALSE       46 (to 3648)
+                        3556    LOAD_DEREF                      0: self
+                        3558    LOAD_ATTR                       0: automation
+                        3568    LOAD_ATTR                       78: val_bank_selected
+                        3578    LOAD_CONST                      19: ('-1', '')
+                        3580    CONTAINS_OP                     0 (in)
+                        3582    POP_JUMP_FORWARD_IF_FALSE       32 (to 3648)
+                        3584    LOAD_DEREF                      0: self
+                        3586    LOAD_METHOD                     89: selectMemberByBanks
+                        3608    LOAD_DEREF                      0: self
+                        3610    LOAD_ATTR                       0: automation
+                        3620    LOAD_ATTR                       77: banks_list_without_space
+                        3630    LOAD_CONST                      9: True
+                        3632    PRECALL                         2
+                        3636    CALL                            2
+                        3646    POP_TOP                         
+                        3648    LOAD_CONST                      1: False
+                        3650    LOAD_DEREF                      0: self
+                        3652    LOAD_ATTR                       0: automation
+                        3662    STORE_ATTR                      88: main_check_new_bank_list_pending
+                        3672    LOAD_DEREF                      0: self
+                        3674    LOAD_ATTR                       0: automation
+                        3684    LOAD_METHOD                     90: stopTime
+                        3706    LOAD_DEREF                      0: self
+                        3708    LOAD_ATTR                       28: settings
+                        3718    LOAD_CONST                      27: 't2e6'
+                        3720    BINARY_SUBSCR                   
+                        3730    LOAD_DEREF                      0: self
+                        3732    LOAD_ATTR                       28: settings
+                        3742    LOAD_CONST                      28: 't2e7'
+                        3744    BINARY_SUBSCR                   
+                        3754    PRECALL                         2
+                        3758    CALL                            2
+                        3768    POP_TOP                         
+                        3770    LOAD_DEREF                      0: self
+                        3772    LOAD_ATTR                       91: temporary_entry_proxy_change_time
+                        3782    LOAD_METHOD                     92: get
+                        3804    PRECALL                         0
+                        3808    CALL                            0
+                        3818    LOAD_CONST                      3: ''
+                        3820    COMPARE_OP                      3 (!=)
+                        3826    POP_JUMP_FORWARD_IF_FALSE       77 (to 3982)
+                        3828    LOAD_GLOBAL                     123: NULL + int
+                        3840    LOAD_DEREF                      0: self
+                        3842    LOAD_ATTR                       91: temporary_entry_proxy_change_time
+                        3852    LOAD_METHOD                     92: get
+                        3874    PRECALL                         0
+                        3878    CALL                            0
+                        3888    PRECALL                         1
+                        3892    CALL                            1
+                        3902    POP_JUMP_FORWARD_IF_FALSE       39 (to 3982)
+                        3904    LOAD_GLOBAL                     123: NULL + int
+                        3916    LOAD_DEREF                      0: self
+                        3918    LOAD_ATTR                       91: temporary_entry_proxy_change_time
+                        3928    LOAD_METHOD                     92: get
+                        3950    PRECALL                         0
+                        3954    CALL                            0
+                        3964    PRECALL                         1
+                        3968    CALL                            1
+                        3978    STORE_FAST                      5: proxy_refresh_time
+                        3980    JUMP_FORWARD                    2 (to 3986)
+                        3982    LOAD_CONST                      18: 0
+                        3984    STORE_FAST                      5: proxy_refresh_time
+                        3986    LOAD_GLOBAL                     186: jbdb_license
+                        3998    LOAD_DEREF                      0: self
+                        4000    LOAD_ATTR                       0: automation
+                        4010    STORE_ATTR                      93: jbdb_license
+                        4020    LOAD_DEREF                      0: self
+                        4022    LOAD_ATTR                       28: settings
+                        4032    LOAD_CONST                      29: 't6c1'
+                        4034    BINARY_SUBSCR                   
+                        4044    LOAD_CONST                      30: 1
+                        4046    COMPARE_OP                      2 (==)
+                        4052    POP_JUMP_FORWARD_IF_FALSE       8 (to 4070)
+                        4054    LOAD_FAST                       5: proxy_refresh_time
+                        4056    LOAD_CONST                      18: 0
+                        4058    COMPARE_OP                      3 (!=)
+                        4064    POP_JUMP_FORWARD_IF_FALSE       2 (to 4070)
+                        4066    LOAD_CONST                      9: True
+                        4068    JUMP_FORWARD                    1 (to 4072)
+                        4070    LOAD_CONST                      1: False
+                        4072    LOAD_DEREF                      0: self
+                        4074    LOAD_ATTR                       0: automation
+                        4084    STORE_ATTR                      94: proxy_change_state
+                        4094    LOAD_CONST                      31: 'selected'
+                        4096    LOAD_DEREF                      0: self
+                        4098    LOAD_ATTR                       95: temporary_proxy_changer_page_one
+                        4108    LOAD_METHOD                     33: state
+                        4130    PRECALL                         0
+                        4134    CALL                            0
+                        4144    CONTAINS_OP                     0 (in)
+                        4146    POP_JUMP_FORWARD_IF_FALSE       2 (to 4152)
+                        4148    LOAD_CONST                      9: True
+                        4150    JUMP_FORWARD                    1 (to 4154)
+                        4152    LOAD_CONST                      1: False
+                        4154    LOAD_DEREF                      0: self
+                        4156    LOAD_ATTR                       0: automation
+                        4166    STORE_ATTR                      96: proxy_changer_page_one_state
+                        4176    LOAD_CONST                      31: 'selected'
+                        4178    LOAD_DEREF                      0: self
+                        4180    LOAD_ATTR                       97: temporary_proxy_changer_page_two
+                        4190    LOAD_METHOD                     33: state
+                        4212    PRECALL                         0
+                        4216    CALL                            0
+                        4226    CONTAINS_OP                     0 (in)
+                        4228    POP_JUMP_FORWARD_IF_FALSE       2 (to 4234)
+                        4230    LOAD_CONST                      9: True
+                        4232    JUMP_FORWARD                    1 (to 4236)
+                        4234    LOAD_CONST                      1: False
+                        4236    LOAD_DEREF                      0: self
+                        4238    LOAD_ATTR                       0: automation
+                        4248    STORE_ATTR                      98: proxy_changer_page_two_state
+                        4258    LOAD_DEREF                      0: self
+                        4260    LOAD_METHOD                     99: refreshTiming
+                        4282    PRECALL                         0
+                        4286    CALL                            0
+                        4296    POP_TOP                         
+                        4298    LOAD_DEREF                      0: self
+                        4300    LOAD_METHOD                     100: checkErrorAndChange
+                        4322    PRECALL                         0
+                        4326    CALL                            0
+                        4336    POP_TOP                         
+                        4338    LOAD_DEREF                      0: self
+                        4340    LOAD_ATTR                       0: automation
+                        4350    LOAD_ATTR                       10: automation_live
+                        4360    POP_JUMP_FORWARD_IF_TRUE        120 (to 4602)
+                        4362    LOAD_GLOBAL                     202: datetime
+                        4374    LOAD_ATTR                       101: datetime
+                        4384    LOAD_METHOD                     102: now

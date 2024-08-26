@@ -1,0 +1,2026 @@
+                        1648    PRECALL                         1
+                        1652    CALL                            1
+                        1662    LOAD_METHOD                     14: index
+                        1684    LOAD_GLOBAL                     31: NULL + max
+                        1696    LOAD_FAST                       19: dict_y
+                        1698    LOAD_METHOD                     13: values
+                        1720    PRECALL                         0
+                        1724    CALL                            0
+                        1734    PRECALL                         1
+                        1738    CALL                            1
+                        1748    PRECALL                         1
+                        1752    CALL                            1
+                        1762    BINARY_SUBSCR                   
+                        1772    STORE_FAST                      13: member
+                        1774    LOAD_FAST                       13: member
+                        1776    LOAD_METHOD                     10: replace
+                        1798    LOAD_CONST                      18: ' '
+                        1800    LOAD_CONST                      7: ''
+                        1802    PRECALL                         2
+                        1806    CALL                            2
+                        1816    LOAD_CONST                      7: ''
+                        1818    COMPARE_OP                      2 (==)
+                        1824    POP_JUMP_FORWARD_IF_FALSE       2 (to 1830)
+                        1826    LOAD_CONST                      0: None
+                        1828    RETURN_VALUE                    
+                        1830    LOAD_FAST                       0: self
+                        1832    LOAD_METHOD                     16: selectMemberByMeli
+                        1854    LOAD_FAST                       13: member
+                        1856    PRECALL                         1
+                        1860    CALL                            1
+                        1870    STORE_FAST                      13: member
+                        1872    LOAD_FAST                       0: self
+                        1874    LOAD_ATTR                       17: play
+                        1884    POP_JUMP_FORWARD_IF_FALSE       20 (to 1926)
+                        1886    LOAD_FAST                       0: self
+                        1888    LOAD_METHOD                     18: playPause
+                        1910    PRECALL                         0
+                        1914    CALL                            0
+                        1924    POP_TOP                         
+                        1926    LOAD_FAST                       0: self
+                        1928    LOAD_METHOD                     19: clearAll
+                        1950    PRECALL                         0
+                        1954    CALL                            0
+                        1964    POP_TOP                         
+                        1966    LOAD_FAST                       0: self
+                        1968    LOAD_METHOD                     20: fillForm
+                        1990    LOAD_CONST                      11: 0
+                        1992    LOAD_FAST                       13: member
+                        1994    PRECALL                         2
+                        1998    CALL                            2
+                        2008    POP_TOP                         
+                        2010    LOAD_FAST                       0: self
+                        2012    LOAD_ATTR                       21: entry_motaqazian
+                        2022    LOAD_METHOD                     22: insert
+                        2044    LOAD_GLOBAL                     46: END
+                        2056    LOAD_FAST                       13: member
+                        2058    LOAD_FAST                       0: self
+                        2060    LOAD_ATTR                       4: database_map
+                        2070    LOAD_CONST                      19: 'name'
+                        2072    BINARY_SUBSCR                   
+                        2082    BINARY_SUBSCR                   
+                        2092    FORMAT_VALUE                    0 (FVC_NONE)
+                        2094    LOAD_CONST                      20: '_'
+                        2096    LOAD_FAST                       13: member
+                        2098    LOAD_FAST                       0: self
+                        2100    LOAD_ATTR                       4: database_map
+                        2110    LOAD_CONST                      21: 'family'
+                        2112    BINARY_SUBSCR                   
+                        2122    BINARY_SUBSCR                   
+                        2132    FORMAT_VALUE                    0 (FVC_NONE)
+                        2134    LOAD_CONST                      20: '_'
+                        2136    LOAD_FAST                       13: member
+                        2138    LOAD_FAST                       0: self
+                        2140    LOAD_ATTR                       4: database_map
+                        2150    LOAD_CONST                      16: 'bank'
+                        2152    BINARY_SUBSCR                   
+                        2162    BINARY_SUBSCR                   
+                        2172    LOAD_METHOD                     2: split
+                        2194    LOAD_CONST                      9: ','
+                        2196    PRECALL                         1
+                        2200    CALL                            1
+                        2210    LOAD_CONST                      11: 0
+                        2212    BINARY_SUBSCR                   
+                        2222    FORMAT_VALUE                    0 (FVC_NONE)
+                        2224    BUILD_STRING                    5
+                        2226    PRECALL                         2
+                        2230    CALL                            2
+                        2240    POP_TOP                         
+                        2242    LOAD_CONST                      2: True
+                        2244    LOAD_FAST                       0: self
+                        2246    STORE_ATTR                      24: start_pending
+                        2256    LOAD_CONST                      1: False
+                        2258    LOAD_FAST                       0: self
+                        2260    LOAD_ATTR                       25: automation
+                        2270    STORE_ATTR                      26: safe_change_pending
+                        2280    LOAD_CONST                      0: None
+                        2282    RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: selectMemberByProvince
+                    Qualified Name: MyApp.selectMemberByProvince
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 1
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                    [Locals+Names]
+                        'self'
+                        'province'
+                    [Constants]
+                        None
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_CONST                      0: None
+                        4       RETURN_VALUE                    
+                None
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: validate
+                    Qualified Name: MyApp.validate
+                    Arg Count: 5
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'replace'
+                        'len'
+                        'int'
+                        'meliSmsLink'
+                    [Locals+Names]
+                        'self'
+                        'text'
+                        'max_len'
+                        'input_type'
+                        'pass_to_function_sms'
+                        'text_type'
+                    [Constants]
+                        None
+                        '0'
+                        ''
+                        '1'
+                        '2'
+                        '3'
+                        '4'
+                        '5'
+                        '6'
+                        '7'
+                        '8'
+                        '9'
+                        'text'
+                        'int'
+                        True
+                        False
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       1: text
+                        4       LOAD_METHOD                     0: replace
+                        26      LOAD_CONST                      1: '0'
+                        28      LOAD_CONST                      2: ''
+                        30      PRECALL                         2
+                        34      CALL                            2
+                        44      LOAD_METHOD                     0: replace
+                        66      LOAD_CONST                      3: '1'
+                        68      LOAD_CONST                      2: ''
+                        70      PRECALL                         2
+                        74      CALL                            2
+                        84      LOAD_METHOD                     0: replace
+                        106     LOAD_CONST                      4: '2'
+                        108     LOAD_CONST                      2: ''
+                        110     PRECALL                         2
+                        114     CALL                            2
+                        124     LOAD_METHOD                     0: replace
+                        146     LOAD_CONST                      5: '3'
+                        148     LOAD_CONST                      2: ''
+                        150     PRECALL                         2
+                        154     CALL                            2
+                        164     LOAD_METHOD                     0: replace
+                        186     LOAD_CONST                      6: '4'
+                        188     LOAD_CONST                      2: ''
+                        190     PRECALL                         2
+                        194     CALL                            2
+                        204     LOAD_METHOD                     0: replace
+                        226     LOAD_CONST                      7: '5'
+                        228     LOAD_CONST                      2: ''
+                        230     PRECALL                         2
+                        234     CALL                            2
+                        244     LOAD_METHOD                     0: replace
+                        266     LOAD_CONST                      8: '6'
+                        268     LOAD_CONST                      2: ''
+                        270     PRECALL                         2
+                        274     CALL                            2
+                        284     LOAD_METHOD                     0: replace
+                        306     LOAD_CONST                      9: '7'
+                        308     LOAD_CONST                      2: ''
+                        310     PRECALL                         2
+                        314     CALL                            2
+                        324     LOAD_METHOD                     0: replace
+                        346     LOAD_CONST                      10: '8'
+                        348     LOAD_CONST                      2: ''
+                        350     PRECALL                         2
+                        354     CALL                            2
+                        364     LOAD_METHOD                     0: replace
+                        386     LOAD_CONST                      11: '9'
+                        388     LOAD_CONST                      2: ''
+                        390     PRECALL                         2
+                        394     CALL                            2
+                        404     LOAD_CONST                      2: ''
+                        406     COMPARE_OP                      3 (!=)
+                        412     POP_JUMP_FORWARD_IF_FALSE       2 (to 418)
+                        414     LOAD_CONST                      12: 'text'
+                        416     JUMP_FORWARD                    1 (to 420)
+                        418     LOAD_CONST                      13: 'int'
+                        420     STORE_FAST                      5: text_type
+                        422     LOAD_GLOBAL                     3: NULL + len
+                        434     LOAD_FAST                       1: text
+                        436     PRECALL                         1
+                        440     CALL                            1
+                        450     LOAD_GLOBAL                     5: NULL + int
+                        462     LOAD_FAST                       2: max_len
+                        464     PRECALL                         1
+                        468     CALL                            1
+                        478     COMPARE_OP                      1 (<=)
+                        484     POP_JUMP_FORWARD_IF_FALSE       37 (to 560)
+                        486     LOAD_FAST                       3: input_type
+                        488     LOAD_CONST                      0: None
+                        490     COMPARE_OP                      2 (==)
+                        496     POP_JUMP_FORWARD_IF_TRUE        6 (to 510)
+                        498     LOAD_FAST                       3: input_type
+                        500     LOAD_FAST                       5: text_type
+                        502     COMPARE_OP                      2 (==)
+                        508     POP_JUMP_FORWARD_IF_FALSE       25 (to 560)
+                        510     LOAD_FAST                       4: pass_to_function_sms
+                        512     POP_JUMP_FORWARD_IF_FALSE       21 (to 556)
+                        514     LOAD_FAST                       0: self
+                        516     LOAD_METHOD                     3: meliSmsLink
+                        538     LOAD_FAST                       1: text
+                        540     PRECALL                         1
+                        544     CALL                            1
+                        554     POP_TOP                         
+                        556     LOAD_CONST                      14: True
+                        558     RETURN_VALUE                    
+                        560     LOAD_CONST                      15: False
+                        562     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: validateSms
+                    Qualified Name: MyApp.validateSms
+                    Arg Count: 5
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'replace'
+                        'len'
+                        'automation'
+                        'last_sms_code_before_start_page_two'
+                        'page_two_change_sms_is_first_time'
+                        'wait_for_new_sms_code'
+                        'do_fast_save_member_without_wait'
+                        'waitUntilLiveIntrupt'
+                        'int'
+                        'meliSmsLink'
+                    [Locals+Names]
+                        'self'
+                        'text'
+                        'max_len'
+                        'input_type'
+                        'pass_to_function_sms'
+                        'text_type'
+                    [Constants]
+                        None
+                        '0'
+                        ''
+                        '1'
+                        '2'
+                        '3'
+                        '4'
+                        '5'
+                        '6'
+                        '7'
+                        '8'
+                        '9'
+                        'text'
+                        'int'
+                        6
+                        False
+                        True
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       1: text
+                        4       LOAD_METHOD                     0: replace
+                        26      LOAD_CONST                      1: '0'
+                        28      LOAD_CONST                      2: ''
+                        30      PRECALL                         2
+                        34      CALL                            2
+                        44      LOAD_METHOD                     0: replace
+                        66      LOAD_CONST                      3: '1'
+                        68      LOAD_CONST                      2: ''
+                        70      PRECALL                         2
+                        74      CALL                            2
+                        84      LOAD_METHOD                     0: replace
+                        106     LOAD_CONST                      4: '2'
+                        108     LOAD_CONST                      2: ''
+                        110     PRECALL                         2
+                        114     CALL                            2
+                        124     LOAD_METHOD                     0: replace
+                        146     LOAD_CONST                      5: '3'
+                        148     LOAD_CONST                      2: ''
+                        150     PRECALL                         2
+                        154     CALL                            2
+                        164     LOAD_METHOD                     0: replace
+                        186     LOAD_CONST                      6: '4'
+                        188     LOAD_CONST                      2: ''
+                        190     PRECALL                         2
+                        194     CALL                            2
+                        204     LOAD_METHOD                     0: replace
+                        226     LOAD_CONST                      7: '5'
+                        228     LOAD_CONST                      2: ''
+                        230     PRECALL                         2
+                        234     CALL                            2
+                        244     LOAD_METHOD                     0: replace
+                        266     LOAD_CONST                      8: '6'
+                        268     LOAD_CONST                      2: ''
+                        270     PRECALL                         2
+                        274     CALL                            2
+                        284     LOAD_METHOD                     0: replace
+                        306     LOAD_CONST                      9: '7'
+                        308     LOAD_CONST                      2: ''
+                        310     PRECALL                         2
+                        314     CALL                            2
+                        324     LOAD_METHOD                     0: replace
+                        346     LOAD_CONST                      10: '8'
+                        348     LOAD_CONST                      2: ''
+                        350     PRECALL                         2
+                        354     CALL                            2
+                        364     LOAD_METHOD                     0: replace
+                        386     LOAD_CONST                      11: '9'
+                        388     LOAD_CONST                      2: ''
+                        390     PRECALL                         2
+                        394     CALL                            2
+                        404     LOAD_CONST                      2: ''
+                        406     COMPARE_OP                      3 (!=)
+                        412     POP_JUMP_FORWARD_IF_FALSE       2 (to 418)
+                        414     LOAD_CONST                      12: 'text'
+                        416     JUMP_FORWARD                    1 (to 420)
+                        418     LOAD_CONST                      13: 'int'
+                        420     STORE_FAST                      5: text_type
+                        422     LOAD_GLOBAL                     3: NULL + len
+                        434     LOAD_FAST                       1: text
+                        436     PRECALL                         1
+                        440     CALL                            1
+                        450     LOAD_CONST                      14: 6
+                        452     COMPARE_OP                      2 (==)
+                        458     POP_JUMP_FORWARD_IF_FALSE       89 (to 638)
+                        460     LOAD_FAST                       1: text
+                        462     LOAD_FAST                       0: self
+                        464     LOAD_ATTR                       2: automation
+                        474     LOAD_ATTR                       3: last_sms_code_before_start_page_two
+                        484     COMPARE_OP                      3 (!=)
+                        490     POP_JUMP_FORWARD_IF_FALSE       73 (to 638)
+                        492     LOAD_FAST                       0: self
+                        494     LOAD_ATTR                       2: automation
+                        504     LOAD_ATTR                       4: page_two_change_sms_is_first_time
+                        514     POP_JUMP_FORWARD_IF_FALSE       61 (to 638)
+                        516     LOAD_CONST                      15: False
+                        518     LOAD_FAST                       0: self
+                        520     LOAD_ATTR                       2: automation
+                        530     STORE_ATTR                      5: wait_for_new_sms_code
+                        540     LOAD_CONST                      15: False
+                        542     LOAD_FAST                       0: self
+                        544     LOAD_ATTR                       2: automation
+                        554     STORE_ATTR                      4: page_two_change_sms_is_first_time
+                        564     LOAD_CONST                      16: True
+                        566     LOAD_FAST                       0: self
+                        568     LOAD_ATTR                       2: automation
+                        578     STORE_ATTR                      6: do_fast_save_member_without_wait
+                        588     LOAD_FAST                       0: self
+                        590     LOAD_ATTR                       2: automation
+                        600     LOAD_METHOD                     7: waitUntilLiveIntrupt
+                        622     PRECALL                         0
+                        626     CALL                            0
+                        636     POP_TOP                         
+                        638     LOAD_GLOBAL                     3: NULL + len
+                        650     LOAD_FAST                       1: text
+                        652     PRECALL                         1
+                        656     CALL                            1
+                        666     LOAD_GLOBAL                     17: NULL + int
+                        678     LOAD_FAST                       2: max_len
+                        680     PRECALL                         1
+                        684     CALL                            1
+                        694     COMPARE_OP                      1 (<=)
+                        700     POP_JUMP_FORWARD_IF_FALSE       37 (to 776)
+                        702     LOAD_FAST                       3: input_type
+                        704     LOAD_CONST                      0: None
+                        706     COMPARE_OP                      2 (==)
+                        712     POP_JUMP_FORWARD_IF_TRUE        6 (to 726)
+                        714     LOAD_FAST                       3: input_type
+                        716     LOAD_FAST                       5: text_type
+                        718     COMPARE_OP                      2 (==)
+                        724     POP_JUMP_FORWARD_IF_FALSE       25 (to 776)
+                        726     LOAD_FAST                       4: pass_to_function_sms
+                        728     POP_JUMP_FORWARD_IF_FALSE       21 (to 772)
+                        730     LOAD_FAST                       0: self
+                        732     LOAD_METHOD                     9: meliSmsLink
+                        754     LOAD_FAST                       1: text
+                        756     PRECALL                         1
+                        760     CALL                            1
+                        770     POP_TOP                         
+                        772     LOAD_CONST                      16: True
+                        774     RETURN_VALUE                    
+                        776     LOAD_CONST                      15: False
+                        778     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: setTemporaryValueWithSettings
+                    Qualified Name: MyApp.setTemporaryValueWithSettings
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'len'
+                        'settings'
+                        'temporary_refresh_captcha_time_1_val'
+                        'int'
+                        'temporary_refresh_bank_val'
+                        'temporary_start_work_time_h_val'
+                        'temporary_start_work_time_m_val'
+                        'temporary_stop_work_time_h_val'
+                        'temporary_stop_work_time_m_val'
+                    [Locals+Names]
+                        'self'
+                    [Constants]
+                        None
+                        't2e1'
+                        0
+                        't2e3'
+                        't2e4'
+                        't2e5'
+                        't2e6'
+                        't2e7'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + len
+                        14      LOAD_FAST                       0: self
+                        16      LOAD_ATTR                       1: settings
+                        26      LOAD_CONST                      1: 't2e1'
+                        28      BINARY_SUBSCR                   
+                        38      PRECALL                         1
+                        42      CALL                            1
+                        52      LOAD_CONST                      2: 0
+                        54      COMPARE_OP                      2 (==)
+                        60      POP_JUMP_FORWARD_IF_FALSE       8 (to 78)
+                        62      LOAD_CONST                      2: 0
+                        64      LOAD_FAST                       0: self
+                        66      STORE_ATTR                      2: temporary_refresh_captcha_time_1_val
+                        76      JUMP_FORWARD                    31 (to 140)
+                        78      LOAD_GLOBAL                     7: NULL + int
+                        90      LOAD_FAST                       0: self
+                        92      LOAD_ATTR                       1: settings
+                        102     LOAD_CONST                      1: 't2e1'
+                        104     BINARY_SUBSCR                   
+                        114     PRECALL                         1
+                        118     CALL                            1
+                        128     LOAD_FAST                       0: self
+                        130     STORE_ATTR                      2: temporary_refresh_captcha_time_1_val
+                        140     LOAD_GLOBAL                     1: NULL + len
+                        152     LOAD_FAST                       0: self
+                        154     LOAD_ATTR                       1: settings
+                        164     LOAD_CONST                      3: 't2e3'
+                        166     BINARY_SUBSCR                   
+                        176     PRECALL                         1
+                        180     CALL                            1
+                        190     LOAD_CONST                      2: 0
+                        192     COMPARE_OP                      2 (==)
+                        198     POP_JUMP_FORWARD_IF_FALSE       8 (to 216)
+                        200     LOAD_CONST                      2: 0
+                        202     LOAD_FAST                       0: self
+                        204     STORE_ATTR                      4: temporary_refresh_bank_val
+                        214     JUMP_FORWARD                    31 (to 278)
+                        216     LOAD_GLOBAL                     7: NULL + int
+                        228     LOAD_FAST                       0: self
+                        230     LOAD_ATTR                       1: settings
+                        240     LOAD_CONST                      3: 't2e3'
+                        242     BINARY_SUBSCR                   
+                        252     PRECALL                         1
+                        256     CALL                            1
+                        266     LOAD_FAST                       0: self
+                        268     STORE_ATTR                      4: temporary_refresh_bank_val
+                        278     LOAD_FAST                       0: self
+                        280     LOAD_ATTR                       1: settings
+                        290     LOAD_CONST                      4: 't2e4'
+                        292     BINARY_SUBSCR                   
+                        302     LOAD_FAST                       0: self
+                        304     STORE_ATTR                      5: temporary_start_work_time_h_val
+                        314     LOAD_FAST                       0: self
+                        316     LOAD_ATTR                       1: settings
+                        326     LOAD_CONST                      5: 't2e5'
+                        328     BINARY_SUBSCR                   
+                        338     LOAD_FAST                       0: self
+                        340     STORE_ATTR                      6: temporary_start_work_time_m_val
+                        350     LOAD_FAST                       0: self
+                        352     LOAD_ATTR                       1: settings
+                        362     LOAD_CONST                      6: 't2e6'
+                        364     BINARY_SUBSCR                   
+                        374     LOAD_FAST                       0: self
+                        376     STORE_ATTR                      7: temporary_stop_work_time_h_val
+                        386     LOAD_FAST                       0: self
+                        388     LOAD_ATTR                       1: settings
+                        398     LOAD_CONST                      7: 't2e7'
+                        400     BINARY_SUBSCR                   
+                        410     LOAD_FAST                       0: self
+                        412     STORE_ATTR                      8: temporary_stop_work_time_m_val
+                        422     LOAD_CONST                      0: None
+                        424     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: parseProxyList
+                    Qualified Name: MyApp.parseProxyList
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'proxyListTextClean'
+                        'settings'
+                        'parsed_proxy_list'
+                        'splitlines'
+                        'split'
+                        'len'
+                        'append'
+                    [Locals+Names]
+                        'self'
+                        'proxy_list_text'
+                        'line'
+                        'splited_line'
+                        '_host'
+                        '_port'
+                    [Constants]
+                        None
+                        't6e2'
+                        ' '
+                        1
+                        'url'
+                        0
+                        3
+                        2
+                        (
+                            'url'
+                            'username'
+                            'password'
+                        )
+                        ':'
+                        (
+                            'host'
+                            'port'
+                            'type'
+                        )
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       0: self
+                        4       LOAD_METHOD                     0: proxyListTextClean
+                        26      LOAD_FAST                       1: proxy_list_text
+                        28      PRECALL                         1
+                        32      CALL                            1
+                        42      LOAD_FAST                       0: self
+                        44      LOAD_ATTR                       1: settings
+                        54      LOAD_CONST                      1: 't6e2'
+                        56      STORE_SUBSCR                    
+                        60      BUILD_LIST                      0
+                        62      LOAD_FAST                       0: self
+                        64      STORE_ATTR                      2: parsed_proxy_list
+                        74      LOAD_FAST                       0: self
+                        76      LOAD_ATTR                       1: settings
+                        86      LOAD_CONST                      1: 't6e2'
+                        88      BINARY_SUBSCR                   
+                        98      LOAD_METHOD                     3: splitlines
+                        120     PRECALL                         0
+                        124     CALL                            0
+                        134     GET_ITER                        
+                        136     FOR_ITER                        240 (to 618)
+                        138     STORE_FAST                      2: line
+                        140     LOAD_FAST                       2: line
+                        142     LOAD_METHOD                     4: split
+                        164     LOAD_CONST                      2: ' '
+                        166     PRECALL                         1
+                        170     CALL                            1
+                        180     STORE_FAST                      3: splited_line
+                        182     LOAD_GLOBAL                     11: NULL + len
+                        194     LOAD_FAST                       3: splited_line
+                        196     PRECALL                         1
+                        200     CALL                            1
+                        210     LOAD_CONST                      3: 1
+                        212     COMPARE_OP                      2 (==)
+                        218     POP_JUMP_FORWARD_IF_FALSE       35 (to 290)
+                        220     LOAD_FAST                       0: self
+                        222     LOAD_ATTR                       2: parsed_proxy_list
+                        232     LOAD_METHOD                     6: append
+                        254     LOAD_CONST                      4: 'url'
+                        256     LOAD_FAST                       3: splited_line
+                        258     LOAD_CONST                      5: 0
+                        260     BINARY_SUBSCR                   
+                        270     BUILD_MAP                       1
+                        272     PRECALL                         1
+                        276     CALL                            1
+                        286     POP_TOP                         
+                        288     JUMP_BACKWARD                   77 (to 136)
+                        290     LOAD_GLOBAL                     11: NULL + len
+                        302     LOAD_FAST                       3: splited_line
+                        304     PRECALL                         1
+                        308     CALL                            1
+                        318     LOAD_CONST                      6: 3
+                        320     COMPARE_OP                      2 (==)
+                        326     POP_JUMP_FORWARD_IF_FALSE       49 (to 426)
+                        328     LOAD_FAST                       0: self
+                        330     LOAD_ATTR                       2: parsed_proxy_list
+                        340     LOAD_METHOD                     6: append
+                        362     LOAD_FAST                       3: splited_line
+                        364     LOAD_CONST                      5: 0
+                        366     BINARY_SUBSCR                   
+                        376     LOAD_FAST                       3: splited_line
+                        378     LOAD_CONST                      3: 1
+                        380     BINARY_SUBSCR                   
+                        390     LOAD_FAST                       3: splited_line
+                        392     LOAD_CONST                      7: 2
+                        394     BINARY_SUBSCR                   
+                        404     LOAD_CONST                      8: ('url', 'username', 'password')
+                        406     BUILD_CONST_KEY_MAP             3
+                        408     PRECALL                         1
+                        412     CALL                            1
+                        422     POP_TOP                         
+                        424     JUMP_BACKWARD                   145 (to 136)
+                        426     LOAD_GLOBAL                     11: NULL + len
+                        438     LOAD_FAST                       3: splited_line
+                        440     PRECALL                         1
+                        444     CALL                            1
+                        454     LOAD_CONST                      7: 2
+                        456     COMPARE_OP                      2 (==)
+                        462     POP_JUMP_FORWARD_IF_FALSE       76 (to 616)
+                        464     LOAD_CONST                      9: ':'
+                        466     LOAD_FAST                       3: splited_line
+                        468     LOAD_CONST                      5: 0
+                        470     BINARY_SUBSCR                   
+                        480     CONTAINS_OP                     0 (in)
+                        482     POP_JUMP_FORWARD_IF_FALSE       66 (to 616)
+                        484     LOAD_FAST                       3: splited_line
+                        486     LOAD_CONST                      5: 0
+                        488     BINARY_SUBSCR                   
+                        498     LOAD_METHOD                     4: split
+                        520     LOAD_CONST                      9: ':'
+                        522     PRECALL                         1
+                        526     CALL                            1
+                        536     UNPACK_SEQUENCE                 2
+                        540     STORE_FAST                      4: _host
+                        542     STORE_FAST                      5: _port
+                        544     LOAD_FAST                       0: self
+                        546     LOAD_ATTR                       2: parsed_proxy_list
+                        556     LOAD_METHOD                     6: append
+                        578     LOAD_FAST                       4: _host
+                        580     LOAD_FAST                       5: _port
+                        582     LOAD_FAST                       3: splited_line
+                        584     LOAD_CONST                      3: 1
+                        586     BINARY_SUBSCR                   
+                        596     LOAD_CONST                      10: ('host', 'port', 'type')
+                        598     BUILD_CONST_KEY_MAP             3
+                        600     PRECALL                         1
+                        604     CALL                            1
+                        614     POP_TOP                         
+                        616     JUMP_BACKWARD                   241 (to 136)
+                        618     LOAD_CONST                      0: None
+                        620     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: getNextProxy
+                    Qualified Name: MyApp.getNextProxy
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'len'
+                        'parsed_proxy_list'
+                        'proxy_index_to_select'
+                    [Locals+Names]
+                        'self'
+                        'mode'
+                        'selected'
+                    [Constants]
+                        None
+                        0
+                        False
+                        1
+                        'system'
+                        'url'
+                        'host'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + len
+                        14      LOAD_FAST                       0: self
+                        16      LOAD_ATTR                       1: parsed_proxy_list
+                        26      PRECALL                         1
+                        30      CALL                            1
+                        40      LOAD_CONST                      1: 0
+                        42      COMPARE_OP                      2 (==)
+                        48      POP_JUMP_FORWARD_IF_FALSE       2 (to 54)
+                        50      LOAD_CONST                      2: False
+                        52      RETURN_VALUE                    
+                        54      NOP                             
+                        56      LOAD_FAST                       0: self
+                        58      LOAD_ATTR                       2: proxy_index_to_select
+                        68      LOAD_GLOBAL                     1: NULL + len
+                        80      LOAD_FAST                       0: self
+                        82      LOAD_ATTR                       1: parsed_proxy_list
+                        92      PRECALL                         1
+                        96      CALL                            1
+                        106     COMPARE_OP                      2 (==)
+                        112     POP_JUMP_FORWARD_IF_FALSE       9 (to 132)
+                        114     LOAD_CONST                      1: 0
+                        116     LOAD_FAST                       0: self
+                        118     STORE_ATTR                      2: proxy_index_to_select
+                        128     LOAD_CONST                      2: False
+                        130     RETURN_VALUE                    
+                        132     LOAD_FAST                       0: self
+                        134     LOAD_ATTR                       1: parsed_proxy_list
+                        144     LOAD_FAST                       0: self
+                        146     LOAD_ATTR                       2: proxy_index_to_select
+                        156     BINARY_SUBSCR                   
+                        166     STORE_FAST                      2: selected
+                        168     LOAD_FAST                       0: self
+                        170     COPY                            1
+                        172     LOAD_ATTR                       2: proxy_index_to_select
+                        182     LOAD_CONST                      3: 1
+                        184     BINARY_OP                       13 (+=)
+                        188     SWAP                            2
+                        190     STORE_ATTR                      2: proxy_index_to_select
+                        200     LOAD_FAST                       1: mode
+                        202     LOAD_CONST                      4: 'system'
+                        204     COMPARE_OP                      2 (==)
+                        210     POP_JUMP_FORWARD_IF_FALSE       6 (to 224)
+                        212     LOAD_CONST                      5: 'url'
+                        214     LOAD_FAST                       2: selected
+                        216     CONTAINS_OP                     0 (in)
+                        218     POP_JUMP_FORWARD_IF_FALSE       1 (to 222)
+                        220     JUMP_FORWARD                    7 (to 236)
+                        222     JUMP_FORWARD                    5 (to 234)
+                        224     LOAD_CONST                      6: 'host'
+                        226     LOAD_FAST                       2: selected
+                        228     CONTAINS_OP                     0 (in)
+                        230     POP_JUMP_FORWARD_IF_FALSE       1 (to 234)
+                        232     JUMP_FORWARD                    1 (to 236)
+                        234     JUMP_BACKWARD                   90 (to 56)
+                        236     LOAD_FAST                       2: selected
+                        238     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: readSettings
+                    Qualified Name: MyApp.readSettings
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 6
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'open'
+                        'json'
+                        'load'
+                        'settings'
+                        'parseProxyList'
+                        'setTemporaryValueWithSettings'
+                    [Locals+Names]
+                        'self'
+                        'f'
+                    [Constants]
+                        None
+                        'settings.json'
+                        'rb'
+                        't1c9'
+                        False
+                        't1c10'
+                        't1c11'
+                        't1c12'
+                        't1c13'
+                        't1c14'
+                        't1c15'
+                        't1c16'
+                        't1c17'
+                        't1c18'
+                        't2c3'
+                        't2c4'
+                        't2e9'
+                        '0'
+                        't2c5'
+                        't2c6'
+                        't2c7'
+                        't2c8'
+                        't2c9'
+                        't2c10'
+                        't2e10'
+                        't2e11'
+                        '600'
+                        't2p2c1'
+                        't2p2e1'
+                        't2p2c2'
+                        't2p2c3'
+                        't2p2c4'
+                        't2p2c5'
+                        't2e1p2'
+                        't2e1'
+                        't2e1p3'
+                        0
+                        't3c2'
+                        't4r1'
+                        't6e1'
+                        't6e2'
+                        ''
+                        't6c1'
+                        True
+                        't6c2'
+                        't6c3'
+                        't6c4'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + open
+                        14      LOAD_CONST                      1: 'settings.json'
+                        16      LOAD_CONST                      2: 'rb'
+                        18      PRECALL                         2
+                        22      CALL                            2
+                        32      BEFORE_WITH                     
+                        34      STORE_FAST                      1: f
+                        36      LOAD_GLOBAL                     3: NULL + json
+                        48      LOAD_ATTR                       2: load
+                        58      LOAD_FAST                       1: f
+                        60      PRECALL                         1
+                        64      CALL                            1
+                        74      LOAD_FAST                       0: self
+                        76      STORE_ATTR                      3: settings
+                        86      LOAD_CONST                      0: None
+                        88      LOAD_CONST                      0: None
+                        90      LOAD_CONST                      0: None
+                        92      PRECALL                         2
+                        96      CALL                            2
+                        106     POP_TOP                         
+                        108     JUMP_FORWARD                    11 (to 132)
+                        110     PUSH_EXC_INFO                   
+                        112     WITH_EXCEPT_START               
+                        114     POP_JUMP_FORWARD_IF_TRUE        4 (to 124)
+                        116     RERAISE                         2
+                        118     COPY                            3
+                        120     POP_EXCEPT                      
+                        122     RERAISE                         1
+                        124     POP_TOP                         
+                        126     POP_EXCEPT                      
+                        128     POP_TOP                         
+                        130     POP_TOP                         
+                        132     LOAD_CONST                      3: 't1c9'
+                        134     LOAD_FAST                       0: self
+                        136     LOAD_ATTR                       3: settings
+                        146     CONTAINS_OP                     1 (not in)
+                        148     POP_JUMP_FORWARD_IF_FALSE       10 (to 170)
+                        150     LOAD_CONST                      4: False
+                        152     LOAD_FAST                       0: self
+                        154     LOAD_ATTR                       3: settings
+                        164     LOAD_CONST                      3: 't1c9'
+                        166     STORE_SUBSCR                    
+                        170     LOAD_CONST                      5: 't1c10'
+                        172     LOAD_FAST                       0: self
+                        174     LOAD_ATTR                       3: settings
+                        184     CONTAINS_OP                     1 (not in)
+                        186     POP_JUMP_FORWARD_IF_FALSE       10 (to 208)
+                        188     LOAD_CONST                      4: False
+                        190     LOAD_FAST                       0: self
+                        192     LOAD_ATTR                       3: settings
+                        202     LOAD_CONST                      5: 't1c10'
+                        204     STORE_SUBSCR                    
+                        208     LOAD_CONST                      6: 't1c11'
+                        210     LOAD_FAST                       0: self
+                        212     LOAD_ATTR                       3: settings
+                        222     CONTAINS_OP                     1 (not in)
+                        224     POP_JUMP_FORWARD_IF_FALSE       10 (to 246)
+                        226     LOAD_CONST                      4: False
+                        228     LOAD_FAST                       0: self
+                        230     LOAD_ATTR                       3: settings
+                        240     LOAD_CONST                      6: 't1c11'
+                        242     STORE_SUBSCR                    
+                        246     LOAD_CONST                      7: 't1c12'
+                        248     LOAD_FAST                       0: self
+                        250     LOAD_ATTR                       3: settings
+                        260     CONTAINS_OP                     1 (not in)
+                        262     POP_JUMP_FORWARD_IF_FALSE       10 (to 284)
+                        264     LOAD_CONST                      4: False
+                        266     LOAD_FAST                       0: self
+                        268     LOAD_ATTR                       3: settings
+                        278     LOAD_CONST                      7: 't1c12'
+                        280     STORE_SUBSCR                    
+                        284     LOAD_CONST                      8: 't1c13'
+                        286     LOAD_FAST                       0: self
+                        288     LOAD_ATTR                       3: settings
+                        298     CONTAINS_OP                     1 (not in)
+                        300     POP_JUMP_FORWARD_IF_FALSE       10 (to 322)
+                        302     LOAD_CONST                      4: False
+                        304     LOAD_FAST                       0: self
+                        306     LOAD_ATTR                       3: settings
+                        316     LOAD_CONST                      8: 't1c13'
+                        318     STORE_SUBSCR                    
+                        322     LOAD_CONST                      9: 't1c14'
+                        324     LOAD_FAST                       0: self
+                        326     LOAD_ATTR                       3: settings
+                        336     CONTAINS_OP                     1 (not in)
+                        338     POP_JUMP_FORWARD_IF_FALSE       10 (to 360)
+                        340     LOAD_CONST                      4: False
+                        342     LOAD_FAST                       0: self
+                        344     LOAD_ATTR                       3: settings
+                        354     LOAD_CONST                      9: 't1c14'
+                        356     STORE_SUBSCR                    
+                        360     LOAD_CONST                      10: 't1c15'
+                        362     LOAD_FAST                       0: self
+                        364     LOAD_ATTR                       3: settings
+                        374     CONTAINS_OP                     1 (not in)
+                        376     POP_JUMP_FORWARD_IF_FALSE       10 (to 398)
+                        378     LOAD_CONST                      4: False
+                        380     LOAD_FAST                       0: self
+                        382     LOAD_ATTR                       3: settings
+                        392     LOAD_CONST                      10: 't1c15'
+                        394     STORE_SUBSCR                    
+                        398     LOAD_CONST                      11: 't1c16'
+                        400     LOAD_FAST                       0: self
+                        402     LOAD_ATTR                       3: settings
+                        412     CONTAINS_OP                     1 (not in)
+                        414     POP_JUMP_FORWARD_IF_FALSE       10 (to 436)
+                        416     LOAD_CONST                      4: False
+                        418     LOAD_FAST                       0: self
+                        420     LOAD_ATTR                       3: settings
+                        430     LOAD_CONST                      11: 't1c16'
+                        432     STORE_SUBSCR                    
+                        436     LOAD_CONST                      12: 't1c17'
+                        438     LOAD_FAST                       0: self
+                        440     LOAD_ATTR                       3: settings
+                        450     CONTAINS_OP                     1 (not in)
+                        452     POP_JUMP_FORWARD_IF_FALSE       10 (to 474)
+                        454     LOAD_CONST                      4: False
+                        456     LOAD_FAST                       0: self
+                        458     LOAD_ATTR                       3: settings
+                        468     LOAD_CONST                      12: 't1c17'
+                        470     STORE_SUBSCR                    
+                        474     LOAD_CONST                      13: 't1c18'
+                        476     LOAD_FAST                       0: self
+                        478     LOAD_ATTR                       3: settings
+                        488     CONTAINS_OP                     1 (not in)
+                        490     POP_JUMP_FORWARD_IF_FALSE       10 (to 512)
+                        492     LOAD_CONST                      4: False
+                        494     LOAD_FAST                       0: self
+                        496     LOAD_ATTR                       3: settings
+                        506     LOAD_CONST                      13: 't1c18'
+                        508     STORE_SUBSCR                    
+                        512     LOAD_CONST                      14: 't2c3'
+                        514     LOAD_FAST                       0: self
+                        516     LOAD_ATTR                       3: settings
+                        526     CONTAINS_OP                     1 (not in)
+                        528     POP_JUMP_FORWARD_IF_FALSE       10 (to 550)
+                        530     LOAD_CONST                      4: False
+                        532     LOAD_FAST                       0: self
+                        534     LOAD_ATTR                       3: settings
+                        544     LOAD_CONST                      14: 't2c3'
+                        546     STORE_SUBSCR                    
+                        550     LOAD_CONST                      15: 't2c4'
+                        552     LOAD_FAST                       0: self
+                        554     LOAD_ATTR                       3: settings
+                        564     CONTAINS_OP                     1 (not in)
+                        566     POP_JUMP_FORWARD_IF_FALSE       10 (to 588)
+                        568     LOAD_CONST                      4: False
+                        570     LOAD_FAST                       0: self
+                        572     LOAD_ATTR                       3: settings
+                        582     LOAD_CONST                      15: 't2c4'
+                        584     STORE_SUBSCR                    
+                        588     LOAD_CONST                      16: 't2e9'
+                        590     LOAD_FAST                       0: self
+                        592     LOAD_ATTR                       3: settings
+                        602     CONTAINS_OP                     1 (not in)
+                        604     POP_JUMP_FORWARD_IF_FALSE       10 (to 626)
+                        606     LOAD_CONST                      17: '0'
+                        608     LOAD_FAST                       0: self
+                        610     LOAD_ATTR                       3: settings
+                        620     LOAD_CONST                      16: 't2e9'
+                        622     STORE_SUBSCR                    
+                        626     LOAD_CONST                      18: 't2c5'
+                        628     LOAD_FAST                       0: self
+                        630     LOAD_ATTR                       3: settings
+                        640     CONTAINS_OP                     1 (not in)
+                        642     POP_JUMP_FORWARD_IF_FALSE       10 (to 664)
+                        644     LOAD_CONST                      4: False
+                        646     LOAD_FAST                       0: self
+                        648     LOAD_ATTR                       3: settings
+                        658     LOAD_CONST                      18: 't2c5'
+                        660     STORE_SUBSCR                    
+                        664     LOAD_CONST                      19: 't2c6'
+                        666     LOAD_FAST                       0: self
+                        668     LOAD_ATTR                       3: settings
+                        678     CONTAINS_OP                     1 (not in)
+                        680     POP_JUMP_FORWARD_IF_FALSE       10 (to 702)
+                        682     LOAD_CONST                      4: False
+                        684     LOAD_FAST                       0: self
+                        686     LOAD_ATTR                       3: settings
+                        696     LOAD_CONST                      19: 't2c6'
+                        698     STORE_SUBSCR                    
+                        702     LOAD_CONST                      20: 't2c7'
+                        704     LOAD_FAST                       0: self
+                        706     LOAD_ATTR                       3: settings
+                        716     CONTAINS_OP                     1 (not in)
+                        718     POP_JUMP_FORWARD_IF_FALSE       10 (to 740)
+                        720     LOAD_CONST                      4: False
+                        722     LOAD_FAST                       0: self
+                        724     LOAD_ATTR                       3: settings
+                        734     LOAD_CONST                      20: 't2c7'
+                        736     STORE_SUBSCR                    
+                        740     LOAD_CONST                      21: 't2c8'
+                        742     LOAD_FAST                       0: self
+                        744     LOAD_ATTR                       3: settings
+                        754     CONTAINS_OP                     1 (not in)
+                        756     POP_JUMP_FORWARD_IF_FALSE       10 (to 778)
+                        758     LOAD_CONST                      4: False
+                        760     LOAD_FAST                       0: self
+                        762     LOAD_ATTR                       3: settings
+                        772     LOAD_CONST                      21: 't2c8'
+                        774     STORE_SUBSCR                    
+                        778     LOAD_CONST                      22: 't2c9'
+                        780     LOAD_FAST                       0: self
+                        782     LOAD_ATTR                       3: settings
+                        792     CONTAINS_OP                     1 (not in)
+                        794     POP_JUMP_FORWARD_IF_FALSE       10 (to 816)
+                        796     LOAD_CONST                      4: False
+                        798     LOAD_FAST                       0: self
+                        800     LOAD_ATTR                       3: settings
+                        810     LOAD_CONST                      22: 't2c9'
+                        812     STORE_SUBSCR                    
+                        816     LOAD_CONST                      23: 't2c10'
+                        818     LOAD_FAST                       0: self
+                        820     LOAD_ATTR                       3: settings
+                        830     CONTAINS_OP                     1 (not in)
+                        832     POP_JUMP_FORWARD_IF_FALSE       10 (to 854)
+                        834     LOAD_CONST                      4: False
+                        836     LOAD_FAST                       0: self
+                        838     LOAD_ATTR                       3: settings
+                        848     LOAD_CONST                      23: 't2c10'
+                        850     STORE_SUBSCR                    
+                        854     LOAD_CONST                      24: 't2e10'
+                        856     LOAD_FAST                       0: self
+                        858     LOAD_ATTR                       3: settings
+                        868     CONTAINS_OP                     1 (not in)
+                        870     POP_JUMP_FORWARD_IF_FALSE       10 (to 892)
+                        872     LOAD_CONST                      17: '0'
+                        874     LOAD_FAST                       0: self
+                        876     LOAD_ATTR                       3: settings
+                        886     LOAD_CONST                      24: 't2e10'
+                        888     STORE_SUBSCR                    
+                        892     LOAD_CONST                      25: 't2e11'
+                        894     LOAD_FAST                       0: self
+                        896     LOAD_ATTR                       3: settings
+                        906     CONTAINS_OP                     1 (not in)
+                        908     POP_JUMP_FORWARD_IF_FALSE       10 (to 930)
+                        910     LOAD_CONST                      26: '600'
+                        912     LOAD_FAST                       0: self
+                        914     LOAD_ATTR                       3: settings
+                        924     LOAD_CONST                      25: 't2e11'
+                        926     STORE_SUBSCR                    
+                        930     LOAD_CONST                      27: 't2p2c1'
+                        932     LOAD_FAST                       0: self
+                        934     LOAD_ATTR                       3: settings
+                        944     CONTAINS_OP                     1 (not in)
+                        946     POP_JUMP_FORWARD_IF_FALSE       10 (to 968)
+                        948     LOAD_CONST                      4: False
+                        950     LOAD_FAST                       0: self
+                        952     LOAD_ATTR                       3: settings
+                        962     LOAD_CONST                      27: 't2p2c1'
+                        964     STORE_SUBSCR                    
+                        968     LOAD_CONST                      28: 't2p2e1'
+                        970     LOAD_FAST                       0: self
+                        972     LOAD_ATTR                       3: settings
+                        982     CONTAINS_OP                     1 (not in)
+                        984     POP_JUMP_FORWARD_IF_FALSE       10 (to 1006)
+                        986     LOAD_CONST                      17: '0'
+                        988     LOAD_FAST                       0: self
+                        990     LOAD_ATTR                       3: settings
+                        1000    LOAD_CONST                      28: 't2p2e1'
+                        1002    STORE_SUBSCR                    
+                        1006    LOAD_CONST                      29: 't2p2c2'
+                        1008    LOAD_FAST                       0: self
+                        1010    LOAD_ATTR                       3: settings
+                        1020    CONTAINS_OP                     1 (not in)
+                        1022    POP_JUMP_FORWARD_IF_FALSE       10 (to 1044)
+                        1024    LOAD_CONST                      4: False
+                        1026    LOAD_FAST                       0: self
+                        1028    LOAD_ATTR                       3: settings
+                        1038    LOAD_CONST                      29: 't2p2c2'
+                        1040    STORE_SUBSCR                    
+                        1044    LOAD_CONST                      30: 't2p2c3'
+                        1046    LOAD_FAST                       0: self
+                        1048    LOAD_ATTR                       3: settings
+                        1058    CONTAINS_OP                     1 (not in)
+                        1060    POP_JUMP_FORWARD_IF_FALSE       10 (to 1082)
+                        1062    LOAD_CONST                      4: False
+                        1064    LOAD_FAST                       0: self
+                        1066    LOAD_ATTR                       3: settings
+                        1076    LOAD_CONST                      30: 't2p2c3'
+                        1078    STORE_SUBSCR                    
+                        1082    LOAD_CONST                      31: 't2p2c4'
+                        1084    LOAD_FAST                       0: self
+                        1086    LOAD_ATTR                       3: settings
+                        1096    CONTAINS_OP                     1 (not in)
+                        1098    POP_JUMP_FORWARD_IF_FALSE       10 (to 1120)
+                        1100    LOAD_CONST                      4: False
+                        1102    LOAD_FAST                       0: self
+                        1104    LOAD_ATTR                       3: settings
+                        1114    LOAD_CONST                      31: 't2p2c4'
+                        1116    STORE_SUBSCR                    
+                        1120    LOAD_CONST                      32: 't2p2c5'
+                        1122    LOAD_FAST                       0: self
+                        1124    LOAD_ATTR                       3: settings
+                        1134    CONTAINS_OP                     1 (not in)
+                        1136    POP_JUMP_FORWARD_IF_FALSE       10 (to 1158)
+                        1138    LOAD_CONST                      4: False
+                        1140    LOAD_FAST                       0: self
+                        1142    LOAD_ATTR                       3: settings
+                        1152    LOAD_CONST                      32: 't2p2c5'
+                        1154    STORE_SUBSCR                    
+                        1158    LOAD_CONST                      33: 't2e1p2'
+                        1160    LOAD_FAST                       0: self
+                        1162    LOAD_ATTR                       3: settings
+                        1172    CONTAINS_OP                     1 (not in)
+                        1174    POP_JUMP_FORWARD_IF_FALSE       21 (to 1218)
+                        1176    LOAD_FAST                       0: self
+                        1178    LOAD_ATTR                       3: settings
+                        1188    LOAD_CONST                      34: 't2e1'
+                        1190    BINARY_SUBSCR                   
+                        1200    LOAD_FAST                       0: self
+                        1202    LOAD_ATTR                       3: settings
+                        1212    LOAD_CONST                      33: 't2e1p2'
+                        1214    STORE_SUBSCR                    
+                        1218    LOAD_CONST                      35: 't2e1p3'
+                        1220    LOAD_FAST                       0: self
+                        1222    LOAD_ATTR                       3: settings
+                        1232    CONTAINS_OP                     1 (not in)
+                        1234    POP_JUMP_FORWARD_IF_FALSE       10 (to 1256)
+                        1236    LOAD_CONST                      36: 0
+                        1238    LOAD_FAST                       0: self
+                        1240    LOAD_ATTR                       3: settings
+                        1250    LOAD_CONST                      35: 't2e1p3'
+                        1252    STORE_SUBSCR                    
+                        1256    LOAD_CONST                      37: 't3c2'
+                        1258    LOAD_FAST                       0: self
+                        1260    LOAD_ATTR                       3: settings
+                        1270    CONTAINS_OP                     1 (not in)
+                        1272    POP_JUMP_FORWARD_IF_FALSE       10 (to 1294)
+                        1274    LOAD_CONST                      4: False
+                        1276    LOAD_FAST                       0: self
+                        1278    LOAD_ATTR                       3: settings
+                        1288    LOAD_CONST                      37: 't3c2'
+                        1290    STORE_SUBSCR                    
+                        1294    LOAD_CONST                      38: 't4r1'
+                        1296    LOAD_FAST                       0: self
+                        1298    LOAD_ATTR                       3: settings
+                        1308    CONTAINS_OP                     1 (not in)
+                        1310    POP_JUMP_FORWARD_IF_FALSE       10 (to 1332)
+                        1312    LOAD_CONST                      36: 0
+                        1314    LOAD_FAST                       0: self
+                        1316    LOAD_ATTR                       3: settings
+                        1326    LOAD_CONST                      38: 't4r1'
+                        1328    STORE_SUBSCR                    
+                        1332    LOAD_CONST                      39: 't6e1'
+                        1334    LOAD_FAST                       0: self
+                        1336    LOAD_ATTR                       3: settings
+                        1346    CONTAINS_OP                     1 (not in)
+                        1348    POP_JUMP_FORWARD_IF_FALSE       10 (to 1370)
+                        1350    LOAD_CONST                      36: 0
+                        1352    LOAD_FAST                       0: self
+                        1354    LOAD_ATTR                       3: settings
+                        1364    LOAD_CONST                      39: 't6e1'
+                        1366    STORE_SUBSCR                    
+                        1370    LOAD_CONST                      40: 't6e2'
+                        1372    LOAD_FAST                       0: self
+                        1374    LOAD_ATTR                       3: settings
+                        1384    CONTAINS_OP                     1 (not in)
+                        1386    POP_JUMP_FORWARD_IF_FALSE       10 (to 1408)
+                        1388    LOAD_CONST                      41: ''
+                        1390    LOAD_FAST                       0: self
+                        1392    LOAD_ATTR                       3: settings
+                        1402    LOAD_CONST                      40: 't6e2'
+                        1404    STORE_SUBSCR                    
+                        1408    LOAD_CONST                      42: 't6c1'
+                        1410    LOAD_FAST                       0: self
+                        1412    LOAD_ATTR                       3: settings
+                        1422    CONTAINS_OP                     1 (not in)
+                        1424    POP_JUMP_FORWARD_IF_FALSE       10 (to 1446)
+                        1426    LOAD_CONST                      43: True
+                        1428    LOAD_FAST                       0: self
+                        1430    LOAD_ATTR                       3: settings
+                        1440    LOAD_CONST                      42: 't6c1'
+                        1442    STORE_SUBSCR                    
+                        1446    LOAD_CONST                      44: 't6c2'
+                        1448    LOAD_FAST                       0: self
+                        1450    LOAD_ATTR                       3: settings
+                        1460    CONTAINS_OP                     1 (not in)
+                        1462    POP_JUMP_FORWARD_IF_FALSE       10 (to 1484)
+                        1464    LOAD_CONST                      43: True
+                        1466    LOAD_FAST                       0: self
+                        1468    LOAD_ATTR                       3: settings
+                        1478    LOAD_CONST                      44: 't6c2'
+                        1480    STORE_SUBSCR                    
+                        1484    LOAD_CONST                      45: 't6c3'
+                        1486    LOAD_FAST                       0: self
+                        1488    LOAD_ATTR                       3: settings
+                        1498    CONTAINS_OP                     1 (not in)
+                        1500    POP_JUMP_FORWARD_IF_FALSE       10 (to 1522)
+                        1502    LOAD_CONST                      43: True
+                        1504    LOAD_FAST                       0: self
+                        1506    LOAD_ATTR                       3: settings
+                        1516    LOAD_CONST                      45: 't6c3'
+                        1518    STORE_SUBSCR                    
+                        1522    LOAD_CONST                      46: 't6c4'
+                        1524    LOAD_FAST                       0: self
+                        1526    LOAD_ATTR                       3: settings
+                        1536    CONTAINS_OP                     1 (not in)
+                        1538    POP_JUMP_FORWARD_IF_FALSE       10 (to 1560)
+                        1540    LOAD_CONST                      4: False
+                        1542    LOAD_FAST                       0: self
+                        1544    LOAD_ATTR                       3: settings
+                        1554    LOAD_CONST                      46: 't6c4'
+                        1556    STORE_SUBSCR                    
+                        1560    LOAD_CONST                      4: False
+                        1562    LOAD_FAST                       0: self
+                        1564    LOAD_ATTR                       3: settings
+                        1574    LOAD_CONST                      27: 't2p2c1'
+                        1576    STORE_SUBSCR                    
+                        1580    LOAD_FAST                       0: self
+                        1582    LOAD_METHOD                     4: parseProxyList
+                        1604    LOAD_FAST                       0: self
+                        1606    LOAD_ATTR                       3: settings
+                        1616    LOAD_CONST                      40: 't6e2'
+                        1618    BINARY_SUBSCR                   
+                        1628    PRECALL                         1
+                        1632    CALL                            1
+                        1642    POP_TOP                         
+                        1644    LOAD_FAST                       0: self
+                        1646    LOAD_METHOD                     5: setTemporaryValueWithSettings
+                        1668    PRECALL                         0
+                        1672    CALL                            0
+                        1682    POP_TOP                         
+                        1684    LOAD_CONST                      0: None
+                        1686    RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: JCSNotFoundStartup
+                    Qualified Name: MyApp.JCSNotFoundStartup
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 3
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'os'
+                        'path'
+                        'exists'
+                        'settings'
+                        'automation'
+                        'last_error'
+                        'time'
+                        'last_error_time'
+                    [Locals+Names]
+                        'self'
+                    [Constants]
+                        None
+                        'JCS.exe'
+                        't2c3'
+                        'نرم افزار حل کپچای سیستمی یافت نشد، تنظیم به حل سرور تغیر یافت. لطفا از طریق تنظیمات اقدام نمایید'
+                        5
+                        False
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     0: os
+                        14      LOAD_ATTR                       1: path
+                        24      LOAD_METHOD                     2: exists
+                        46      LOAD_CONST                      1: 'JCS.exe'
+                        48      PRECALL                         1
+                        52      CALL                            1
+                        62      POP_JUMP_FORWARD_IF_TRUE        69 (to 202)
+                        64      LOAD_FAST                       0: self
+                        66      LOAD_ATTR                       3: settings
+                        76      LOAD_CONST                      2: 't2c3'
+                        78      BINARY_SUBSCR                   
+                        88      POP_JUMP_FORWARD_IF_FALSE       58 (to 206)
+                        90      LOAD_CONST                      3: 'نرم افزار حل کپچای سیستمی یافت نشد، تنظیم به حل سرور تغیر یافت. لطفا از طریق تنظیمات اقدام نمایید'
+                        92      LOAD_FAST                       0: self
+                        94      LOAD_ATTR                       4: automation
+                        104     STORE_ATTR                      5: last_error
+                        114     LOAD_GLOBAL                     13: NULL + time
+                        126     LOAD_ATTR                       6: time
+                        136     PRECALL                         0
+                        140     CALL                            0
+                        150     LOAD_CONST                      4: 5
+                        152     BINARY_OP                       0 (+)
+                        156     LOAD_FAST                       0: self
+                        158     LOAD_ATTR                       4: automation
+                        168     STORE_ATTR                      7: last_error_time
+                        178     LOAD_CONST                      5: False
+                        180     LOAD_FAST                       0: self
+                        182     LOAD_ATTR                       3: settings
+                        192     LOAD_CONST                      2: 't2c3'
+                        194     STORE_SUBSCR                    
+                        198     LOAD_CONST                      0: None
+                        200     RETURN_VALUE                    
+                        202     LOAD_CONST                      0: None
+                        204     RETURN_VALUE                    
+                        206     LOAD_CONST                      0: None
+                        208     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: saveSettings
+                    Qualified Name: MyApp.saveSettings
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 6
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'open'
+                        'json'
+                        'dump'
+                        'settings'
+                    [Locals+Names]
+                        'self'
+                        'f'
+                    [Constants]
+                        None
+                        'settings.json'
+                        'w'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + open
+                        14      LOAD_CONST                      1: 'settings.json'
+                        16      LOAD_CONST                      2: 'w'
+                        18      PRECALL                         2
+                        22      CALL                            2
+                        32      BEFORE_WITH                     
+                        34      STORE_FAST                      1: f
+                        36      LOAD_GLOBAL                     3: NULL + json
+                        48      LOAD_ATTR                       2: dump
+                        58      LOAD_FAST                       0: self
+                        60      LOAD_ATTR                       3: settings
+                        70      LOAD_FAST                       1: f
+                        72      PRECALL                         2
+                        76      CALL                            2
+                        86      POP_TOP                         
+                        88      LOAD_CONST                      0: None
+                        90      LOAD_CONST                      0: None
+                        92      LOAD_CONST                      0: None
+                        94      PRECALL                         2
+                        98      CALL                            2
+                        108     POP_TOP                         
+                        110     LOAD_CONST                      0: None
+                        112     RETURN_VALUE                    
+                        114     PUSH_EXC_INFO                   
+                        116     WITH_EXCEPT_START               
+                        118     POP_JUMP_FORWARD_IF_TRUE        4 (to 128)
+                        120     RERAISE                         2
+                        122     COPY                            3
+                        124     POP_EXCEPT                      
+                        126     RERAISE                         1
+                        128     POP_TOP                         
+                        130     POP_EXCEPT                      
+                        132     POP_TOP                         
+                        134     POP_TOP                         
+                        136     LOAD_CONST                      0: None
+                        138     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: getPriorityByMeli
+                    Qualified Name: MyApp.getPriorityByMeli
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 4
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'priority_dict'
+                        'int'
+                    [Locals+Names]
+                        'self'
+                        'meli'
+                    [Constants]
+                        None
+                        999
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       NOP                             
+                        4       LOAD_FAST                       0: self
+                        6       LOAD_ATTR                       0: priority_dict
+                        16      LOAD_GLOBAL                     3: NULL + int
+                        28      LOAD_FAST                       1: meli
+                        30      PRECALL                         1
+                        34      CALL                            1
+                        44      BINARY_SUBSCR                   
+                        54      RETURN_VALUE                    
+                        56      PUSH_EXC_INFO                   
+                        58      POP_TOP                         
+                        60      POP_EXCEPT                      
+                        62      LOAD_CONST                      1: 999
+                        64      RETURN_VALUE                    
+                        66      COPY                            3
+                        68      POP_EXCEPT                      
+                        70      RERAISE                         1
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: updatePriorityDict
+                    Qualified Name: MyApp.updatePriorityDict
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'list'
+                        'execute'
+                        'priority_dict'
+                        'sorted'
+                        'items'
+                    [Locals+Names]
+                        'self'
+                        'cursor'
+                        'priority_list'
+                        'item'
+                    [Constants]
+                        None
+                        'SELECT meli, priority FROM priority'
+                        1
+                        ''
+                        999
+                        0
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <dictcomp>
+                            Qualified Name: MyApp.updatePriorityDict.<locals>.<dictcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 4
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                            [Locals+Names]
+                                '.0'
+                                'k'
+                                'v'
+                            [Constants]
+                            [Disassembly]
+                                0       RESUME                          0
+                                2       BUILD_MAP                       0
+                                4       LOAD_FAST                       0: .0
+                                6       FOR_ITER                        8 (to 24)
+                                8       UNPACK_SEQUENCE                 2
+                                12      STORE_FAST                      1: k
+                                14      STORE_FAST                      2: v
+                                16      LOAD_FAST                       1: k
+                                18      LOAD_FAST                       2: v
+                                20      MAP_ADD                         2
+                                22      JUMP_BACKWARD                   9 (to 6)
+                                24      RETURN_VALUE                    
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: MyApp.updatePriorityDict.<locals>.<lambda>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 2
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                            [Locals+Names]
+                                'item'
+                            [Constants]
+                                None
+                                1
+                            [Disassembly]
+                                0       RESUME                          0
+                                2       LOAD_FAST                       0: item
+                                4       LOAD_CONST                      1: 1
+                                6       BINARY_SUBSCR                   
+                                16      RETURN_VALUE                    
+                        (
+                            'key'
+                        )
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + list
+                        14      LOAD_FAST                       1: cursor
+                        16      LOAD_METHOD                     1: execute
+                        38      LOAD_CONST                      1: 'SELECT meli, priority FROM priority'
+                        40      PRECALL                         1
+                        44      CALL                            1
+                        54      PRECALL                         1
+                        58      CALL                            1
+                        68      STORE_FAST                      2: priority_list
+                        70      BUILD_MAP                       0
+                        72      LOAD_FAST                       0: self
+                        74      STORE_ATTR                      2: priority_dict
+                        84      LOAD_FAST                       2: priority_list
+                        86      GET_ITER                        
+                        88      FOR_ITER                        38 (to 166)
+                        90      STORE_FAST                      3: item
+                        92      LOAD_FAST                       3: item
+                        94      LOAD_CONST                      2: 1
+                        96      BINARY_SUBSCR                   
+                        106     LOAD_CONST                      3: ''
+                        108     COMPARE_OP                      3 (!=)
+                        114     POP_JUMP_FORWARD_IF_FALSE       8 (to 132)
+                        116     LOAD_FAST                       3: item
+                        118     LOAD_CONST                      2: 1
+                        120     BINARY_SUBSCR                   
+                        130     JUMP_FORWARD                    1 (to 134)
+                        132     LOAD_CONST                      4: 999
+                        134     LOAD_FAST                       0: self
+                        136     LOAD_ATTR                       2: priority_dict
+                        146     LOAD_FAST                       3: item
+                        148     LOAD_CONST                      5: 0
+                        150     BINARY_SUBSCR                   
+                        160     STORE_SUBSCR                    
+                        164     JUMP_BACKWARD                   39 (to 88)
+                        166     LOAD_CONST                      6: <CODE> <dictcomp>
+                        168     MAKE_FUNCTION                   0
+                        170     LOAD_GLOBAL                     7: NULL + sorted
+                        182     LOAD_FAST                       0: self
+                        184     LOAD_ATTR                       2: priority_dict
+                        194     LOAD_METHOD                     4: items
+                        216     PRECALL                         0
+                        220     CALL                            0
+                        230     LOAD_CONST                      7: <CODE> <lambda>
+                        232     MAKE_FUNCTION                   0
+                        234     KW_NAMES                        8: ('key',)
+                        236     PRECALL                         2
+                        240     CALL                            2
+                        250     GET_ITER                        
+                        252     PRECALL                         0
+                        256     CALL                            0
+                        266     LOAD_FAST                       0: self
+                        268     STORE_ATTR                      2: priority_dict
+                        278     LOAD_CONST                      0: None
+                        280     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: addNewBlockedNumber
+                    Qualified Name: MyApp.addNewBlockedNumber
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'str'
+                        'blocked_number_list'
+                        'sqlite3'
+                        'connect'
+                        'cursor'
+                        'execute'
+                        'commit'
+                        'close'
+                    [Locals+Names]
+                        'self'
+                        'phone_number'
+                        'con'
+                        'cur'
+                    [Constants]
+                        None
+                        'members.db'
+                        'INSERT INTO blocked_number VALUES (NULL, "'
+                        '")'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + str
+                        14      LOAD_FAST                       1: phone_number
+                        16      PRECALL                         1
+                        20      CALL                            1
+                        30      STORE_FAST                      1: phone_number
+                        32      LOAD_FAST                       1: phone_number
+                        34      LOAD_FAST                       0: self
+                        36      LOAD_ATTR                       1: blocked_number_list
+                        46      CONTAINS_OP                     0 (in)
+                        48      POP_JUMP_FORWARD_IF_FALSE       2 (to 54)
+                        50      LOAD_CONST                      0: None
+                        52      RETURN_VALUE                    
+                        54      LOAD_GLOBAL                     5: NULL + sqlite3
+                        66      LOAD_ATTR                       3: connect
+                        76      LOAD_CONST                      1: 'members.db'
+                        78      PRECALL                         1
+                        82      CALL                            1
+                        92      STORE_FAST                      2: con
+                        94      LOAD_FAST                       2: con
+                        96      LOAD_METHOD                     4: cursor
+                        118     PRECALL                         0
+                        122     CALL                            0
+                        132     STORE_FAST                      3: cur
+                        134     LOAD_FAST                       3: cur
+                        136     LOAD_METHOD                     5: execute
+                        158     LOAD_CONST                      2: 'INSERT INTO blocked_number VALUES (NULL, "'
+                        160     LOAD_FAST                       1: phone_number
+                        162     FORMAT_VALUE                    0 (FVC_NONE)
+                        164     LOAD_CONST                      3: '")'
+                        166     BUILD_STRING                    3
+                        168     PRECALL                         1
+                        172     CALL                            1
+                        182     POP_TOP                         
+                        184     LOAD_FAST                       2: con
+                        186     LOAD_METHOD                     6: commit
+                        208     PRECALL                         0
+                        212     CALL                            0
+                        222     POP_TOP                         
+                        224     LOAD_FAST                       2: con
+                        226     LOAD_METHOD                     7: close
+                        248     PRECALL                         0
+                        252     CALL                            0
+                        262     POP_TOP                         
+                        264     LOAD_CONST                      0: None
+                        266     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: addNewSignedUpBefore
+                    Qualified Name: MyApp.addNewSignedUpBefore
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'str'
+                        'signed_up_before_list'
+                        'sqlite3'
+                        'connect'
+                        'cursor'
+                        'execute'
+                        'commit'
+                        'close'
+                    [Locals+Names]
+                        'self'
+                        'meli'
+                        'con'
+                        'cur'
+                    [Constants]
+                        None
+                        'members.db'
+                        'INSERT INTO signed_up_before VALUES (NULL, "'
+                        '")'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + str
+                        14      LOAD_FAST                       1: meli
+                        16      PRECALL                         1
+                        20      CALL                            1
+                        30      STORE_FAST                      1: meli
+                        32      LOAD_FAST                       1: meli
+                        34      LOAD_FAST                       0: self
+                        36      LOAD_ATTR                       1: signed_up_before_list
+                        46      CONTAINS_OP                     0 (in)
+                        48      POP_JUMP_FORWARD_IF_FALSE       2 (to 54)
+                        50      LOAD_CONST                      0: None
+                        52      RETURN_VALUE                    
+                        54      LOAD_GLOBAL                     5: NULL + sqlite3
+                        66      LOAD_ATTR                       3: connect
+                        76      LOAD_CONST                      1: 'members.db'
+                        78      PRECALL                         1
+                        82      CALL                            1
+                        92      STORE_FAST                      2: con
+                        94      LOAD_FAST                       2: con
+                        96      LOAD_METHOD                     4: cursor
+                        118     PRECALL                         0
+                        122     CALL                            0
+                        132     STORE_FAST                      3: cur
+                        134     LOAD_FAST                       3: cur
+                        136     LOAD_METHOD                     5: execute
+                        158     LOAD_CONST                      2: 'INSERT INTO signed_up_before VALUES (NULL, "'
+                        160     LOAD_FAST                       1: meli
+                        162     FORMAT_VALUE                    0 (FVC_NONE)
+                        164     LOAD_CONST                      3: '")'
+                        166     BUILD_STRING                    3
+                        168     PRECALL                         1
+                        172     CALL                            1
+                        182     POP_TOP                         
+                        184     LOAD_FAST                       2: con
+                        186     LOAD_METHOD                     6: commit
+                        208     PRECALL                         0
+                        212     CALL                            0
+                        222     POP_TOP                         
+                        224     LOAD_FAST                       2: con
+                        226     LOAD_METHOD                     7: close
+                        248     PRECALL                         0
+                        252     CALL                            0
+                        262     POP_TOP                         
+                        264     LOAD_CONST                      0: None
+                        266     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: removeBlockedNumber
+                    Qualified Name: MyApp.removeBlockedNumber
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'sqlite3'
+                        'connect'
+                        'cursor'
+                        'execute'
+                        'commit'
+                        'close'
+                    [Locals+Names]
+                        'self'
+                        'phone_number'
+                        'con'
+                        'cur'
+                    [Constants]
+                        None
+                        'members.db'
+                        "DELETE FROM blocked_number WHERE phone_number='"
+                        "'"
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + sqlite3
+                        14      LOAD_ATTR                       1: connect
+                        24      LOAD_CONST                      1: 'members.db'
+                        26      PRECALL                         1
+                        30      CALL                            1
+                        40      STORE_FAST                      2: con
+                        42      LOAD_FAST                       2: con
+                        44      LOAD_METHOD                     2: cursor
+                        66      PRECALL                         0
+                        70      CALL                            0
+                        80      STORE_FAST                      3: cur
+                        82      LOAD_FAST                       3: cur
+                        84      LOAD_METHOD                     3: execute
+                        106     LOAD_CONST                      2: "DELETE FROM blocked_number WHERE phone_number='"
+                        108     LOAD_FAST                       1: phone_number
+                        110     FORMAT_VALUE                    0 (FVC_NONE)
+                        112     LOAD_CONST                      3: "'"
+                        114     BUILD_STRING                    3
+                        116     PRECALL                         1
+                        120     CALL                            1
+                        130     POP_TOP                         
+                        132     LOAD_FAST                       2: con
+                        134     LOAD_METHOD                     4: commit
+                        156     PRECALL                         0
+                        160     CALL                            0
+                        170     POP_TOP                         
+                        172     LOAD_FAST                       2: con
+                        174     LOAD_METHOD                     5: close
+                        196     PRECALL                         0
+                        200     CALL                            0
+                        210     POP_TOP                         
+                        212     LOAD_CONST                      0: None
+                        214     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: removeSignedUpBefore
+                    Qualified Name: MyApp.removeSignedUpBefore
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'sqlite3'
+                        'connect'
+                        'cursor'
+                        'execute'
+                        'commit'
+                        'close'
+                    [Locals+Names]
+                        'self'
+                        'meli'
+                        'con'
+                        'cur'
+                    [Constants]
+                        None
+                        'members.db'
+                        "DELETE FROM signed_up_before WHERE meli='"
+                        "'"
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + sqlite3
+                        14      LOAD_ATTR                       1: connect
+                        24      LOAD_CONST                      1: 'members.db'
+                        26      PRECALL                         1
+                        30      CALL                            1
+                        40      STORE_FAST                      2: con
+                        42      LOAD_FAST                       2: con
+                        44      LOAD_METHOD                     2: cursor
+                        66      PRECALL                         0
+                        70      CALL                            0
+                        80      STORE_FAST                      3: cur
+                        82      LOAD_FAST                       3: cur
+                        84      LOAD_METHOD                     3: execute
+                        106     LOAD_CONST                      2: "DELETE FROM signed_up_before WHERE meli='"
+                        108     LOAD_FAST                       1: meli
+                        110     FORMAT_VALUE                    0 (FVC_NONE)
+                        112     LOAD_CONST                      3: "'"
+                        114     BUILD_STRING                    3
+                        116     PRECALL                         1
+                        120     CALL                            1
+                        130     POP_TOP                         
+                        132     LOAD_FAST                       2: con
+                        134     LOAD_METHOD                     4: commit
+                        156     PRECALL                         0
+                        160     CALL                            0
+                        170     POP_TOP                         
+                        172     LOAD_FAST                       2: con
+                        174     LOAD_METHOD                     5: close
+                        196     PRECALL                         0
+                        200     CALL                            0
+                        210     POP_TOP                         
+                        212     LOAD_CONST                      0: None
+                        214     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: updateBlockedNumberList
+                    Qualified Name: MyApp.updateBlockedNumberList
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'list'
+                        'execute'
+                        'blocked_number_list'
+                    [Locals+Names]
+                        'self'
+                        'cur'
+                        'blocked_number_list'
+                    [Constants]
+                        None
+                        'SELECT phone_number FROM blocked_number'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.updateBlockedNumberList.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 4
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                            [Constants]
+                                0
+                            [Disassembly]
+                                0       RESUME                          0
+                                2       BUILD_LIST                      0
+                                4       LOAD_FAST                       0: .0
+                                6       FOR_ITER                        10 (to 28)
+                                8       STORE_FAST                      1: i
+                                10      LOAD_FAST                       1: i
+                                12      LOAD_CONST                      0: 0
+                                14      BINARY_SUBSCR                   
+                                24      LIST_APPEND                     2
+                                26      JUMP_BACKWARD                   11 (to 6)
+                                28      RETURN_VALUE                    
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + list
+                        14      LOAD_FAST                       1: cur
+                        16      LOAD_METHOD                     1: execute
+                        38      LOAD_CONST                      1: 'SELECT phone_number FROM blocked_number'
+                        40      PRECALL                         1
+                        44      CALL                            1
+                        54      PRECALL                         1
+                        58      CALL                            1
+                        68      STORE_FAST                      2: blocked_number_list
+                        70      LOAD_CONST                      2: <CODE> <listcomp>
+                        72      MAKE_FUNCTION                   0
+                        74      LOAD_FAST                       2: blocked_number_list
+                        76      GET_ITER                        
+                        78      PRECALL                         0
+                        82      CALL                            0
+                        92      LOAD_FAST                       0: self
+                        94      STORE_ATTR                      2: blocked_number_list
+                        104     LOAD_CONST                      0: None
+                        106     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: updateSignedUpBeforeList
+                    Qualified Name: MyApp.updateSignedUpBeforeList
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'list'
+                        'execute'
+                        'signed_up_before_list'
+                    [Locals+Names]
+                        'self'
+                        'cur'
+                        'signed_up_before_list'
+                    [Constants]
+                        None
+                        'SELECT meli priority FROM signed_up_before'
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <listcomp>
+                            Qualified Name: MyApp.updateSignedUpBeforeList.<locals>.<listcomp>
+                            Arg Count: 1
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 4
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                            [Locals+Names]
+                                '.0'
+                                'i'
+                            [Constants]
+                                0
+                            [Disassembly]
+                                0       RESUME                          0
+                                2       BUILD_LIST                      0
+                                4       LOAD_FAST                       0: .0
+                                6       FOR_ITER                        10 (to 28)
+                                8       STORE_FAST                      1: i
+                                10      LOAD_FAST                       1: i
+                                12      LOAD_CONST                      0: 0
+                                14      BINARY_SUBSCR                   
+                                24      LIST_APPEND                     2
+                                26      JUMP_BACKWARD                   11 (to 6)
+                                28      RETURN_VALUE                    
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + list
+                        14      LOAD_FAST                       1: cur
+                        16      LOAD_METHOD                     1: execute
+                        38      LOAD_CONST                      1: 'SELECT meli priority FROM signed_up_before'
+                        40      PRECALL                         1
+                        44      CALL                            1
+                        54      PRECALL                         1
+                        58      CALL                            1
+                        68      STORE_FAST                      2: signed_up_before_list
+                        70      LOAD_CONST                      2: <CODE> <listcomp>
+                        72      MAKE_FUNCTION                   0
+                        74      LOAD_FAST                       2: signed_up_before_list
+                        76      GET_ITER                        
+                        78      PRECALL                         0
+                        82      CALL                            0
+                        92      LOAD_FAST                       0: self
+                        94      STORE_ATTR                      2: signed_up_before_list
+                        104     LOAD_CONST                      0: None
+                        106     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: getAllDataFromDataBase
+                    Qualified Name: MyApp.getAllDataFromDataBase
+                    Arg Count: 1
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 6
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'sqlite3'
+                        'connect'
+                        'cursor'
+                        'updatePriorityDict'
+                        'updateBlockedNumberList'
+                        'updateSignedUpBeforeList'
+                        'database_list'
+                        'list'
+                        'execute'
+                        'priority_dict'
+                        'enumerate'
+                        'str'
+                        'database_map'
+                        'append'
+                        'pop'
+                        'database_list_motaqazi_index'
+                        'database_list_sabtname_index'
+                        'database_list_removed_index'
+                        'blocked_number_member_list'
+                        'signed_up_before_member_list'
+                        'blocked_number_list'
+                        'signed_up_before_list'
+                        'close'
+                        'getBanksAlarmFromDatabase'
+                    [Locals+Names]
+                        'self'
+                        'con'
+                        'cur'
+                        'not_sorted_members'
+                        'mem'
+                        'index'
+                        'j'
+                        'i'
+                        'member'
+                    [Constants]
+                        None
+                        'members.db'
+                        'SELECT * FROM members'
+                        999
+                        'meli'
+                        'status'
+                        0
+                        'hamrah'
+                        1
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_GLOBAL                     1: NULL + sqlite3
+                        14      LOAD_ATTR                       1: connect
+                        24      LOAD_CONST                      1: 'members.db'
+                        26      PRECALL                         1
+                        30      CALL                            1
+                        40      STORE_FAST                      1: con
+                        42      LOAD_FAST                       1: con
+                        44      LOAD_METHOD                     2: cursor
+                        66      PRECALL                         0
+                        70      CALL                            0
+                        80      STORE_FAST                      2: cur
+                        82      LOAD_FAST                       0: self

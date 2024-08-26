@@ -1,0 +1,2027 @@
+                790     LOAD_CONST                      0: None
+                792     RETURN_VALUE                    
+        'برای نصب یا فیکس کردن درایور کروم می توانید از گزینه های زیر یکی را به دلخواه انتخاب کرده تا نرم افزار دانلود و نصب شود. پیشنهاد می شود از نسخه 32 بیتی استفاده کنید'
+        'current driver version: '
+        '\nonline driver version: '
+        '\nchrome version: '
+        'درایور کروم یافت نشد. لطفا با استفاده از دکمه ی دانلود آن را بارگیری کرده سپس دوباره تلاش کنید'
+        'درایور کروم آپدیت نیست در صورت مشاهده هرگونه مشکل ابتدا از بروز بودن کروم اطمینان حاصل کنید. سپس با استفاده از دکمه زیر درایور را آپدیت نمایید'
+        'utf-8'
+        '0.de.pool.ntp.org'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: RequestTimefromNtp
+            Qualified Name: RequestTimefromNtp
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 5
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'socket'
+                'AF_INET'
+                'SOCK_DGRAM'
+                'sendto'
+                'recvfrom'
+                'struct'
+                'unpack'
+            [Locals+Names]
+                'addr'
+                'results'
+                'REF_TIME_1970'
+                'client'
+                'data'
+                'address'
+                't'
+            [Constants]
+                None
+                0x83AA7E80
+                b'\x1b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                123
+                1024
+                '!12I'
+                10
+                0
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_CONST                      1: 0x83AA7E80
+                4       STORE_FAST                      2: REF_TIME_1970
+                6       LOAD_GLOBAL                     1: NULL + socket
+                18      LOAD_ATTR                       0: socket
+                28      LOAD_GLOBAL                     0: socket
+                40      LOAD_ATTR                       1: AF_INET
+                50      LOAD_GLOBAL                     0: socket
+                62      LOAD_ATTR                       2: SOCK_DGRAM
+                72      PRECALL                         2
+                76      CALL                            2
+                86      STORE_FAST                      3: client
+                88      LOAD_CONST                      2: b'\x1b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+                90      STORE_FAST                      4: data
+                92      LOAD_FAST                       3: client
+                94      LOAD_METHOD                     3: sendto
+                116     LOAD_FAST                       4: data
+                118     LOAD_FAST                       0: addr
+                120     LOAD_CONST                      3: 123
+                122     BUILD_TUPLE                     2
+                124     PRECALL                         2
+                128     CALL                            2
+                138     POP_TOP                         
+                140     LOAD_FAST                       3: client
+                142     LOAD_METHOD                     4: recvfrom
+                164     LOAD_CONST                      4: 1024
+                166     PRECALL                         1
+                170     CALL                            1
+                180     UNPACK_SEQUENCE                 2
+                184     STORE_FAST                      4: data
+                186     STORE_FAST                      5: address
+                188     LOAD_FAST                       4: data
+                190     POP_JUMP_FORWARD_IF_FALSE       32 (to 256)
+                192     LOAD_GLOBAL                     11: NULL + struct
+                204     LOAD_ATTR                       6: unpack
+                214     LOAD_CONST                      5: '!12I'
+                216     LOAD_FAST                       4: data
+                218     PRECALL                         2
+                222     CALL                            2
+                232     LOAD_CONST                      6: 10
+                234     BINARY_SUBSCR                   
+                244     STORE_FAST                      6: t
+                246     LOAD_FAST                       6: t
+                248     LOAD_FAST                       2: REF_TIME_1970
+                250     BINARY_OP                       23 (-=)
+                254     STORE_FAST                      6: t
+                256     LOAD_FAST                       6: t
+                258     LOAD_FAST                       1: results
+                260     LOAD_CONST                      7: 0
+                262     STORE_SUBSCR                    
+                266     LOAD_CONST                      0: None
+                268     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: getNtpTime
+            Qualified Name: getNtpTime
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'threading'
+                'Thread'
+                'RequestTimefromNtp'
+                'start'
+                'join'
+                'is_alive'
+                'print'
+                'Exception'
+            [Locals+Names]
+                'index'
+                'results'
+                'servers_prefix'
+                'p'
+                't'
+                'e'
+            [Constants]
+                None
+                0
+                1
+                8
+                (
+                    'ir'
+                    'asia'
+                    'ae'
+                    'de'
+                    'europe'
+                    'am'
+                )
+                5
+                '.pool.ntp.org'
+                (
+                    'target'
+                    'args'
+                )
+                3
+                "running... let's kill the thread..."
+                False
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_CONST                      1: 0
+                4       STORE_FAST                      0: index
+                6       LOAD_CONST                      0: None
+                8       BUILD_LIST                      1
+                10      LOAD_CONST                      2: 1
+                12      BINARY_OP                       5 (*)
+                16      STORE_FAST                      1: results
+                18      LOAD_FAST                       0: index
+                20      LOAD_CONST                      3: 8
+                22      COMPARE_OP                      0 (<)
+                28      POP_JUMP_FORWARD_IF_FALSE       175 (to 380)
+                30      BUILD_LIST                      0
+                32      LOAD_CONST                      4: ('ir', 'asia', 'ae', 'de', 'europe', 'am')
+                34      LIST_EXTEND                     1
+                36      STORE_FAST                      2: servers_prefix
+                38      NOP                             
+                40      LOAD_GLOBAL                     1: NULL + threading
+                52      LOAD_ATTR                       1: Thread
+                62      LOAD_GLOBAL                     4: RequestTimefromNtp
+                74      LOAD_FAST                       2: servers_prefix
+                76      LOAD_FAST                       0: index
+                78      LOAD_CONST                      5: 5
+                80      BINARY_OP                       6 (%)
+                84      BINARY_SUBSCR                   
+                94      FORMAT_VALUE                    0 (FVC_NONE)
+                96      LOAD_CONST                      6: '.pool.ntp.org'
+                98      BUILD_STRING                    2
+                100     LOAD_FAST                       1: results
+                102     BUILD_TUPLE                     2
+                104     KW_NAMES                        7: ('target', 'args')
+                106     PRECALL                         2
+                110     CALL                            2
+                120     STORE_FAST                      3: p
+                122     LOAD_FAST                       3: p
+                124     LOAD_METHOD                     3: start
+                146     PRECALL                         0
+                150     CALL                            0
+                160     POP_TOP                         
+                162     LOAD_FAST                       3: p
+                164     LOAD_METHOD                     4: join
+                186     LOAD_CONST                      8: 3
+                188     PRECALL                         1
+                192     CALL                            1
+                202     POP_TOP                         
+                204     LOAD_FAST                       3: p
+                206     LOAD_METHOD                     5: is_alive
+                228     PRECALL                         0
+                232     CALL                            0
+                242     POP_JUMP_FORWARD_IF_FALSE       17 (to 278)
+                244     LOAD_GLOBAL                     13: NULL + print
+                256     LOAD_CONST                      9: "running... let's kill the thread..."
+                258     PRECALL                         1
+                262     CALL                            1
+                272     POP_TOP                         
+                274     DELETE_FAST                     3: p
+                276     JUMP_BACKWARD                   130 (to 18)
+                278     LOAD_FAST                       1: results
+                280     LOAD_CONST                      1: 0
+                282     BINARY_SUBSCR                   
+                292     STORE_FAST                      4: t
+                294     LOAD_FAST                       4: t
+                296     POP_JUMP_FORWARD_IF_NONE        1 (to 300)
+                298     JUMP_FORWARD                    40 (to 380)
+                300     LOAD_CONST                      1: 0
+                302     LOAD_CONST                      1: 0
+                304     BINARY_OP                       11 (/)
+                308     POP_TOP                         
+                310     JUMP_FORWARD                    28 (to 368)
+                312     PUSH_EXC_INFO                   
+                314     LOAD_GLOBAL                     14: Exception
+                326     CHECK_EXC_MATCH                 
+                328     POP_JUMP_FORWARD_IF_FALSE       15 (to 360)
+                330     STORE_FAST                      5: e
+                332     LOAD_FAST                       0: index
+                334     LOAD_CONST                      2: 1
+                336     BINARY_OP                       13 (+=)
+                340     STORE_FAST                      0: index
+                342     POP_EXCEPT                      
+                344     LOAD_CONST                      0: None
+                346     STORE_FAST                      5: e
+                348     DELETE_FAST                     5: e
+                350     JUMP_BACKWARD                   167 (to 18)
+                352     LOAD_CONST                      0: None
+                354     STORE_FAST                      5: e
+                356     DELETE_FAST                     5: e
+                358     RERAISE                         1
+                360     RERAISE                         0
+                362     COPY                            3
+                364     POP_EXCEPT                      
+                366     RERAISE                         1
+                368     LOAD_FAST                       0: index
+                370     LOAD_CONST                      3: 8
+                372     COMPARE_OP                      0 (<)
+                378     POP_JUMP_BACKWARD_IF_TRUE       175 (to 30)
+                380     LOAD_FAST                       0: index
+                382     LOAD_CONST                      3: 8
+                384     COMPARE_OP                      0 (<)
+                390     POP_JUMP_FORWARD_IF_FALSE       2 (to 396)
+                392     LOAD_FAST                       4: t
+                394     RETURN_VALUE                    
+                396     LOAD_CONST                      10: False
+                398     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: RightClicker
+            Qualified Name: RightClicker
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 1
+            Flags: 0x00000000
+            [Names]
+                '__name__'
+                '__module__'
+                '__qualname__'
+                '__init__'
+                'right_click_command'
+            [Locals+Names]
+            [Constants]
+                'RightClicker'
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: __init__
+                    Qualified Name: RightClicker.__init__
+                    Arg Count: 2
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'Menu'
+                        'add_command'
+                        'tk_popup'
+                        'x_root'
+                        'y_root'
+                    [Locals+Names]
+                        'self'
+                        'event'
+                        'right_click_menu'
+                        'persian_dict'
+                        'txt'
+                    [Constants]
+                        None
+                        0
+                        (
+                            'tearoff'
+                            'takefocus'
+                        )
+                        'بریدن'
+                        'کپی کردن'
+                        'چسباندن'
+                        (
+                            'Cut'
+                            'Copy'
+                            'Paste'
+                        )
+                        [Code]
+                            File Name: jetvam.pyw
+                            Object Name: <lambda>
+                            Qualified Name: RightClicker.__init__.<locals>.<lambda>
+                            Arg Count: 2
+                            Pos Only Arg Count: 0
+                            KW Only Arg Count: 0
+                            Stack Size: 4
+                            Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                            [Names]
+                                'right_click_command'
+                            [Locals+Names]
+                                'event'
+                                'text'
+                                'self'
+                            [Constants]
+                                None
+                            [Disassembly]
+                                0       COPY_FREE_VARS                  1
+                                2       RESUME                          0
+                                4       LOAD_DEREF                      2: self
+                                6       LOAD_METHOD                     0: right_click_command
+                                28      LOAD_FAST                       0: event
+                                30      LOAD_FAST                       1: text
+                                32      PRECALL                         2
+                                36      CALL                            2
+                                46      RETURN_VALUE                    
+                        (
+                            'label'
+                            'command'
+                        )
+                        40
+                        10
+                        '0'
+                        (
+                            'entry'
+                        )
+                    [Disassembly]
+                        0       MAKE_CELL                       0: self
+                        2       RESUME                          0
+                        4       LOAD_GLOBAL                     1: NULL + Menu
+                        16      LOAD_CONST                      0: None
+                        18      LOAD_CONST                      1: 0
+                        20      LOAD_CONST                      1: 0
+                        22      KW_NAMES                        2: ('tearoff', 'takefocus')
+                        24      PRECALL                         3
+                        28      CALL                            3
+                        38      STORE_FAST                      2: right_click_menu
+                        40      LOAD_CONST                      3: 'بریدن'
+                        42      LOAD_CONST                      4: 'کپی کردن'
+                        44      LOAD_CONST                      5: 'چسباندن'
+                        46      LOAD_CONST                      6: ('Cut', 'Copy', 'Paste')
+                        48      BUILD_CONST_KEY_MAP             3
+                        50      STORE_FAST                      3: persian_dict
+                        52      LOAD_CONST                      6: ('Cut', 'Copy', 'Paste')
+                        54      GET_ITER                        
+                        56      FOR_ITER                        37 (to 132)
+                        58      STORE_FAST                      4: txt
+                        60      LOAD_FAST                       2: right_click_menu
+                        62      LOAD_METHOD                     1: add_command
+                        84      LOAD_FAST                       3: persian_dict
+                        86      LOAD_FAST                       4: txt
+                        88      BINARY_SUBSCR                   
+                        98      LOAD_FAST                       1: event
+                        100     LOAD_FAST                       4: txt
+                        102     BUILD_TUPLE                     2
+                        104     LOAD_CLOSURE                    0: self
+                        106     BUILD_TUPLE                     1
+                        108     LOAD_CONST                      7: <CODE> <lambda>
+                        110     MAKE_FUNCTION                   9
+                        112     KW_NAMES                        8: ('label', 'command')
+                        114     PRECALL                         2
+                        118     CALL                            2
+                        128     POP_TOP                         
+                        130     JUMP_BACKWARD                   38 (to 56)
+                        132     LOAD_FAST                       2: right_click_menu
+                        134     LOAD_METHOD                     2: tk_popup
+                        156     LOAD_FAST                       1: event
+                        158     LOAD_ATTR                       3: x_root
+                        168     LOAD_CONST                      9: 40
+                        170     BINARY_OP                       0 (+)
+                        174     LOAD_FAST                       1: event
+                        176     LOAD_ATTR                       4: y_root
+                        186     LOAD_CONST                      10: 10
+                        188     BINARY_OP                       0 (+)
+                        192     LOAD_CONST                      11: '0'
+                        194     KW_NAMES                        12: ('entry',)
+                        196     PRECALL                         3
+                        200     CALL                            3
+                        210     POP_TOP                         
+                        212     LOAD_CONST                      0: None
+                        214     RETURN_VALUE                    
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: right_click_command
+                    Qualified Name: RightClicker.right_click_command
+                    Arg Count: 3
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+                    [Names]
+                        'widget'
+                        'event_generate'
+                        'selection_get'
+                        'pyperclip'
+                        'copy'
+                    [Locals+Names]
+                        'self'
+                        'event'
+                        'cmd'
+                        'd'
+                    [Constants]
+                        None
+                        '<<'
+                        '>>'
+                        'Copy'
+                        'Cut'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       LOAD_FAST                       1: event
+                        4       LOAD_ATTR                       0: widget
+                        14      LOAD_METHOD                     1: event_generate
+                        36      LOAD_CONST                      1: '<<'
+                        38      LOAD_FAST                       2: cmd
+                        40      FORMAT_VALUE                    0 (FVC_NONE)
+                        42      LOAD_CONST                      2: '>>'
+                        44      BUILD_STRING                    3
+                        46      PRECALL                         1
+                        50      CALL                            1
+                        60      POP_TOP                         
+                        62      LOAD_FAST                       2: cmd
+                        64      LOAD_CONST                      3: 'Copy'
+                        66      COMPARE_OP                      2 (==)
+                        72      POP_JUMP_FORWARD_IF_TRUE        6 (to 86)
+                        74      LOAD_FAST                       2: cmd
+                        76      LOAD_CONST                      4: 'Cut'
+                        78      COMPARE_OP                      2 (==)
+                        84      POP_JUMP_FORWARD_IF_FALSE       56 (to 198)
+                        86      NOP                             
+                        88      LOAD_FAST                       1: event
+                        90      LOAD_ATTR                       0: widget
+                        100     LOAD_METHOD                     2: selection_get
+                        122     PRECALL                         0
+                        126     CALL                            0
+                        136     STORE_FAST                      3: d
+                        138     LOAD_GLOBAL                     7: NULL + pyperclip
+                        150     LOAD_ATTR                       4: copy
+                        160     LOAD_FAST                       3: d
+                        162     PRECALL                         1
+                        166     CALL                            1
+                        176     POP_TOP                         
+                        178     LOAD_CONST                      0: None
+                        180     RETURN_VALUE                    
+                        182     PUSH_EXC_INFO                   
+                        184     POP_TOP                         
+                        186     POP_EXCEPT                      
+                        188     LOAD_CONST                      0: None
+                        190     RETURN_VALUE                    
+                        192     COPY                            3
+                        194     POP_EXCEPT                      
+                        196     RERAISE                         1
+                        198     LOAD_CONST                      0: None
+                        200     RETURN_VALUE                    
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_NAME                       0: __name__
+                4       STORE_NAME                      1: __module__
+                6       LOAD_CONST                      0: 'RightClicker'
+                8       STORE_NAME                      2: __qualname__
+                10      LOAD_CONST                      1: <CODE> __init__
+                12      MAKE_FUNCTION                   0
+                14      STORE_NAME                      3: __init__
+                16      LOAD_CONST                      2: <CODE> right_click_command
+                18      MAKE_FUNCTION                   0
+                20      STORE_NAME                      4: right_click_command
+                22      LOAD_CONST                      3: None
+                24      RETURN_VALUE                    
+        'RightClicker'
+        'https://jsms.amoria.ir'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: copyuuid
+            Qualified Name: copyuuid
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 3
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'msg'
+                'clipboard'
+                'copy'
+            [Locals+Names]
+                'uuid'
+                'tooltip'
+            [Constants]
+                None
+                'کپی شد'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_CONST                      1: 'کپی شد'
+                4       LOAD_FAST                       1: tooltip
+                6       STORE_ATTR                      0: msg
+                16      LOAD_GLOBAL                     3: NULL + clipboard
+                28      LOAD_ATTR                       2: copy
+                38      LOAD_FAST                       0: uuid
+                40      PRECALL                         1
+                44      CALL                            1
+                54      POP_TOP                         
+                56      LOAD_CONST                      0: None
+                58      RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: checkLicense
+            Qualified Name: checkLicense
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'open'
+                'write'
+                'destroy'
+                'subprocess'
+                'Popen'
+            [Locals+Names]
+                'license'
+                'a'
+                'f'
+            [Constants]
+                None
+                'jetvam.lic'
+                'w'
+                'jetvam.exe'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + open
+                14      LOAD_CONST                      1: 'jetvam.lic'
+                16      LOAD_CONST                      2: 'w'
+                18      PRECALL                         2
+                22      CALL                            2
+                32      BEFORE_WITH                     
+                34      STORE_FAST                      2: f
+                36      LOAD_FAST                       2: f
+                38      LOAD_METHOD                     1: write
+                60      LOAD_FAST                       0: license
+                62      PRECALL                         1
+                66      CALL                            1
+                76      POP_TOP                         
+                78      LOAD_CONST                      0: None
+                80      LOAD_CONST                      0: None
+                82      LOAD_CONST                      0: None
+                84      PRECALL                         2
+                88      CALL                            2
+                98      POP_TOP                         
+                100     JUMP_FORWARD                    11 (to 124)
+                102     PUSH_EXC_INFO                   
+                104     WITH_EXCEPT_START               
+                106     POP_JUMP_FORWARD_IF_TRUE        4 (to 116)
+                108     RERAISE                         2
+                110     COPY                            3
+                112     POP_EXCEPT                      
+                114     RERAISE                         1
+                116     POP_TOP                         
+                118     POP_EXCEPT                      
+                120     POP_TOP                         
+                122     POP_TOP                         
+                124     LOAD_FAST                       1: a
+                126     LOAD_METHOD                     2: destroy
+                148     PRECALL                         0
+                152     CALL                            0
+                162     POP_TOP                         
+                164     LOAD_GLOBAL                     7: NULL + subprocess
+                176     LOAD_ATTR                       4: Popen
+                186     LOAD_CONST                      3: 'jetvam.exe'
+                188     PRECALL                         1
+                192     CALL                            1
+                202     POP_TOP                         
+                204     LOAD_CONST                      0: None
+                206     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: paste
+            Qualified Name: paste
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'clipboard'
+                'paste'
+                'insert'
+                'END'
+            [Locals+Names]
+                'entry_'
+                'd'
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + clipboard
+                14      LOAD_ATTR                       1: paste
+                24      PRECALL                         0
+                28      CALL                            0
+                38      STORE_FAST                      1: d
+                40      LOAD_FAST                       0: entry_
+                42      LOAD_METHOD                     2: insert
+                64      LOAD_GLOBAL                     6: END
+                76      LOAD_FAST                       1: d
+                78      PRECALL                         2
+                82      CALL                            2
+                92      POP_TOP                         
+                94      LOAD_CONST                      0: None
+                96      RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: autoUpdateLicense
+            Qualified Name: autoUpdateLicense
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'destroy'
+                'getRequest'
+                'ok'
+                'text'
+                'startswith'
+                'open'
+                'write'
+                'jlog'
+                'Tk'
+                'title'
+                'Label'
+                'pack'
+                'my_splash'
+                'close'
+                'mainloop'
+                'subprocess'
+                'Popen'
+            [Locals+Names]
+                'sys_hash'
+                'a'
+                'license_request_link'
+                'res'
+                'license_set_text'
+                'f'
+                'ld_root'
+            [Constants]
+                None
+                'https://jetvamezdevaj.pythonanywhere.com/get_license/'
+                'False'
+                'کاربر مورد نظر یافت نشد'
+                'jbdb:'
+                'jetvamjbdb.lic'
+                'w'
+                'لایسنس برای سیستم شما یافت و ذخیره شد، برای اعمال تنظیمات لطفا نرم افزار را بسته و مجدد اجرا کنید'
+                'jetvam.lic'
+                'لایسنس برای سیستم شما یافت و ذخیره شد'
+                'خطا در پیدا کردن کد سیستم ارسال شده'
+                'خطا در برقراری ارتباط با سرور، دوباره تلاش کنید'
+                'auto update license'
+                'چک سرور برای لایسنس'
+                (
+                    'arial'
+                    16
+                )
+                (
+                    'text'
+                    'font'
+                )
+                10
+                (
+                    'padx'
+                    'pady'
+                )
+                'jetvam.exe'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_FAST                       1: a
+                4       LOAD_METHOD                     0: destroy
+                26      PRECALL                         0
+                30      CALL                            0
+                40      POP_TOP                         
+                42      LOAD_CONST                      1: 'https://jetvamezdevaj.pythonanywhere.com/get_license/'
+                44      LOAD_FAST                       0: sys_hash
+                46      BINARY_OP                       0 (+)
+                50      STORE_FAST                      2: license_request_link
+                52      NOP                             
+                54      LOAD_GLOBAL                     3: NULL + getRequest
+                66      LOAD_FAST                       2: license_request_link
+                68      PRECALL                         1
+                72      CALL                            1
+                82      STORE_FAST                      3: res
+                84      LOAD_FAST                       3: res
+                86      LOAD_ATTR                       2: ok
+                96      POP_JUMP_FORWARD_IF_FALSE       173 (to 444)
+                98      LOAD_FAST                       3: res
+                100     LOAD_ATTR                       3: text
+                110     LOAD_CONST                      2: 'False'
+                112     COMPARE_OP                      2 (==)
+                118     POP_JUMP_FORWARD_IF_FALSE       3 (to 126)
+                120     LOAD_CONST                      3: 'کاربر مورد نظر یافت نشد'
+                122     STORE_FAST                      4: license_set_text
+                124     JUMP_FORWARD                    161 (to 448)
+                126     LOAD_FAST                       0: sys_hash
+                128     LOAD_METHOD                     4: startswith
+                150     LOAD_CONST                      4: 'jbdb:'
+                152     PRECALL                         1
+                156     CALL                            1
+                166     POP_JUMP_FORWARD_IF_FALSE       69 (to 306)
+                168     LOAD_GLOBAL                     11: NULL + open
+                180     LOAD_CONST                      5: 'jetvamjbdb.lic'
+                182     LOAD_CONST                      6: 'w'
+                184     PRECALL                         2
+                188     CALL                            2
+                198     BEFORE_WITH                     
+                200     STORE_FAST                      5: f
+                202     LOAD_FAST                       5: f
+                204     LOAD_METHOD                     6: write
+                226     LOAD_FAST                       3: res
+                228     LOAD_ATTR                       3: text
+                238     PRECALL                         1
+                242     CALL                            1
+                252     POP_TOP                         
+                254     LOAD_CONST                      0: None
+                256     LOAD_CONST                      0: None
+                258     LOAD_CONST                      0: None
+                260     PRECALL                         2
+                264     CALL                            2
+                274     POP_TOP                         
+                276     JUMP_FORWARD                    11 (to 300)
+                278     PUSH_EXC_INFO                   
+                280     WITH_EXCEPT_START               
+                282     POP_JUMP_FORWARD_IF_TRUE        4 (to 292)
+                284     RERAISE                         2
+                286     COPY                            3
+                288     POP_EXCEPT                      
+                290     RERAISE                         1
+                292     POP_TOP                         
+                294     POP_EXCEPT                      
+                296     POP_TOP                         
+                298     POP_TOP                         
+                300     LOAD_CONST                      7: 'لایسنس برای سیستم شما یافت و ذخیره شد، برای اعمال تنظیمات لطفا نرم افزار را بسته و مجدد اجرا کنید'
+                302     STORE_FAST                      4: license_set_text
+                304     JUMP_FORWARD                    71 (to 448)
+                306     LOAD_GLOBAL                     11: NULL + open
+                318     LOAD_CONST                      8: 'jetvam.lic'
+                320     LOAD_CONST                      6: 'w'
+                322     PRECALL                         2
+                326     CALL                            2
+                336     BEFORE_WITH                     
+                338     STORE_FAST                      5: f
+                340     LOAD_FAST                       5: f
+                342     LOAD_METHOD                     6: write
+                364     LOAD_FAST                       3: res
+                366     LOAD_ATTR                       3: text
+                376     PRECALL                         1
+                380     CALL                            1
+                390     POP_TOP                         
+                392     LOAD_CONST                      0: None
+                394     LOAD_CONST                      0: None
+                396     LOAD_CONST                      0: None
+                398     PRECALL                         2
+                402     CALL                            2
+                412     POP_TOP                         
+                414     JUMP_FORWARD                    11 (to 438)
+                416     PUSH_EXC_INFO                   
+                418     WITH_EXCEPT_START               
+                420     POP_JUMP_FORWARD_IF_TRUE        4 (to 430)
+                422     RERAISE                         2
+                424     COPY                            3
+                426     POP_EXCEPT                      
+                428     RERAISE                         1
+                430     POP_TOP                         
+                432     POP_EXCEPT                      
+                434     POP_TOP                         
+                436     POP_TOP                         
+                438     LOAD_CONST                      9: 'لایسنس برای سیستم شما یافت و ذخیره شد'
+                440     STORE_FAST                      4: license_set_text
+                442     JUMP_FORWARD                    2 (to 448)
+                444     LOAD_CONST                      10: 'خطا در پیدا کردن کد سیستم ارسال شده'
+                446     STORE_FAST                      4: license_set_text
+                448     JUMP_FORWARD                    24 (to 498)
+                450     PUSH_EXC_INFO                   
+                452     POP_TOP                         
+                454     LOAD_CONST                      11: 'خطا در برقراری ارتباط با سرور، دوباره تلاش کنید'
+                456     STORE_FAST                      4: license_set_text
+                458     LOAD_GLOBAL                     15: NULL + jlog
+                470     LOAD_CONST                      12: 'auto update license'
+                472     PRECALL                         1
+                476     CALL                            1
+                486     POP_TOP                         
+                488     POP_EXCEPT                      
+                490     JUMP_FORWARD                    3 (to 498)
+                492     COPY                            3
+                494     POP_EXCEPT                      
+                496     RERAISE                         1
+                498     LOAD_GLOBAL                     17: NULL + Tk
+                510     PRECALL                         0
+                514     CALL                            0
+                524     STORE_FAST                      6: ld_root
+                526     LOAD_FAST                       6: ld_root
+                528     LOAD_METHOD                     9: title
+                550     LOAD_CONST                      13: 'چک سرور برای لایسنس'
+                552     PRECALL                         1
+                556     CALL                            1
+                566     POP_TOP                         
+                568     LOAD_GLOBAL                     21: NULL + Label
+                580     LOAD_FAST                       6: ld_root
+                582     LOAD_FAST                       4: license_set_text
+                584     LOAD_CONST                      14: ('arial', 16)
+                586     KW_NAMES                        15: ('text', 'font')
+                588     PRECALL                         3
+                592     CALL                            3
+                602     LOAD_METHOD                     11: pack
+                624     LOAD_CONST                      16: 10
+                626     LOAD_CONST                      16: 10
+                628     KW_NAMES                        17: ('padx', 'pady')
+                630     PRECALL                         2
+                634     CALL                            2
+                644     POP_TOP                         
+                646     LOAD_GLOBAL                     24: my_splash
+                658     LOAD_METHOD                     13: close
+                680     PRECALL                         0
+                684     CALL                            0
+                694     POP_TOP                         
+                696     LOAD_FAST                       6: ld_root
+                698     LOAD_METHOD                     14: mainloop
+                720     PRECALL                         0
+                724     CALL                            0
+                734     POP_TOP                         
+                736     LOAD_GLOBAL                     31: NULL + subprocess
+                748     LOAD_ATTR                       16: Popen
+                758     LOAD_CONST                      18: 'jetvam.exe'
+                760     PRECALL                         1
+                764     CALL                            1
+                774     POP_TOP                         
+                776     LOAD_CONST                      0: None
+                778     RETURN_VALUE                    
+        'before ntp'
+        'after ntp'
+        86400
+        'خطای زمان سیستم'
+        'اختلاف زیاد بین ساعت سیستم و زمان حقیقی'
+        (
+            'text'
+            'font'
+        )
+        b'O2TDwkpynt-6E3zVDvR-wgvJf_GnZfecepwL7HSTQXg='
+        'jetvam.lic'
+        'خطای لایسنس'
+        'فایل لایسنس یافت نشد'
+        'کد سیستم'
+        'ne'
+        (
+            'text'
+            'labelanchor'
+        )
+        (
+            'text'
+        )
+        'برای کپی کردن کلیک کنید'
+        0.05
+        'کد لایسنس'
+        'both'
+        (
+            'padx'
+            'pady'
+            'fill'
+        )
+        42
+        (
+            'width'
+            'height'
+        )
+        (
+            'expand'
+            'fill'
+            'padx'
+            'pady'
+        )
+        '<Button-3>'
+        'ذخیره کردن لایسنس'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'checkLicense'
+                'entry_license'
+                'get'
+                'END'
+                'a'
+            [Locals+Names]
+            [Constants]
+                None
+                '1.0'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + checkLicense
+                14      LOAD_GLOBAL                     2: entry_license
+                26      LOAD_METHOD                     2: get
+                48      LOAD_CONST                      1: '1.0'
+                50      LOAD_GLOBAL                     6: END
+                62      PRECALL                         2
+                66      CALL                            2
+                76      LOAD_GLOBAL                     8: a
+                88      PRECALL                         2
+                92      CALL                            2
+                102     RETURN_VALUE                    
+        (
+            'text'
+            'padding'
+            'command'
+        )
+        'e'
+        (
+            'anchor'
+            'padx'
+            'pady'
+            'side'
+        )
+        'وارد کردن مقدار کپی شده'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 3
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'paste'
+                'entry_license'
+            [Locals+Names]
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + paste
+                14      LOAD_GLOBAL                     2: entry_license
+                26      PRECALL                         1
+                30      CALL                            1
+                40      RETURN_VALUE                    
+        (
+            'anchor'
+            'side'
+            'padx'
+            'pady'
+        )
+        'دانلود خودکار لایسنس'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'autoUpdateLicense'
+                'system_id_hash'
+                'a'
+            [Locals+Names]
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + autoUpdateLicense
+                14      LOAD_GLOBAL                     2: system_id_hash
+                26      LOAD_GLOBAL                     4: a
+                38      PRECALL                         2
+                42      CALL                            2
+                52      RETURN_VALUE                    
+        '<Button-1>'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'copyuuid'
+                'system_id_hash'
+                'copy_to_clipboard_tool_tip'
+            [Locals+Names]
+                '_'
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + copyuuid
+                14      LOAD_GLOBAL                     2: system_id_hash
+                26      LOAD_GLOBAL                     4: copy_to_clipboard_tool_tip
+                38      PRECALL                         2
+                42      CALL                            2
+                52      RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'copyuuid'
+                'system_id_hash'
+                'copy_to_clipboard_tool_tip'
+            [Locals+Names]
+                '_'
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + copyuuid
+                14      LOAD_GLOBAL                     2: system_id_hash
+                26      LOAD_GLOBAL                     4: copy_to_clipboard_tool_tip
+                38      PRECALL                         2
+                42      CALL                            2
+                52      RETURN_VALUE                    
+        'rb'
+        ':'
+        'عدم مطابقت فایل لایسنس با سیستم'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'checkLicense'
+                'entry_license'
+                'get'
+                'END'
+                'a'
+            [Locals+Names]
+            [Constants]
+                None
+                '1.0'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + checkLicense
+                14      LOAD_GLOBAL                     2: entry_license
+                26      LOAD_METHOD                     2: get
+                48      LOAD_CONST                      1: '1.0'
+                50      LOAD_GLOBAL                     6: END
+                62      PRECALL                         2
+                66      CALL                            2
+                76      LOAD_GLOBAL                     8: a
+                88      PRECALL                         2
+                92      CALL                            2
+                102     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 3
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'paste'
+                'entry_license'
+            [Locals+Names]
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + paste
+                14      LOAD_GLOBAL                     2: entry_license
+                26      PRECALL                         1
+                30      CALL                            1
+                40      RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'autoUpdateLicense'
+                'system_id_hash'
+                'a'
+            [Locals+Names]
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + autoUpdateLicense
+                14      LOAD_GLOBAL                     2: system_id_hash
+                26      LOAD_GLOBAL                     4: a
+                38      PRECALL                         2
+                42      CALL                            2
+                52      RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'copyuuid'
+                'system_id_hash'
+                'copy_to_clipboard_tool_tip'
+            [Locals+Names]
+                '_'
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + copyuuid
+                14      LOAD_GLOBAL                     2: system_id_hash
+                26      LOAD_GLOBAL                     4: copy_to_clipboard_tool_tip
+                38      PRECALL                         2
+                42      CALL                            2
+                52      RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'copyuuid'
+                'system_id_hash'
+                'copy_to_clipboard_tool_tip'
+            [Locals+Names]
+                '_'
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + copyuuid
+                14      LOAD_GLOBAL                     2: system_id_hash
+                26      LOAD_GLOBAL                     4: copy_to_clipboard_tool_tip
+                38      PRECALL                         2
+                42      CALL                            2
+                52      RETURN_VALUE                    
+        'لایسنس منقضی شده است'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'checkLicense'
+                'entry_license'
+                'get'
+                'END'
+                'a'
+            [Locals+Names]
+            [Constants]
+                None
+                '1.0'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + checkLicense
+                14      LOAD_GLOBAL                     2: entry_license
+                26      LOAD_METHOD                     2: get
+                48      LOAD_CONST                      1: '1.0'
+                50      LOAD_GLOBAL                     6: END
+                62      PRECALL                         2
+                66      CALL                            2
+                76      LOAD_GLOBAL                     8: a
+                88      PRECALL                         2
+                92      CALL                            2
+                102     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 3
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'paste'
+                'entry_license'
+            [Locals+Names]
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + paste
+                14      LOAD_GLOBAL                     2: entry_license
+                26      PRECALL                         1
+                30      CALL                            1
+                40      RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'autoUpdateLicense'
+                'system_id_hash'
+                'a'
+            [Locals+Names]
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + autoUpdateLicense
+                14      LOAD_GLOBAL                     2: system_id_hash
+                26      LOAD_GLOBAL                     4: a
+                38      PRECALL                         2
+                42      CALL                            2
+                52      RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'copyuuid'
+                'system_id_hash'
+                'copy_to_clipboard_tool_tip'
+            [Locals+Names]
+                '_'
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + copyuuid
+                14      LOAD_GLOBAL                     2: system_id_hash
+                26      LOAD_GLOBAL                     4: copy_to_clipboard_tool_tip
+                38      PRECALL                         2
+                42      CALL                            2
+                52      RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'copyuuid'
+                'system_id_hash'
+                'copy_to_clipboard_tool_tip'
+            [Locals+Names]
+                '_'
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + copyuuid
+                14      LOAD_GLOBAL                     2: system_id_hash
+                26      LOAD_GLOBAL                     4: copy_to_clipboard_tool_tip
+                38      PRECALL                         2
+                42      CALL                            2
+                52      RETURN_VALUE                    
+        'jetvamjbdb.lic'
+        'jbdb'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: yourChromeNotUpdateDialog
+            Qualified Name: yourChromeNotUpdateDialog
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 7
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'Tk'
+                'resizable'
+                'title'
+                'Label'
+                'pack'
+                'destroy'
+                'my_splash'
+                'close'
+                'mainloop'
+                'closeFunction'
+            [Locals+Names]
+                'main_dialog'
+                'a'
+            [Constants]
+                None
+                0
+                'خطای ورژن'
+                'عدم مطابقت نرم افزار کروم با درایور. اگر درایور را آپدیت کرده اید، ممکن است کروم شما بروز نباشد، لطفا ابتدا کروم را آپدیت کرده سپس دوباره تلاش کنید'
+                580
+                (
+                    'arial'
+                    16
+                )
+                'center'
+                (
+                    'text'
+                    'wraplength'
+                    'font'
+                    'justify'
+                )
+                20
+                (
+                    'padx'
+                    'pady'
+                )
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + Tk
+                14      PRECALL                         0
+                18      CALL                            0
+                28      STORE_FAST                      1: a
+                30      LOAD_FAST                       1: a
+                32      LOAD_METHOD                     1: resizable
+                54      LOAD_CONST                      1: 0
+                56      LOAD_CONST                      1: 0
+                58      PRECALL                         2
+                62      CALL                            2
+                72      POP_TOP                         
+                74      LOAD_FAST                       1: a
+                76      LOAD_METHOD                     2: title
+                98      LOAD_CONST                      2: 'خطای ورژن'
+                100     PRECALL                         1
+                104     CALL                            1
+                114     POP_TOP                         
+                116     LOAD_GLOBAL                     7: NULL + Label
+                128     LOAD_FAST                       1: a
+                130     LOAD_CONST                      3: 'عدم مطابقت نرم افزار کروم با درایور. اگر درایور را آپدیت کرده اید، ممکن است کروم شما بروز نباشد، لطفا ابتدا کروم را آپدیت کرده سپس دوباره تلاش کنید'
+                132     LOAD_CONST                      4: 580
+                134     LOAD_CONST                      5: ('arial', 16)
+                136     LOAD_CONST                      6: 'center'
+                138     KW_NAMES                        7: ('text', 'wraplength', 'font', 'justify')
+                140     PRECALL                         5
+                144     CALL                            5
+                154     LOAD_METHOD                     4: pack
+                176     LOAD_CONST                      8: 20
+                178     LOAD_CONST                      8: 20
+                180     KW_NAMES                        9: ('padx', 'pady')
+                182     PRECALL                         2
+                186     CALL                            2
+                196     POP_TOP                         
+                198     LOAD_FAST                       0: main_dialog
+                200     LOAD_METHOD                     5: destroy
+                222     PRECALL                         0
+                226     CALL                            0
+                236     POP_TOP                         
+                238     LOAD_GLOBAL                     12: my_splash
+                250     LOAD_METHOD                     7: close
+                272     PRECALL                         0
+                276     CALL                            0
+                286     POP_TOP                         
+                288     LOAD_FAST                       1: a
+                290     LOAD_METHOD                     8: mainloop
+                312     PRECALL                         0
+                316     CALL                            0
+                326     POP_TOP                         
+                328     LOAD_FAST                       0: main_dialog
+                330     LOAD_METHOD                     9: closeFunction
+                352     PRECALL                         0
+                356     CALL                            0
+                366     POP_TOP                         
+                368     LOAD_CONST                      0: None
+                370     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: licenseCheckCloseDialog
+            Qualified Name: licenseCheckCloseDialog
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 5
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'Tk'
+                'resizable'
+                'title'
+                'Label'
+                'pack'
+            [Locals+Names]
+                'a'
+            [Constants]
+                None
+                0
+                'لایسنس'
+                'لایسنس نرم افزار منقضی شده است'
+                (
+                    'arial'
+                    16
+                )
+                (
+                    'text'
+                    'font'
+                )
+                20
+                (
+                    'padx'
+                    'pady'
+                )
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + Tk
+                14      PRECALL                         0
+                18      CALL                            0
+                28      STORE_FAST                      0: a
+                30      LOAD_FAST                       0: a
+                32      LOAD_METHOD                     1: resizable
+                54      LOAD_CONST                      1: 0
+                56      LOAD_CONST                      1: 0
+                58      PRECALL                         2
+                62      CALL                            2
+                72      POP_TOP                         
+                74      LOAD_FAST                       0: a
+                76      LOAD_METHOD                     2: title
+                98      LOAD_CONST                      2: 'لایسنس'
+                100     PRECALL                         1
+                104     CALL                            1
+                114     POP_TOP                         
+                116     LOAD_GLOBAL                     7: NULL + Label
+                128     LOAD_FAST                       0: a
+                130     LOAD_CONST                      3: 'لایسنس نرم افزار منقضی شده است'
+                132     LOAD_CONST                      4: ('arial', 16)
+                134     KW_NAMES                        5: ('text', 'font')
+                136     PRECALL                         3
+                140     CALL                            3
+                150     LOAD_METHOD                     4: pack
+                172     LOAD_CONST                      6: 20
+                174     LOAD_CONST                      6: 20
+                176     KW_NAMES                        7: ('padx', 'pady')
+                178     PRECALL                         2
+                182     CALL                            2
+                192     POP_TOP                         
+                194     LOAD_FAST                       0: a
+                196     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: checkLicenseTime
+            Qualified Name: checkLicenseTime
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 3
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'expire_time'
+                'time'
+                'until_time'
+            [Locals+Names]
+            [Constants]
+                None
+                0
+                False
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     0: expire_time
+                14      LOAD_GLOBAL                     3: NULL + time
+                26      LOAD_ATTR                       1: time
+                36      PRECALL                         0
+                40      CALL                            0
+                50      BINARY_OP                       10 (-)
+                54      STORE_GLOBAL                    2: until_time
+                56      LOAD_GLOBAL                     4: until_time
+                68      LOAD_CONST                      1: 0
+                70      COMPARE_OP                      0 (<)
+                76      POP_JUMP_FORWARD_IF_FALSE       2 (to 82)
+                78      LOAD_CONST                      2: False
+                80      RETURN_VALUE                    
+                82      LOAD_CONST                      0: None
+                84      RETURN_VALUE                    
+        'check license'
+        'jetvam-ezdevaj'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: sendSystemIdAndLicenseTime
+            Qualified Name: sendSystemIdAndLicenseTime
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 5
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'int'
+                'until_time'
+                'postRequest'
+            [Locals+Names]
+                'system_id'
+                'expire_day'
+                'expire_hours'
+                'send_dict'
+                'res'
+            [Constants]
+                None
+                86400
+                3600
+                '#'
+                (
+                    'system_id'
+                    'expire_day'
+                    'expire_hours'
+                )
+                'https://jetvamezdevaj.pythonanywhere.com/sendUserInfo'
+                (
+                    'json'
+                )
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + int
+                14      LOAD_GLOBAL                     2: until_time
+                26      LOAD_CONST                      1: 86400
+                28      BINARY_OP                       11 (/)
+                32      PRECALL                         1
+                36      CALL                            1
+                46      STORE_FAST                      1: expire_day
+                48      LOAD_GLOBAL                     1: NULL + int
+                60      LOAD_GLOBAL                     2: until_time
+                72      LOAD_FAST                       1: expire_day
+                74      LOAD_CONST                      1: 86400
+                76      BINARY_OP                       5 (*)
+                80      BINARY_OP                       10 (-)
+                84      LOAD_CONST                      2: 3600
+                86      BINARY_OP                       2 (//)
+                90      PRECALL                         1
+                94      CALL                            1
+                104     STORE_FAST                      2: expire_hours
+                106     LOAD_CONST                      3: '#'
+                108     LOAD_FAST                       0: system_id
+                110     FORMAT_VALUE                    0 (FVC_NONE)
+                112     BUILD_STRING                    2
+                114     LOAD_FAST                       1: expire_day
+                116     LOAD_FAST                       2: expire_hours
+                118     LOAD_CONST                      4: ('system_id', 'expire_day', 'expire_hours')
+                120     BUILD_CONST_KEY_MAP             3
+                122     STORE_FAST                      3: send_dict
+                124     LOAD_GLOBAL                     5: NULL + postRequest
+                136     LOAD_CONST                      5: 'https://jetvamezdevaj.pythonanywhere.com/sendUserInfo'
+                138     LOAD_FAST                       3: send_dict
+                140     KW_NAMES                        6: ('json',)
+                142     PRECALL                         2
+                146     CALL                            2
+                156     STORE_FAST                      4: res
+                158     LOAD_CONST                      0: None
+                160     RETURN_VALUE                    
+        '.no-login-log'
+        'error in send open log!'
+        'resource\\irans-cities.json'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <listcomp>
+            Qualified Name: <listcomp>
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+            [Locals+Names]
+                '.0'
+                'i'
+            [Constants]
+                'province'
+            [Disassembly]
+                0       RESUME                          0
+                2       BUILD_LIST                      0
+                4       LOAD_FAST                       0: .0
+                6       FOR_ITER                        10 (to 28)
+                8       STORE_FAST                      1: i
+                10      LOAD_FAST                       1: i
+                12      LOAD_CONST                      0: 'province'
+                14      BINARY_SUBSCR                   
+                24      LIST_APPEND                     2
+                26      JUMP_BACKWARD                   11 (to 6)
+                28      RETURN_VALUE                    
+        'province'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: sendBankToServer
+            Qualified Name: sendBankToServer
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 7
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'time'
+                'last_send_bank_time'
+                'str'
+                'int'
+                'getVersionCode'
+                'app_version'
+                'threading'
+                'Thread'
+                'start'
+                'jlog'
+            [Locals+Names]
+                'province_id'
+                'banks'
+                'sendPostRequest'
+                'last_version_code'
+                't'
+            [Constants]
+                None
+                2
+                'banks'
+                'app_version'
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: sendPostRequest
+                    Qualified Name: sendBankToServer.<locals>.sendPostRequest
+                    Arg Count: 3
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                    [Names]
+                        'postRequest'
+                        'jlog'
+                    [Locals+Names]
+                        'province_number'
+                        'banks'
+                        'app_version'
+                        'dic'
+                    [Constants]
+                        None
+                        'jetvam'
+                        (
+                            'province'
+                            'banks'
+                            'app'
+                            'app-version'
+                        )
+                        'https://telegrambot.chbk.run/update'
+                        (
+                            'json'
+                        )
+                        'dbh error'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       NOP                             
+                        4       LOAD_FAST                       0: province_number
+                        6       LOAD_FAST                       1: banks
+                        8       LOAD_CONST                      1: 'jetvam'
+                        10      LOAD_FAST                       2: app_version
+                        12      LOAD_CONST                      2: ('province', 'banks', 'app', 'app-version')
+                        14      BUILD_CONST_KEY_MAP             4
+                        16      STORE_FAST                      3: dic
+                        18      LOAD_GLOBAL                     1: NULL + postRequest
+                        30      LOAD_CONST                      3: 'https://telegrambot.chbk.run/update'
+                        32      LOAD_FAST                       3: dic
+                        34      KW_NAMES                        4: ('json',)
+                        36      PRECALL                         2
+                        40      CALL                            2
+                        50      POP_TOP                         
+                        52      LOAD_CONST                      0: None
+                        54      RETURN_VALUE                    
+                        56      PUSH_EXC_INFO                   
+                        58      POP_TOP                         
+                        60      LOAD_GLOBAL                     3: NULL + jlog
+                        72      LOAD_CONST                      5: 'dbh error'
+                        74      PRECALL                         1
+                        78      CALL                            1
+                        88      POP_TOP                         
+                        90      POP_EXCEPT                      
+                        92      LOAD_CONST                      0: None
+                        94      RETURN_VALUE                    
+                        96      COPY                            3
+                        98      POP_EXCEPT                      
+                        100     RERAISE                         1
+                (
+                    'province_number'
+                    'banks'
+                    'app_version'
+                )
+                (
+                    'target'
+                    'kwargs'
+                )
+                'dbh first-step error'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + time
+                14      LOAD_ATTR                       0: time
+                24      PRECALL                         0
+                28      CALL                            0
+                38      LOAD_GLOBAL                     2: last_send_bank_time
+                50      BINARY_OP                       10 (-)
+                54      LOAD_CONST                      1: 2
+                56      COMPARE_OP                      0 (<)
+                62      POP_JUMP_FORWARD_IF_FALSE       2 (to 68)
+                64      LOAD_CONST                      0: None
+                66      RETURN_VALUE                    
+                68      LOAD_CONST                      2: 'banks'
+                70      LOAD_GLOBAL                     4: str
+                82      LOAD_CONST                      3: 'app_version'
+                84      LOAD_GLOBAL                     6: int
+                96      BUILD_TUPLE                     4
+                98      LOAD_CONST                      4: <CODE> sendPostRequest
+                100     MAKE_FUNCTION                   4
+                102     STORE_FAST                      2: sendPostRequest
+                104     LOAD_GLOBAL                     1: NULL + time
+                116     LOAD_ATTR                       0: time
+                126     PRECALL                         0
+                130     CALL                            0
+                140     STORE_GLOBAL                    1: last_send_bank_time
+                142     NOP                             
+                144     LOAD_GLOBAL                     9: NULL + getVersionCode
+                156     LOAD_GLOBAL                     10: app_version
+                168     PRECALL                         1
+                172     CALL                            1
+                182     STORE_FAST                      3: last_version_code
+                184     LOAD_GLOBAL                     13: NULL + threading
+                196     LOAD_ATTR                       7: Thread
+                206     LOAD_FAST                       2: sendPostRequest
+                208     LOAD_FAST                       0: province_id
+                210     LOAD_FAST                       1: banks
+                212     LOAD_FAST                       3: last_version_code
+                214     LOAD_CONST                      5: ('province_number', 'banks', 'app_version')
+                216     BUILD_CONST_KEY_MAP             3
+                218     KW_NAMES                        6: ('target', 'kwargs')
+                220     PRECALL                         2
+                224     CALL                            2
+                234     STORE_FAST                      4: t
+                236     LOAD_FAST                       4: t
+                238     LOAD_METHOD                     8: start
+                260     PRECALL                         0
+                264     CALL                            0
+                274     POP_TOP                         
+                276     LOAD_CONST                      0: None
+                278     RETURN_VALUE                    
+                280     PUSH_EXC_INFO                   
+                282     POP_TOP                         
+                284     LOAD_GLOBAL                     19: NULL + jlog
+                296     LOAD_CONST                      7: 'dbh first-step error'
+                298     PRECALL                         1
+                302     CALL                            1
+                312     POP_TOP                         
+                314     POP_EXCEPT                      
+                316     LOAD_CONST                      0: None
+                318     RETURN_VALUE                    
+                320     COPY                            3
+                322     POP_EXCEPT                      
+                324     RERAISE                         1
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: sendBankToJBDB
+            Qualified Name: sendBankToJBDB
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 7
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'time'
+                'last_send_bank_time_2'
+                'str'
+                'int'
+                'getVersionCode'
+                'app_version'
+                'threading'
+                'Thread'
+                'start'
+                'jlog'
+            [Locals+Names]
+                'province_id'
+                'banks'
+                'sendPostRequest'
+                'last_version_code'
+                't'
+            [Constants]
+                None
+                2
+                'banks'
+                'app_version'
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: sendPostRequest
+                    Qualified Name: sendBankToJBDB.<locals>.sendPostRequest
+                    Arg Count: 3
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                    [Names]
+                        'print'
+                        'postRequest'
+                        'jlog'
+                    [Locals+Names]
+                        'province_number'
+                        'banks'
+                        'app_version'
+                        'dic'
+                    [Constants]
+                        None
+                        'jetvam'
+                        (
+                            'province'
+                            'banks'
+                            'app'
+                            'app-version'
+                        )
+                        'https://jbdb.amoria.ir/update'
+                        (
+                            'json'
+                        )
+                        'dbh2 error'
+                    [Disassembly]
+                        0       RESUME                          0
+                        2       NOP                             
+                        4       LOAD_FAST                       0: province_number
+                        6       LOAD_FAST                       1: banks
+                        8       LOAD_CONST                      1: 'jetvam'
+                        10      LOAD_FAST                       2: app_version
+                        12      LOAD_CONST                      2: ('province', 'banks', 'app', 'app-version')
+                        14      BUILD_CONST_KEY_MAP             4
+                        16      STORE_FAST                      3: dic
+                        18      LOAD_GLOBAL                     1: NULL + print
+                        30      LOAD_FAST                       3: dic
+                        32      PRECALL                         1
+                        36      CALL                            1
+                        46      POP_TOP                         
+                        48      LOAD_GLOBAL                     3: NULL + postRequest
+                        60      LOAD_CONST                      3: 'https://jbdb.amoria.ir/update'
+                        62      LOAD_FAST                       3: dic
+                        64      KW_NAMES                        4: ('json',)
+                        66      PRECALL                         2
+                        70      CALL                            2
+                        80      POP_TOP                         
+                        82      LOAD_CONST                      0: None
+                        84      RETURN_VALUE                    
+                        86      PUSH_EXC_INFO                   
+                        88      POP_TOP                         
+                        90      LOAD_GLOBAL                     5: NULL + jlog
+                        102     LOAD_CONST                      5: 'dbh2 error'
+                        104     PRECALL                         1
+                        108     CALL                            1
+                        118     POP_TOP                         
+                        120     POP_EXCEPT                      
+                        122     LOAD_CONST                      0: None
+                        124     RETURN_VALUE                    
+                        126     COPY                            3
+                        128     POP_EXCEPT                      
+                        130     RERAISE                         1
+                (
+                    'province_number'
+                    'banks'
+                    'app_version'
+                )
+                (
+                    'target'
+                    'kwargs'
+                )
+                'dbh2 first-step error'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + time
+                14      LOAD_ATTR                       0: time
+                24      PRECALL                         0
+                28      CALL                            0
+                38      LOAD_GLOBAL                     2: last_send_bank_time_2
+                50      BINARY_OP                       10 (-)
+                54      LOAD_CONST                      1: 2
+                56      COMPARE_OP                      0 (<)
+                62      POP_JUMP_FORWARD_IF_FALSE       2 (to 68)
+                64      LOAD_CONST                      0: None
+                66      RETURN_VALUE                    
+                68      LOAD_CONST                      2: 'banks'
+                70      LOAD_GLOBAL                     4: str
+                82      LOAD_CONST                      3: 'app_version'
+                84      LOAD_GLOBAL                     6: int
+                96      BUILD_TUPLE                     4
+                98      LOAD_CONST                      4: <CODE> sendPostRequest
+                100     MAKE_FUNCTION                   4
+                102     STORE_FAST                      2: sendPostRequest
+                104     LOAD_GLOBAL                     1: NULL + time
+                116     LOAD_ATTR                       0: time
+                126     PRECALL                         0
+                130     CALL                            0
+                140     STORE_GLOBAL                    1: last_send_bank_time_2
+                142     NOP                             
+                144     LOAD_GLOBAL                     9: NULL + getVersionCode
+                156     LOAD_GLOBAL                     10: app_version
+                168     PRECALL                         1
+                172     CALL                            1
+                182     STORE_FAST                      3: last_version_code
+                184     LOAD_GLOBAL                     13: NULL + threading
+                196     LOAD_ATTR                       7: Thread
+                206     LOAD_FAST                       2: sendPostRequest
+                208     LOAD_FAST                       0: province_id
+                210     LOAD_FAST                       1: banks
+                212     LOAD_FAST                       3: last_version_code
+                214     LOAD_CONST                      5: ('province_number', 'banks', 'app_version')
+                216     BUILD_CONST_KEY_MAP             3
+                218     KW_NAMES                        6: ('target', 'kwargs')
+                220     PRECALL                         2
+                224     CALL                            2
+                234     STORE_FAST                      4: t
+                236     LOAD_FAST                       4: t
+                238     LOAD_METHOD                     8: start
+                260     PRECALL                         0
+                264     CALL                            0
+                274     POP_TOP                         
+                276     LOAD_CONST                      0: None
+                278     RETURN_VALUE                    
+                280     PUSH_EXC_INFO                   
+                282     POP_TOP                         
+                284     LOAD_GLOBAL                     19: NULL + jlog
+                296     LOAD_CONST                      7: 'dbh2 first-step error'
+                298     PRECALL                         1
+                302     CALL                            1
+                312     POP_TOP                         
+                314     POP_EXCEPT                      
+                316     LOAD_CONST                      0: None
+                318     RETURN_VALUE                    
+                320     COPY                            3
+                322     POP_EXCEPT                      
+                324     RERAISE                         1
+        'province_name'
+        'return'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: getProvinceIdFromName
+            Qualified Name: getProvinceIdFromName
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 3
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'province_name_dict'
+                'print'
+            [Locals+Names]
+                'province_name'
+            [Constants]
+                None
+                -1
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_FAST                       0: province_name
+                4       LOAD_GLOBAL                     0: province_name_dict
+                16      CONTAINS_OP                     0 (in)
+                18      POP_JUMP_FORWARD_IF_FALSE       13 (to 46)
+                20      LOAD_GLOBAL                     0: province_name_dict
+                32      LOAD_FAST                       0: province_name
+                34      BINARY_SUBSCR                   
+                44      RETURN_VALUE                    
+                46      LOAD_GLOBAL                     3: NULL + print
+                58      LOAD_FAST                       0: province_name
+                60      PRECALL                         1
+                64      CALL                            1
+                74      POP_TOP                         
+                76      LOAD_CONST                      1: -1
+                78      RETURN_VALUE                    
+        'banks_list'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: getCleanedBanksString
+            Qualified Name: getCleanedBanksString
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'split'
+                'append'
+                'join'
+            [Locals+Names]
+                'banks_list'
+                'cleaned_banks_list'
+                'i'
+                'bank_name'
+            [Constants]
+                None
+                'انتخاب کنید'
+                '-'
+                0
+                ','
+            [Disassembly]
+                0       RESUME                          0
+                2       BUILD_LIST                      0
+                4       STORE_FAST                      1: cleaned_banks_list
+                6       LOAD_FAST                       0: banks_list
+                8       GET_ITER                        
+                10      FOR_ITER                        55 (to 122)
+                12      STORE_FAST                      2: i
+                14      LOAD_CONST                      1: 'انتخاب کنید'
+                16      LOAD_FAST                       2: i
+                18      CONTAINS_OP                     0 (in)

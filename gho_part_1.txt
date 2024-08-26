@@ -1,0 +1,2027 @@
+jetvam.pyc (Python 3.11)
+[Code]
+    File Name: jetvam.pyw
+    Object Name: <module>
+    Qualified Name: <module>
+    Arg Count: 0
+    Pos Only Arg Count: 0
+    KW Only Arg Count: 0
+    Stack Size: 8
+    Flags: 0x00000000
+    [Names]
+        'showSplash'
+        'MySplash'
+        'my_splash'
+        'show'
+        'time'
+        'tt'
+        'tkinter'
+        'Label'
+        'tkinter_label'
+        'Button'
+        'tkinter_Button'
+        'Entry'
+        'tkinter_Entry'
+        'tkinter.ttk'
+        'font'
+        'tkinter.font'
+        'BOLD'
+        'Font'
+        'PIL'
+        'Image'
+        'ImageTk'
+        'datetime'
+        'ntplib'
+        'sqlite3'
+        'ctypes'
+        'hashlib'
+        'sha256'
+        'notification'
+        'automation'
+        'threading'
+        'ImageScroll'
+        'ScrollableImage'
+        'winsound'
+        'sys'
+        'os'
+        'numpy'
+        'np'
+        'cryptography.fernet'
+        'Fernet'
+        'tktooltip'
+        'ToolTip'
+        'clipboard'
+        'subprocess'
+        'requests'
+        'post'
+        'postRequest'
+        'get'
+        'getRequest'
+        'inspect'
+        'getframeinfo'
+        'stack'
+        'traceback'
+        'downloadWithDnsAndPercentage'
+        'openedCounter'
+        'countJetvam'
+        'webdriverManager'
+        'io'
+        'BytesIO'
+        'db_update'
+        'json'
+        'pyperclip'
+        'struct'
+        'signal'
+        'socket'
+        'changeSystemProxy'
+        'STARTUPINFO'
+        'startupinfo'
+        'dwFlags'
+        'STARTF_USESHOWWINDOW'
+        'app_version'
+        'path'
+        'abspath'
+        'driver_root'
+        'exists'
+        'open'
+        'f'
+        'write'
+        'showJetvamCountError'
+        'exit'
+        'check_output'
+        'os_platform'
+        'disableButtonChildren'
+        'jlog'
+        'delJlog'
+        'getVersionCode'
+        'last_version_name'
+        'isUpdate'
+        'join'
+        'createDB'
+        'checkAndCreateSmsCounter'
+        'checkAndCreatePriority'
+        'checkAndCreateDeletedUsers'
+        'checkAndCreateBanksAlarm'
+        'checkAndCreateBlockedPhone'
+        'checkAndCreateSigendUpBefore'
+        'def_settings'
+        'isfile'
+        'loads'
+        'def_settings_json'
+        'dump'
+        'decode'
+        'split'
+        'strip'
+        'current_machine_id'
+        'close_pending'
+        'turnOnClosePending'
+        'error_counter'
+        'Tk'
+        'j'
+        'title'
+        'icon_image'
+        'PhotoImage'
+        'icon'
+        'wm_iconphoto'
+        'pack'
+        'text'
+        'BOTH'
+        'close'
+        'mainloop'
+        'jcs_handle'
+        'startJCS'
+        'downloadJCSThread'
+        'download_jcs_thread'
+        'downloadJCS'
+        'showDownloadJCS'
+        'getLocalWebDriverVersion'
+        'local_driver_version'
+        'getOnlineWebDriverVersion'
+        'online_driver_version'
+        'online_driver_link_x64'
+        'online_driver_link_x86'
+        'getChromeVersion'
+        'chrome_version'
+        'Exception'
+        'e'
+        'print'
+        'downloadUpdate'
+        'download_driver_thread'
+        'updateDriver'
+        'showDownloadDriver'
+        'download_driver_message'
+        'dialog_message'
+        'encode'
+        'hexdigest'
+        'system_id_hash'
+        'RequestTimefromNtp'
+        'getNtpTime'
+        'RightClicker'
+        'server_domain'
+        'copyuuid'
+        'checkLicense'
+        'paste'
+        'autoUpdateLicense'
+        'current_ntp_time'
+        'system_time_time'
+        'abs'
+        'real_differ_time'
+        'a'
+        'resizable'
+        'key'
+        'c'
+        'LabelFrame'
+        'uuid_tframe'
+        'label_uuid'
+        'copy_to_clipboard_tool_tip'
+        'license_entry_frame'
+        'Text'
+        'entry_license'
+        'bind'
+        'button_check_licens'
+        'paste_button'
+        'expire_time'
+        'read'
+        'jj'
+        'decrypt'
+        'dfile'
+        'sys_id'
+        'exptime'
+        'float'
+        'until_time'
+        'jbdb_license'
+        'jbdb_expire_time'
+        'license_code'
+        'jbdb_sys_id'
+        'jbdb_exptime'
+        'jbdb_until_time'
+        'yourChromeNotUpdateDialog'
+        'licenseCheckCloseDialog'
+        'checkLicenseTime'
+        'myappid'
+        'windll'
+        'shell32'
+        'SetCurrentProcessExplicitAppUserModelID'
+        'sendSystemIdAndLicenseTime'
+        'iran_json'
+        'provinces'
+        'province_number_dict'
+        'province_name_dict'
+        'enumerate'
+        'province_number'
+        'province'
+        'last_send_bank_time'
+        'sendBankToServer'
+        'last_send_bank_time_2'
+        'sendBankToJBDB'
+        'str'
+        'int'
+        'getProvinceIdFromName'
+        'list'
+        'getCleanedBanksString'
+        'updateServerBanksList'
+        'getCities'
+        'splitlines'
+        'banks'
+        'index'
+        'bank'
+        'alarmSound'
+        'makeBlank'
+        'shcore'
+        'SetProcessDpiAwareness'
+        'MyApp'
+        '__name__'
+        'app'
+    [Locals+Names]
+    [Constants]
+        0
+        None
+        (
+            'tt'
+        )
+        (
+            '*'
+        )
+        (
+            'Label'
+        )
+        (
+            'Button'
+        )
+        (
+            'Entry'
+        )
+        (
+            'font'
+        )
+        (
+            'BOLD'
+            'Font'
+        )
+        (
+            'Image'
+            'ImageTk'
+        )
+        (
+            'sha256'
+        )
+        (
+            'ScrollableImage'
+        )
+        (
+            'Fernet'
+        )
+        (
+            'ToolTip'
+        )
+        (
+            'post'
+        )
+        (
+            'get'
+        )
+        (
+            'getframeinfo'
+            'stack'
+        )
+        (
+            'countJetvam'
+        )
+        (
+            'BytesIO'
+        )
+        'import'
+        '3.26.5'
+        ''
+        'no-gui'
+        'w'
+        'debug'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: showJetvamCountError
+            Qualified Name: showJetvamCountError
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 7
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'Tk'
+                'title'
+                'Image'
+                'open'
+                'os'
+                'path'
+                'join'
+                'driver_root'
+                'ImageTk'
+                'PhotoImage'
+                'wm_iconphoto'
+                'Label'
+                'pack'
+                'my_splash'
+                'close'
+                'mainloop'
+            [Locals+Names]
+                'j'
+                'icon_image'
+                'icon'
+            [Constants]
+                None
+                'اخطار'
+                'resource'
+                'icon.png'
+                True
+                'تعداد نرم افزار های باز شده بیشتر از حد مجاز تشخیص داده شد. این کار باعث بلاک شدن شما توسط بانک مرکزی می‌شود. نهایتا حق باز کردن پنج نرم افزار را دارید'
+                580
+                'center'
+                (
+                    'arial'
+                    16
+                )
+                (
+                    'text'
+                    'wraplength'
+                    'justify'
+                    'font'
+                )
+                20
+                (
+                    'padx'
+                    'pady'
+                )
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + Tk
+                14      PRECALL                         0
+                18      CALL                            0
+                28      STORE_FAST                      0: j
+                30      LOAD_FAST                       0: j
+                32      LOAD_METHOD                     1: title
+                54      LOAD_CONST                      1: 'اخطار'
+                56      PRECALL                         1
+                60      CALL                            1
+                70      POP_TOP                         
+                72      LOAD_GLOBAL                     5: NULL + Image
+                84      LOAD_ATTR                       3: open
+                94      LOAD_GLOBAL                     8: os
+                106     LOAD_ATTR                       5: path
+                116     LOAD_METHOD                     6: join
+                138     LOAD_GLOBAL                     14: driver_root
+                150     LOAD_CONST                      2: 'resource'
+                152     LOAD_CONST                      3: 'icon.png'
+                154     PRECALL                         3
+                158     CALL                            3
+                168     PRECALL                         1
+                172     CALL                            1
+                182     STORE_FAST                      1: icon_image
+                184     LOAD_GLOBAL                     17: NULL + ImageTk
+                196     LOAD_ATTR                       9: PhotoImage
+                206     LOAD_FAST                       1: icon_image
+                208     PRECALL                         1
+                212     CALL                            1
+                222     STORE_FAST                      2: icon
+                224     NOP                             
+                226     LOAD_FAST                       0: j
+                228     LOAD_METHOD                     10: wm_iconphoto
+                250     LOAD_CONST                      4: True
+                252     LOAD_FAST                       2: icon
+                254     PRECALL                         2
+                258     CALL                            2
+                268     POP_TOP                         
+                270     JUMP_FORWARD                    7 (to 286)
+                272     PUSH_EXC_INFO                   
+                274     POP_TOP                         
+                276     POP_EXCEPT                      
+                278     JUMP_FORWARD                    3 (to 286)
+                280     COPY                            3
+                282     POP_EXCEPT                      
+                284     RERAISE                         1
+                286     LOAD_GLOBAL                     23: NULL + Label
+                298     LOAD_FAST                       0: j
+                300     LOAD_CONST                      5: 'تعداد نرم افزار های باز شده بیشتر از حد مجاز تشخیص داده شد. این کار باعث بلاک شدن شما توسط بانک مرکزی می‌شود. نهایتا حق باز کردن پنج نرم افزار را دارید'
+                302     LOAD_CONST                      6: 580
+                304     LOAD_CONST                      7: 'center'
+                306     LOAD_CONST                      8: ('arial', 16)
+                308     KW_NAMES                        9: ('text', 'wraplength', 'justify', 'font')
+                310     PRECALL                         5
+                314     CALL                            5
+                324     LOAD_METHOD                     12: pack
+                346     LOAD_CONST                      10: 20
+                348     LOAD_CONST                      10: 20
+                350     KW_NAMES                        11: ('padx', 'pady')
+                352     PRECALL                         2
+                356     CALL                            2
+                366     POP_TOP                         
+                368     LOAD_GLOBAL                     26: my_splash
+                380     LOAD_METHOD                     14: close
+                402     PRECALL                         0
+                406     CALL                            0
+                416     POP_TOP                         
+                418     LOAD_FAST                       0: j
+                420     LOAD_METHOD                     15: mainloop
+                442     PRECALL                         0
+                446     CALL                            0
+                456     POP_TOP                         
+                458     LOAD_CONST                      0: None
+                460     RETURN_VALUE                    
+        4
+        b'64-bit'
+        'wmic OS get OSArchitecture'
+        (
+            'startupinfo'
+        )
+        'win64'
+        'win32'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: disableButtonChildren
+            Qualified Name: disableButtonChildren
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'winfo_children'
+                'winfo_class'
+                'configure'
+            [Locals+Names]
+                'parent'
+                'child'
+                'wtype'
+            [Constants]
+                None
+                'TButton'
+                'disable'
+                (
+                    'state'
+                )
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_FAST                       0: parent
+                4       LOAD_METHOD                     0: winfo_children
+                26      PRECALL                         0
+                30      CALL                            0
+                40      GET_ITER                        
+                42      FOR_ITER                        50 (to 144)
+                44      STORE_FAST                      1: child
+                46      LOAD_FAST                       1: child
+                48      LOAD_METHOD                     1: winfo_class
+                70      PRECALL                         0
+                74      CALL                            0
+                84      STORE_FAST                      2: wtype
+                86      LOAD_FAST                       2: wtype
+                88      LOAD_CONST                      1: 'TButton'
+                90      COMPARE_OP                      2 (==)
+                96      POP_JUMP_FORWARD_IF_FALSE       22 (to 142)
+                98      LOAD_FAST                       1: child
+                100     LOAD_METHOD                     2: configure
+                122     LOAD_CONST                      2: 'disable'
+                124     KW_NAMES                        3: ('state',)
+                126     PRECALL                         1
+                130     CALL                            1
+                140     POP_TOP                         
+                142     JUMP_BACKWARD                   51 (to 42)
+                144     LOAD_CONST                      0: None
+                146     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: jlog
+            Qualified Name: jlog
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 30
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'str'
+                'traceback'
+                'format_exc'
+                'getframeinfo'
+                'stack'
+                'lineno'
+                'open'
+                'write'
+                'time'
+                'strftime'
+                'gmtime'
+                'encode'
+            [Locals+Names]
+                'log'
+                'full_error'
+                'lineno'
+                'f'
+            [Constants]
+                None
+                1
+                0
+                '.jlog'
+                'ab'
+                '===================='
+                '[line < '
+                ' ^6'
+                " > '"
+                '%Y-%m-%d %H:%M:%S'
+                "']"
+                '\n'
+                '--------------------'
+                '<'
+                'sys error'
+                ' ^15'
+                '>'
+                '[end  < '
+                'utf-8'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + str
+                14      LOAD_GLOBAL                     3: NULL + traceback
+                26      LOAD_ATTR                       2: format_exc
+                36      PRECALL                         0
+                40      CALL                            0
+                50      PRECALL                         1
+                54      CALL                            1
+                64      STORE_FAST                      1: full_error
+                66      LOAD_GLOBAL                     7: NULL + getframeinfo
+                78      LOAD_GLOBAL                     9: NULL + stack
+                90      PRECALL                         0
+                94      CALL                            0
+                104     LOAD_CONST                      1: 1
+                106     BINARY_SUBSCR                   
+                116     LOAD_CONST                      2: 0
+                118     BINARY_SUBSCR                   
+                128     PRECALL                         1
+                132     CALL                            1
+                142     LOAD_ATTR                       5: lineno
+                152     STORE_FAST                      2: lineno
+                154     LOAD_GLOBAL                     1: NULL + str
+                166     LOAD_FAST                       0: log
+                168     PRECALL                         1
+                172     CALL                            1
+                182     STORE_FAST                      0: log
+                184     LOAD_GLOBAL                     13: NULL + open
+                196     LOAD_CONST                      3: '.jlog'
+                198     LOAD_CONST                      4: 'ab'
+                200     PRECALL                         2
+                204     CALL                            2
+                214     BEFORE_WITH                     
+                216     STORE_FAST                      3: f
+                218     LOAD_FAST                       3: f
+                220     LOAD_METHOD                     7: write
+                242     LOAD_CONST                      5: '===================='
+                244     FORMAT_VALUE                    0 (FVC_NONE)
+                246     LOAD_CONST                      6: '[line < '
+                248     LOAD_FAST                       2: lineno
+                250     LOAD_CONST                      7: ' ^6'
+                252     FORMAT_VALUE                    4 (FVC_NONE | FVS_HAVE_SPEC)
+                254     LOAD_CONST                      8: " > '"
+                256     LOAD_GLOBAL                     17: NULL + time
+                268     LOAD_ATTR                       9: strftime
+                278     LOAD_CONST                      9: '%Y-%m-%d %H:%M:%S'
+                280     LOAD_GLOBAL                     17: NULL + time
+                292     LOAD_ATTR                       10: gmtime
+                302     PRECALL                         0
+                306     CALL                            0
+                316     PRECALL                         2
+                320     CALL                            2
+                330     FORMAT_VALUE                    0 (FVC_NONE)
+                332     LOAD_CONST                      10: "']"
+                334     LOAD_CONST                      5: '===================='
+                336     FORMAT_VALUE                    0 (FVC_NONE)
+                338     LOAD_CONST                      11: '\n'
+                340     LOAD_FAST                       0: log
+                342     FORMAT_VALUE                    0 (FVC_NONE)
+                344     LOAD_CONST                      11: '\n'
+                346     LOAD_CONST                      12: '--------------------'
+                348     FORMAT_VALUE                    0 (FVC_NONE)
+                350     LOAD_CONST                      13: '<'
+                352     LOAD_CONST                      14: 'sys error'
+                354     LOAD_CONST                      15: ' ^15'
+                356     FORMAT_VALUE                    4 (FVC_NONE | FVS_HAVE_SPEC)
+                358     LOAD_CONST                      16: '>'
+                360     LOAD_CONST                      12: '--------------------'
+                362     FORMAT_VALUE                    0 (FVC_NONE)
+                364     LOAD_CONST                      11: '\n'
+                366     LOAD_FAST                       1: full_error
+                368     FORMAT_VALUE                    0 (FVC_NONE)
+                370     LOAD_CONST                      11: '\n'
+                372     LOAD_CONST                      5: '===================='
+                374     FORMAT_VALUE                    0 (FVC_NONE)
+                376     LOAD_CONST                      17: '[end  < '
+                378     LOAD_FAST                       2: lineno
+                380     LOAD_CONST                      7: ' ^6'
+                382     FORMAT_VALUE                    4 (FVC_NONE | FVS_HAVE_SPEC)
+                384     LOAD_CONST                      8: " > '"
+                386     LOAD_GLOBAL                     17: NULL + time
+                398     LOAD_ATTR                       9: strftime
+                408     LOAD_CONST                      9: '%Y-%m-%d %H:%M:%S'
+                410     LOAD_GLOBAL                     17: NULL + time
+                422     LOAD_ATTR                       10: gmtime
+                432     PRECALL                         0
+                436     CALL                            0
+                446     PRECALL                         2
+                450     CALL                            2
+                460     FORMAT_VALUE                    0 (FVC_NONE)
+                462     LOAD_CONST                      10: "']"
+                464     LOAD_CONST                      5: '===================='
+                466     FORMAT_VALUE                    0 (FVC_NONE)
+                468     LOAD_CONST                      11: '\n'
+                470     BUILD_STRING                    26
+                472     LOAD_METHOD                     11: encode
+                494     LOAD_CONST                      18: 'utf-8'
+                496     PRECALL                         1
+                500     CALL                            1
+                510     PRECALL                         1
+                514     CALL                            1
+                524     POP_TOP                         
+                526     LOAD_CONST                      0: None
+                528     LOAD_CONST                      0: None
+                530     LOAD_CONST                      0: None
+                532     PRECALL                         2
+                536     CALL                            2
+                546     POP_TOP                         
+                548     LOAD_CONST                      0: None
+                550     RETURN_VALUE                    
+                552     PUSH_EXC_INFO                   
+                554     WITH_EXCEPT_START               
+                556     POP_JUMP_FORWARD_IF_TRUE        4 (to 566)
+                558     RERAISE                         2
+                560     COPY                            3
+                562     POP_EXCEPT                      
+                564     RERAISE                         1
+                566     POP_TOP                         
+                568     POP_EXCEPT                      
+                570     POP_TOP                         
+                572     POP_TOP                         
+                574     LOAD_CONST                      0: None
+                576     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: delJlog
+            Qualified Name: delJlog
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 3
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'os'
+                'path'
+                'exists'
+                'remove'
+            [Locals+Names]
+            [Constants]
+                None
+                '.jlog'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     0: os
+                14      LOAD_ATTR                       1: path
+                24      LOAD_METHOD                     2: exists
+                46      LOAD_CONST                      1: '.jlog'
+                48      PRECALL                         1
+                52      CALL                            1
+                62      POP_JUMP_FORWARD_IF_FALSE       22 (to 108)
+                64      LOAD_GLOBAL                     1: NULL + os
+                76      LOAD_ATTR                       3: remove
+                86      LOAD_CONST                      1: '.jlog'
+                88      PRECALL                         1
+                92      CALL                            1
+                102     POP_TOP                         
+                104     LOAD_CONST                      0: None
+                106     RETURN_VALUE                    
+                108     LOAD_CONST                      0: None
+                110     RETURN_VALUE                    
+        'start logging'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: getVersionCode
+            Qualified Name: getVersionCode
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 5
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'split'
+                'replace'
+                'int'
+            [Locals+Names]
+                'version_name'
+                'x'
+            [Constants]
+                None
+                '.'
+                0
+                ' >2'
+                1
+                2
+                ' >3'
+                ' '
+                '0'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_FAST                       0: version_name
+                4       LOAD_METHOD                     0: split
+                26      LOAD_CONST                      1: '.'
+                28      PRECALL                         1
+                32      CALL                            1
+                42      LOAD_CONST                      2: 0
+                44      BINARY_SUBSCR                   
+                54      LOAD_CONST                      3: ' >2'
+                56      FORMAT_VALUE                    4 (FVC_NONE | FVS_HAVE_SPEC)
+                58      LOAD_FAST                       0: version_name
+                60      LOAD_METHOD                     0: split
+                82      LOAD_CONST                      1: '.'
+                84      PRECALL                         1
+                88      CALL                            1
+                98      LOAD_CONST                      4: 1
+                100     BINARY_SUBSCR                   
+                110     LOAD_CONST                      3: ' >2'
+                112     FORMAT_VALUE                    4 (FVC_NONE | FVS_HAVE_SPEC)
+                114     LOAD_FAST                       0: version_name
+                116     LOAD_METHOD                     0: split
+                138     LOAD_CONST                      1: '.'
+                140     PRECALL                         1
+                144     CALL                            1
+                154     LOAD_CONST                      5: 2
+                156     BINARY_SUBSCR                   
+                166     LOAD_CONST                      6: ' >3'
+                168     FORMAT_VALUE                    4 (FVC_NONE | FVS_HAVE_SPEC)
+                170     BUILD_STRING                    3
+                172     LOAD_METHOD                     1: replace
+                194     LOAD_CONST                      7: ' '
+                196     LOAD_CONST                      8: '0'
+                198     PRECALL                         2
+                202     CALL                            2
+                212     STORE_FAST                      1: x
+                214     LOAD_GLOBAL                     5: NULL + int
+                226     LOAD_FAST                       1: x
+                228     PRECALL                         1
+                232     CALL                            1
+                242     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: isUpdate
+            Qualified Name: isUpdate
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'getRequest'
+                'last_version_name'
+                'getVersionCode'
+                'text'
+                'jlog'
+            [Locals+Names]
+                'version_code'
+                'server_domain'
+                'last_version_code'
+            [Constants]
+                None
+                '/getLastVersionName'
+                10
+                (
+                    'timeout'
+                )
+                True
+                False
+                'is update function'
+            [Disassembly]
+                0       RESUME                          0
+                2       NOP                             
+                4       LOAD_GLOBAL                     1: NULL + getRequest
+                16      LOAD_FAST                       1: server_domain
+                18      LOAD_CONST                      1: '/getLastVersionName'
+                20      BINARY_OP                       0 (+)
+                24      LOAD_CONST                      2: 10
+                26      KW_NAMES                        3: ('timeout',)
+                28      PRECALL                         2
+                32      CALL                            2
+                42      STORE_GLOBAL                    1: last_version_name
+                44      LOAD_GLOBAL                     5: NULL + getVersionCode
+                56      LOAD_GLOBAL                     2: last_version_name
+                68      LOAD_ATTR                       3: text
+                78      PRECALL                         1
+                82      CALL                            1
+                92      STORE_FAST                      2: last_version_code
+                94      LOAD_FAST                       0: version_code
+                96      LOAD_FAST                       2: last_version_code
+                98      COMPARE_OP                      5 (>=)
+                104     POP_JUMP_FORWARD_IF_FALSE       2 (to 110)
+                106     LOAD_CONST                      4: True
+                108     RETURN_VALUE                    
+                110     LOAD_CONST                      5: False
+                112     RETURN_VALUE                    
+                114     PUSH_EXC_INFO                   
+                116     POP_TOP                         
+                118     LOAD_GLOBAL                     9: NULL + jlog
+                130     LOAD_CONST                      6: 'is update function'
+                132     PRECALL                         1
+                136     CALL                            1
+                146     POP_TOP                         
+                148     POP_EXCEPT                      
+                150     LOAD_CONST                      4: True
+                152     RETURN_VALUE                    
+                154     COPY                            3
+                156     POP_EXCEPT                      
+                158     RERAISE                         1
+        'members.db'
+        '{"t1c1": true, "t1c2": true, "t1c3": true, "t1c4": false, "t1c5": true, "t1c6": true, "t1c7": true, "t1c8": false, "t1c9": false, "t1c10": false, "t2e1": "2", "t2e2": "600", "t2e3": "2", "t2e4": "", "t2e5": "", "t2e6": "", "t2e7": "", "t2c1": false, "t2c2": false, "t2e8": "30", "t2c3": false, "t3c1": false}'
+        'settings.json'
+        'wmic csproduct get uuid'
+        '\n'
+        1
+        False
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: turnOnClosePending
+            Qualified Name: turnOnClosePending
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 1
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'close_pending'
+            [Locals+Names]
+            [Constants]
+                None
+                True
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_CONST                      1: True
+                4       STORE_GLOBAL                    0: close_pending
+                6       LOAD_CONST                      0: None
+                8       RETURN_VALUE                    
+        'https://jve.amoria.ir'
+        'بروزرسانی'
+        'resource\\icon.png'
+        True
+        'نسخه ی جدید تری از نرم افزار یافت شد، آیا مایل به بروزرسانی هستید؟'
+        580
+        'center'
+        (
+            'arial'
+            16
+        )
+        (
+            'text'
+            'wraplength'
+            'justify'
+            'font'
+        )
+        20
+        (
+            'padx'
+            'pady'
+        )
+        '  →  '
+        (
+            'arial'
+            10
+        )
+        'بله'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 5
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'turnOnClosePending'
+                'j'
+                'destroy'
+                'subprocess'
+                'Popen'
+            [Locals+Names]
+            [Constants]
+                None
+                'fixing.exe'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + turnOnClosePending
+                14      PRECALL                         0
+                18      CALL                            0
+                28      LOAD_GLOBAL                     2: j
+                40      LOAD_METHOD                     2: destroy
+                62      PRECALL                         0
+                66      CALL                            0
+                76      LOAD_GLOBAL                     7: NULL + subprocess
+                88      LOAD_ATTR                       4: Popen
+                98      LOAD_CONST                      1: 'fixing.exe'
+                100     PRECALL                         1
+                104     CALL                            1
+                114     BUILD_TUPLE                     3
+                116     RETURN_VALUE                    
+        (
+            'text'
+            'command'
+        )
+        'right'
+        10
+        (
+            'expand'
+            'side'
+            'fill'
+            'pady'
+            'padx'
+        )
+        'خیر'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: <lambda>
+            Qualified Name: <lambda>
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 2
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'j'
+                'destroy'
+            [Locals+Names]
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     0: j
+                14      LOAD_METHOD                     1: destroy
+                36      PRECALL                         0
+                40      CALL                            0
+                50      RETURN_VALUE                    
+        'left'
+        'error in update checking'
+        5
+        'خطای اینترنت'
+        'لطفا از اتصال خود به اینترنت اطمینان یابید'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: startJCS
+            Qualified Name: startJCS
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 5
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'getRequest'
+                'subprocess'
+                'Popen'
+                'jcs_handle'
+            [Locals+Names]
+                'r'
+            [Constants]
+                None
+                'http://localhost:29379/api/'
+                0.1
+                (
+                    'timeout'
+                )
+                'JCS.exe'
+                True
+                (
+                    'shell'
+                )
+            [Disassembly]
+                0       RESUME                          0
+                2       NOP                             
+                4       LOAD_GLOBAL                     1: NULL + getRequest
+                16      LOAD_CONST                      1: 'http://localhost:29379/api/'
+                18      LOAD_CONST                      2: 0.1
+                20      KW_NAMES                        3: ('timeout',)
+                22      PRECALL                         2
+                26      CALL                            2
+                36      STORE_FAST                      0: r
+                38      LOAD_CONST                      0: None
+                40      RETURN_VALUE                    
+                42      PUSH_EXC_INFO                   
+                44      POP_TOP                         
+                46      LOAD_GLOBAL                     3: NULL + subprocess
+                58      LOAD_ATTR                       2: Popen
+                68      LOAD_CONST                      4: 'JCS.exe'
+                70      LOAD_CONST                      5: True
+                72      KW_NAMES                        6: ('shell',)
+                74      PRECALL                         2
+                78      CALL                            2
+                88      STORE_GLOBAL                    3: jcs_handle
+                90      POP_EXCEPT                      
+                92      LOAD_CONST                      0: None
+                94      RETURN_VALUE                    
+                96      COPY                            3
+                98      POP_EXCEPT                      
+                100     RERAISE                         1
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: downloadJCSThread
+            Qualified Name: downloadJCSThread
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'downloadWithDnsAndPercentage'
+                'downloadFile'
+                'BytesIO'
+                'download_percentage'
+                'open'
+                'write'
+                'getvalue'
+            [Locals+Names]
+                'download_jcs_link'
+                'download_object'
+                'downloaded_file'
+                'percentage'
+                'f'
+            [Constants]
+                None
+                'https://jve.amoria.ir/static/JCS.exe'
+                '8.8.8.8'
+                'JCS.exe'
+                'wb'
+                101
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_CONST                      1: 'https://jve.amoria.ir/static/JCS.exe'
+                4       STORE_FAST                      0: download_jcs_link
+                6       LOAD_GLOBAL                     1: NULL + downloadWithDnsAndPercentage
+                18      LOAD_ATTR                       1: downloadFile
+                28      LOAD_FAST                       0: download_jcs_link
+                30      LOAD_CONST                      2: '8.8.8.8'
+                32      PRECALL                         2
+                36      CALL                            2
+                46      STORE_FAST                      1: download_object
+                48      LOAD_GLOBAL                     5: NULL + BytesIO
+                60      PRECALL                         0
+                64      CALL                            0
+                74      STORE_FAST                      2: downloaded_file
+                76      LOAD_FAST                       1: download_object
+                78      GET_ITER                        
+                80      FOR_ITER                        9 (to 100)
+                82      UNPACK_SEQUENCE                 2
+                86      STORE_FAST                      3: percentage
+                88      STORE_FAST                      4: f
+                90      LOAD_FAST                       3: percentage
+                92      STORE_GLOBAL                    3: download_percentage
+                94      LOAD_FAST                       4: f
+                96      STORE_FAST                      2: downloaded_file
+                98      JUMP_BACKWARD                   10 (to 80)
+                100     LOAD_GLOBAL                     9: NULL + open
+                112     LOAD_CONST                      3: 'JCS.exe'
+                114     LOAD_CONST                      4: 'wb'
+                116     PRECALL                         2
+                120     CALL                            2
+                130     BEFORE_WITH                     
+                132     STORE_FAST                      4: f
+                134     LOAD_FAST                       4: f
+                136     LOAD_METHOD                     5: write
+                158     LOAD_FAST                       2: downloaded_file
+                160     LOAD_METHOD                     6: getvalue
+                182     PRECALL                         0
+                186     CALL                            0
+                196     PRECALL                         1
+                200     CALL                            1
+                210     POP_TOP                         
+                212     LOAD_CONST                      0: None
+                214     LOAD_CONST                      0: None
+                216     LOAD_CONST                      0: None
+                218     PRECALL                         2
+                222     CALL                            2
+                232     POP_TOP                         
+                234     JUMP_FORWARD                    11 (to 258)
+                236     PUSH_EXC_INFO                   
+                238     WITH_EXCEPT_START               
+                240     POP_JUMP_FORWARD_IF_TRUE        4 (to 250)
+                242     RERAISE                         2
+                244     COPY                            3
+                246     POP_EXCEPT                      
+                248     RERAISE                         1
+                250     POP_TOP                         
+                252     POP_EXCEPT                      
+                254     POP_TOP                         
+                256     POP_TOP                         
+                258     LOAD_CONST                      5: 101
+                260     STORE_GLOBAL                    3: download_percentage
+                262     LOAD_CONST                      0: None
+                264     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: downloadJCS
+            Qualified Name: downloadJCS
+            Arg Count: 3
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'download_jcs_thread'
+                'threading'
+                'Thread'
+                'downloadJCSThread'
+                'start'
+                'download_percentage'
+                'config'
+                'after'
+                'destroy'
+            [Locals+Names]
+                'j'
+                'progress_bar'
+                'app_class'
+            [Constants]
+                None
+                (
+                    'target'
+                )
+                101
+                (
+                    'value'
+                )
+                100
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: <lambda>
+                    Qualified Name: downloadJCS.<locals>.<lambda>
+                    Arg Count: 0
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 5
+                    Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                    [Names]
+                        'downloadJCS'
+                    [Locals+Names]
+                        'app_class'
+                        'j'
+                        'progress_bar'
+                    [Constants]
+                        None
+                    [Disassembly]
+                        0       COPY_FREE_VARS                  3
+                        2       RESUME                          0
+                        4       LOAD_GLOBAL                     1: NULL + downloadJCS
+                        16      LOAD_DEREF                      1: j
+                        18      LOAD_DEREF                      2: progress_bar
+                        20      LOAD_DEREF                      0: app_class
+                        22      PRECALL                         3
+                        26      CALL                            3
+                        36      RETURN_VALUE                    
+            [Disassembly]
+                0       MAKE_CELL                       0: j
+                2       MAKE_CELL                       1: progress_bar
+                4       MAKE_CELL                       2: app_class
+                6       RESUME                          0
+                8       LOAD_GLOBAL                     0: download_jcs_thread
+                20      LOAD_CONST                      0: None
+                22      COMPARE_OP                      2 (==)
+                28      POP_JUMP_FORWARD_IF_FALSE       51 (to 132)
+                30      LOAD_GLOBAL                     3: NULL + threading
+                42      LOAD_ATTR                       2: Thread
+                52      LOAD_GLOBAL                     6: downloadJCSThread
+                64      KW_NAMES                        1: ('target',)
+                66      PRECALL                         1
+                70      CALL                            1
+                80      STORE_GLOBAL                    0: download_jcs_thread
+                82      LOAD_GLOBAL                     0: download_jcs_thread
+                94      LOAD_METHOD                     4: start
+                116     PRECALL                         0
+                120     CALL                            0
+                130     POP_TOP                         
+                132     LOAD_GLOBAL                     10: download_percentage
+                144     LOAD_CONST                      2: 101
+                146     COMPARE_OP                      3 (!=)
+                152     POP_JUMP_FORWARD_IF_FALSE       56 (to 266)
+                154     LOAD_DEREF                      1: progress_bar
+                156     LOAD_METHOD                     6: config
+                178     LOAD_GLOBAL                     10: download_percentage
+                190     KW_NAMES                        3: ('value',)
+                192     PRECALL                         1
+                196     CALL                            1
+                206     POP_TOP                         
+                208     LOAD_DEREF                      0: j
+                210     LOAD_METHOD                     7: after
+                232     LOAD_CONST                      4: 100
+                234     LOAD_CLOSURE                    2: app_class
+                236     LOAD_CLOSURE                    0: j
+                238     LOAD_CLOSURE                    1: progress_bar
+                240     BUILD_TUPLE                     3
+                242     LOAD_CONST                      5: <CODE> <lambda>
+                244     MAKE_FUNCTION                   8
+                246     PRECALL                         2
+                250     CALL                            2
+                260     POP_TOP                         
+                262     LOAD_CONST                      0: None
+                264     RETURN_VALUE                    
+                266     LOAD_DEREF                      0: j
+                268     LOAD_METHOD                     8: destroy
+                290     PRECALL                         0
+                294     CALL                            0
+                304     POP_TOP                         
+                306     LOAD_CONST                      0: None
+                308     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: showDownloadJCS
+            Qualified Name: showDownloadJCS
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 7
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'download_percentage'
+                'Tk'
+                'title'
+                'Image'
+                'open'
+                'ImageTk'
+                'PhotoImage'
+                'wm_iconphoto'
+                'Label'
+                'pack'
+                'Progressbar'
+                'BOTH'
+                'Button'
+                'my_splash'
+                'close'
+                'mainloop'
+            [Locals+Names]
+                'message'
+                'app_class'
+                'icon_image'
+                'icon'
+                'download_progressbar'
+                'j'
+            [Constants]
+                None
+                0
+                'JCS'
+                'resource\\icon.png'
+                True
+                580
+                'center'
+                (
+                    'arial'
+                    16
+                )
+                (
+                    'text'
+                    'wraplength'
+                    'justify'
+                    'font'
+                )
+                20
+                (
+                    'padx'
+                    'pady'
+                )
+                100
+                (
+                    'maximum'
+                    'value'
+                )
+                10
+                (
+                    'fill'
+                    'pady'
+                    'padx'
+                )
+                'دانلود نرم افزار'
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: <lambda>
+                    Qualified Name: showDownloadJCS.<locals>.<lambda>
+                    Arg Count: 0
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 6
+                    Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                    [Names]
+                        'disableButtonChildren'
+                        'downloadJCS'
+                    [Locals+Names]
+                        'app_class'
+                        'download_progressbar'
+                        'j'
+                    [Constants]
+                        None
+                    [Disassembly]
+                        0       COPY_FREE_VARS                  3
+                        2       RESUME                          0
+                        4       LOAD_GLOBAL                     1: NULL + disableButtonChildren
+                        16      LOAD_DEREF                      2: j
+                        18      PRECALL                         1
+                        22      CALL                            1
+                        32      LOAD_GLOBAL                     3: NULL + downloadJCS
+                        44      LOAD_DEREF                      2: j
+                        46      LOAD_DEREF                      1: download_progressbar
+                        48      LOAD_DEREF                      0: app_class
+                        50      PRECALL                         3
+                        54      CALL                            3
+                        64      BUILD_TUPLE                     2
+                        66      RETURN_VALUE                    
+                (
+                    'text'
+                    'command'
+                )
+                5
+                (
+                    'expand'
+                    'fill'
+                    'pady'
+                    'padx'
+                )
+            [Disassembly]
+                0       MAKE_CELL                       1: app_class
+                2       MAKE_CELL                       4: download_progressbar
+                4       MAKE_CELL                       5: j
+                6       RESUME                          0
+                8       LOAD_CONST                      1: 0
+                10      STORE_GLOBAL                    0: download_percentage
+                12      LOAD_GLOBAL                     3: NULL + Tk
+                24      PRECALL                         0
+                28      CALL                            0
+                38      STORE_DEREF                     5: j
+                40      LOAD_DEREF                      5: j
+                42      LOAD_METHOD                     2: title
+                64      LOAD_CONST                      2: 'JCS'
+                66      PRECALL                         1
+                70      CALL                            1
+                80      POP_TOP                         
+                82      LOAD_GLOBAL                     7: NULL + Image
+                94      LOAD_ATTR                       4: open
+                104     LOAD_CONST                      3: 'resource\\icon.png'
+                106     PRECALL                         1
+                110     CALL                            1
+                120     STORE_FAST                      2: icon_image
+                122     LOAD_GLOBAL                     11: NULL + ImageTk
+                134     LOAD_ATTR                       6: PhotoImage
+                144     LOAD_FAST                       2: icon_image
+                146     PRECALL                         1
+                150     CALL                            1
+                160     STORE_FAST                      3: icon
+                162     NOP                             
+                164     LOAD_DEREF                      5: j
+                166     LOAD_METHOD                     7: wm_iconphoto
+                188     LOAD_CONST                      4: True
+                190     LOAD_FAST                       3: icon
+                192     PRECALL                         2
+                196     CALL                            2
+                206     POP_TOP                         
+                208     JUMP_FORWARD                    7 (to 224)
+                210     PUSH_EXC_INFO                   
+                212     POP_TOP                         
+                214     POP_EXCEPT                      
+                216     JUMP_FORWARD                    3 (to 224)
+                218     COPY                            3
+                220     POP_EXCEPT                      
+                222     RERAISE                         1
+                224     LOAD_GLOBAL                     17: NULL + Label
+                236     LOAD_DEREF                      5: j
+                238     LOAD_FAST                       0: message
+                240     LOAD_CONST                      5: 580
+                242     LOAD_CONST                      6: 'center'
+                244     LOAD_CONST                      7: ('arial', 16)
+                246     KW_NAMES                        8: ('text', 'wraplength', 'justify', 'font')
+                248     PRECALL                         5
+                252     CALL                            5
+                262     LOAD_METHOD                     9: pack
+                284     LOAD_CONST                      9: 20
+                286     LOAD_CONST                      9: 20
+                288     KW_NAMES                        10: ('padx', 'pady')
+                290     PRECALL                         2
+                294     CALL                            2
+                304     POP_TOP                         
+                306     LOAD_GLOBAL                     21: NULL + Progressbar
+                318     LOAD_DEREF                      5: j
+                320     LOAD_CONST                      11: 100
+                322     LOAD_CONST                      1: 0
+                324     KW_NAMES                        12: ('maximum', 'value')
+                326     PRECALL                         3
+                330     CALL                            3
+                340     STORE_DEREF                     4: download_progressbar
+                342     LOAD_DEREF                      4: download_progressbar
+                344     LOAD_METHOD                     9: pack
+                366     LOAD_GLOBAL                     22: BOTH
+                378     LOAD_CONST                      13: 10
+                380     LOAD_CONST                      13: 10
+                382     KW_NAMES                        14: ('fill', 'pady', 'padx')
+                384     PRECALL                         3
+                388     CALL                            3
+                398     POP_TOP                         
+                400     LOAD_GLOBAL                     25: NULL + Button
+                412     LOAD_DEREF                      5: j
+                414     LOAD_CONST                      15: 'دانلود نرم افزار'
+                416     LOAD_CLOSURE                    1: app_class
+                418     LOAD_CLOSURE                    4: download_progressbar
+                420     LOAD_CLOSURE                    5: j
+                422     BUILD_TUPLE                     3
+                424     LOAD_CONST                      16: <CODE> <lambda>
+                426     MAKE_FUNCTION                   8
+                428     KW_NAMES                        17: ('text', 'command')
+                430     PRECALL                         3
+                434     CALL                            3
+                444     LOAD_METHOD                     9: pack
+                466     LOAD_CONST                      4: True
+                468     LOAD_GLOBAL                     22: BOTH
+                480     LOAD_CONST                      18: 5
+                482     LOAD_CONST                      13: 10
+                484     KW_NAMES                        19: ('expand', 'fill', 'pady', 'padx')
+                486     PRECALL                         4
+                490     CALL                            4
+                500     POP_TOP                         
+                502     LOAD_GLOBAL                     26: my_splash
+                514     LOAD_METHOD                     14: close
+                536     PRECALL                         0
+                540     CALL                            0
+                550     POP_TOP                         
+                552     LOAD_DEREF                      5: j
+                554     LOAD_METHOD                     15: mainloop
+                576     PRECALL                         0
+                580     CALL                            0
+                590     POP_TOP                         
+                592     LOAD_CONST                      0: None
+                594     RETURN_VALUE                    
+        'get driver info'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: downloadUpdate
+            Qualified Name: downloadUpdate
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'download_percentage'
+                'online_driver_link_x64'
+                'online_driver_link_x86'
+                'downloadWithDnsAndPercentage'
+                'downloadFile'
+                'BytesIO'
+                'webdriverManager'
+                'extractWebDriver'
+            [Locals+Names]
+                'arch'
+                'try_counter'
+                'download_error_find'
+                'download_driver_link'
+                'download_object'
+                'downloaded_file'
+                'percentage'
+                'f'
+            [Constants]
+                None
+                0
+                1
+                False
+                '64'
+                '10.202.10.202'
+                1379
+                True
+                10
+                101
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_CONST                      1: 0
+                4       STORE_GLOBAL                    0: download_percentage
+                6       LOAD_CONST                      1: 0
+                8       STORE_FAST                      1: try_counter
+                10      NOP                             
+                12      LOAD_CONST                      3: False
+                14      STORE_FAST                      2: download_error_find
+                16      LOAD_FAST                       0: arch
+                18      LOAD_CONST                      4: '64'
+                20      COMPARE_OP                      2 (==)
+                26      POP_JUMP_FORWARD_IF_FALSE       8 (to 44)
+                28      LOAD_GLOBAL                     2: online_driver_link_x64
+                40      STORE_FAST                      3: download_driver_link
+                42      JUMP_FORWARD                    7 (to 58)
+                44      LOAD_GLOBAL                     4: online_driver_link_x86
+                56      STORE_FAST                      3: download_driver_link
+                58      LOAD_GLOBAL                     7: NULL + downloadWithDnsAndPercentage
+                70      LOAD_ATTR                       4: downloadFile
+                80      LOAD_FAST                       3: download_driver_link
+                82      LOAD_CONST                      5: '10.202.10.202'
+                84      PRECALL                         2
+                88      CALL                            2
+                98      STORE_FAST                      4: download_object
+                100     LOAD_GLOBAL                     11: NULL + BytesIO
+                112     PRECALL                         0
+                116     CALL                            0
+                126     STORE_FAST                      5: downloaded_file
+                128     LOAD_FAST                       4: download_object
+                130     GET_ITER                        
+                132     FOR_ITER                        24 (to 182)
+                134     UNPACK_SEQUENCE                 2
+                138     STORE_FAST                      6: percentage
+                140     STORE_FAST                      7: f
+                142     LOAD_FAST                       6: percentage
+                144     LOAD_CONST                      6: 1379
+                146     COMPARE_OP                      2 (==)
+                152     POP_JUMP_FORWARD_IF_FALSE       9 (to 172)
+                154     LOAD_CONST                      7: True
+                156     STORE_FAST                      2: download_error_find
+                158     LOAD_FAST                       1: try_counter
+                160     LOAD_CONST                      2: 1
+                162     BINARY_OP                       13 (+=)
+                166     STORE_FAST                      1: try_counter
+                168     POP_TOP                         
+                170     JUMP_FORWARD                    5 (to 182)
+                172     LOAD_FAST                       6: percentage
+                174     STORE_GLOBAL                    0: download_percentage
+                176     LOAD_FAST                       7: f
+                178     STORE_FAST                      5: downloaded_file
+                180     JUMP_BACKWARD                   25 (to 132)
+                182     LOAD_FAST                       2: download_error_find
+                184     POP_JUMP_FORWARD_IF_FALSE       11 (to 208)
+                186     LOAD_FAST                       1: try_counter
+                188     LOAD_CONST                      8: 10
+                190     COMPARE_OP                      2 (==)
+                196     POP_JUMP_FORWARD_IF_FALSE       4 (to 206)
+                198     LOAD_CONST                      6: 1379
+                200     STORE_GLOBAL                    0: download_percentage
+                202     LOAD_CONST                      0: None
+                204     RETURN_VALUE                    
+                206     JUMP_BACKWARD                   99 (to 10)
+                208     LOAD_GLOBAL                     13: NULL + webdriverManager
+                220     LOAD_ATTR                       7: extractWebDriver
+                230     LOAD_FAST                       5: downloaded_file
+                232     LOAD_FAST                       0: arch
+                234     PRECALL                         2
+                238     CALL                            2
+                248     POP_TOP                         
+                250     LOAD_CONST                      9: 101
+                252     STORE_GLOBAL                    0: download_percentage
+                254     LOAD_CONST                      0: None
+                256     RETURN_VALUE                    
+        '32'
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: updateDriver
+            Qualified Name: updateDriver
+            Arg Count: 4
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 7
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'download_driver_thread'
+                'threading'
+                'Thread'
+                'downloadUpdate'
+                'start'
+                'automation_stop_called'
+                'automationStop'
+                'download_percentage'
+                'config'
+                'after'
+                'destroy'
+                'subprocess'
+                'Popen'
+                'sys'
+                'exit'
+            [Locals+Names]
+                'j'
+                'progress_bar'
+                'arch'
+                'app_class'
+            [Constants]
+                None
+                (
+                    'target'
+                    'args'
+                )
+                101
+                1379
+                (
+                    'value'
+                )
+                100
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: <lambda>
+                    Qualified Name: updateDriver.<locals>.<lambda>
+                    Arg Count: 0
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 6
+                    Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                    [Names]
+                        'updateDriver'
+                    [Locals+Names]
+                        'app_class'
+                        'arch'
+                        'j'
+                        'progress_bar'
+                    [Constants]
+                        None
+                    [Disassembly]
+                        0       COPY_FREE_VARS                  4
+                        2       RESUME                          0
+                        4       LOAD_GLOBAL                     1: NULL + updateDriver
+                        16      LOAD_DEREF                      2: j
+                        18      LOAD_DEREF                      3: progress_bar
+                        20      LOAD_DEREF                      1: arch
+                        22      LOAD_DEREF                      0: app_class
+                        24      PRECALL                         4
+                        28      CALL                            4
+                        38      RETURN_VALUE                    
+                'jetvam.exe'
+                0
+            [Disassembly]
+                0       MAKE_CELL                       0: j
+                2       MAKE_CELL                       1: progress_bar
+                4       MAKE_CELL                       2: arch
+                6       MAKE_CELL                       3: app_class
+                8       RESUME                          0
+                10      LOAD_GLOBAL                     0: download_driver_thread
+                22      LOAD_CONST                      0: None
+                24      COMPARE_OP                      2 (==)
+                30      POP_JUMP_FORWARD_IF_FALSE       54 (to 140)
+                32      LOAD_GLOBAL                     3: NULL + threading
+                44      LOAD_ATTR                       2: Thread
+                54      LOAD_GLOBAL                     6: downloadUpdate
+                66      LOAD_DEREF                      2: arch
+                68      LOAD_DEREF                      2: arch
+                70      BUILD_MAP                       1
+                72      KW_NAMES                        1: ('target', 'args')
+                74      PRECALL                         2
+                78      CALL                            2
+                88      STORE_GLOBAL                    0: download_driver_thread
+                90      LOAD_GLOBAL                     0: download_driver_thread
+                102     LOAD_METHOD                     4: start
+                124     PRECALL                         0
+                128     CALL                            0
+                138     POP_TOP                         
+                140     LOAD_DEREF                      3: app_class
+                142     LOAD_CONST                      0: None
+                144     COMPARE_OP                      3 (!=)
+                150     POP_JUMP_FORWARD_IF_FALSE       27 (to 206)
+                152     LOAD_DEREF                      3: app_class
+                154     LOAD_ATTR                       5: automation_stop_called
+                164     POP_JUMP_FORWARD_IF_TRUE        20 (to 206)
+                166     LOAD_DEREF                      3: app_class
+                168     LOAD_METHOD                     6: automationStop
+                190     PRECALL                         0
+                194     CALL                            0
+                204     POP_TOP                         
+                206     LOAD_GLOBAL                     14: download_percentage
+                218     LOAD_CONST                      2: 101
+                220     COMPARE_OP                      3 (!=)
+                226     POP_JUMP_FORWARD_IF_FALSE       68 (to 364)
+                228     LOAD_GLOBAL                     14: download_percentage
+                240     LOAD_CONST                      3: 1379
+                242     COMPARE_OP                      3 (!=)
+                248     POP_JUMP_FORWARD_IF_FALSE       57 (to 364)
+                250     LOAD_DEREF                      1: progress_bar
+                252     LOAD_METHOD                     8: config
+                274     LOAD_GLOBAL                     14: download_percentage
+                286     KW_NAMES                        4: ('value',)
+                288     PRECALL                         1
+                292     CALL                            1
+                302     POP_TOP                         
+                304     LOAD_DEREF                      0: j
+                306     LOAD_METHOD                     9: after
+                328     LOAD_CONST                      5: 100
+                330     LOAD_CLOSURE                    3: app_class
+                332     LOAD_CLOSURE                    2: arch
+                334     LOAD_CLOSURE                    0: j
+                336     LOAD_CLOSURE                    1: progress_bar
+                338     BUILD_TUPLE                     4
+                340     LOAD_CONST                      6: <CODE> <lambda>
+                342     MAKE_FUNCTION                   8
+                344     PRECALL                         2
+                348     CALL                            2
+                358     POP_TOP                         
+                360     LOAD_CONST                      0: None
+                362     RETURN_VALUE                    
+                364     LOAD_DEREF                      0: j
+                366     LOAD_METHOD                     10: destroy
+                388     PRECALL                         0
+                392     CALL                            0
+                402     POP_TOP                         
+                404     LOAD_GLOBAL                     23: NULL + subprocess
+                416     LOAD_ATTR                       12: Popen
+                426     LOAD_CONST                      7: 'jetvam.exe'
+                428     PRECALL                         1
+                432     CALL                            1
+                442     POP_TOP                         
+                444     LOAD_GLOBAL                     27: NULL + sys
+                456     LOAD_ATTR                       14: exit
+                466     LOAD_CONST                      8: 0
+                468     PRECALL                         1
+                472     CALL                            1
+                482     POP_TOP                         
+                484     LOAD_CONST                      0: None
+                486     RETURN_VALUE                    
+        [Code]
+            File Name: jetvam.pyw
+            Object Name: showDownloadDriver
+            Qualified Name: showDownloadDriver
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 7
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'download_percentage'
+                'Tk'
+                'title'
+                'Image'
+                'open'
+                'ImageTk'
+                'PhotoImage'
+                'wm_iconphoto'
+                'Label'
+                'pack'
+                'chrome_version'
+                'Progressbar'
+                'BOTH'
+                'Button'
+                'my_splash'
+                'close'
+                'mainloop'
+            [Locals+Names]
+                'message'
+                'app_class'
+                'icon_image'
+                'icon'
+                'download_progressbar'
+                'j'
+            [Constants]
+                None
+                0
+                'دانلود درایور'
+                'resource\\icon.png'
+                True
+                580
+                'center'
+                (
+                    'arial'
+                    16
+                )
+                (
+                    'text'
+                    'wraplength'
+                    'justify'
+                    'font'
+                )
+                20
+                (
+                    'padx'
+                    'pady'
+                )
+                'Your Chrome version: '
+                (
+                    'text'
+                )
+                100
+                (
+                    'maximum'
+                    'value'
+                )
+                10
+                (
+                    'fill'
+                    'pady'
+                    'padx'
+                )
+                '64 bit'
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: <lambda>
+                    Qualified Name: showDownloadDriver.<locals>.<lambda>
+                    Arg Count: 0
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                    [Names]
+                        'disableButtonChildren'
+                        'updateDriver'
+                    [Locals+Names]
+                        'app_class'
+                        'download_progressbar'
+                        'j'
+                    [Constants]
+                        None
+                        '64'
+                    [Disassembly]
+                        0       COPY_FREE_VARS                  3
+                        2       RESUME                          0
+                        4       LOAD_GLOBAL                     1: NULL + disableButtonChildren
+                        16      LOAD_DEREF                      2: j
+                        18      PRECALL                         1
+                        22      CALL                            1
+                        32      LOAD_GLOBAL                     3: NULL + updateDriver
+                        44      LOAD_DEREF                      2: j
+                        46      LOAD_DEREF                      1: download_progressbar
+                        48      LOAD_CONST                      1: '64'
+                        50      LOAD_DEREF                      0: app_class
+                        52      PRECALL                         4
+                        56      CALL                            4
+                        66      BUILD_TUPLE                     2
+                        68      RETURN_VALUE                    
+                (
+                    'text'
+                    'command'
+                )
+                5
+                'left'
+                (
+                    'expand'
+                    'fill'
+                    'pady'
+                    'padx'
+                    'side'
+                )
+                '32 bit'
+                [Code]
+                    File Name: jetvam.pyw
+                    Object Name: <lambda>
+                    Qualified Name: showDownloadDriver.<locals>.<lambda>
+                    Arg Count: 0
+                    Pos Only Arg Count: 0
+                    KW Only Arg Count: 0
+                    Stack Size: 7
+                    Flags: 0x00000013 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NESTED)
+                    [Names]
+                        'disableButtonChildren'
+                        'updateDriver'
+                    [Locals+Names]
+                        'app_class'
+                        'download_progressbar'
+                        'j'
+                    [Constants]
+                        None
+                        '32'
+                    [Disassembly]
+                        0       COPY_FREE_VARS                  3
+                        2       RESUME                          0
+                        4       LOAD_GLOBAL                     1: NULL + disableButtonChildren
+                        16      LOAD_DEREF                      2: j
+                        18      PRECALL                         1
+                        22      CALL                            1
+                        32      LOAD_GLOBAL                     3: NULL + updateDriver
+                        44      LOAD_DEREF                      2: j
+                        46      LOAD_DEREF                      1: download_progressbar
+                        48      LOAD_CONST                      1: '32'
+                        50      LOAD_DEREF                      0: app_class
+                        52      PRECALL                         4
+                        56      CALL                            4
+                        66      BUILD_TUPLE                     2
+                        68      RETURN_VALUE                    
+                'right'
+            [Disassembly]
+                0       MAKE_CELL                       1: app_class
+                2       MAKE_CELL                       4: download_progressbar
+                4       MAKE_CELL                       5: j
+                6       RESUME                          0
+                8       LOAD_CONST                      1: 0
+                10      STORE_GLOBAL                    0: download_percentage
+                12      LOAD_GLOBAL                     3: NULL + Tk
+                24      PRECALL                         0
+                28      CALL                            0
+                38      STORE_DEREF                     5: j
+                40      LOAD_DEREF                      5: j
+                42      LOAD_METHOD                     2: title
+                64      LOAD_CONST                      2: 'دانلود درایور'
+                66      PRECALL                         1
+                70      CALL                            1
+                80      POP_TOP                         
+                82      LOAD_GLOBAL                     7: NULL + Image
+                94      LOAD_ATTR                       4: open
+                104     LOAD_CONST                      3: 'resource\\icon.png'
+                106     PRECALL                         1
+                110     CALL                            1
+                120     STORE_FAST                      2: icon_image
+                122     LOAD_GLOBAL                     11: NULL + ImageTk
+                134     LOAD_ATTR                       6: PhotoImage
+                144     LOAD_FAST                       2: icon_image
+                146     PRECALL                         1
+                150     CALL                            1
+                160     STORE_FAST                      3: icon
+                162     NOP                             
+                164     LOAD_DEREF                      5: j
+                166     LOAD_METHOD                     7: wm_iconphoto
+                188     LOAD_CONST                      4: True
+                190     LOAD_FAST                       3: icon
+                192     PRECALL                         2
+                196     CALL                            2
+                206     POP_TOP                         
+                208     JUMP_FORWARD                    7 (to 224)
+                210     PUSH_EXC_INFO                   
+                212     POP_TOP                         
+                214     POP_EXCEPT                      
+                216     JUMP_FORWARD                    3 (to 224)
+                218     COPY                            3
+                220     POP_EXCEPT                      
+                222     RERAISE                         1
+                224     LOAD_GLOBAL                     17: NULL + Label
+                236     LOAD_DEREF                      5: j
+                238     LOAD_FAST                       0: message
+                240     LOAD_CONST                      5: 580
+                242     LOAD_CONST                      6: 'center'
+                244     LOAD_CONST                      7: ('arial', 16)
+                246     KW_NAMES                        8: ('text', 'wraplength', 'justify', 'font')
+                248     PRECALL                         5
+                252     CALL                            5
+                262     LOAD_METHOD                     9: pack
+                284     LOAD_CONST                      9: 20
+                286     LOAD_CONST                      9: 20
+                288     KW_NAMES                        10: ('padx', 'pady')
+                290     PRECALL                         2
+                294     CALL                            2
+                304     POP_TOP                         
+                306     LOAD_GLOBAL                     17: NULL + Label
+                318     LOAD_DEREF                      5: j
+                320     LOAD_CONST                      11: 'Your Chrome version: '
+                322     LOAD_GLOBAL                     20: chrome_version
+                334     FORMAT_VALUE                    0 (FVC_NONE)
+                336     BUILD_STRING                    2
+                338     KW_NAMES                        12: ('text',)
+                340     PRECALL                         2
+                344     CALL                            2
+                354     LOAD_METHOD                     9: pack
+                376     LOAD_CONST                      9: 20
+                378     LOAD_CONST                      9: 20
+                380     KW_NAMES                        10: ('padx', 'pady')
+                382     PRECALL                         2
+                386     CALL                            2
+                396     POP_TOP                         
+                398     LOAD_GLOBAL                     23: NULL + Progressbar
+                410     LOAD_DEREF                      5: j
+                412     LOAD_CONST                      13: 100
+                414     LOAD_CONST                      1: 0
+                416     KW_NAMES                        14: ('maximum', 'value')
+                418     PRECALL                         3
+                422     CALL                            3
+                432     STORE_DEREF                     4: download_progressbar
+                434     LOAD_DEREF                      4: download_progressbar
+                436     LOAD_METHOD                     9: pack
+                458     LOAD_GLOBAL                     24: BOTH
+                470     LOAD_CONST                      15: 10
+                472     LOAD_CONST                      15: 10
+                474     KW_NAMES                        16: ('fill', 'pady', 'padx')
+                476     PRECALL                         3
+                480     CALL                            3
+                490     POP_TOP                         
+                492     LOAD_GLOBAL                     27: NULL + Button
+                504     LOAD_DEREF                      5: j
+                506     LOAD_CONST                      17: '64 bit'
+                508     LOAD_CLOSURE                    1: app_class
+                510     LOAD_CLOSURE                    4: download_progressbar
+                512     LOAD_CLOSURE                    5: j
+                514     BUILD_TUPLE                     3
+                516     LOAD_CONST                      18: <CODE> <lambda>
+                518     MAKE_FUNCTION                   8
+                520     KW_NAMES                        19: ('text', 'command')
+                522     PRECALL                         3
+                526     CALL                            3
+                536     LOAD_METHOD                     9: pack
+                558     LOAD_CONST                      4: True
+                560     LOAD_GLOBAL                     24: BOTH
+                572     LOAD_CONST                      20: 5
+                574     LOAD_CONST                      15: 10
+                576     LOAD_CONST                      21: 'left'
+                578     KW_NAMES                        22: ('expand', 'fill', 'pady', 'padx', 'side')
+                580     PRECALL                         5
+                584     CALL                            5
+                594     POP_TOP                         
+                596     LOAD_GLOBAL                     27: NULL + Button
+                608     LOAD_DEREF                      5: j
+                610     LOAD_CONST                      23: '32 bit'
+                612     LOAD_CLOSURE                    1: app_class
+                614     LOAD_CLOSURE                    4: download_progressbar
+                616     LOAD_CLOSURE                    5: j
+                618     BUILD_TUPLE                     3
+                620     LOAD_CONST                      24: <CODE> <lambda>
+                622     MAKE_FUNCTION                   8
+                624     KW_NAMES                        19: ('text', 'command')
+                626     PRECALL                         3
+                630     CALL                            3
+                640     LOAD_METHOD                     9: pack
+                662     LOAD_CONST                      4: True
+                664     LOAD_GLOBAL                     24: BOTH
+                676     LOAD_CONST                      20: 5
+                678     LOAD_CONST                      15: 10
+                680     LOAD_CONST                      25: 'right'
+                682     KW_NAMES                        22: ('expand', 'fill', 'pady', 'padx', 'side')
+                684     PRECALL                         5
+                688     CALL                            5
+                698     POP_TOP                         
+                700     LOAD_GLOBAL                     28: my_splash
+                712     LOAD_METHOD                     15: close
+                734     PRECALL                         0
+                738     CALL                            0
+                748     POP_TOP                         
+                750     LOAD_DEREF                      5: j
+                752     LOAD_METHOD                     16: mainloop
+                774     PRECALL                         0
+                778     CALL                            0
+                788     POP_TOP                         
